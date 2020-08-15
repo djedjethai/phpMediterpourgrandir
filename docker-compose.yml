@@ -17,5 +17,9 @@ services:
       - MYSQL_PASSWORD=root
     ports:
       - "3306:3306"
-        #volumes:
+    volumes:
+      - mysql-db:/var/lib/mysql
+        # - /var/www/html/
         #- ./var/www/html/'monsupersite (1).sql':/docker-entrypoint-initdb.d/'monsupersite (1).sql'
+volumes: 
+      mysql-db:
