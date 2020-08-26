@@ -21,5 +21,35 @@ services:
       - mysql-db:/var/lib/mysql
         # - /var/www/html/
         #- ./var/www/html/'monsupersite (1).sql':/docker-entrypoint-initdb.d/'monsupersite (1).sql'
+
+   
+  postfix:
+    build:
+      context: ./postFix
+    port:
+      - 25:80
+    environment:
+      POSTFIX_HOSTNAME: "example.com"
+      POSTFIX_RELAY_HOST: "example.com:587"
+      POSTFIX_RELAY_USER: "user"
+      POSTFIX_RELAY_PASSWORD_FILE: /run/secrets/postfix_password
+    secrets:
+      - postfix_password
+  
+  # secrets:
+  # bpostfix_password:
+  # file: ./stack/secrets/postfix_password.context
+
+
+
+
+
+
+
+    
+    
+    
+    
+
 volumes: 
       mysql-db:
