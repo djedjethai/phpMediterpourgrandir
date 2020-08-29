@@ -16,8 +16,11 @@ VOLUME [ "/var/spool/postfix", "/etc/postfix" ]
 EXPOSE 25
 
 # Configure Postfix on startup
-COPY docker-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["docker-entrypoint.sh"]
+COPY ./docker-entrypoint.sh /usr/local/bin
+# ENTRYPOINT ["docker-entrypoint.sh"]
+RUN chmod -R 711 /usr/local/bin
+
+ENTRYPOINT /usr/local/bin/docker-entrypoint.sh
 
 # Start postfix in foreground mode
 CMD ["postfix", "start-fg"]
