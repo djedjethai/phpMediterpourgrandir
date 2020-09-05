@@ -29,8 +29,8 @@ services:
     ports:
       - 25:25
     environment:
-      POSTFIX_HOSTNAME: "example.com"
-      POSTFIX_RELAY_HOST: "example.com:25"
+      POSTFIX_HOSTNAME: "exemple.com"
+      POSTFIX_RELAY_HOST: "exemple.com:25"
       POSTFIX_RELAY_USER: "user"
       # POSTFIX_RELAY_PASSWORD_FILE: "password" 
       # /run/secrets/postfix_password

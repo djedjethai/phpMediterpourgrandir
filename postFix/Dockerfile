@@ -10,7 +10,7 @@ RUN apk add --no-cache --update postfix cyrus-sasl cyrus-sasl-plain ca-certifica
     (rm "/tmp/"* 2>/dev/null || true) && (rm -rf /var/cache/apk/* 2>/dev/null || true)
 
 # Mark used folders
-VOLUME [ "/var/spool/postfix", "/etc/postfix" ]
+# VOLUME [ "/var/spool/postfix", "/etc/postfix" ]
 
 # Expose mail submission agent port
 EXPOSE 25
