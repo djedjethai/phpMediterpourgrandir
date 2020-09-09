@@ -10,17 +10,20 @@ RUN apk add --no-cache --update postfix cyrus-sasl cyrus-sasl-plain ca-certifica
     (rm "/tmp/"* 2>/dev/null || true) && (rm -rf /var/cache/apk/* 2>/dev/null || true)
 
 # Mark used folders
-# VOLUME [ "/var/spool/postfix", "/etc/postfix" ]
+VOLUME [ "/var/spool/postfix", "/etc/postfix" ]
 
 # Expose mail submission agent port
 EXPOSE 25
 
 # Configure Postfix on startup
-COPY ./docker-entrypoint.sh /usr/local/bin
+COPY docker-entrypoint.sh /usr/local/bin/
 # ENTRYPOINT ["docker-entrypoint.sh"]
 RUN chmod -R 711 /usr/local/bin
 
 ENTRYPOINT /usr/local/bin/docker-entrypoint.sh
+# ENTRYPOINT ["docker-entrypoint.sh"]
 
 # Start postfix in foreground mode
-CMD ["postfix", "start-fg"]
+# CMD ["postfix", "start-fg"]
+
+CMD ["/usr/sbin/postfix", "start-fg"];
