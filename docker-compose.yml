@@ -1,45 +1,33 @@
-version: "3.2"
+version: "2.4"
+
 services:
-  php-apache:
-    build:
-      context: ./apache-php
-    ports:
-      - 80:80  
-    volumes:
-      - ./MediterPourGrandir/:/var/www/html/  
-  mysql:
-    image: mysql:5.6.40
-    #restart: always
-    environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=monsupersite
-#      - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
-    ports:
-      - "3306:3306"
-    volumes:
-      - mysql-db:/var/lib/mysql
-        # - /var/www/html/
-        #- ./var/www/html/'monsupersite (1).sql':/docker-entrypoint-initdb.d/'monsupersite (1).sql'
-
-   
-  postfix:
-    build:
-      context: ./postFix
-    ports:
-      - 25:25
-    environment:
-      POSTFIX_HOSTNAME: "exemple.com"
-      POSTFIX_RELAY_HOST: "exemple.com:25"
-      POSTFIX_RELAY_USER: "user"
-      # POSTFIX_RELAY_PASSWORD_FILE: "password" 
-      # /run/secrets/postfix_password
-      # secrets:
-      # - postfix_password
-  
-  # secrets:
-  # bpostfix_password:
-  # file: ./stack/secrets/postfix_password.context
-
+        php-apache:
+                build:
+                        context: ./apache-php
+                        target: prod
+                ports:
+                        - 80:80  
+                volumes:
+                        - ./apache-php/MediterPourGrandir/:/var/www/html/   
+        mysql:
+                image: mysql:5.6.40
+                #restart: always
+                environment:
+                        - MYSQL_ROOT_PASSWORD=root
+                        - MYSQL_DATABASE=monsupersite
+#                       - MYSQL_USER=root
+                        - MYSQL_PASSWORD=root
+                ports:
+                        - "3306:3306"
+                volumes:
+                        - mysql-db:/var/lib/mysql
+        postfix:
+                image: boky/postfix
+                environment:
+                        - ALLOWED_SENDER_DOMAINS=127.0.0.1
+                        # - RELAYHOST=192.168.1.37
+                ports: 
+                        - "1587:587"         
+      
 volumes: 
       mysql-db:

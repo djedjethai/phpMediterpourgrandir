@@ -1,4 +1,5 @@
-FROM php:7.2.1-apache
+# base stage
+FROM php:7.2.1-apache as base
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 # Enable apache rewrite
@@ -18,4 +19,35 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 
 #Copy php ini
 COPY php.ini /usr/local/etc/php/php.ini
+
+WORKDIR /var/www/html/
+# Install git
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y git
+
+# Install composer & update packages
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+# Install unzip utility and libs needed by zip PHP extension 
+RUN apt-get update && apt-get install -y \
+    zlib1g-dev \
+    libzip-dev \
+    unzip
+RUN docker-php-ext-install zip
+# RUN composer update
+
 RUN a2enmod rewrite
+
+# development stage
+FROM base as dev
+# COPY ./MediterPourGrandir .
+# RUN composer update
+
+
+# stage delete dev package
+
+# production stage
+FROM base as prod
+COPY ./MediterPourGrandir .
+WORKDIR /var/www/html/
+RUN composer update

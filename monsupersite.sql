@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 05, 2020 at 09:21 AM
+-- Generation Time: Sep 19, 2020 at 09:28 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -148,7 +148,9 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`id`, `studentId`, `contenu`, `grade`, `datePost`) VALUES
-(1, 52, 'hbgfngfhdhdfhdf', 4, '2020-09-05');
+(2, 97, 'duuur mais c bien, j avance', 5, '2020-09-19'),
+(6, 99, 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzz', 2, '2020-09-10'),
+(10, 52, 'voyons si les caches sont effaces', 1, '2020-09-19');
 
 -- --------------------------------------------------------
 
@@ -273,13 +275,13 @@ INSERT INTO `notifications` (`id`, `news_id`, `user_id`, `status`, `history`) VA
 (17, 57, 52, 0, 1),
 (18, 66, 52, 0, 1),
 (19, 66, 97, 0, NULL),
-(20, 62, 97, 1, 1),
+(20, 62, 97, 0, 1),
 (21, 62, 98, 1, 1),
-(22, 62, 99, 1, 1),
+(22, 62, 99, 0, 1),
 (23, 67, 98, 1, 1),
-(24, 68, 97, 1, 1),
+(24, 68, 97, 0, 1),
 (25, 68, 52, 0, 1),
-(26, 68, 99, 1, 1),
+(26, 68, 99, 0, 1),
 (27, 68, 98, 1, 1),
 (28, 68, 100, 1, 1),
 (29, 62, 100, 1, 1),
@@ -316,7 +318,7 @@ INSERT INTO `sessions` (`id`, `user_id`, `csrfToken`, `dateSet`, `dateExpire`) V
 (83, 38, '', '2020-03-14 15:35:00', '2020-03-14 21:35:00'),
 (89, 42, '', '2020-03-21 12:06:56', '2020-03-21 18:06:56'),
 (222, 100, '59c45c23ad32405d7ca40b4cea36cc6bd05ea1ce4559020441acf0e0c11f32bd', '2020-07-01 08:04:23', '2020-07-01 14:04:23'),
-(234, 97, '031fa223398677b6d2dc4b1246167a50c4be4bd5bb3e2187c68fb069f4ebe8da', '2020-08-08 12:19:05', '2020-08-08 18:19:05');
+(253, 97, '2474895858959820db4e7d51d14d8c4c2b0f4d6957fe3ad1e529a1253de27f6a', '2020-09-19 14:11:33', '2020-09-19 20:11:33');
 
 -- --------------------------------------------------------
 
@@ -355,10 +357,10 @@ INSERT INTO `students` (`id`, `pseudo`, `password`, `email`, `dateSignUp`, `date
 (42, 'new', '$2y$10$A2T1ZgAO2jSg7jW.JoWfoOzn34.q7bXEH/DNNQ6FHCuTcoyBWlf3m', 'new@new.com', '2020-03-18 10:45:58', NULL, 1, 0, 22674108554727, 1, NULL, NULL),
 (50, 'papy up', '$2y$10$LcNf96HSYeZwhoYipvawz.HH7PoN.V8S2jbRby8dsefoBsuDU1UIm', 'papyup@papy.com', '2020-03-18 12:50:20', NULL, 1, 0, 56887040646899, 1, NULL, NULL),
 (51, 'samir', '$2y$10$lKwJJ5HQi3OWFfEnuFE8GOYEiChgqNDA8NZYd7NisGVD7ho.06jC.', 'samir@samir.com', '2020-03-25 18:43:15', NULL, 1, 0, 15756088453926, 1, NULL, NULL),
-(52, 'jerome ok', '$2y$10$DsHunPM5Z17mYrrYT2BcXulPCeRtvcfC7UOlBKMcS67bjPNvSBVK6', 'jerome@jerome.com', '2020-03-28 11:39:10', NULL, 1, 0, 11471130206955, 1, 'balloon-1046658_1280.jpg', NULL),
+(52, 'jerome ok', '$2y$10$DsHunPM5Z17mYrrYT2BcXulPCeRtvcfC7UOlBKMcS67bjPNvSBVK6', 'jerome@jerome.com', '2020-03-28 11:39:10', '2020-09-16 11:50:24', 2, 0, 11471130206955, 1, 'balloon-1046658_1280.jpg', NULL),
 (53, 'test', '$2y$10$Bt/TV1rydYEkDQ7PfHsiauKg8OP/gsdk2a1Nl9Z6C8zatLdLhhwfy', 'test@test.com', '2020-03-28 12:15:17', NULL, 1, 0, 37798917627008, 1, NULL, NULL),
 (96, 'salut', '$2y$10$kcWoQfu4aIwSKVhOGH4ZveVid9lAVbiZrt0.o.e7Fa.0DlGylb1gS', 'djedje.thai.ok@gmail.com', '2020-05-16 13:38:18', NULL, 1, 0, 38877276667733, NULL, NULL, NULL),
-(97, 'annick', '$2y$10$SYF3c5pRMpx8CbTS.Sbb2eDwvdVWUJe/Tw.h4hasoaeLA5UiHXYcW', 'annick@annick.com', '2020-06-17 11:49:56', NULL, 1, 0, 11213745463692, 1, 'heart-700141_640.jpg', NULL),
+(97, 'annick', '$2y$10$SYF3c5pRMpx8CbTS.Sbb2eDwvdVWUJe/Tw.h4hasoaeLA5UiHXYcW', 'annick@annick.com', '2020-06-17 11:49:56', '2020-09-16 11:43:39', 3, 1, 11213745463692, 1, 'heart-700141_640.jpg', NULL),
 (98, 'paulux', '$2y$10$Anli7eJ9ajgAH.g8IEeYZuRgZuLygQN0sBjk./s9XHKmlku.pvmva', 'paulux@paulux.com', '2020-06-17 13:19:47', NULL, 1, 0, 21965434196332, 1, NULL, NULL),
 (99, 'loulou', '$2y$10$YG3SDlvk8u6BueyXufjyMulXFDEIkvXeDNtSLCVX3UA6B6yEpGuiK', 'loulou@loulou.com', '2020-06-17 13:23:00', NULL, 1, 0, 85334686800729, 1, NULL, NULL),
 (100, 'arthur', '$2y$10$x747DOjmcGcAfL/JIqDKUutuOQR/RkWdsMTCKG7wHshubS3.uQcKW', 'athur@arthur.com', '2020-07-01 07:58:34', NULL, 1, 0, 2405436770806, 1, NULL, NULL),
@@ -437,7 +439,7 @@ ALTER TABLE `erreurs`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `lecon`
@@ -461,7 +463,7 @@ ALTER TABLE `notifications`
 -- AUTO_INCREMENT for table `sessions`
 --
 ALTER TABLE `sessions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=240;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=254;
 
 --
 -- AUTO_INCREMENT for table `students`
