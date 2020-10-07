@@ -1,0 +1,9 @@
+RewriteEngine On
+
+AddCharset UTF-8 .php
+
+RewriteRule ^admin/ bootstrap.php?app=Backend [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*)$ bootstrap.php?app=Frontend [QSA,L]

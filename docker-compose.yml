@@ -4,11 +4,12 @@ services:
         php-apache:
                 build:
                         context: ./apache-php
-                        target: prod
+                        target: dev
                 ports:
-                        - 80:80  
+                        - "80:80"  
+                # for prod take off the volumes
                 volumes:
-                        - ./apache-php/MediterPourGrandir/:/var/www/html/   
+                        - ./apache-php/MediterPourGrandir/:/var/www/html/  
         mysql:
                 image: mysql:5.6.40
                 #restart: always
@@ -21,13 +22,15 @@ services:
                         - "3306:3306"
                 volumes:
                         - mysql-db:/var/lib/mysql
-        postfix:
-                image: boky/postfix
-                environment:
-                        - ALLOWED_SENDER_DOMAINS=127.0.0.1
-                        # - RELAYHOST=192.168.1.37
-                ports: 
-                        - "1587:587"         
-      
+         # postfix:
+         #      image: juanluisbaptiste/postfix:latest
+         #      environment:
+         #              - SMTP_SERVER=smtp.mycompany.com
+         #              - SMTP_USERNAME=user@mycompany.com
+         #              - SMTP_PASSWORD=changeme
+         #              - SERVER_HOSTNAME=localhost                
+         #      expose: 
+         #              - "25"         
+                          
 volumes: 
       mysql-db:

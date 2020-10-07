@@ -1,0 +1,361 @@
+
+Date: Saturday 25th of July 2020 04:27:33 AM
+Text: <strong>Warning</strong> : [0] Use of undefined constant iiiiiii - assumed 'iiiiiii' (this will throw an Error in a future version of PHP)<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Route.php</strong> at the line <strong>27</strong>
+Date: Saturday 25th of July 2020 04:33:20 AM
+Text: <strong>Warning</strong> : [0] Use of undefined constant rrrrrrrr - assumed 'rrrrrrrr' (this will throw an Error in a future version of PHP)<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Route.php</strong> at the line <strong>27</strong>
+Date: Saturday 25th of July 2020 04:33:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 29th of July 2020 01:29:19 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 04:34:42 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 04:43:10 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 04:43:23 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 04:48:42 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 05:09:19 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 05:09:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 05:10:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 05:13:05 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 06:20:14 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 1st of August 2020 06:20:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:24:53 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:24:56 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:24:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:37:54 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:37:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:40:26 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:40:26 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:47:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:47:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:47:45 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:47:45 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:47:58 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:47:58 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:48:01 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:48:01 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:49:42 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:49:42 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:49:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:49:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:00 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:00 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:17 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:17 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:50:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:54:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:54:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:54:51 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:54:51 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:58:21 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:58:21 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:58:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 01:58:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 02:18:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 02:22:49 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 02:23:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 5th of August 2020 02:51:27 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 12:35:53 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 12:35:53 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 12:35:54 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 12:36:12 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 12:42:05 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 12:44:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 04:21:15 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 04:21:15 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 05:18:58 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 8th of August 2020 05:19:05 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:31:55 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:31:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:32:20 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:51:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:51:33 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:52:05 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:52:06 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 03:52:10 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:08:40 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:08:46 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:12:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:12:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:12:47 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:12:54 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:12:56 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:15:27 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:15:27 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:15:29 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:19:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 04:19:11 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 05:26:05 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 12th of August 2020 05:26:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 04:57:09 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 04:58:47 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 04:58:59 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 05:24:15 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 05:24:20 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:15:09 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:15:10 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:35:54 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:35:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:35:59 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:36:02 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:38:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:40:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:40:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:40:37 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:40:40 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:41:14 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:42:07 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:42:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:42:09 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:42:34 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:42:34 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:42:39 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:42:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:56:37 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:56:38 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:56:58 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:57:43 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:57:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:57:49 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:58:00 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:58:00 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:58:06 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:23 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:24 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:24 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:28 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:29 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:54 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 06:59:54 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:00:09 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:00:59 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:01:00 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:01:14 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:04:40 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:04:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:04:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:05:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:21 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:21 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:37 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:38 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:38 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:38 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:06:48 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:07:12 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Saturday 15th of August 2020 07:07:13 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 12:58:52 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 12:58:53 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:01:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:19:18 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:21:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:22:00 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:24:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:26:44 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:26:45 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:27:59 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:28:07 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:29:27 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:29:33 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:29:37 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:29:37 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:35:48 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:37:24 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:37:55 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:43:07 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:43:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:43:09 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:43:09 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:45:57 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:46:47 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:47:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:47:59 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:50:36 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:59:14 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 01:59:58 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 02:00:20 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 02:04:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 02:05:38 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 02:05:39 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>
+Date: Wednesday 19th of August 2020 02:06:15 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: content<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Page.php</strong> at the line <strong>36</strong>
+Date: Wednesday 19th of August 2020 02:06:49 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: module<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Templates/headNav.php</strong> at the line <strong>8</strong>

@@ -1,0 +1,137 @@
+
+Date: Saturday 25th of July 2020 04:29:16 AM
+Text: <strong>Warning</strong> : [0] Use of undefined constant rrrrrrrr - assumed 'rrrrrrrr' (this will throw an Error in a future version of PHP)<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Route.php</strong> at the line <strong>27</strong>
+Date: Saturday 1st of August 2020 04:34:41 AM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Cache.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Cache.php(11): OCFram\Cache->setDataFolder('/opt/lampp/htdo...')
+#1 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/opt/lampp/htdo...', '/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Application.php(73): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(28): OCFram\Application->getController()
+#4 /opt/lampp/htdocs/MediterPourGrandir/Web/bootstrap.php(38): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Saturday 5th of September 2020 06:33:51 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(19): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:46:10 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(19): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:46:18 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(19): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:49:03 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(19): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:50:21 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:19
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(19): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:51:44 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(22): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:54:01 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(22): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:54:54 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(22): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:54:58 AM
+Text: PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(22): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 5th of September 2020 06:56:19 AM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dateAjout' in 'field list' in /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/MediterPourGrandir/lib/vendors/Model/FeedbackManagerPDO.php(22): PDOStatement->execute()
+#1 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/FeedbackFormHandler.php(16): Model\FeedbackManagerPDO->add(Object(Entity\Feedback))
+#2 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/Modules/Learn/LearnController.php(133): App\Frontend\Modules\Learn\FeedbackFormHandler->process()
+#3 /opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/BackController.php(43): App\Frontend\Modules\Learn\LearnController->executeAddFeedback(Object(OCFram\HTTPRequest))
+#4 /opt/lampp/htdocs/MediterPourGrandir/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /opt/lampp/htdocs/MediterPourGrandir/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Wednesday 9th of September 2020 01:19:32 AM
+Text: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1 in /var/www/html/lib/vendors/Model/FeedbackManagerPDO.php:41
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/FeedbackManagerPDO.php(41): PDO->query('SELECT feedback...')
+#1 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(140): Model\FeedbackManagerPDO->getFeedback(-1, '5')
+#2 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(36): App\Frontend\Modules\Welcome\WelcomeController->getFeedback()
+#3 /var/www/html/lib/OCFram/BackController.php(43): App\Frontend\Modules\Welcome\WelcomeController->executeIndex(Object(OCFram\HTTPRequest))
+#4 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Saturday 26th of September 2020 05:23:56 AM
+Text: SendGrid\Exception\InvalidRequest: Could not send request to server. CURL error 77: error setting certificate verify locations:
+  CAfile: /opt/lampp/share/curl/curl-ca-bundle.crt
+  CApath: /etc/ssl/certs in /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php:473
+Stack trace:
+#0 /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php(606): SendGrid\Client->makeRequest('post', 'https://api.sen...', Object(SendGrid\Mail\Mail), NULL, false)
+#1 /var/www/html/vendor/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php(67): SendGrid\Client->__call('post', Array)
+#2 /var/www/html/lib/OCFram/Mailer.php(33): BaseSendGridClientInterface->send(Object(SendGrid\Mail\Mail))
+#3 /var/www/html/lib/OCFram/Mailer.php(203): OCFram\Mailer::sendMail('djedjethai@gmai...', 'djedje.thai.ok@...', 'Mediter Pour Gr...', 'Email de loulou...')
+#4 /var/www/html/App/Frontend/Modules/Welcome/WelcomeFormHandler.php(15): OCFram\Mailer::sendMailContact(Object(Entity\Contact))
+#5 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(112): App\Frontend\Modules\Welcome\WelcomeFormHandler->processMailContact(Object(Entity\Contact))
+#6 /var/www/html/lib/OCFram/BackController.php(43): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#8 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#9 {main}

@@ -1,0 +1,1 @@
+<p>un mail contenant votre mot de passe vous a ete envoye</p>

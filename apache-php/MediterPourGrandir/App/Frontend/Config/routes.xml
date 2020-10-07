@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<routes>
+  <route url="/" module="Welcome" action="index" />
+  <route url="/welcome/DeroulementFormation.php" module="Welcome" action="deroulementFormation" />
+  <route url="/welcome/QuiSuisJe.php" module="Welcome" action="quiSuisJe" />
+  <route url="/welcome/contact.php" module="Welcome" action="contact" />
+  <route url="/welcome/allFeedbacks.php" module="Welcome" action="allFeedbacks" />
+  <!--<route url="/welcome/mailContact.php" module="Welcome" action="mailContact" />-->
+  <route url="/welcome/error.php" module="Welcome" action="error" />
+  
+  <route url="/auth/signIn.php" module="Auth" action="signIn" />
+  <route url="/auth/signUp.php" module="Auth" action="signUp" />
+  <!--<route url="/auth/registration.php" module="Auth" action="registration" />-->
+  <route url="/auth/confRegistration-([0-9]+)\.php" module="Auth" action="confRegistration" vars="key" />
+  <route url="/auth/forgetPassword.php" module="Auth" action="forgetPassword" />
+  <!--<route url="/auth/password.php" module="Auth" action="password" />-->
+
+  <route url="/learn/learn.php" module="Learn" action="learn" />
+  <route url="/learn/lessonFinish.php" module="Learn" action="lessonFinish" />
+  <route url="/learn/deconnexion.php" module="Learn" action="deconnexion" />
+  <route url="/learn/addFeedback.php" module="Learn" action="addFeedback" />
+  
+  <route url="/news/index-([0-9]+)\.php" module="News" action="index" vars="page"/>
+  <route url="/news/news-([0-9]+)\.php" module="News" action="show" vars="id"/>
+  <route url="/news/commenter-([0-9]+)\.php" module="News" action="insertComment" vars="news" />
+  <route url="/news/insert.php" module="News" action="insert" />
+  <route url="/news/update-([0-9]+)\.php" module="News" action="update" vars="id" />
+
+  <route url="/news/comment-update-([0-9]+)\.php" module="News" action="updateComment" vars="id" />
+
+  <route url="/Account/message.php" module="Account" action="message" />
+  <route url="/Account/modifyAccount.php" module="Account" action="modifyAccount" />
+  <route url="/Account/modifyPassword.php" module="Account" action="modifyPassword" />
+
+</routes>

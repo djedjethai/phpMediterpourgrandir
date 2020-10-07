@@ -1,0 +1,8 @@
+{
+    "require": {
+        "monolog/monolog": "1.0.*",
+	"sendgrid/sendgrid": "~7"
+    },
+    "require-dev": {
+    }
+}

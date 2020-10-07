@@ -1,0 +1,1 @@
+<p>votre demande d'inscription a bien ete prise en compte, un mail vous a ete envoye afin de confirmer l'ouverture de votre compte</p>
