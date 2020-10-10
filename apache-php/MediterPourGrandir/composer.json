@@ -1,7 +1,8 @@
 {
     "require": {
         "monolog/monolog": "1.0.*",
-	"sendgrid/sendgrid": "~7"
+	"sendgrid/sendgrid": "~7",
+        "johnathanmiller/secure-env-php": "^2.0"
     },
     "require-dev": {
     }

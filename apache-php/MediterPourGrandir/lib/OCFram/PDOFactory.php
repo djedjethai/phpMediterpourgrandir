@@ -1,13 +1,20 @@
 <?php
 namespace OCFram;
 
+use SecureEnvPHP\SecureEnvPHP;
+
+
 class PDOFactory
 {
-  public static function getMysqlConnexion()
-  {
-    $db = new \PDO('mysql:host=mysql;port=3306;dbname=monsupersite', 'root', 'root');
-    $db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+  	public static function getMysqlConnexion()
+  	{
+	  	(new SecureEnvPHP())->parse('.env.enc', '.env.key');
+		$user = getenv('DB_USER');
+		$password = getenv('DB_PASSWORD');
+
+    		$db = new \PDO('mysql:host=mysql;port=3306;dbname=monsupersite', $user, $password);
+    		$db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     
-    return $db;
-  }
+    		return $db;
+  	}
 }

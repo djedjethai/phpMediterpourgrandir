@@ -8,8 +8,6 @@ use \FormBuilder\ContactFormBuilder;
 use \App\Frontend\Modules\Welcome\WelcomeFormHandler;
 use \OCFram\MyException;
 
-use GpsLab\Component\Base64UID\Base64UID;
-
 class WelcomeController extends BackController
 {
   public function verifSession()
@@ -62,10 +60,6 @@ class WelcomeController extends BackController
   public function executeQuiSuisJe(HTTPRequest $request)
   {
     $user = $this->verifSession();
-
-    // verif composer
-    $uid = Base64UID::generate();
-    var_dump($uid);
 
     if($user) {
       $this->page->addVar('student', $user);
