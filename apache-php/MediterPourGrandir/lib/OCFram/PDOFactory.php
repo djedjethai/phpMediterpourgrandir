@@ -12,7 +12,7 @@ class PDOFactory
 		$user = getenv('DB_USER');
 		$password = getenv('DB_PASSWORD');
 
-    		$db = new \PDO('mysql:host=mysql;port=3306;dbname=monsupersite', $user, $password);
+    		$db = new \PDO('mysql:host=mysql;port=3306;dbname=monsupersite;charset=utf8', $user, $password);
     		$db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     
     		return $db;
