@@ -1,0 +1,266 @@
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+[1200-1800] our actual code
+1800px ++ big desktop
+
+$breackpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/* universal selector will select all elements on the page and apply it to them. to prevent pre-setting of the differents browser.
+Like it s the same for all*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /*by default box-sizing do not herite. but setting up the all page like it will make it everywhere*/
+  box-sizing: inherit; }
+
+/*html element is the root font-size. so set it up, and then we use rem with all other font-size
+(like this we can modify this one, and all get modify)*/
+html {
+  /*10px to make it easy ! as 1rem is root's font-size * rem. So 1rem will be 10px.
+    But we don t want it in px bc it will lock the screen of the user: if he want to agrandir, il ne pourra plus, donc
+    on convertir en %. 100% = 16px dc 62.5% = 10px*/
+  font-size: 62.5%;
+  /*@include respond(phone) {
+        font-size: 50%; // we want 1rem to be 8px, so 8/16 = 50%
+    }*/ }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+/*setting it here will make it available for the all doc, via l'heritage*/
+/*we can use the animation created on any object*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  /*just to show like crazy animation*/
+  60% {
+    transform: rotate(180deg); }
+  80% {
+    transform: translateX(1rem) rotate(180deg); }
+  /*on pourrait aussi mettre des etapes/pourcentage intermediare*/
+  100% {
+    opacity: 1;
+    transform: translate(0) rotate(180deg); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/*make the button coming from the bottom*/
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    /*the pb here, is that this animation start with a delay, so the opacity 1 occur with delay as well...
+        pr palier a ca on utilise: animation-fill-mode: backwards; see the button effect below*/
+    opacity: 1;
+    transform: translateY(0); } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 2.7;
+  /*predefine the line-height 1.7 fois bigger than the default one*/
+  color: #777;
+  /*so from here all the child class of the doc herite de border-box*/
+  box-sizing: border-box; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.header {
+  /*95% of the view port point*/
+  height: 85vh;
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+  /*what ever the view port, cover will always try to fit the elmt inside the box*/
+  background-size: cover;
+  /*fix the backGr at the top*/
+  background-position: top;
+  position: relative; }
+
+.intro {
+  padding: 25rem 0;
+  background-color: #f7f7f7;
+  /*we almost always add that for the backGround*/
+  background-size: cover; }
+  @media only screen and (max-width: 56.25em) {
+    .intro {
+      padding: 12rem 0; } }
+
+.intohead {
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+  padding: 25rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .intohead {
+      padding: 20rem 0; } }
+
+.pic {
+  background-color: #f7f7f7;
+  padding: 25rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .pic {
+      padding: 20rem 0 10rem 0; } }
+
+.skills {
+  padding: 25rem 0rem;
+  background-color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .skills {
+      padding: 10rem 0; } }
+
+.portfolio {
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+  padding: 25rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio {
+      padding: 10rem 0; } }
+
+.vision {
+  padding: 25rem 0rem;
+  background-color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .vision {
+      padding: 10rem 0; } }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  /*means Except the last child (so this margin-bottom will be apply to all children except the last one)*/ }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 6rem * 2) /3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 6rem * 3) /4); }
+  .row .col-2-of-4 {
+    width: calc((100% - 6rem) /2); }
+  .row .col-2-of-3 {
+    width: calc((2 * (100% - 6rem * 2) /3) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc((3 * (100% - 6rem * 3) /4) + 2 * 6rem); }
+
+.app {
+  border: 1px solid black;
+  margin: auto; }
+
+.dropUl {
+  /*margin: 0px, 30px, 0px, 0px;*/
+  padding: 0;
+  list-style: none;
+  background: #e3f2fd;
+  text-align: left; }
+
+.dropUl .dropLi {
+  display: inline-block;
+  position: relative;
+  line-height: 21px; }
+
+.dropUl .dropLi .dropA {
+  display: block;
+  /*min-width: 150px;*/
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none; }
+
+.dropUl .dropLi .dropA:hover {
+  color: #777;
+  background: #e3f2fd; }
+
+.dropUl .dropLi .dropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
+
+.dropUl .dropLi:hover .dropdown {
+  display: block;
+  /* Display the dropdown */ }
+
+.dropUl .dropLi .dropdown .dropLi {
+  display: block; }
+
+.dropUl .dropLi .dropdown .dropLi .dropA:hover {
+  color: #fff;
+  background: #939393; }

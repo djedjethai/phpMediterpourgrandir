@@ -1,0 +1,9 @@
+{
+	"dependencies": {
+		"node-sass": "4.14.1"
+	},
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss Web/css/style.css",
+		"compile:Wsass": "node-sass sass/main.scss Web/css/style.css -w"
+	}
+}

@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <!--<meta charset="utf-8">-->
   <title>mediter pour grandir</title>
-  <link rel="stylesheet" href="/Web/css/Global.css">
+  <link rel="stylesheet" href="/Web/css/style.css">
   <link rel="stylesheet" href="/css/<?=$module?>/<?=$view?>.css">
   <link rel="stylesheet" href="/Web/css/bootstrap-4.3.1-dist/css/bootstrap.css">
   <!--<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>-->
