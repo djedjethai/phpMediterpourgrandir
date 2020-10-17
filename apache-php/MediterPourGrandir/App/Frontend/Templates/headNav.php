@@ -15,9 +15,9 @@
   <script src="/js/<?=$module?>/<?=$view?>.js"></script>	
 
 </head>
-<body class="body">
+<body>
   <!--<nav class="navbar navbar-expand-md bg-dark navbar-dark">-->
-  <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-md navbar-light">
   <!-- Brand -->
   
   <!-- Toggler/collapsibe Button -->

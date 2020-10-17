@@ -135,3 +135,13 @@ Stack trace:
 #7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
 #8 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
 #9 {main}
+Date: Friday 16th of October 2020 07:28:09 AM
+Text: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'monsupersite.students' doesn't exist in /var/www/html/lib/vendors/Model/AuthManagerPDO.php:24
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/AuthManagerPDO.php(24): PDOStatement->execute()
+#1 /var/www/html/App/Frontend/Modules/Auth/AuthFormHandler.php(17): Model\AuthManagerPDO->existStudent(Object(Entity\Student))
+#2 /var/www/html/App/Frontend/Modules/Auth/AuthController.php(47): App\Frontend\Modules\Auth\AuthFormHandler->processAuth(Object(Entity\Student))
+#3 /var/www/html/lib/OCFram/BackController.php(43): App\Frontend\Modules\Auth\AuthController->executeSignIn(Object(OCFram\HTTPRequest))
+#4 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#6 {main}

@@ -20,16 +20,16 @@ COPY php.ini /usr/local/etc/php/php.ini
 WORKDIR /var/www/html/
 # RUN apt-get install iputils-ping
 # Install git
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y git
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y git 
 # Install composer & update packages
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 # Install unzip utility and libs needed by zip PHP extension 
 RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libzip-dev \
-    unzip
+    unzip 
 RUN docker-php-ext-install zip
 RUN  apt-get clean
 RUN a2enmod rewrite

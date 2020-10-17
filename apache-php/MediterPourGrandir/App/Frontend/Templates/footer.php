@@ -1,13 +1,13 @@
 <!-- Footer 
 <footer class="page-footer font-small special-color-dark pt-4">-->
-<footer class="shadow-lg page-footer font-small pt-4" style="background-color: #e3f2fd;">  
+<footer class="shadow-lg page-footer">  
 
   <!-- Footer Elements -->
   <?php if(!$user->isUser()) { ?>
   <div class="container">
      <ul class="list-unstyled list-inline text-center py-2">
     <li class="list-inline-item">
-      <h5 class="mb-1">Apprenez a mediter, c'est GRATUIT !</h5>
+      <h5 class="paragraph">Apprenez a mediter, c'est GRATUIT !</h5>
     </li>
     <li class="list-inline-item">
       <a href="/auth/signUp.php" class="btn btn-success btn-rounded">S'inscrir !</a>

@@ -7,6 +7,22 @@ body {
     color: $color-grey-dark;
     /*so from here all the child class of the doc herite de border-box*/
     box-sizing: border-box;
+    font-size: $default-font-size;
 }
 
+.navbar {
+	font-size: $default-font-size;
+	min-height: 6rem;
+	background-color: blue;
+}
 
+.navbar-light .navbar-nav .nav-link {
+	color: white !important; 
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

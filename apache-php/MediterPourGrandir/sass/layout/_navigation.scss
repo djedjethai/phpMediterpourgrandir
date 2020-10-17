@@ -1,3 +1,17 @@
+// main navbar
+.navbar {
+	// font-size: $default-font-size;
+	min-height: 6rem;
+	background-color: $color-tertiary-dark;
+	font-size: 1.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $color-white !important; 
+}
+
+
+// dropul account connected student
 .dropUl{
   		/*margin: 0px, 30px, 0px, 0px;*/
     padding: 0;

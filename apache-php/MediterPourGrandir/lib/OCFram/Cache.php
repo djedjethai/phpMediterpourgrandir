@@ -33,7 +33,7 @@ class Cache
   {
     if (!file_exists($filename)) return null;
     
-    echo 'from read cache<br />';
+    // echo 'from read cache<br />';
 
     $file = fopen($filename, 'r');
     $content = '';

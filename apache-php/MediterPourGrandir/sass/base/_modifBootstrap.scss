@@ -1,0 +1,9 @@
+.btn{
+	min-height: 4rem;
+	font-size: 1.8rem !important;
+
+	&-success {
+		background-color: $color-secondary-dark !important;
+	}
+}
+

@@ -35,7 +35,7 @@ class WelcomeController extends BackController
     
     if ($listFeedbacks === null)
     {
-      echo 'from db';
+      // echo 'from db';
       $listFeedbacks = $this->getFeedback();
       //$listeNews = $manager->getList($fromNewsNbr, $nombreNews);
     
