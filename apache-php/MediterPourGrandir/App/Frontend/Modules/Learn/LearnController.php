@@ -24,7 +24,7 @@ class LearnController extends BackController
     $interLesson = $manager->getIntervalLesson($student);
 
     if($interLesson === false || ($student->lesson() == 1))
-    {
+    {   
       $lesson = $manager->getLesson($student->lesson());
     }
     else

@@ -92,7 +92,7 @@ class CommentsManagerPDO extends CommentsManager
 
   public function getLastComment($newsId)
   {
-    $q = $this->dao->prepare('SELECT comments.id, newsId, auteurComId, pseudo, contenu, date FROM comments INNER JOIN students ON comments.auteurComId = students.id WHERE comments.id = (SELECT MAX(id) FROM comments WHERE newsId = :id)');
+    $q = $this->dao->prepare('SELECT comments.id, newsId, auteurComId, pseudo, picture, contenu, date FROM comments INNER JOIN students ON comments.auteurComId = students.id WHERE comments.id = (SELECT MAX(id) FROM comments WHERE newsId = :id)');
     $q->bindValue(':id', (int) $newsId, \PDO::PARAM_INT);
     $q->execute();
     

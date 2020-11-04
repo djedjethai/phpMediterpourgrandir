@@ -117,3 +117,7 @@ Date: Wednesday 9th of September 2020 05:59:14 AM
 Text: <strong>Warning</strong> : [0] move_uploaded_file(/pictures/mountain.jpeg): failed to open stream: No such file or directory<br /><strong>/var/www/html/lib/OCFram/ImageHandler.php</strong> at the line <strong>55</strong>
 Date: Wednesday 9th of September 2020 06:00:01 AM
 Text: <strong>Warning</strong> : [0] move_uploaded_file(/MediterPourGrandir/Web/pictures/mountain.jpeg): failed to open stream: No such file or directory<br /><strong>/var/www/html/lib/OCFram/ImageHandler.php</strong> at the line <strong>55</strong>
+Date: Wednesday 4th of November 2020 06:14:55 AM
+Text: <strong>Warning</strong> : [0] unlink(/opt/lampp/htdocs/MediterPourGrandir/Web/pictures/balloon-1046658_1280.jpg): No such file or directory<br /><strong>/var/www/html/App/Frontend/Modules/Account/AccountFormHandler.php</strong> at the line <strong>58</strong>
+Date: Wednesday 4th of November 2020 09:27:13 AM
+Text: <strong>Warning</strong> : [0] unlink(/var/www/html/lib/OCFram/../../tmp/cache/datas/feedbacks): Is a directory<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>23</strong>

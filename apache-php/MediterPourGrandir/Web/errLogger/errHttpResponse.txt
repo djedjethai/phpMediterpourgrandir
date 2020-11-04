@@ -5,3 +5,7 @@ Date: Saturday 25th of July 2020 04:26:11 AM
 Text: <strong>Warning</strong> : [0] Use of undefined constant cccccccc - assumed 'cccccccc' (this will throw an Error in a future version of PHP)<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Page.php</strong> at the line <strong>43</strong>
 Date: Wednesday 9th of September 2020 02:05:52 AM
 Text: <strong>Unknow error</strong> : [0] Object of class DateTime could not be converted to string<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/Views/index.php</strong> at the line <strong>22</strong>
+Date: Wednesday 4th of November 2020 06:48:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>58</strong>
+Date: Wednesday 4th of November 2020 06:48:28 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>58</strong>

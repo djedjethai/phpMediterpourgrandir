@@ -229,7 +229,6 @@ class NewsController extends BackController
       // if update of a news, delete the news's cache
       if (file_exists($this->cache->dataFolder()."/news-".$request->getData('id')))
       {
-        echo 'rrr';
         $this->cache->delete('news-'.$request->getData('id'));
       }  
 

@@ -1,4 +1,4 @@
-	<div class="row">
+<div class="row">
 		<div class="col-md-2">
 			<div class="ul1">
 				<ul>
@@ -11,7 +11,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-10">
+	<div class="col-md-10">
 				
 <div>				
 <?php

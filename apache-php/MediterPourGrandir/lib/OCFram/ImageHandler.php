@@ -29,7 +29,8 @@ class ImageHandler
 	        // Vérifie le type MIME du fichier
 	        if(in_array($filetype, $allowed)){
 	            // Vérifie si le fichier existe avant de le télécharger.
-	            if(file_exists($this->destination. "/" . $image["name"]))
+	            // here i must check in bdd if name of the pic already exist
+ 	            if(file_exists($this->destination. "/" . $image["name"]))
 	            {
 	                return $image["name"] . " existe déjà.";
 	            } 

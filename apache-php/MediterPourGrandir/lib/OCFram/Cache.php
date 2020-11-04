@@ -15,6 +15,13 @@ class Cache
     unlink($this->dataFolder.'/'.$key);
   }
 
+  public function deleteAllNews()
+  {
+    foreach (glob($this->dataFolder.'/news-*') as $filename) {
+        unlink($filename);
+    }
+  }
+
   public function deleteIndex()
   {
     foreach (glob($this->dataFolder.'/index-*') as $filename) {

@@ -46,37 +46,41 @@ class AccountController extends BackController
     if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {
 
-      if ($request->fileExists('picture'))
-      {
+        if ($request->fileExists('picture'))
+        {
 
-        // $imageDestination = "/opt/lampp/htdocs/MediterPourGrandir/Web/pictures";
-        $imageDestination = "/var/www/html/Web/pictures";
-        $imageHandler = new ImageHandler($imageDestination);
-        $imageErr = $imageHandler->checkFile($request->fileData('picture'));
-      }
+          // $imageDestination = "/opt/lampp/htdocs/MediterPourGrandir/Web/pictures";
+          $imageDestination = "/var/www/html/Web/pictures";
+          $imageHandler = new ImageHandler($imageDestination);
+          $imageErr = $imageHandler->checkFile($request->fileData('picture'));
+        }
 
-      if ($request->postData('deletePic') && $request->postData('password')) 
-      {
-        $student = new StudentModifyAccount([
-        'id' => $user->id(),
-        'pseudo' => $request->postData('pseudo'),
-        'email' => $request->postData('email'),
-        'password' => $request->postData('password'),
-        'picture' => '',
-        'newPicture' => ''
-      ]);
-      }
-      else
-      {
-        $student = new StudentModifyAccount([
+        if ($request->postData('deletePic') && $request->postData('password')) 
+        {
+         $student = new StudentModifyAccount([
           'id' => $user->id(),
           'pseudo' => $request->postData('pseudo'),
           'email' => $request->postData('email'),
           'password' => $request->postData('password'),
-          'picture' => $user->picture(),
-          'newPicture' => $request->fileData('picture')["name"]
+          'picture' => '',
+          'newPicture' => ''
         ]);
-      }
+        }
+        else
+        {
+          $student = new StudentModifyAccount([
+            'id' => $user->id(),
+            'pseudo' => $request->postData('pseudo'),
+            'email' => $request->postData('email'),
+            'password' => $request->postData('password'),
+            'picture' => $user->picture(),
+            'newPicture' => $request->fileData('picture')["name"]
+          ]);
+        }
+        // as some client datas has been updated, we delete all caches.
+        $this->cache->deleteIndex();
+        $this->cache->deleteAllNews();
+         // $this->cache->delete('news-'.$request->getData('id'));
     }
     else
     {
@@ -109,7 +113,7 @@ class AccountController extends BackController
         $uploadSuccess = $imageHandler->uploadFile($request->fileData('picture'));
         $accountFormHandler->processStudentModification($student, $user);
         $this->app->user()->setFlash('La modification de votre compte a ete effectue');
-        // $this->app->httpResponse()->redirect('/Account/modifyAccount.php');
+        $this->app->httpResponse()->redirect('/Account/modifyAccount.php');
       }
       
     }

@@ -51,7 +51,12 @@ class AccountFormHandler extends FormHandler
       $student->setEmail($user->email());
     }
 
-    $imageDestination = "/opt/lampp/htdocs/MediterPourGrandir/Web/pictures";
+    // path in computer
+    // $imageDestination = "/opt/lampp/htdocs/MediterPourGrandir/Web/pictures";
+
+    // path in container
+    $imageDestination = "/var/www/html/Web/pictures";
+
     // if mofify picture, and already got one, we delete the old one
     if ($student->picture() && $student->newPicture())
     {
@@ -63,9 +68,9 @@ class AccountFormHandler extends FormHandler
     if (!$student->picture())
     {
     	$imageExist = $this->manager->imageExist($student);
-		if ($imageExist) {
-			unlink($imageDestination. '/' .$imageExist);
-		}
+		  if ($imageExist) {
+			 unlink($imageDestination. '/' .$imageExist);
+		  }
     }
     $this->manager->modifyStudent($student);
 

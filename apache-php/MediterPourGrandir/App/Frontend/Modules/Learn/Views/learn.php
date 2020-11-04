@@ -16,7 +16,7 @@
 			<div>
 
 			<h4 class="text-left">Lesson:</h4> 
-			<p class="text-left"><?= $lesson->lesson() ?><p>
+			<p class="text-left"><?= nl2br($lesson->lesson()) ?><p>
 
 			<!--
 			a faire disparaitre si moins de 4 jours-->	

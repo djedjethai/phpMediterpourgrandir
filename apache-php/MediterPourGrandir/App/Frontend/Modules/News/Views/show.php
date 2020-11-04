@@ -4,7 +4,7 @@
 	
 	
 	<?php if($news['picture']) { ?>
-		<img style="max-width: 60px;" src="/pictures/<?=$news['picture']?>" alt="test" />
+		<img style="max-width: 60px;" src="/Web/pictures/<?=$news['picture']?>" alt="test" />
 	<?php } ?>
 
 	<p>Par <em><?= $news['pseudo'] ?></em>, le <?= $news['dateAjout']->format('d/m/Y à H\hi') ?></p>
@@ -50,7 +50,7 @@ foreach ($comments as $comment) {
 	<fieldset>
 		  <legend>
 		  	<?php if($comment['picture']) { ?>
-				<img style="max-width: 60px;" src="/pictures/<?=$comment['picture']?>" alt="test" />
+				<img style="max-width: 60px;" src="/Web/pictures/<?=$comment['picture']?>" alt="test" />
 			<?php } ?>
 		    Posté par <strong><?= htmlspecialchars($comment['pseudo']) ?></strong> le <?= $comment['date']->format('d/m/Y à H\hi') ?>
 		    <?php if ($user->isAuthenticated()) { ?> -
