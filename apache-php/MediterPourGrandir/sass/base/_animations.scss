@@ -5,17 +5,13 @@
         opacity: 0;
         transform: translateX(-10rem);
     }
-    /*just to show like crazy animation*/
-    60% {
-        transform: rotate(180deg);
-    }
     80% {
-        transform: translateX(1rem) rotate(180deg);
+        transform: translateX(1rem);
     }
     /*on pourrait aussi mettre des etapes/pourcentage intermediare*/
     100% {
         opacity: 1;
-        transform: translate(0) rotate(180deg);
+        transform: translate(0);
     }
 }
 

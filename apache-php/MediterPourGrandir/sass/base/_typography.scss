@@ -26,3 +26,37 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+.heading-primary {
+    color: $color-secondary-light;
+    // background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+    // -webkit-background-clip: text;
+    // color: transparent; 
+    text-transform: uppercase;
+    /*to stop potentiel shaking on anumation, we add this ligne*/
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        /*to validate the @keyframes animation, we need this 2 lines*/
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        /*accelere ou ralentit le debut ou la fin, ou alterne ease-in-out*/
+        animation-timing-function: ease-out;
+        /*set a delay before the animation start
+        animation-delay: 3s;
+        repeat an animation few times
+        animation-iteration-count: 3;*/
+    }
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        /*write it on one line to be faster*/
+        animation: moveInRight 2s ease-out;
+    }
+}

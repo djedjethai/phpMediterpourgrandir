@@ -1,6 +1,20 @@
-<div class="row">
-		<div class="col-md-2">
-			<div class="ul1">
+
+<header class="header">
+ 	 <!--<div class="header__logo-box">
+             <img src="img/logo-white.png" alt="logo" class="header__logo" />
+	 </div>-->
+	<div class="header__text-box">
+	 	<h1 class="heading-primary">
+                	<span class="heading-primary--main">MEDITER</span>
+                	<span class="heading-primary--sub">pour GRANDIR</span>
+         	</h1>
+	 	<a href="#" class="btn btn--white btn--animated">decouvrez la formation</a>
+	</div>	
+</header>
+
+<div class="">
+		<div class="">
+			<div class="">
 				<ul>
 					<li><a href="#ch2">qu'est ce que la méditation</a></li>
 					<li><a href="#ch3">quels sont les bénéfices de la méditation</a></li>

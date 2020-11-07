@@ -1,0 +1,23 @@
+.header {
+    /*95% of the view port point*/
+    height: 40vh;
+    background: linear-gradient($color-tertiary-dark, rgba($color-tertiary-light, 0.801));
+    /*what ever the view port, cover will always try to fit the elmt inside the box*/
+    background-size: cover;
+    /*fix the backGr at the top*/
+    background-position: top;
+    position: relative;
+    &__text-box {
+        text-align: center;
+        position: absolute;
+        /*40% and 50% from the parent element*/
+        top: 50%;
+        left: 50%;
+        /*readjust l'alignement x et y par rapport l'element lui-meme*/
+        transform: translate(-50%, -50%);
+    }
+}
+
+.logo:hover {
+    animation: moveInRight 2s ease-out;
+}
