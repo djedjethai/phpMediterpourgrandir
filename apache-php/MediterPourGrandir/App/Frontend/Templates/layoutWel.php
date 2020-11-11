@@ -9,7 +9,7 @@
 		<div class="col-md-10 mx-auto mt-5">-->	
 			<?php if ($user->hasFlash()) echo '<p style="text-align: center; color: green; border: 4mm ridge rgba(170, 50, 220, .6);">', $user->getFlash(), '</p>'; ?>
 
-			<div><?= $content ?></div>
+			<?= $content ?>
 		<!--</div>
 	</div>
 </div>-->

@@ -24,13 +24,7 @@ Like it s the same for all*/
 /*html element is the root font-size. so set it up, and then we use rem with all other font-size
 (like this we can modify this one, and all get modify)*/
 html {
-  /*10px to make it easy ! as 1rem is root's font-size * rem. So 1rem will be 10px.
-    But we don t want it in px bc it will lock the screen of the user: if he want to agrandir, il ne pourra plus, donc
-    on convertir en %. 100% = 16px dc 62.5% = 10px*/
-  font-size: 62.5%;
-  /*@include respond(phone) {
-        font-size: 50%; // we want 1rem to be 8px, so 8/16 = 50%
-    }*/ }
+  font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -47,6 +41,10 @@ body {
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+::selection {
+  background-color: #55c57a;
+  color: #fff; }
 
 /*setting it here will make it available for the all doc, via l'heritage*/
 /*we can use the animation created on any object*/
@@ -101,11 +99,6 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: white !important; }
 
-.paragraph {
-  font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
-
 .heading-primary {
   color: #ffb900;
   text-transform: uppercase;
@@ -133,6 +126,36 @@ body {
     letter-spacing: 1.75rem;
     /*write it on one line to be faster*/
     animation: moveInRight 2s ease-out; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ffb900, #ff7730);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-family: 2rem; } }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -163,6 +186,115 @@ body {
   font-size: 1.8rem !important; }
   .btn-success {
     background-color: #ff7730 !important; }
+
+.btn {
+  /*!!! ici on part du :hover . Donc le -1 aura un effet de descendre*/ }
+  .btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.4rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    /*to stop potentiel shaking on anumation, we add this ligne*/
+    backface-visibility: hidden;
+    /*transition is the simple way to create effects, all is to select all properties, and 2s for the time */
+    transition: all .2s;
+    /*as we want the ::after (which have a position:absolute) to refer to this element*/
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    opacity: 1; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem white; }
+    .btn:hover::after {
+      /*grossit 1.5 fois. the simple one: transform: scale(1.5);
+            more complexe:*/
+      transform: scaleX(1.4) scaleY(1.6);
+      /*that is the trick to fade something up*/
+      opacity: 0; }
+  .btn:focus, .btn:active {
+    outline: none;
+    transform: translateY(-1px);
+    /*here is half of the hover value, as we clicked on it*/
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+    .btn--white::after {
+      background-color: #fff; }
+  .btn--green {
+    background-color: #55c57a;
+    color: #fff; }
+    .btn--green::after {
+      background-color: #7ed56f; }
+  .btn::after {
+    /*for this sudo effect, the content: and display: property have to appear, even empty*/
+    content: '';
+    /*as the btn is already a inline-block*/
+    display: inline-block;
+    /*pourcentage par rapport au parent donc au &*/
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /*this is the start of the effect link to &:hover::after*/
+    transition: all .4s; }
+  .btn--animated {
+    /*last value is a start delay, so 0,75s*/
+    animation: moveInButton .5s ease-out .75s;
+    /*permet de palier au delay, d'initialiser le stade initial de depart d'animation sans delay.*/
+    animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #2998ff;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .row {
   max-width: 114rem;
@@ -267,7 +399,7 @@ footer {
 
 .header {
   /*95% of the view port point*/
-  height: 40vh;
+  height: 60vh;
   background: linear-gradient(#5643fa, rgba(41, 152, 255, 0.801));
   /*what ever the view port, cover will always try to fit the elmt inside the box*/
   background-size: cover;
@@ -286,84 +418,10 @@ footer {
 .logo:hover {
   animation: moveInRight 2s ease-out; }
 
-.btn {
-  /*!!! ici on part du :hover . Donc le -1 aura un effet de descendre*/ }
-  .btn, .btn:link, .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.4rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    /*to stop potentiel shaking on anumation, we add this ligne*/
-    backface-visibility: hidden;
-    /*transition is the simple way to create effects, all is to select all properties, and 2s for the time */
-    transition: all .2s;
-    /*as we want the ::after (which have a position:absolute) to refer to this element*/
-    position: relative;
-    font-size: 1.6rem;
-    border: none;
-    cursor: pointer;
-    opacity: 1; }
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem white; }
-    .btn:hover::after {
-      /*grossit 1.5 fois. the simple one: transform: scale(1.5);
-            more complexe:*/
-      transform: scaleX(1.4) scaleY(1.6);
-      /*that is the trick to fade something up*/
-      opacity: 0; }
-  .btn:focus, .btn:active {
-    outline: none;
-    transform: translateY(-1px);
-    /*here is half of the hover value, as we clicked on it*/
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-  .btn--white {
-    background-color: #fff;
-    color: #777; }
-    .btn--white::after {
-      background-color: #fff; }
-  .btn--green {
-    background-color: #55c57a;
-    color: #fff; }
-    .btn--green::after {
-      background-color: #7ed56f; }
-  .btn::after {
-    /*for this sudo effect, the content: and display: property have to appear, even empty*/
-    content: '';
-    /*as the btn is already a inline-block*/
-    display: inline-block;
-    /*pourcentage par rapport au parent donc au &*/
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    /*this is the start of the effect link to &:hover::after*/
-    transition: all .4s; }
-  .btn--animated {
-    /*last value is a start delay, so 0,75s*/
-    animation: moveInButton .5s ease-out .75s;
-    /*permet de palier au delay, d'initialiser le stade initial de depart d'animation sans delay.*/
-    animation-fill-mode: backwards; }
-
-.btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
-  color: #55c57a;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #55c57a;
-  padding: 3px;
-  transition: all .2s; }
-
-.btn-text:hover {
-  background-color: #55c57a;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
-
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+  @media only screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0; } }

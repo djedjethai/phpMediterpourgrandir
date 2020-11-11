@@ -1,6 +1,6 @@
 .header {
     /*95% of the view port point*/
-    height: 40vh;
+    height: 60vh;
     background: linear-gradient($color-tertiary-dark, rgba($color-tertiary-light, 0.801));
     /*what ever the view port, cover will always try to fit the elmt inside the box*/
     background-size: cover;
