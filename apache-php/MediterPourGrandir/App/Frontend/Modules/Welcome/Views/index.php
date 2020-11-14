@@ -14,21 +14,23 @@
 <section class="section-about">
 	<div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
-                    Pourquoi mediter
+                    Les bénéfices de la méditation
                 </h2>
             </div>
 	<div class="row">
 		<div class="col-1-of-2">	
-			<h3 class="heading-tertiary u-margin-bottom-small">la meditation s'avere benefique dans de nombreux domaines</h3>
-			<p class="paragraph">
-			Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”</p>
-			
-			<p class="paragraph">As Cicero would put it, “Um, not so fast.”</p>
-			
-			<p class="paragraph">The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.</p>
-			
-			<p class="paragraph">Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.
-			</p>
+			<div class="benefMedit">
+			<ul>
+				<li>Meilleur sommeil.</li>
+				<li>Elimination de certains maux (psychologiques et physiques).</li>
+				<li>Amélioration des performances intellectuelles.</li>
+				<li>Amélioration du souci du détail (de l’attention).</li>
+				<li>Limitation de l’impact des soucis.</li>
+				<li>Limitation de l’action insidieuse des pensées.</li>
+				<li>Amélioration du bien-être, de l’état de joie.</li>
+				<li>Développement de la compassion, amélioration de la confiance en soi, donc embellissement des rapports humains.</li>
+			</ul>
+			</div>
 		</div>
 		<div class="col-1-of-2">
                    	<div class="composition">

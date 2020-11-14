@@ -10,15 +10,15 @@
         outline-offset: 2rem;
         &--p1 {
             left: 0;
-            top: -2rem;
+            top: 4rem;
         }
         &--p2 {
             right: 0;
-            top: 2rem;
+            top: 8rem;
         }
         &--p3 {
             left: 20%;
-            top: 10rem;
+            top: 16rem;
         }
         &:hover {
             outline: 1.5rem solid $color-tertiary-light;
