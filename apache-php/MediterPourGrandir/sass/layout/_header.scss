@@ -1,7 +1,8 @@
 .header {
     /*95% of the view port point*/
     height: 60vh;
-    background: linear-gradient($color-tertiary-dark, rgba($color-tertiary-light, 0.801));
+    // background: linear-gradient($color-tertiary-dark, rgba($color-tertiary-light, 0.801));
+    background-image: linear-gradient(to bottom, rgba($color-tertiary-dark, 0.801), rgba($color-tertiary-light, 0.801)), url(../images/welcome/header.jpg);
     /*what ever the view port, cover will always try to fit the elmt inside the box*/
     background-size: cover;
     /*fix the backGr at the top*/

@@ -8,7 +8,7 @@
 }
 
 .benefMedit {
-	background-color: "green";
+	// background-color: "green";
 	padding: 2rem;
         ul {
             list-style: none;
@@ -23,4 +23,14 @@
                 }
             }
         }
+}
+
+.section-stories {
+    // position: relative; as the bg-video is absolute and should appear behind this section
+    background-color: $color-grey-light-1;
+    position: relative;
+    padding: 15rem 0;
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
