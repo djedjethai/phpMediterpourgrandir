@@ -18,8 +18,8 @@
                     Les bénéfices de la méditation
                 </h2>
             </div>
-	<div class="row">
-		<div class="col-1-of-2">	
+	    <div class="rowgrid">
+		<div class="col-1-of-2">
 			<div class="benefMedit">
 			<ul>
 				<li>Meilleur sommeil.</li>
@@ -54,7 +54,7 @@
 	foreach ($feedbacks as $feedback)
 	{
 	?>
-	<div class="row">
+	<div class="rowgrid">
               	<div class="story">
                     	<figure class="story__shape">
                         	<img src="img/ii.png" alt="person on a tour" class="story__img" />
@@ -72,6 +72,6 @@
 	} ?>
 	<div class="u-center-text u-margin-top-huge">
                	<a href="/welcome/allFeedbacks.php" class="btn-text">Voir tous les Avis&rarr;</a>
-       	</div>
+	</div>
 </section>
 </main>

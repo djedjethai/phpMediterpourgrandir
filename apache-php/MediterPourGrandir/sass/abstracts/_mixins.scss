@@ -35,30 +35,20 @@ $breackpoint argument choices:
 // for media query we use em, not rem bc rem won t work on every browser
 // 1em = 16px, and in our _base.scss file we setted our rem like it '100% = 16px dc 62.5% = 10px'
 // so on fait l'operation px/16:
-@mixin respond($breackpoint) {
-    @if $breackpoint==phone {
-        @media only screen and (max-width: 37.5em) {
-            // 600px/16
-            @content
-        };
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
     }
-    @if $breackpoint==tab-port {
-        @media only screen and (max-width: 56.25em) {
-            // 900px
-            @content
-        };
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
     }
-    @if $breackpoint==tab-land {
-        @media only screen and (max-width: 75em) {
-            // 1200px
-            @content
-        };
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
     }
-    @if $breackpoint==big-desktop {
-        @media only screen and (min-width: 112.5em) {
-            // 1800px
-            @content
-        };
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
     }
 }
+
 
