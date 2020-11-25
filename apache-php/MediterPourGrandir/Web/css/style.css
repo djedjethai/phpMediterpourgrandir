@@ -181,6 +181,13 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-separation-section {
+  width: 70%;
+  color: #777;
+  height: 1px;
+  background-color: #777;
+  margin: 0 auto; }
+
 .btn {
   min-height: 4rem;
   font-size: 1.8rem !important; }
@@ -302,8 +309,7 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
+  padding: 2rem 6rem 12rem 6rem;
   font-size: 2rem; }
   @media only screen and (max-width: 56.25em) {
     .story {
@@ -480,7 +486,7 @@ footer {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 27rem 0 0 0;
   margin-top: -20vh; }
   @media only screen and (max-width: 56.25em) {
     .section-about {

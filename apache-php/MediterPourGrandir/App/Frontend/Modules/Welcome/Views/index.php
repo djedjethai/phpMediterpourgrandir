@@ -41,8 +41,8 @@
                         </div>
 		</div>
 	</div>
+<hr class="u-separation-section" />
 </section>
-
 <section class="section-stories">
 	<div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -55,15 +55,20 @@
 	{
 	?>
 	<div class="rowgrid">
-              	<div class="story">
+              	<div class="story u-margin-bottom-small">
                     	<figure class="story__shape">
-                        	<img src="img/ii.png" alt="person on a tour" class="story__img" />
-                        	<figcaption class="story__caption">
+			<?php if($feedback['picture']) { ?>
+			<img src="/Web/pictures/<?=$feedback['picture']?>" alt="profile picture" class="story__img" />
+			<?php } else { ?>
+			<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="story__img" />
+			<?php } ?>
+				<figcaption class="story__caption">
                             		<?= $feedback['pseudo'] ?>
                         	</figcaption>
+
                     	</figure>
                     	<div class="story__text">
-				<h5>Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 50px">Appreciation: <?= $feedback['grade'] ?></span></h5>
+				<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 50px">Appreciation: <?= $feedback['grade'] ?></span></h5>
 				<p><?= nl2br($feedback['contenu']) ?></p>
 		    	</div>
 		</div>

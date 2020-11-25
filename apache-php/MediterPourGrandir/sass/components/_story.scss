@@ -5,9 +5,7 @@
     // adding rgba() on the back-ground color, permet d'ajouter l'opacity
     background-color: rgba($color-white, .6);
     border-radius: 3px;
-    padding: 6rem;
-    padding-left: 9rem;
-    // font-size: $default-font-size;
+    padding: 2rem 6rem 12rem 6rem;
     font-size: 2rem;
      
     @include respond(tab-port) {
@@ -22,14 +20,8 @@
         width: 15rem;
         height: 15rem;
         float: left;
-        // first elment: radius of the circle, so with 50% le rayon sera la moitier de l'element dc parfait
-        // les 2 50% suivant positionne le centre du cercle, dc en plein centre de la ou il se trouve deja. dc parfait
-        // the element must be floating and have width and height.......for it to work.....beuhhh....
-        // for it to work on safari need -webkit-
         border-radius: 50%;
-        overflow: hidden;
-        // with a floating element we DON T USE margin and padding. but 
-        // transform: translateX(-3rem) skewX(12deg); // le skewX() est pr redresser le text
+        overflow: hidden; 
         position: relative;
         @include respond(phone) {
             transform: translateX(-3rem) skewX(0deg);

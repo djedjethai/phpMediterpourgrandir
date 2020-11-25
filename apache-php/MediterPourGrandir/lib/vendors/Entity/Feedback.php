@@ -8,6 +8,7 @@ class Feedback extends Entity
 {
   protected $id,
             $studentId,
+	    $picture,
             $pseudo,
             $contenu,
             $grade,
@@ -54,6 +55,11 @@ class Feedback extends Entity
 
     $this->grade = $grade;
   }
+  
+  public function setPicture($picture)
+  {
+    $this->picture = $picture;
+  }
 
   public function setDatePost(\DateTime $datePost)
   {
@@ -83,6 +89,11 @@ class Feedback extends Entity
   public function grade()
   {
     return $this->grade;
+  }
+
+  public function picture()
+  {
+    return $this->picture;
   }
 
   public function datePost()

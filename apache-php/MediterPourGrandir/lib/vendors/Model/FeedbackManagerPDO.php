@@ -43,7 +43,7 @@ class FeedbackManagerPDO extends Manager
 
   public function getFeedback($debut = -1, $limite = -1)
   {
-      $sql = 'SELECT feedback.id, pseudo, grade, contenu, datePost FROM feedback INNER JOIN students ON feedback.studentId = students.id';
+      $sql = 'SELECT feedback.id, pseudo, picture, grade, contenu, datePost FROM feedback INNER JOIN students ON feedback.studentId = students.id';
 
       if ($debut != -1 || $limite != -1)
       {
