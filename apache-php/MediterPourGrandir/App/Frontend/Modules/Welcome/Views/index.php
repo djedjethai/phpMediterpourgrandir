@@ -35,9 +35,9 @@
 		</div>
 		<div class="col-1-of-2">
                    	<div class="composition">
-			 <img src="Web/images/welcome/wel-1-medium.jpg" alt="photo1" class="composition__photo composition__photo--p1">
-                        <img src="Web/images/welcome/wel-2-medium.jpg" alt="photo2" class="composition__photo composition__photo--p2">
-                        <img src="Web/images/welcome/wel-3-medium.jpg" alt="photo3" class="composition__photo composition__photo--p3">
+			<img srcset="Web/images/welcome/wel-1-medium.jpg 300w, Web/images/welcome/wel-1-medium.jpg 1000w" size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1" class="composition__photo composition__photo--p1" src="Web/images/welcome/wel-1-medium.jpg">
+			<img srcset="Web/images/welcome/wel-2-medium.jpg 300w, Web/images/welcome/wel-2-medium.jpg 1000w" size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2" class="composition__photo composition__photo--p2" src="Web/images/welcome/wel-2-medium.jpg">
+			<img srcset="Web/images/welcome/wel-3-medium.jpg 300w, Web/images/welcome/wel-3-medium.jpg 1000w" size="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3" class="composition__photo composition__photo--p3" src="Web/images/welcome/wel-3-medium.jpg">
                         </div>
 		</div>
 	</div>
