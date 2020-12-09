@@ -11,12 +11,11 @@ class StringField extends Field
     
     if (!empty($this->errorMessage))
     {
-      $widget .= '<span class="text-danger">'.$this->errorMessage.'<span><br />';
+      $widget .= '<span class="form__error">'.$this->errorMessage.'</span><br />';
     }
 
-    //var_dump($this->name);
     
-    $widget .= '<label class="text-dark">'.$this->label.'</label><input type="text" class="form-control" name="'.$this->name.'" ';
+    $widget .= '<div class="form__group"><label for="'.$this->label.'" class="form__label">'.$this->label.'</label><input type="text" id="'.$this->label.'" class="form__input" name="'.$this->name.'" ';
     
     if (!empty($this->value))
     {
@@ -28,7 +27,7 @@ class StringField extends Field
       $widget .= ' maxlength="'.$this->maxLength.'"';
     }
     
-    return $widget .= ' />';
+    return $widget .= ' /></div>';
   }
   
   public function setMaxLength($maxLength)

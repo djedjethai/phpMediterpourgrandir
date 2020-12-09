@@ -9,3 +9,7 @@ Date: Wednesday 4th of November 2020 06:48:22 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>58</strong>
 Date: Wednesday 4th of November 2020 06:48:28 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>58</strong>
+Date: Wednesday 9th of December 2020 09:38:34 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Wednesday 9th of December 2020 09:38:39 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>

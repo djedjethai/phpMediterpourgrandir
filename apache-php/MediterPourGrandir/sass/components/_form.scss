@@ -1,0 +1,114 @@
+.form {
+	&__error {
+		color: red;
+		font-size: 1.7rem;
+	}
+	&__link {
+		color: $color-tertiary-dark;
+		font-size:1.5rem;
+	}
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    &__input {
+        font-size: 1.7rem;
+        // plutot que de repeter la font....
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        // as the hover have border-bottom: 3px. we set it here as transparent, like it the element under do not move on hover mode
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+        @include respond(tab-port) {
+            width: 100%;
+        }
+        &:focus {
+            outline: none;
+            background-color: rgba($color-white, .9);
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-tertiary-light;
+            // pareil que &:focus:invalid
+            &:invalid {
+                border-bottom: 3px solid $color-secondary-dark;
+            }
+        }
+        // only work on safari and chrome
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+        }
+    }
+    &__label {
+        font-size: 1.7rem;
+        font-weight: bold;
+        // to position it on the same level of the text
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+    // le + est la commande 'sybling' to select the next elments 
+    // if &__label wasn t right next to we should use the operator ~
+    // sybling can work ONLY if the sybling elements is coming after(in the html)
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        // with only opacity: 0; the elment is invisible but style on the page. visibility make it desapear
+        // but we still need the 'opacity' bc we wouldn't be able to animate the elm with only visibility
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+    &__radio-group {
+        width: 49%;
+        display: inline-block;
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+    &__radio-input {
+        display: none;
+    }
+    &__radio-label {
+        font-size: $default-font-size;
+        cursor: pointer;
+        position: relative;
+        // as le label chevauche le button
+        padding-left: 4rem;
+    }
+    &__radio-button {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%;
+        // to make a cicle like it, the element should be diplay:block (or inline-block, ce qui nous arrange ici pr l'alignement)
+        display: inline-block;
+        // mais l'alignement n est pas encore suffisant, du coup position absolut
+        position: absolute;
+        top: -.1;
+        left: 0;
+        &::after {
+            // if we use a sudo element we have to precise his content and his display
+            content: '';
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            // actually if the parent is position: absolute, this absolute position will work as the parent were relative
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: opacity .1s;
+        }
+    }
+    &__radio-input:checked~&__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+}
+

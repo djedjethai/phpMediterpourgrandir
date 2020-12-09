@@ -1,9 +1,22 @@
-<h4 class="text-center">Recuperer votre mot de passe</h4>
-<p></p>
-<form action="" method="post">
-  <p>
-    <?= $form ?>
-    
-    <input class="form-group" type="submit" value="Valider" />
-  </p>
-</form>
+<main>
+<section class="section-book">
+     	<div class="rowgrid">
+             	<div class="book">
+                    	<div class="book__form">
+                        	<form action="" class="form" method="post">
+                            		<div class="u-margin-bottom-medium">
+                                		<h2 class="heading-secondary">
+                                    			Recuperez votre mot de passe
+                                		</h2>
+                            		</div>
+					 <?= $form ?>
+					<button class="btn btn--blue">
+					<input type="submit" value=" Valider " />    	
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+
