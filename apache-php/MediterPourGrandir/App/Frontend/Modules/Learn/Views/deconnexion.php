@@ -1,9 +1,13 @@
-<p></p>
+<main>
+	<section class="section-report">
+     		<div class="rowgrid">
+				<div class="report">
+					<div class="report__box">
+					<p class="paragraph">Vous etes deconnectes, tous les cookies ont ete supprimes.</p>
+					</div>
+				</div>
+		</div>
+	</section>
+</main>
 
-
-<div class="container">
-	<div class="row align-items-center justify-content-center" style="height:100vh;">     
-	<div class="shadow-lg w-50 p-5 rounded-lg border border-dark">Vous etes deconnecte, tous les cookies ont ete supprimes.</div>
-</div>
-</div>
 

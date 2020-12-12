@@ -73,6 +73,7 @@ class Mailer
 
   public static function sendMailAuth($student, $key)
   {
+	var_dump("http://mediterpourgrandir/auth/confRegistration-".$key."".$student->id().".php");
    
     $destination = $student->email();
     $sender = 'djedjethai@gmail.com';
