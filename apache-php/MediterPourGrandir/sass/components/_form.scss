@@ -43,7 +43,7 @@
         }
     }
     &__label {
-        font-size: 1.7rem;
+        font-size: $default-font-size;
         font-weight: bold;
         // to position it on the same level of the text
         margin-left: 2rem;
@@ -73,7 +73,7 @@
         display: none;
     }
     &__radio-label {
-        font-size: $default-font-size;
+        font-size: 1.7rem;
         cursor: pointer;
         position: relative;
         // as le label chevauche le button
@@ -82,7 +82,7 @@
     &__radio-button {
         height: 3rem;
         width: 3rem;
-        border: 5px solid $color-primary;
+        border: 5px solid $color-tertiary-light;
         border-radius: 50%;
         // to make a cicle like it, the element should be diplay:block (or inline-block, ce qui nous arrange ici pr l'alignement)
         display: inline-block;
@@ -102,7 +102,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: $color-primary;
+            background-color: $color-tertiary-light;
             opacity: 0;
             transition: opacity .1s;
         }

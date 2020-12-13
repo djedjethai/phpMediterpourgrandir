@@ -41,13 +41,13 @@ class FeedbackManagerPDO extends Manager
    //   $requete->execute();
     // }
 
-  public function getFeedback($debut = -1, $limite = -1)
+  public function getFeedback($debut, $limite)
   {
-      $sql = 'SELECT feedback.id, pseudo, picture, grade, contenu, datePost FROM feedback INNER JOIN students ON feedback.studentId = students.id';
+      $sql = 'SELECT feedback.id, pseudo, picture, grade, contenu, datePost FROM feedback INNER JOIN students ON feedback.studentId = students.id ORDER BY datePost DESC';
 
       if ($debut != -1 || $limite != -1)
       {
-          $sql .= ' LIMIT '.(int) $limite.' OFFSET '.(int) $debut;
+          $sql .= ' LIMIT '.(int)$limite.' OFFSET '.(int)$debut;
       }
 
       $requete = $this->dao->query($sql);
@@ -64,15 +64,7 @@ class FeedbackManagerPDO extends Manager
       $requete->closeCursor();
     
       return $listFeedback;
-
-
-      //$q->bindValue(':chapter_number', (int) $chapter, \PDO::PARAM_INT);
-      // $q->execute();
-      
-      // $q->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Entity\Feedback');
-      
-      // return $q->fetch();
-  }
+  } 
 
   public function haveFeedBack($id) 
   {

@@ -121,3 +121,11 @@ Date: Wednesday 4th of November 2020 06:14:55 AM
 Text: <strong>Warning</strong> : [0] unlink(/opt/lampp/htdocs/MediterPourGrandir/Web/pictures/balloon-1046658_1280.jpg): No such file or directory<br /><strong>/var/www/html/App/Frontend/Modules/Account/AccountFormHandler.php</strong> at the line <strong>58</strong>
 Date: Wednesday 4th of November 2020 09:27:13 AM
 Text: <strong>Warning</strong> : [0] unlink(/var/www/html/lib/OCFram/../../tmp/cache/datas/feedbacks): Is a directory<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>23</strong>
+Date: Sunday 13th of December 2020 07:27:26 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: limit<br /><strong>/var/www/html/lib/vendors/Model/FeedbackManagerPDO.php</strong> at the line <strong>49</strong>
+Date: Sunday 13th of December 2020 07:32:02 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: debut<br /><strong>/var/www/html/lib/vendors/Model/FeedbackManagerPDO.php</strong> at the line <strong>48</strong>
+Date: Sunday 13th of December 2020 07:46:12 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: listFeedbacks<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php</strong> at the line <strong>36</strong>
+Date: Sunday 13th of December 2020 07:46:47 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: listFeedbacks<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php</strong> at the line <strong>37</strong>

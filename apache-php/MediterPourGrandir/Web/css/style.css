@@ -400,7 +400,7 @@ body {
     color: #999; }
 
 .form__label {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-left: 2rem;
   margin-top: .7rem;
@@ -424,7 +424,7 @@ body {
   display: none; }
 
 .form__radio-label {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   cursor: pointer;
   position: relative;
   padding-left: 4rem; }
@@ -432,7 +432,7 @@ body {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  border: 5px solid #55c57a;
+  border: 5px solid #2998ff;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -448,7 +448,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #55c57a;
+    background-color: #2998ff;
     opacity: 0;
     transition: opacity .1s; }
 
