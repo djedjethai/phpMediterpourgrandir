@@ -79,7 +79,9 @@ class AccountController extends BackController
         }
         // as some client datas has been updated, we delete all caches.
         $this->cache->deleteIndex();
-        $this->cache->deleteAllNews();
+        $this->cache->deleteAllNews();	
+        $this->cache->delete('/feedbacks/welcomePage');
+        $this->cache->delete('/feedbacks/welcomePageAllFeed');
          // $this->cache->delete('news-'.$request->getData('id'));
     }
     else

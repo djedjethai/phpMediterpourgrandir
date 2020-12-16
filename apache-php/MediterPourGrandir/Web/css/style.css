@@ -43,7 +43,7 @@ body {
       padding: 0; } }
 
 ::selection {
-  background-color: #55c57a;
+  background-color: #2998ff;
   color: #fff; }
 
 /*setting it here will make it available for the all doc, via l'heritage*/
@@ -670,3 +670,11 @@ footer {
     left: 50%;
     /*readjust l'alignement x et y par rapport l'element lui-meme*/
     transform: translate(-50%, -50%); }
+
+.section-news {
+  background-color: #eee;
+  position: relative;
+  padding: 20rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-news {
+      padding: 10rem 0; } }

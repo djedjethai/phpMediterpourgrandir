@@ -12,7 +12,9 @@ class Cache
   
   public function delete($key)
   {
-    unlink($this->dataFolder.'/'.$key);
+    if (file_exists($this->dataFolder.'/'.$key)) {
+	    unlink($this->dataFolder.'/'.$key);
+    }
   }
 
   public function deleteAllNews()
