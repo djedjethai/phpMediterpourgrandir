@@ -633,8 +633,32 @@ footer {
     @media only screen and (max-width: 75em) {
       .book__form {
         width: 70%; } }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 56.25em) {
       .book__form {
+        width: 100%; } }
+
+.booknopic {
+  width: 85%;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border: #999 solid 1px; }
+  @media only screen and (max-width: 75em) {
+    .booknopic {
+      width: 85%; } }
+  @media only screen and (max-width: 56.25em) {
+    .booknopic {
+      width: 90%; } }
+  .booknopic__form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 6rem; }
+    @media only screen and (max-width: 75em) {
+      .booknopic__form {
+        width: 90%; } }
+    @media only screen and (max-width: 56.25em) {
+      .booknopic__form {
         width: 100%; } }
 
 .section-report {

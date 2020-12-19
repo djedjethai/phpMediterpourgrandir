@@ -1,8 +1,8 @@
 <main>
 <section class="section-book">
      	<div class="rowgrid">
-             	<div class="book">
-                    	<div class="book__form">
+             	<div class="booknopic">
+                    	<div class="booknopic__form">
                         	<form action="" class="form" method="post">
                             		<div class="u-margin-bottom-medium">
                                 		<h2 class="heading-secondary">

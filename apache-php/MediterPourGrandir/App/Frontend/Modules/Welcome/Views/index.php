@@ -69,7 +69,7 @@
                     	</figure>
                     	<div class="story__text">
 				<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 50px">Appreciation: <?= $feedback['grade'] ?></span></h5>
-				<p style="width:500px;"><?= nl2br($feedback['contenu']) ?></p>
+				<p style="width:500px;"><?php echo nl2br($feedback['contenu']) ?></p>
 		    	</div>
 		</div>
 	</div>		
