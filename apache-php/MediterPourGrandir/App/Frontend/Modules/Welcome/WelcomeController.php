@@ -31,13 +31,14 @@ class WelcomeController extends BackController
 
     $nameCache = '/feedbacks/welcomePage';
 
-    $listFeedbacks = $this->cache->read($nameCache);
-
+    // $listFeedbacks = $this->cache->read($nameCache);
+    $listFeedbacks = null;
     if ($listFeedbacks === null)
     {
       $manager =  $this->managers->getManagerOf('Feedback');
-      $listFeedbacks = $manager->getFeedback(0, 3);
-    
+      // $listFeedbacks = $manager->getFeedback(0, 3);
+      $listFeedbacks = $this->getFeedbackHepler();
+
       $this->cache->write($nameCache, $listFeedbacks, '2 months');
     }
 
@@ -157,39 +158,29 @@ class WelcomeController extends BackController
 
   }
 
-  // public function getFeedback() 
-  // {  
+  public function getFeedbackHepler() 
+  {  
 
-  //   $nombreFeedback = $this->app->config()->get('nombre_feedback');
-  //   $nombreCaracteres = $this->app->config()->get('nombre_caracteresFeedback');
+    $nombreFeedback = $this->app->config()->get('nombre_feedback');
+    $nombreCaracteres = $this->app->config()->get('nombre_caracteresFeedback');
 
-  //   $manager = $this->managers->getManagerOf('Feedback');
+    $manager = $this->managers->getManagerOf('Feedback');
 
-  //   // set cache system v.newsController
-  //   $listFeedbacks = $manager->getFeedback( 0, $nombreFeedback);
+    // set cache system v.newsController
+    $listFeedbacks = $manager->getFeedback( 0, $nombreFeedback);
 
+    foreach ($listFeedbacks as $feedback)
+    {
+      if (strlen($feedback->contenu()) > $nombreCaracteres)
+      {
+        $debut = substr($feedback->contenu(), 0, $nombreCaracteres);
+        $debut = substr($debut, 0, strrpos($debut, ' ')) . '...';
 
-  //   foreach ($listFeedbacks as $feedback)
-  //   {
-  //     if (strlen($feedback->contenu()) > $nombreCaracteres)
-  //     {
-  //       $debut = substr($feedback->contenu(), 0, $nombreCaracteres);
-  //       $debut = substr($debut, 0, strrpos($debut, ' ')) . '.........';
-  //       
-  //       $feedback->setContenu($debut);
-  //     }
-  //   }
+        $feedback->setContenu($debut);
+      }
+    }
 
     // a retourner dans la page acceuil which will show it
-    // return $listFeedbacks;
-
-    // // send num de page
-    // $this->page->addVar('page', $page);
-    // // send total news
-    // $this->page->addVar('totalPages', $totalPages);
-    // // On ajoute la variable $listeNews à la vue.
-    // $this->page->addVar('listeNews', $listeFeedbacks);
-
-  // }
-
+    return $listFeedbacks;
+    }
 }

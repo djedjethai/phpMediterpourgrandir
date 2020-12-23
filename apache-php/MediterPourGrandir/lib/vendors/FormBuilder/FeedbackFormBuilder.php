@@ -13,8 +13,8 @@ class FeedbackFormBuilder extends FormBuilder
     $this->form->add(new TextField([
         'label' => 'Contenu',
         'name' => 'contenu',
-        'rows' => 7,
-        'cols' => 50,
+        'rows' => 13,
+        'cols' => 80,
         'validators' => [
           new NotNullValidator('Merci de spécifier votre commentaire'),
         ],

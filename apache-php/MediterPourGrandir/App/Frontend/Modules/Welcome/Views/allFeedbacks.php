@@ -16,6 +16,7 @@
         	                    		<?= $feedback['pseudo'] ?>
         	                	</figcaption>
 
+
         	            	</figure>
         	            	<div class="story__text">
 					<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 50px">Appreciation: <?= $feedback['grade'] ?></span></h5>

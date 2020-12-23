@@ -37,8 +37,8 @@ class ContactFormBuilder extends FormBuilder
        ->add(new TextField([
         'label' => 'Contenu',
         'name' => 'contenu',
-        'rows' => 8,
-        'cols' => 60,
+        'rows' => 13,
+        'cols' => 80,
         'validators' => [
           new NotNullValidator('Merci de spécifier le contenu'),
         ],
