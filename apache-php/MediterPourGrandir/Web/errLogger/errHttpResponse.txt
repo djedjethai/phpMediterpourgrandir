@@ -1,25 +1,58 @@
 
-Date: Saturday 25th of July 2020 04:25:50 AM
-Text: <strong>Warning</strong> : [0] Use of undefined constant ooooooo - assumed 'ooooooo' (this will throw an Error in a future version of PHP)<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Page.php</strong> at the line <strong>43</strong>
-Date: Saturday 25th of July 2020 04:26:11 AM
-Text: <strong>Warning</strong> : [0] Use of undefined constant cccccccc - assumed 'cccccccc' (this will throw an Error in a future version of PHP)<br /><strong>/opt/lampp/htdocs/MediterPourGrandir/lib/OCFram/Page.php</strong> at the line <strong>43</strong>
-Date: Wednesday 9th of September 2020 02:05:52 AM
-Text: <strong>Unknow error</strong> : [0] Object of class DateTime could not be converted to string<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/Views/index.php</strong> at the line <strong>22</strong>
-Date: Wednesday 4th of November 2020 06:48:22 AM
-Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>58</strong>
-Date: Wednesday 4th of November 2020 06:48:28 AM
-Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>58</strong>
-Date: Wednesday 9th of December 2020 09:38:34 AM
+
+Date: Saturday 9th of January 2021 11:23:44 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
-Date: Wednesday 9th of December 2020 09:38:39 AM
+Date: Saturday 9th of January 2021 11:23:49 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
-Date: Saturday 12th of December 2020 06:10:28 AM
+Date: Saturday 9th of January 2021 11:23:55 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
-Date: Saturday 12th of December 2020 06:11:31 AM
+Date: Saturday 9th of January 2021 11:24:18 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
-Date: Saturday 12th of December 2020 10:28:27 AM
+Date: Saturday 9th of January 2021 11:25:21 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
-Date: Sunday 13th of December 2020 05:54:12 AM
-Text: <strong>Notice</strong> : [0] Undefined variable: feedbacks<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/Views/allFeedbacks.php</strong> at the line <strong>4</strong>
-Date: Sunday 13th of December 2020 05:54:19 AM
-Text: <strong>Notice</strong> : [0] Undefined variable: feedbacks<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/Views/allFeedbacks.php</strong> at the line <strong>4</strong>
+Date: Saturday 9th of January 2021 11:25:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:25:25 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:27:22 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:32:41 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:34:49 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:35:35 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:47:41 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:47:52 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:58:17 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 11:58:21 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:00:09 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:00:12 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:02:05 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:06:22 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:07:20 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:07:58 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:13:59 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:16:54 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:19:20 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:20:10 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:20:14 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:20:38 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 9th of January 2021 12:21:01 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>

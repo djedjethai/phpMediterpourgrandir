@@ -503,6 +503,10 @@ body {
       .booknopic__form {
         width: 100%; } }
 
+.textwelcome {
+  width: 80%;
+  margin: 0 auto; }
+
 .rowgrid {
   max-width: 114rem;
   margin: 0 auto;
@@ -659,6 +663,22 @@ footer {
   background-color: #eee; }
   @media only screen and (max-width: 56.25em) {
     .section-book {
+      padding: 10rem 0; } }
+
+.section-introduction {
+  background-color: #eee;
+  position: relative;
+  padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-introduction {
+      padding: 10rem 0; } }
+
+.section-explication {
+  background-color: #eee;
+  position: relative;
+  padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-explication {
       padding: 10rem 0; } }
 
 .section-report {

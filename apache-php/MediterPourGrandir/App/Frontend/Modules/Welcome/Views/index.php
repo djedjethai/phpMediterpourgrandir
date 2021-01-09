@@ -12,6 +12,20 @@
 </header>
 
 <main>
+<section class="section-introduction">
+	<div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Introduction
+            </h2>
+    </div>
+    <div class="textwelcome">
+    	<div class="paragraph">
+    		<p>Vivant en Thaïlande depuis plus de 15 ans, j’ai eu la chance suivre des formations de méditation sérieuses. j’ai notamment obtenue la qualification d’Instructeur au sein de l’institut <a href=http://www.samathi.com/2016/institute-detail.php?actid=1>willpower institut”</a>. Méditer quotidiennement nous aide à prendre du recule par rapport aux évènements du quotidien et par rapport à nous-même, progressivement nos prises de conscience s’éclaircissent, d’où ‘’méditation de pleine conscience’’.<br /> 
+    		De plus, affermissant la force de volonté, nous développons nos aptitudes à rectifier nos comportements, nos paroles, et finalement nos pensées, ainsi nous optimisons notre bien-être. Dans cet enseignement je n’invente rien, je ne fais que rapporter une technique de méditation traditionnelle résultante de l’expérience d’expert, en l’occurrence de <a href=https://en.wikipedia.org/wiki/Mun_Bhuridatta>Luang Pu Mun Bhuridatta</a>.</p>
+    	</div> 
+    </div>
+</section>
+
 <section class="section-about">
 	<div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -43,6 +57,24 @@
 	</div>
 <hr class="u-separation-section" />
 </section>
+
+<section class="section-explication">
+	<div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                de maniere generale
+            </h2>
+    </div>
+    <div class="textwelcome">
+    	<div class="paragraph">
+    		<p>La méditation consiste à rester concentré sur un support tel la respiration. L’exercice n’est pas si simple car l’esprit ne cesse de vagabonder, de rêvasser, de ressasser, aussi nous devons continuellement nous reconcentrer. Cet effort (de concentration) affermit notre force de concentration.</p>
+
+			<p>De la concentration découle l’attention, proportionnellement à notre niveau, tout comme la concentration notre potentiel d’attention s’améliore. Cela génère un état de bien être particulier et optimise nos performances dans tous les domaines. Notons qu’ à maturité cela nous permettra de constater les mécanismes de notre esprit.</p>
+
+			<p>Notre pratique méditative ainsi que nos efforts personnels à entretenir au mieux notre calme intérieur au quotidien optimise nos prises de conscience, et donc modifie nos convictions. Nous devenons plus raisonnables, plus réfléchit, nous grandissons.</p>
+    	</div> 
+    </div>
+</section>
+
 <section class="section-stories">
 	<div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -55,7 +87,7 @@
 	{
 	?>
 	<div class="rowgrid">
-              	<div class="story u-margin-bottom-small">
+            <div class="story u-margin-bottom-small">
                     	<figure class="story__shape">
 			<?php if($feedback['picture']) { ?>
 			<img src="/Web/pictures/<?=$feedback['picture']?>" alt="profile picture" class="story__img" />

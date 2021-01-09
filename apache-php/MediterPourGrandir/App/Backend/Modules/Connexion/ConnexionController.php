@@ -8,6 +8,10 @@ class ConnexionController extends BackController
 {
   public function executeIndex(HTTPRequest $request)
   {
+    // admin need to signin with his account first	  
+    $user = $this->verifSession();
+    
+    $this->page->addVar('student', $user); 
     $this->page->addVar('title', 'Connexion');
     
     if ($request->postExists('login'))
@@ -17,7 +21,7 @@ class ConnexionController extends BackController
       
       if ($login == $this->app->config()->get('login') && $password == $this->app->config()->get('pass'))
       {
-        $this->app->user()->setAuthenticated(true);
+	$this->app->user()->setAuthenticated(true);
         $this->app->httpResponse()->redirect('.');
       }
       else
