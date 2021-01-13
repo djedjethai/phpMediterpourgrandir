@@ -25,3 +25,30 @@ Stack trace:
 #3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
 #4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
 #5 {main}
+Date: Wednesday 13th of January 2021 11:43:31 AM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'news' in 'where clause' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:28
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(28): PDO->exec('DELETE FROM com...')
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(25): Model\CommentsManagerPDO->deleteFromNews('74')
+#2 /var/www/html/lib/OCFram/BackController.php(43): App\Backend\Modules\News\NewsController->executeDelete(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}
+Date: Wednesday 13th of January 2021 11:53:53 AM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'news' in 'where clause' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:28
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(28): PDO->exec('DELETE FROM com...')
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(25): Model\CommentsManagerPDO->deleteFromNews('73')
+#2 /var/www/html/lib/OCFram/BackController.php(43): App\Backend\Modules\News\NewsController->executeDelete(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}
+Date: Wednesday 13th of January 2021 11:54:35 AM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'news' in 'where clause' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:28
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(28): PDO->exec('DELETE FROM com...')
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(25): Model\CommentsManagerPDO->deleteFromNews('73')
+#2 /var/www/html/lib/OCFram/BackController.php(43): App\Backend\Modules\News\NewsController->executeDelete(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}

@@ -18,11 +18,20 @@ class NewsController extends BackController
   }
   
   public function executeDelete(HTTPRequest $request)
-  {
+  {	  
+    $user = $this->verifSession();
+
     $newsId = $request->getData('id');
 
     $this->managers->getManagerOf('News')->delete($newsId);
     $this->managers->getManagerOf('Comments')->deleteFromNews($newsId);
+
+    // delete all caches
+    $this->cache->deleteIndex();
+    if (file_exists($this->cache->dataFolder()."/news-".$request->getData('id')))
+    {   
+        $this->cache->delete('news-'.$request->getData('id'));
+    } 
 
     $this->app->user()->setFlash('La news a bien été supprimée !');
 
@@ -31,6 +40,8 @@ class NewsController extends BackController
 
   public function executeDeleteComment(HTTPRequest $request)
   {
+    $user = $this->verifSession();
+   
     $this->managers->getManagerOf('Comments')->delete($request->getData('id'));
     
     $this->app->user()->setFlash('Le commentaire a bien été supprimé !');
@@ -49,6 +60,46 @@ class NewsController extends BackController
 
     $this->page->addVar('student', $user); 
     $this->page->addVar('title', 'Gestion des news');
+  }
+
+  public function executeShow(HTTPRequest $request) 
+  {
+    $user = $this->verifSession();
+
+    $newsId = $request->getData('id');
+
+    // make sure have news
+    $news = $this->managers->getManagerOf('News')->getUnique($newsId);
+    if (empty($news))
+    {
+      $this->app->httpResponse()->redirect404();
+    }
+    
+    $commentManager = $this->managers->getManagerOf('Comments');
+    
+    // check if news have comments then dislay
+    $newsHaveComment = $commentManager->isNewsHaveComment($news->id());
+    if ($newsHaveComment)
+    {
+    	$comments = $commentManager->getListOf($news->id());
+    }
+    else 
+    {
+	// if no comment get out    
+	$this->app->user()->setFlash('Ce post ne contient pas de commentaires !');
+        $this->app->httpResponse()->redirect('.');
+	return;
+    }
+    // $this->page->addVar('comments', $this->managers->getManagerOf('Comments')->getListOf($news->id()));
+    
+    // maybee delete this line ???
+    $this->page->addVar('newsHaveComment', $newsHaveComment);
+  
+    // $this->page->addVar('lastComment', $lastComment);
+    $this->page->addVar('student', $user);
+    $this->page->addVar('title', $news->titre());
+    $this->page->addVar('news', $news);
+    $this->page->addVar('comments', $comments);
   }
 
   public function executeInsert(HTTPRequest $request)
