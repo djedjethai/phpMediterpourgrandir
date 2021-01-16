@@ -56,3 +56,5 @@ Date: Saturday 9th of January 2021 12:20:38 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
 Date: Saturday 9th of January 2021 12:21:01 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
+Date: Saturday 16th of January 2021 12:53:50 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>

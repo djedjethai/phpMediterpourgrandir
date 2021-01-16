@@ -66,11 +66,11 @@
     </div>
     <div class="textwelcome">
     	<div class="paragraph">
-    		<p>La méditation consiste à rester concentré sur un support tel la respiration. L’exercice n’est pas si simple car l’esprit ne cesse de vagabonder, de rêvasser, de ressasser, aussi nous devons continuellement nous reconcentrer. Cet effort (de concentration) affermit notre force de concentration.</p>
+    		<p>La méditation consiste à rester concentré sur un support tel la respiration. L’exercice n’est pas si simple car l’esprit ne cesse de vagabonder, de rêvasser, de ressasser, aussi nous devons continuellement nous reconcentrer. De la concentration découle l’attention, proportionnellement à notre niveau nos qualités (de concentration et d’attention) s’améliorent.</p>
 
-			<p>De la concentration découle l’attention, proportionnellement à notre niveau, tout comme la concentration notre potentiel d’attention s’améliore. Cela génère un état de bien être particulier et optimise nos performances dans tous les domaines. Notons qu’ à maturité cela nous permettra de constater les mécanismes de notre esprit.</p>
+			<p>Affermir notre potentiel de concentration et d’attention optimise nos performances dans tous les domaines car, quelle que soit la tâche, intellectuellement nous devenons plus endurant et faisons moins d’erreurs. Rappeler la concentration nous entraine à moins dépendre de nos humeurs-émotions (souvent appelé ‘’le lâcher prise’’ en Français) , progressivement un état de bien être particulier s’installe en nous.</p>
 
-			<p>Notre pratique méditative ainsi que nos efforts personnels à entretenir au mieux notre calme intérieur au quotidien optimise nos prises de conscience, et donc modifie nos convictions. Nous devenons plus raisonnables, plus réfléchit, nous grandissons.</p>
+			<p>Notre pratique méditative ainsi que nos efforts personnels à entretenir au mieux notre calme intérieur au quotidien optimise nos prises de conscience (notons qu’ à maturité nous saurons constater les mécanismes de notre esprit), et donc modifie nos convictions. Nous devenons plus raisonnables, plus réfléchit, nous grandissons.</p>
     	</div> 
     </div>
 </section>

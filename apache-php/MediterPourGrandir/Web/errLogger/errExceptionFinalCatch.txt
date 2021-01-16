@@ -52,3 +52,10 @@ Stack trace:
 #3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
 #4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
 #5 {main}
+Date: Saturday 16th of January 2021 01:19:16 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}

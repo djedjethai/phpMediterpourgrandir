@@ -45,8 +45,10 @@ class NewsController extends BackController
     $this->managers->getManagerOf('Comments')->delete($request->getData('id'));
     
     $this->app->user()->setFlash('Le commentaire a bien été supprimé !');
-    
-    $this->app->httpResponse()->redirect('.');
+
+    var_dump($request);
+
+    $this->app->httpResponse()->redirect('/news/index-1.php');
   }
 
   public function executeIndex(HTTPRequest $request)
@@ -61,55 +63,7 @@ class NewsController extends BackController
     $this->page->addVar('student', $user); 
     $this->page->addVar('title', 'Gestion des news');
   }
-
-  public function executeShow(HTTPRequest $request) 
-  {
-    $user = $this->verifSession();
-
-    $newsId = $request->getData('id');
-
-    // make sure have news
-    $news = $this->managers->getManagerOf('News')->getUnique($newsId);
-    if (empty($news))
-    {
-      $this->app->httpResponse()->redirect404();
-    }
-    
-    $commentManager = $this->managers->getManagerOf('Comments');
-    
-    // check if news have comments then dislay
-    $newsHaveComment = $commentManager->isNewsHaveComment($news->id());
-    if ($newsHaveComment)
-    {
-    	$comments = $commentManager->getListOf($news->id());
-    }
-    else 
-    {
-	// if no comment get out    
-	$this->app->user()->setFlash('Ce post ne contient pas de commentaires !');
-        $this->app->httpResponse()->redirect('.');
-	return;
-    }
-    // $this->page->addVar('comments', $this->managers->getManagerOf('Comments')->getListOf($news->id()));
-    
-    // maybee delete this line ???
-    $this->page->addVar('newsHaveComment', $newsHaveComment);
-  
-    // $this->page->addVar('lastComment', $lastComment);
-    $this->page->addVar('student', $user);
-    $this->page->addVar('title', $news->titre());
-    $this->page->addVar('news', $news);
-    $this->page->addVar('comments', $comments);
-  }
-
-  public function executeInsert(HTTPRequest $request)
-  {
-
-    $this->processForm($request);
-
-    $this->page->addVar('title', 'Ajout d\'une news');
-  }
-
+ 
   public function executeUpdate(HTTPRequest $request)
   {    
 
@@ -119,10 +73,12 @@ class NewsController extends BackController
   }
 
   public function executeUpdateComment(HTTPRequest $request)
-  {
+  { 
+    $user = $this->verifSession();
+
     $this->page->addVar('title', 'Modification d\'un commentaire');
 
-    if ($request->method() == 'POST')
+    if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {
       $comment = new Comment([
         'id' => $request->getData('id'),
@@ -135,7 +91,7 @@ class NewsController extends BackController
       $comment = $this->managers->getManagerOf('Comments')->get($request->getData('id'));
     }
 
-    $formBuilder = new CommentFormBuilder($comment);
+    $formBuilder = new CommentFormBuilder($comment, $user->csrf());
     $formBuilder->build();
 
     $form = $formBuilder->form();
@@ -146,10 +102,11 @@ class NewsController extends BackController
     {
       $this->app->user()->setFlash('Le commentaire a bien été modifié');
 
-      $this->app->httpResponse()->redirect('/admin/');
+      $this->app->httpResponse()->redirect('/news/index-1.php');
     }
 
     $this->page->addVar('form', $form->createView());
+    $this->page->addVar('student', $user); 
   }
 
   public function processForm(HTTPRequest $request)

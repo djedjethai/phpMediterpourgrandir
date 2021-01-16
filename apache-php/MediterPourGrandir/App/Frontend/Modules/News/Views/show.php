@@ -1,5 +1,4 @@
 <main>
-<section class="section-news">
 	<div class="rowgrid">
 		<!--<div class="col-3-of-4">-->
 			
@@ -15,12 +14,10 @@
 		
 			<p>Par <em><?= $news['pseudo'] ?></em>, le <?= $news['dateAjout']->format('d/m/Y à H\hi') ?></p>
 			<h2><?= $news['titre'] ?></h2>
-			<div style="max-width: 200px">
+			<div>
 			<?php  
-				var_dump($news['contenu']);
 				echo(nl2br($news['contenu']));
 			?>
-			<p>grrrrrr</p>	
 			</div>
 				
 			<?php if (isset($newsHaveComment) && $newsHaveComment === false) { ?>
@@ -64,8 +61,8 @@
 					<?php } ?>
 				    Posté par <strong><?= htmlspecialchars($comment['pseudo']) ?></strong> le <?= $comment['date']->format('d/m/Y à H\hi') ?>
 				    <?php if ($user->isAuthenticated()) { ?> -
-				      <a href="admin/comment-update-<?= $comment['id'] ?>.php">Modifier</a> 
-				      <a href="admin/comment-delete-<?= $comment['id'] ?>.php">Supprimer</a>
+				      <a href="/admin/comment-update-<?= $comment['id'] ?>.html">Modifier</a> 
+				      <a href="/admin/comment-delete-<?= $comment['id'] ?>.html">Supprimer</a>
 				    <?php } ?>
 				  </legend>
 				  <p><?= nl2br(htmlspecialchars($comment['contenu'])) ?></p>

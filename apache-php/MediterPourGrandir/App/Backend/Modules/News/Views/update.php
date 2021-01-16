@@ -1,8 +1,22 @@
-<h2>Modifier une news</h2>
-<form action="" method="post">
-  <p>
-    <?= $form ?>
-    
-    <input type="submit" value="Modifier" />
-  </p>
-</form>
+<section class="section-book">
+     	<div class="rowgrid">
+             	<div class="booknopic">
+                    	<div class="booknopic__form">
+                        	<form action="" class="form" method="post">
+					<div class="u-center-text u-margin-top-medium u-margin-bottom-medium">
+                                		<h2 class="heading-secondary">
+                                    			Admin modifie news
+                                		</h2>
+                            		</div>
+		  	    		
+			       		<?= $form ?>
+					<button class="btn btn--blue">
+					<input type="submit" value=" Envoyer " />    	
+					</button>
+
+				</form>
+		    	</div>
+		</div>
+	</div>
+</section>
+
