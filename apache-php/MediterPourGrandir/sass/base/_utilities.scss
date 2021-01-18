@@ -25,6 +25,13 @@
     }
 }
 
+.u-margin-top-verybig {
+    margin-top: 17rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 8rem !important;
+    }
+}
+
 .u-margin-top-huge {
     margin-top: 10rem !important;
 }
@@ -35,4 +42,15 @@
 	height: 1px;
 	background-color: $color-grey-dark;
 	margin: 0 auto; 
+}
+
+.u-margin-left-small {
+    margin-left: 1.5rem !important;
+}
+
+.u-margin-left-medium {
+    margin-left: 4rem !important;
+    @include respond(tab-port) {
+        margin-left: 3rem !important;
+    }
 }

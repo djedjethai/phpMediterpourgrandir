@@ -178,6 +178,12 @@ body {
     .u-margin-top-big {
       margin-bottom: 5rem !important; } }
 
+.u-margin-top-verybig {
+  margin-top: 17rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-verybig {
+      margin-bottom: 8rem !important; } }
+
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
@@ -187,6 +193,15 @@ body {
   height: 1px;
   background-color: #777;
   margin: 0 auto; }
+
+.u-margin-left-small {
+  margin-left: 1.5rem !important; }
+
+.u-margin-left-medium {
+  margin-left: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-left-medium {
+      margin-left: 3rem !important; } }
 
 .btn {
   min-height: 4rem;
@@ -651,7 +666,7 @@ footer {
         border-bottom: 1px solid #eee; }
 
 .section-stories {
-  background-color: #eee;
+  background-color: #dedace;
   position: relative;
   padding: 15rem 0; }
   @media only screen and (max-width: 56.25em) {
@@ -666,7 +681,7 @@ footer {
       padding: 10rem 0; } }
 
 .section-introduction {
-  background-color: #eee;
+  background-color: #dedace;
   position: relative;
   padding: 15rem 0; }
   @media only screen and (max-width: 56.25em) {
@@ -674,11 +689,19 @@ footer {
       padding: 10rem 0; } }
 
 .section-explication {
-  background-color: #eee;
+  background-color: #dedace;
   position: relative;
   padding: 15rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-explication {
+      padding: 10rem 0; } }
+
+.section-formation {
+  background-color: #eee;
+  position: relative;
+  padding: 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-formation {
       padding: 10rem 0; } }
 
 .section-report {

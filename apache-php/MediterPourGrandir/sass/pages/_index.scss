@@ -27,7 +27,7 @@
 
 .section-stories {
     // position: relative; as the bg-video is absolute and should appear behind this section
-    background-color: $color-grey-light-2;
+    background-color: $color-grey-light;
     position: relative;
     padding: 15rem 0;
 
@@ -47,7 +47,7 @@
 }
 
 .section-introduction {
-	background-color: $color-grey-light-2;
+	background-color: $color-grey-light;
     	position: relative;
     	padding: 15rem 0;
 
@@ -57,12 +57,22 @@
 }
 
 .section-explication {
-	background-color: $color-grey-light-2;
+	background-color: $color-grey-light;
     	position: relative;
     	padding: 15rem 0;
 
     	@include respond(tab-port) {
         	padding: 10rem 0;
     	}
+}
+
+.section-formation {
+    background-color: $color-grey-light-2;
+        position: relative;
+        padding: 15rem 0;
+
+        @include respond(tab-port) {
+            padding: 10rem 0;
+        }
 }
 
