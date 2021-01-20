@@ -522,6 +522,24 @@ body {
   width: 80%;
   margin: 0 auto; }
 
+.showpicture {
+  text-align: center; }
+  .showpicture__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    margin: 0 auto;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .showpicture__photo:hover {
+      outline: 1.5rem solid #2998ff;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .showpicture:hover .showpicture__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .rowgrid {
   max-width: 114rem;
   margin: 0 auto;
@@ -737,6 +755,14 @@ footer {
     left: 50%;
     /*readjust l'alignement x et y par rapport l'element lui-meme*/
     transform: translate(-50%, -50%); }
+
+.section-quisuisje {
+  background-color: #eee;
+  position: relative;
+  padding: 20rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-quisuisje {
+      padding: 10rem 0; } }
 
 .section-news {
   background-color: #eee;

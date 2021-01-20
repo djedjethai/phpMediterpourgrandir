@@ -38,3 +38,13 @@
 	        transform: translate(-50%, -50%);
 	}
 }
+
+.section-quisuisje {
+	background-color: $color-grey-light-2;
+    	position: relative;
+    	padding: 20rem 0;
+
+    	@include respond(tab-port) {
+        	padding: 10rem 0;
+    	}
+}

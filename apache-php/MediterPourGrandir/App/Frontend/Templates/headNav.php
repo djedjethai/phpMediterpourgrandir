@@ -39,7 +39,6 @@
 	      </a>
 	      <div class="dropdown-menu">
 	        <a class="dropdown-item" href="/">Acceuil</a>
-	        <a class="dropdown-item" href="/welcome/DeroulementFormation.php">Deroulement de la formation</a>
 	        <a class="dropdown-item" href="/welcome/QuiSuisJe.php">Qui suis-je</a>
 	        <a class="dropdown-item" href="/welcome/contact.php">Contact</a>
 	      </div>
@@ -80,7 +79,6 @@
 		        <a class="nav-link" href="/">Acceuil<span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="/welcome/DeroulementFormation.php">Deroulement de la formation<span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="/welcome/QuiSuisJe.php">Qui suis-je</a>

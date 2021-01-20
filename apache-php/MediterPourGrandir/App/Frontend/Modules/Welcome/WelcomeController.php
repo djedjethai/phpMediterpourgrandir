@@ -46,17 +46,7 @@ class WelcomeController extends BackController
 
     $this->page->addVar('title', 'Bienvenue a acceuil');
   }
-  
-  public function executeDeroulementFormation(HTTPRequest $request)
-  {
-    $user = $this->verifSession();
-
-    if($user) {
-      $this->page->addVar('student', $user);
-    }
-    $this->page->addVar('title', 'Details de la formation');
-  }
-
+   
   public function executeQuiSuisJe(HTTPRequest $request)
   {
     $user = $this->verifSession();

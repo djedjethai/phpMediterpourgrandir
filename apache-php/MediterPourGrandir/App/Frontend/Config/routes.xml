@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <routes>
   <route url="/" module="Welcome" action="index" />
-  <route url="/welcome/DeroulementFormation.php" module="Welcome" action="deroulementFormation" />
   <route url="/welcome/QuiSuisJe.php" module="Welcome" action="quiSuisJe" />
   <route url="/welcome/contact.php" module="Welcome" action="contact" />
   <route url="/welcome/allFeedbacks.php" module="Welcome" action="allFeedbacks" />
