@@ -10,9 +10,8 @@
 				<p class="u-margin-bottom-medium">Instructeur de haute méditation<br/>
 				(Willpower Institute Bangkok)</p>	
 		
-		<p>pratiquant de meditaion depuis de nombreuses annee, cette technique m’a permis de changer, de devenir plus raisonnable, compatissant, respectueux, tolerant, progresivement ma qualite de vie s’est ameliorer. Finalement, et par chance, j’ai eu l’oppotunite d’approndir mes connaisssances de la meditation en suivant des formations. Elles m’ont permis de mieux comprendre les tenants et aboutisants de cette technique, et donc de pratiquer plus effiacement. 
-<br />
-Je continue de pratique qotidiennement, et aime occasionelement faire des retraites dans les foret aux nord de la Thailand.</p>
+		<p>Pratiquant de méditation depuis de nombreuses années, cette techique m'a fait évoluer, je suis devenu plus raisonnable, compatissant, respectueux, tolérant, progressivement ma qualité de vie s’est améliorer.<br />
+		J’ai eu opportunité d’approfondir mes connaissances (de la méditation) en suivant des formations. Elles m’ont permis de mieux comprendre les tenants et aboutissants de cet exercice, et donc de pratiquer plus efficacement. Ainsi je souhaite rapporter ces enseignements afin d’offrir à d’autres l’opportunité de les découvrir.</p>
 
 			</div>
 		</div>

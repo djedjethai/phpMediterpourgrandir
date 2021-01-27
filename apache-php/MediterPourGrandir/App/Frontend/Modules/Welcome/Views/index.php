@@ -69,7 +69,7 @@
 
 			<p><span class="u-margin-left-medium">Affermir</span> notre potentiel de concentration et d’attention optimise nos performances dans tous les domaines car, quelle que soit la tâche, intellectuellement nous devenons plus endurant et faisons moins d’erreurs. Rappeler la concentration nous entraine à moins dépendre de nos humeurs-émotions (souvent appelé ‘’le lâcher prise’’ en Français) , progressivement un état de bien être particulier s’installe en nous.</p>
 
-			<p><span class="u-margin-left-medium">Notre</span> pratique méditative ainsi que nos efforts personnels à entretenir au mieux notre calme intérieur au quotidien optimise nos prises de conscience (notons qu’ à maturité nous saurons constater les mécanismes de notre esprit), et donc modifie nos convictions. Nous devenons plus raisonnables, plus réfléchit, nous grandissons.</p>
+			<p><span class="u-margin-left-medium">Notre</span> pratique méditative ainsi que nos efforts personnels à entretenir au mieux notre calme intérieur au quotidien optimise nos prises de conscience (notons qu’à maturité nous saurons constater les mécanismes de notre esprit), et donc modifie nos convictions. Nous devenons plus raisonnables, plus réfléchit, nous grandissons.</p>
     	</div> 
     </div>
 </section>
@@ -82,9 +82,9 @@
     </div>
     <div class="textwelcome">
     	<div class="paragraph">
-    		<p><span class="u-margin-left-medium">Cet</span> enseignement est gratuit. Il se compose de 46 leçons reparties en  5 chapitres. Tous les aspects de la méditation sont expliqués : une technique extrêmement efficace, les obstacles à éviter, les chan (djana) et les yan (insight). Il s’adresse à tous les niveaux car il part de zéro et décrit toutes les étapes. Aussi à l’issue la méditation de pleine conscience n’aura plus de secret pour vous.</p>
+    		<p><span class="u-margin-left-medium">Cet</span> enseignement est gratuit. Il se compose de 46 leçons réparties en  5 chapitres. Tous les aspects de la méditation sont expliqués : une technique extrêmement efficace, les obstacles à éviter, les chan (djana) et les yan (insight). Il s’adresse à tous les niveaux car il part de zéro et décrit toutes les étapes. Aussi à l’issue la méditation de pleine conscience n’aura plus de secret pour vous.</p>
 
-			<p><span class="u-margin-left-medium">Après</span> avoir ouvert votre compte, vous avez accès à une leçon tous les 4 jours. Cette contrainte n’est pas anodine, afin de développer la méditation if faut la pratiquer quotidiennement durant un certain temps avant d’en constater les bénéfices. Ainsi cet enseignement vous incite, pour commencer, à méditer durant 6 mois. Idéalement cela ne sera qu’un début, car à l’issue, afin d’entretenir vos acquis et continuer à progresser, vous devrez poursuivre.</p>
+			<p><span class="u-margin-left-medium">Après</span> avoir ouvert votre compte, vous avez accès à une leçon tous les 4 jours. Cette contrainte n’est pas anodine, afin de développer la méditation if faut la pratiquer quotidiennement durant un certain temps pour en constater les bénéfices. Ainsi cet enseignement vous incite, pour commencer, à méditer durant 6 mois. Idéalement cela ne sera qu’un début, car à l’issue, afin d’entretenir vos acquis et continuer à progresser, vous devrez poursuivre.</p>
  
 			<p><span class="u-margin-left-medium">Un</span> forum est mis à disposition afin de répondre aux questions, si vous avez des doutes, ou ne comprenez pas certaines explications. Ce dernier vous permet également d’échanger avec d’autres pratiquants sur des sujets lies à la méditation.</p>
     	</div> 

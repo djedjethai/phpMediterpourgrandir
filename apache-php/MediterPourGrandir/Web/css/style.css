@@ -767,7 +767,7 @@ footer {
 .section-news {
   background-color: #eee;
   position: relative;
-  padding: 20rem 0; }
+  padding: 5rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-news {
       padding: 10rem 0; } }
