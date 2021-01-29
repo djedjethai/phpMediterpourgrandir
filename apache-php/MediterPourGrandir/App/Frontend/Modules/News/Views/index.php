@@ -1,58 +1,37 @@
+<main>
+<section class="section-news">
+
 <a href="/news/insert.php"><button class="btn btn-primary btn-sm">Ajouter une news</button></a>
+
 <?php
 foreach ($listeNews as $news)
 {
 ?>
 
-
-
 <div class="newsframe">
-	<div class="newsframe-content">
 	<figure class="newsframe__shape">	
 	<?php if($news['picture']) { ?>
-		<img style="max-width: 60px;" src="/Web/pictures/<?=$news['picture']?>" alt="test" />
+		<img src="/Web/pictures/<?=$news['picture']?>" alt="test" class="newsframe__img"/>
+	<?php } else { ?>
+		<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="newsframe__img" />
 	<?php } ?>
-	<h2><a href="news-<?= $news['id'] ?>.php"><?= $news['titre'] ?></a></h2>
+		<figcaption class="story__caption">
+        		<?= $news['pseudo'] ?>
+        	</figcaption>
+
+	</figure>
+	<div class="newsframe__text">
+		<h2><a href="news-<?= $news['id'] ?>.php"><?= $news['titre'] ?></a></h2>
+		<a href="/news/update-', $news['id'], '.php"></a>
+	</div>
 	<p><?= nl2br($news['contenu']) ?></p>
-	<a href="/news/update-', $news['id'], '.php"></a>
-	
 </div>	
-
-<!--A copier ici...............-->
-			<figure class="story__shape">
-			<?php if($feedback['picture']) { ?>
-			<img src="/Web/pictures/<?=$feedback['picture']?>" alt="profile picture" class="story__img" />
-			<?php } else { ?>
-			<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="story__img" />
-			<?php } ?>
-				<figcaption class="story__caption">
-                            		<?= $feedback['pseudo'] ?>
-                        	</figcaption>
-
-                    	</figure>
-                    	<div class="story__text">
-				<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 50px">Appreciation: <?= $feedback['grade'] ?></span></h5>
-				<p style="width:500px;"><?php echo nl2br($feedback['contenu']) ?></p>
-		    	</div>
-		</div>
-	</div>		
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php
 }
-
 ?>
+
+
 <!--PAGINATION-->
 <nav aria-label="Page navigation example">
   <ul class="pagination">
@@ -87,3 +66,5 @@ foreach ($listeNews as $news)
   </ul>
 </nav>
 
+</section>
+</main>

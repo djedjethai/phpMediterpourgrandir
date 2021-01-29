@@ -1,77 +1,85 @@
 .newsframe {
-	width: 80%;
-	    margin: 0 auto;
-	    box-shadow: 0 3rem 6rem rgba($color-black, .1);
-	    // adding rgba() on the back-ground color, permet d'ajouter l'opacity
-	    background-color: rgba($color-white, .6);
-	    border-radius: 3px;
-	    padding: 2rem 6rem 12rem 6rem;
-	    font-size: 2rem;
-	    border-bottom: 2px solid $color-grey-dark;
-	     
-	    @include respond(tab-port) {
-	        width: 100%;
-	        padding: 4rem;
-	        padding-left: 7rem;
-	    }
-	    @include respond(phone) {
-	        transform: skewX(0);
-	    }
-	    &__shape {
-	        width: 15rem;
-	        height: 15rem;
-	        float: left;
-	        border-radius: 50%;
-	        overflow: hidden; 
-	        position: relative;
-	        @include respond(phone) {
-	            transform: translateX(-3rem) skewX(0deg);
-	        }
-	        // for older browser to work
-	        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-	            // clip-path fait disparaitre les contours debordant de la forme 
-	            -webkit-clip-path: circle(50% at 50% 50%);
-	            clip-path: circle(50% at 50% 50%);
-	            -webkit-shape-outside: circle(50% at 50% 50%);
-	            shape-outside: circle(50% at 50% 50%);
-	            border-radius: none;
-	        }
-	    }
-	    // in responsive design image ALWAYS need a width
-	    &__img {
-	        // take 100% of the parent. normally we use the width BUT as the height is smaller, we use the height
-	        height: 100%;
-	        transform: translateX(-4rem) scale(1.4);
-	        // backface-visibility: hidden; pas besoin che moi, mais util che le prof pour rectifier un secnd effect du transform
-	        transition: all .5s;
-	    }
-	    &__caption {
-	        position: absolute;
-	        top: 50%;
-	        left: 50%;
-	        // as it s the start of the animation, wich will finish on the :hover. the 2 translate should have the same format
-	        transform: translate(-50%, 20%);
-	        color: $color-white;
-	        text-transform: uppercase;
-	        font-size: 1.7rem;
-	        text-align: center;
-	        opacity: 0;
-	        transition: all .5s;
-	        // to fix the small mouvement at the end of the animation
-	        backface-visibility: hidden;
-	    }
-	    &:hover &__caption {
-	        opacity: 1;
-	        transform: translate(-50%, -50%);
-	    }
-	    &:hover &__img {
-	        transform: translateX(-4rem) scale(1);
-	        filter: blur(3px) brightness(80%); // make it blur and darker
-	    }
-	    &__text {
-	        // transform: skewX(12deg);
-	        @include respond(phone) {
-	            transform: skewX(0);
-	        }
-	     }
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    // adding rgba() on the back-ground color, permet d'ajouter l'opacity
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 2rem 6rem 12rem 6rem;
+    font-size: 2rem;
+    border-bottom: 2px solid $color-grey-dark;
+     
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+    &__shape {
+        width: 10rem;
+        height: 10rem;
+        float: left;
+        border-radius: 50%;
+        overflow: hidden; 
+        position: relative;
+        @include respond(phone) {
+            transform: translateX(-3rem) skewX(0deg);
+        }
+        // for older browser to work
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            // clip-path fait disparaitre les contours debordant de la forme 
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+    }
+    // in responsive design image ALWAYS need a width
+    &__img {
+        // take 100% of the parent. normally we use the width BUT as the height is smaller, we use the height
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        // backface-visibility: hidden; pas besoin che moi, mais util che le prof pour rectifier un secnd effect du transform
+        transition: all .5s;
+    }
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // as it s the start of the animation, wich will finish on the :hover. the 2 translate should have the same format
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        // to fix the small mouvement at the end of the animation
+        backface-visibility: hidden;
+    }
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%); // make it blur and darker
+    }
+    &__text {
+        // transform: skewX(12deg);
+        @include respond(phone) {
+            transform: skewX(0);
+        }
+    }
 }
+
+
+
+
+
+
+
+
