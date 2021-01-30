@@ -1,10 +1,11 @@
 <main>
 	<section class="section-stories">
+		
+		<div class="rowgrid">
 		<?php
 		foreach ($listFeedbacks as $feedback)
 		{
 		?>
-		<!--<div class="rowgrid">-->
         	      	<div class="story u-margin-bottom-small">
         	            	<figure class="story__shape">
 				<?php if($feedback['picture']) { ?>

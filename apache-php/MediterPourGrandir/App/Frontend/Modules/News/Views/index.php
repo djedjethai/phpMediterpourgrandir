@@ -1,13 +1,16 @@
 <main>
 <section class="section-news">
 
-<a href="/news/insert.php"><button class="btn btn-primary btn-sm">Ajouter une news</button></a>
+<div class="section-news__around">
+	<a href="/news/insert.php" class="btn-text-resize">Ajouter une news</a>
+</div>
 
+
+<div class="rowgrid">
 <?php
 foreach ($listeNews as $news)
 {
 ?>
-
 <div class="newsframe">
 	<figure class="newsframe__shape">	
 	<?php if($news['picture']) { ?>
@@ -15,16 +18,15 @@ foreach ($listeNews as $news)
 	<?php } else { ?>
 		<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="newsframe__img" />
 	<?php } ?>
-		<figcaption class="story__caption">
-        		<?= $news['pseudo'] ?>
-        	</figcaption>
-
+		
 	</figure>
-	<div class="newsframe__text">
-		<h2><a href="news-<?= $news['id'] ?>.php"><?= $news['titre'] ?></a></h2>
-		<a href="/news/update-', $news['id'], '.php"></a>
+	<div class="newsframe__title">
+		<a href="news-<?= $news['id'] ?>.php" class="btn-link"><?= $news['titre'] ?></a>
+		<!--<a href="/news/update-', $news['id'], '.php"></a>-->
 	</div>
-	<p><?= nl2br($news['contenu']) ?></p>
+	<div class="newsframe__text">
+		<p><?= nl2br($news['contenu']) ?></p>
+	</div>
 </div>	
 
 <?php
