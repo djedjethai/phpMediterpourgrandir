@@ -25,9 +25,8 @@ class NewsController extends BackController
     $manager = $this->managers->getManagerOf('News');
 
     $page = floatval($request->getData('page'));
-    $totalPages = ceil($manager->count() / 10);
-    
-    
+    $totalPages = floor( intval($manager->count(), 10) / 10);
+
     $nameCache = substr($_SERVER['REQUEST_URI'],6,-4);
     $listeNews = $this->cache->read($nameCache);
     

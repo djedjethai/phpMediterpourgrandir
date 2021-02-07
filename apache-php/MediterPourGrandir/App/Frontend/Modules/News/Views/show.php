@@ -1,46 +1,51 @@
 <main>
+<section class="section-news">
+
+
 	<div class="rowgrid">
 		<!--<div class="col-3-of-4">-->
 			
 
 		<a href="/news/index-1.php"><button class="btn btn-sm btn-outline-secondary my-1" type="button">Retour aux news</button></a>
 		
-		<div class="border border-dark rounded shadow my-3 p-3">
-			
-			
-			<?php if($news['picture']) { ?>
-				<img style="max-width: 60px;" src="/Web/pictures/<?=$news['picture']?>" alt="test" />
-			<?php } ?>
+		<div class="newsframe">
+	<figure class="newsframe__shape">	
+	<?php if($news['picture']) { ?>
+		<img src="/Web/pictures/<?=$news['picture']?>" alt="test" class="newsframe__img"/>
+	<?php } else { ?>
+		<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="newsframe__img" />
+	<?php } ?>
 		
-			<p>Par <em><?= $news['pseudo'] ?></em>, le <?= $news['dateAjout']->format('d/m/Y à H\hi') ?></p>
-			<h2><?= $news['titre'] ?></h2>
-			<div>
-			<?php  
-				echo(nl2br($news['contenu']));
-			?>
-			</div>
-				
-			<?php if (isset($newsHaveComment) && $newsHaveComment === false) { ?>
-		        <a href="update-<?= $news['id'] ?>.php"><button class="btn btn--blue">Modifier</button></a>
-			
-
-			<?php } ?>
-		</div>
-		
-		
-		
+	</figure>
+	<div class="newsframe__title">
+		<?= $news['titre'] ?>
+	</div>
+		<p>Par <em><?= $news['pseudo'] ?></em>, le <?= $news['dateAjout']->format('d/m/Y à H\hi') ?></p>
+	<div class="newsframe__text">
+		<p><?= nl2br($news['contenu']) ?></p>
+	</div>
+	<div>			
+		<?php if (isset($newsHaveComment) && $newsHaveComment === false) { ?>
+		<a href="update-<?= $news['id'] ?>.php"><button class="btn btn--blue">Modifier</button></a>
+		<?php } ?>
 		
 		<?php if ($news['dateAjout'] != $news['dateModif']) { ?>
 		  <p style="text-align: right;"><small><em>Modifiée le <?= $news['dateModif']->format('d/m/Y à H\hi') ?></em></small></p>
-		<?php }	
+		<?php }	?>
+	</div>
+	
+	</div>
+
+
+
+			
+			
 		
-		/*
-		if (empty($comments))
-		{
-		?>
+	
+		<?php if (empty($comments)) { ?>
 		<p>Aucun commentaire n'a encore été posté. Soyez le premier à en laisser un !</p>
 		<?php
-		}*/
+		}
 		$keyLast = 0;
 		
 		for ($i = 0; $i < count($comments); $i++) 
@@ -90,9 +95,9 @@
 		
 		<?php } ?>
 		<!--</div>-->
-	</div>
-</section>
-</main>
+	<!--</div>-->
+<!--</section>
+</main>-->
 
 	
 

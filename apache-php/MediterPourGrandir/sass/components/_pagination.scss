@@ -1,0 +1,30 @@
+.paginate {
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+
+.paginate .page-link {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: .7rem 1.5rem;
+    box-shadow: 2.5px 2.5px 2px 1px rgba(0, 0, 255, .2);
+    transition: all .2s;
+}
+
+.paginate .move.active {
+    background-color: $color-tertiary-dark;
+    // color: $color-white!important;
+}
+
+.paginate .move:hover:not(.active) {
+    background-color: $color-tertiary-dark;
+    color: $color-white;
+    box-shadow: 2.5px 2.5px 2px 3px rgba(0, 0, 255, .15);
+    transform: translateY(-2px);
+}
+
+.change-page {
+	font-size: 2rem;
+}

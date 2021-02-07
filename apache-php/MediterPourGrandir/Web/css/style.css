@@ -627,6 +627,31 @@ body {
       .newsframe__text {
         transform: skewX(0); } }
 
+.paginate {
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1.5rem; }
+
+.paginate .page-link {
+  display: inline-block;
+  text-decoration: none;
+  color: blue;
+  padding: .7rem 1.5rem;
+  box-shadow: 2.5px 2.5px 2px 1px rgba(0, 0, 255, 0.2);
+  transition: all .2s; }
+
+.paginate .move.active {
+  background-color: #5643fa; }
+
+.paginate .move:hover:not(.active) {
+  background-color: #5643fa;
+  color: #fff;
+  box-shadow: 2.5px 2.5px 2px 3px rgba(0, 0, 255, 0.15);
+  transform: translateY(-2px); }
+
+.change-page {
+  font-size: 2rem; }
+
 .rowgrid {
   max-width: 114rem;
   margin: 0 auto;

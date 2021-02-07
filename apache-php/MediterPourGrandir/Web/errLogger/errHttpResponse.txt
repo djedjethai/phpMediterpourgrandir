@@ -60,3 +60,7 @@ Date: Saturday 16th of January 2021 12:53:50 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: student<br /><strong>/var/www/html/App/Frontend/Templates/headNav.php</strong> at the line <strong>61</strong>
 Date: Friday 29th of January 2021 09:58:44 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: feedback<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/index.php</strong> at the line <strong>23</strong>
+Date: Sunday 7th of February 2021 08:44:28 AM
+Text: <strong>Warning</strong> : [0] Use of undefined constant page - assumed 'page' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/index.php</strong> at the line <strong>49</strong>
+Date: Sunday 7th of February 2021 08:44:45 AM
+Text: <strong>Warning</strong> : [0] Use of undefined constant page - assumed 'page' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/index.php</strong> at the line <strong>49</strong>

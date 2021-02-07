@@ -1,12 +1,13 @@
 <main>
 <section class="section-news">
 
+<div class="rowgrid">
+
 <div class="section-news__around">
 	<a href="/news/insert.php" class="btn-text-resize">Ajouter une news</a>
 </div>
 
 
-<div class="rowgrid">
 <?php
 foreach ($listeNews as $news)
 {
@@ -33,17 +34,45 @@ foreach ($listeNews as $news)
 }
 ?>
 
-
-<!--PAGINATION-->
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link"
+<div class="paginate">
+<a class="page-link move"
       <?php 
       	if($page > 1) {
       		$previousPage = $page - 1 ;
       		echo 'href=/news/index-'.$previousPage.'.php';
-      } ?>
+} ?>
+      >
+        <span class="change-page">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+<div class="page-link" desabled="true">
+	<span class="change-page"><?=$page?></span>
+</div>
+<a class="page-link move" desabled="true" 
+      	<?php 
+      	if($page < $totalPages) {
+      		$nextPage = $page + 1 ;
+      		echo 'href=/news/index-'.$nextPage.'.php';
+		} ?>
+      	>
+        <span class="change-page">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+
+</div>
+
+
+
+<!--PAGINATION-->
+<!--<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link"
+      <?php 
+      	/*if($page > 1) {
+      		$previousPage = $page - 1 ;
+      		echo 'href=/news/index-'.$previousPage.'.php';
+} */?>
       aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
         <span class="sr-only">Previous</span>
@@ -53,20 +82,21 @@ foreach ($listeNews as $news)
     <li class="page-item">
       <a class="page-link" desabled="true" 
       	<?php 
-      	if($page < $totalPages) {
+      	/*if($page < $totalPages) {
       		$nextPage = $page + 1 ;
       		echo 'href=/news/index-'.$nextPage.'.php';
-      	} ?>
+		} */?>
       	aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
         <span class="sr-only">Next</span>
       </a>
     </li>
     <li class="page-item">
-      <a class="page-link">Nombre de pages: <?=$totalPages?></a>
+      <a class="page-link">Nombre de pages: <?//=$totalPages?></a>
     </li>
   </ul>
-</nav>
+</nav>-->
 
+</div>
 </section>
 </main>

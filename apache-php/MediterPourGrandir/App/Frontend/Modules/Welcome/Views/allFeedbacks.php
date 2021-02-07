@@ -24,9 +24,9 @@
 					<p><?= nl2br($feedback['contenu']) ?></p>
 			    	</div>
 			</div>
-		<!--</div>-->		
 		<?php
-		} ?>
+		} ?>	
+		</div>	
 	</section>
 </main>
 
