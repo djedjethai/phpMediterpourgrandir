@@ -1,0 +1,17 @@
+.comment{
+	background-color: rgba($color-grey-light-1, .6);
+	width: 90%;
+	margin: 0 auto;
+
+	&__nocomment {
+		font-size: 3rem;
+		margin: 4rem 0;
+	}
+	&__item{
+		border-style: inset;
+		margin-bottom: .3rem;
+		padding: 2rem 6rem 4rem 6rem;
+		margin: 1rem 0;
+		font-size: 2rem;	
+	}
+}

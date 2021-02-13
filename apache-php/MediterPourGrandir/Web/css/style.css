@@ -580,7 +580,7 @@ body {
   transform: translateY(0); }
 
 .newsframe {
-  width: 80%;
+  width: 90%;
   margin: 1rem auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
@@ -651,6 +651,20 @@ body {
 
 .change-page {
   font-size: 2rem; }
+
+.comment {
+  background-color: rgba(247, 247, 247, 0.6);
+  width: 90%;
+  margin: 0 auto; }
+  .comment__nocomment {
+    font-size: 3rem;
+    margin: 4rem 0; }
+  .comment__item {
+    border-style: inset;
+    margin-bottom: .3rem;
+    padding: 2rem 6rem 4rem 6rem;
+    margin: 1rem 0;
+    font-size: 2rem; }
 
 .rowgrid {
   max-width: 114rem;
