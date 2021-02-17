@@ -18,6 +18,13 @@
     margin-bottom: 8rem !important;
 }
 
+.u-margin-top {
+    margin-top: 4rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 2rem !important;
+    }
+}
+
 .u-margin-top-big {
     margin-top: 8rem !important;
     @include respond(tab-port) {
@@ -54,3 +61,26 @@
         margin-left: 3rem !important;
     }
 }
+
+.justify-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.justify-center {
+	display: flex;
+	justify-content: center;
+}
+
+.justify-spacebetweenreverse {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.justify-spacebetween {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+

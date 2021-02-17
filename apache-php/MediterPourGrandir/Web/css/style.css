@@ -172,6 +172,12 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
+.u-margin-top {
+  margin-top: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top {
+      margin-bottom: 2rem !important; } }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
   @media only screen and (max-width: 56.25em) {
@@ -202,6 +208,24 @@ body {
   @media only screen and (max-width: 56.25em) {
     .u-margin-left-medium {
       margin-left: 3rem !important; } }
+
+.justify-right {
+  display: flex;
+  justify-content: flex-end; }
+
+.justify-center {
+  display: flex;
+  justify-content: center; }
+
+.justify-spacebetweenreverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between; }
+
+.justify-spacebetween {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between; }
 
 .btn {
   min-height: 4rem;
@@ -307,6 +331,25 @@ body {
   transform: translateY(-2px); }
 
 .btn-link:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.btn-choice:link, .btn-choice:visited {
+  font-size: 1.6rem;
+  color: #ff7730;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #ff7730;
+  padding: 3px 1rem;
+  transition: all .2s; }
+
+.btn-choice:hover {
+  background-color: #ff7730;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-choice:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
@@ -655,7 +698,7 @@ body {
 .comment {
   background-color: rgba(247, 247, 247, 0.6);
   width: 90%;
-  margin: 0 auto; }
+  margin: 2rem auto; }
   .comment__nocomment {
     font-size: 3rem;
     margin: 4rem 0; }
@@ -665,6 +708,13 @@ body {
     padding: 2rem 6rem 4rem 6rem;
     margin: 1rem 0;
     font-size: 2rem; }
+
+.back-addcomment {
+  background-color: #eee;
+  padding-top: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .back-addcomment {
+      padding-bottom: 2rem !important; } }
 
 .rowgrid {
   max-width: 114rem;

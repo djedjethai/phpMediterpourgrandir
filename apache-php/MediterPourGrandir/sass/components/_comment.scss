@@ -1,7 +1,7 @@
 .comment{
 	background-color: rgba($color-grey-light-1, .6);
 	width: 90%;
-	margin: 0 auto;
+	margin: 2rem auto;
 
 	&__nocomment {
 		font-size: 3rem;
@@ -15,3 +15,12 @@
 		font-size: 2rem;	
 	}
 }
+
+.back-addcomment {
+    background-color: $color-grey-light-2;
+    padding-top: 4rem !important;
+    @include respond(tab-port) {
+        padding-bottom: 2rem !important;
+    }
+}
+

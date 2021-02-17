@@ -1,5 +1,5 @@
-<main>
-<section class="section-news">
+<!--<main>
+<section class="section-news">-->
 
 
 	<div class="rowgrid">
@@ -22,24 +22,30 @@
 		<?= $news['titre'] ?>
 		</div>
 		
-		<p>Par <em><?= $news['pseudo'] ?></em>, le <?= $news['dateAjout']->format('d/m/Y à H\hi') ?></p>
+		<p class="paragraph">Par <em><?= $news['pseudo'] ?></em>, le: <?= $news['dateAjout']->format('d/m/Y à H\hi') ?></p>
 		<div class="newsframe__text">
 			<p><?= nl2br($news['contenu']) ?></p>
 		</div>
 		
 		<div>			
 		<?php if (isset($newsHaveComment) && $newsHaveComment === false) { ?>
-			<a href="update-<?= $news['id'] ?>.php"><button class="btn btn--blue">Modifier</button></a>
+		<div class="justify-spacebetweenreverse u-margin-top">
+			<div>
+			<a href="update-<?= $news['id'] ?>.php" class="btn-choice">Modifier</a>
+			</div>
+  			<div>
 		<?php } ?>
 		
 		<?php if ($news['dateAjout'] != $news['dateModif']) { ?>
-		  	<p style="text-align: right;"><small><em>Modifiée le <?= $news['dateModif']->format('d/m/Y à H\hi') ?></em></small></p>
+		  	<p class="paragraph"><em>Modifiée le <?= $news['dateModif']->format('d/m/Y à H\hi') ?></em></p>
 		<?php }	?>
+			</div>
+		</div>
 		</div>
 	</div>
 	
 	
-	<div class="comment u-margin-bottom-medium">	
+	<div class="comment">	
 		<?php if (empty($comments)) { ?>
 		<p class="comment__nocomment">Aucun commentaire n'a encore été posté. Soyez le premier à en laisser un !</p>
 
@@ -76,24 +82,24 @@
 		
 			<?php 
 			if($comments[$keyLast]->id() ===  $comment->id() && $comments[$keyLast]->pseudo() === $student->pseudo()) { ?>
-			<div class="row">
-			<div class="col-lg-12">
-				<a href="comment-update-<?= $comment['id'] ?>.php"><button class="btn btn-secondary float-right">Modifier</button></a>
-			</div>
-			</div>
+			
+			<div class="justify-right u-margin-top">
+				<a href="comment-update-<?= $comment['id'] ?>.php" class="btn-choice">Modifier</a>
+			</div>	
 		<? } ?>	
+
 		</div>
 
+		<div class="justify-right back-addcomment">
 		<?php } 
-		
 		if ($newsHaveComment && ($lastComment === false || $lastComment->auteurComId() !== $student->id())) { ?>
 			<a href="commenter-<?= $news['id'] ?>.php"><button class="btn btn-sm btn-primary my-1" type="button">Ajouter un commentaire</button></a>
-		
 		<?php } ?>
-		<!--</div>-->
+		</div>
 	</div>
-</section>
-</main>
+	</div>
+<!--</section>
+</main>-->
 
 	
 
