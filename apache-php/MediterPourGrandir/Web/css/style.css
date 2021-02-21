@@ -209,6 +209,10 @@ body {
     .u-margin-left-medium {
       margin-left: 3rem !important; } }
 
+.u-wrap-goback {
+  padding: 1rem 0;
+  margin: 1rem 0; }
+
 .justify-right {
   display: flex;
   justify-content: flex-end; }
@@ -296,6 +300,44 @@ body {
     /*permet de palier au delay, d'initialiser le stade initial de depart d'animation sans delay.*/
     animation-fill-mode: backwards; }
 
+.btn-text-resize-big:link, .btn-text-resize-big:visited {
+  font-size: 4rem;
+  margin: 3rem 0;
+  color: #5643fa;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #5643fa;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text-resize-big:hover {
+  background-color: #5643fa;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text-resize-big:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.btn-text-resize-meddium:link, .btn-text-resize-meddium:visited {
+  background-color: #5643fa;
+  color: #fff;
+  font-size: 3rem;
+  margin: 2rem 0rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 2px 1.5rem;
+  transition: all .2s; }
+
+.btn-text-resize-meddium:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text-resize-meddium:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #5643fa;
@@ -303,7 +345,8 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #5643fa;
   padding: 3px;
-  transition: all .2s; }
+  transition: all .2s;
+  margin: .3rem; }
 
 .btn-text:hover {
   background-color: #5643fa;
@@ -335,17 +378,16 @@ body {
   transform: translateY(0); }
 
 .btn-choice:link, .btn-choice:visited {
+  font-size: 2rem;
+  background-color: #ff7730;
+  color: #fff;
   font-size: 1.6rem;
-  color: #ff7730;
   display: inline-block;
   text-decoration: none;
-  border: 2px solid #ff7730;
   padding: 3px 1rem;
   transition: all .2s; }
 
 .btn-choice:hover {
-  background-color: #ff7730;
-  color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -602,33 +644,14 @@ body {
   .showpicture:hover .showpicture__photo:not(:hover) {
     transform: scale(0.95); }
 
-.btn-text-resize:link, .btn-text-resize:visited {
-  font-size: 4rem;
-  margin: 3rem 0;
-  color: #5643fa;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #5643fa;
-  padding: 3px;
-  transition: all .2s; }
-
-.btn-text-resize:hover {
-  background-color: #5643fa;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
-
-.btn-text-resize:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
-
 .newsframe {
   width: 90%;
-  margin: 1rem auto;
+  margin: 4px auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 2rem 6rem 5rem 6rem;
+  font-size: 2rem;
   border-bottom: 2px solid #777; }
   @media only screen and (max-width: 56.25em) {
     .newsframe {
@@ -664,6 +687,24 @@ body {
     @media only screen and (max-width: 37.5em) {
       .newsframe__title {
         transform: skewX(0); } }
+  .newsframe__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .newsframe:hover .newsframe__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .newsframe:hover .newsframe__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%); }
   .newsframe__text {
     font-size: 2rem; }
     @media only screen and (max-width: 37.5em) {
@@ -699,7 +740,11 @@ body {
   background-color: rgba(247, 247, 247, 0.6);
   width: 90%;
   margin: 2rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .comment {
+      width: 100%; } }
   .comment__nocomment {
+    background-color: #eee;
     font-size: 3rem;
     margin: 4rem 0; }
   .comment__item {
@@ -868,7 +913,7 @@ footer {
       padding: 10rem 0; } }
 
 .section-book {
-  padding: 15rem 10rem;
+  padding: 10rem 10rem;
   background-color: #eee; }
   @media only screen and (max-width: 56.25em) {
     .section-book {
@@ -942,4 +987,8 @@ footer {
 
 .section-news {
   background-color: #eee;
-  position: relative; }
+  position: relative;
+  padding: 5rem 0 10rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-news {
+      padding: 3rem 0; } }

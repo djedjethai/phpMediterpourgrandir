@@ -108,7 +108,7 @@
 			<?php if($feedback['picture']) { ?>
 			<img src="/Web/pictures/<?=$feedback['picture']?>" alt="profile picture" class="story__img" />
 			<?php } else { ?>
-			<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="story__img" />
+			<img src="/Web/images/welcome/backprofile.jpg" alt="profile picture" class="story__img" />
 			<?php } ?>
 				<figcaption class="story__caption">
                             		<?= $feedback['pseudo'] ?>

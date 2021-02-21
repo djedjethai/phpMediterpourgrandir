@@ -2,10 +2,10 @@
 <section class="section-news">-->
 
 
-	<div class="rowgrid">
+<div class="rowgrid">
 		<!--<div class="col-3-of-4">-->
 	<br />		
-	<div>
+	<div class="u-wrap-goback">
 		<a href="/news/index-1.php" class="btn-text">&Larr;Retour aux news</a>
 	</div>
 		
@@ -14,8 +14,12 @@
 		<?php if($news['picture']) { ?>
 			<img src="/Web/pictures/<?=$news['picture']?>" alt="test" class="newsframe__img"/>
 		<?php } else { ?>
-			<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="newsframe__img" />
+			<img src="/Web/images/welcome/backprofile.jpg" alt="profile picture" class="newsframe__img" />
 		<?php } ?>	
+			<figcaption class="newsframe__caption">
+                            	<?= $news['pseudo'] ?>
+                        </figcaption>
+
 		</figure>
 	
 		<div class="newsframe__title">
@@ -27,7 +31,7 @@
 			<p><?= nl2br($news['contenu']) ?></p>
 		</div>
 		
-		<div>			
+<div><!--????? but works like it-->			
 		<?php if (isset($newsHaveComment) && $newsHaveComment === false) { ?>
 		<div class="justify-spacebetweenreverse u-margin-top">
 			<div>
@@ -41,12 +45,10 @@
 		<?php }	?>
 			</div>
 		</div>
-		</div>
-	</div>
 	
 	
 	<div class="comment">	
-		<?php if (empty($comments)) { ?>
+		<?php if (empty($comments) && ($news['auteurId'] !== $student->id())) { ?>
 		<p class="comment__nocomment">Aucun commentaire n'a encore été posté. Soyez le premier à en laisser un !</p>
 
 	
@@ -86,29 +88,18 @@
 			<div class="justify-right u-margin-top">
 				<a href="comment-update-<?= $comment['id'] ?>.php" class="btn-choice">Modifier</a>
 			</div>	
-		<? } ?>	
+			<? } ?>	
 
 		</div>
 
-		<div class="justify-right back-addcomment">
 		<?php } 
 		if ($newsHaveComment && ($lastComment === false || $lastComment->auteurComId() !== $student->id())) { ?>
-			<a href="commenter-<?= $news['id'] ?>.php"><button class="btn btn-sm btn-primary my-1" type="button">Ajouter un commentaire</button></a>
+
+			<div class="justify-right">
+				<a href="commenter-<?= $news['id'] ?>.php" class="btn-text-resize-meddium">Ajouter un commentaire</a>
+			</div>
 		<?php } ?>
-		</div>
 	</div>
-	</div>
-<!--</section>
-</main>-->
-
-	
-
-
-
-
-
-
-
-
+</div>
 
 

@@ -4,7 +4,7 @@
                     	<div class="booknopic__form">
                         	<form action="" class="form" method="post">
                             		<div class="u-margin-bottom-medium">
-               	<a href="/news/index-1.php" class="btn-text">Retour aux news&rarr;</a>
+               	<a href="/news/index-1.php" class="btn-text">&Larr;Retour aux news</a>
 					</div>
 
 					<div class="u-center-text u-margin-top-medium u-margin-bottom-medium">
