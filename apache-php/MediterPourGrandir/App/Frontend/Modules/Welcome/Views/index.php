@@ -21,7 +21,7 @@
     <div class="textwelcome">
     	<div class="paragraph">
     		<p><span class="u-margin-left-medium">Vivant</span> en Thaïlande depuis plus de 15 ans, j’ai eu la chance suivre des formations de méditation sérieuses. j’ai notamment obtenue la qualification d’Instructeur au sein de l’institut <a href=http://www.samathi.com/2016/institute-detail.php?actid=1>willpower institut”</a>. Méditer quotidiennement nous aide à prendre du recule par rapport aux évènements du quotidien et par rapport à nous-même, progressivement nos prises de conscience s’éclaircissent, d’où ‘’méditation de pleine conscience’’.</p>
-    		<p><span class="u-margin-left-medium">De</span> plus, affermissant la force de volonté, nous développons nos aptitudes à rectifier nos comportements, nos paroles, et finalement nos pensées, ainsi nous optimisons notre bien-être. Dans cet enseignement je n’invente rien, je ne fais que rapporter une technique de méditation traditionnelle résultante de l’expérience d’expert, en l’occurrence de <a href=https://en.wikipedia.org/wiki/Mun_Bhuridatta>Luang Pu Mun Bhuridatta</a>.</p>
+    		<p><span class="u-margin-left-medium">De</span> plus, affermissant la force de volonté, nous développons nos aptitudes à rectifier nos comportements, nos paroles, et finalement nos pensées, ainsi nous optimisons notre bien-être. Dans cet enseignement je n’invente rien, je ne fais que rapporter une technique de méditation traditionnelle résultante de l’expérience d’expert, en l’occurrence la technique de <a href=https://en.wikipedia.org/wiki/Mun_Bhuridatta>Luang Pu Mun Bhuridatta</a> enseignée par <a href=https://www.willpowerinstituteusa.com/th/biography-of-phra-dhammongkolyarn-luangphor-viriyang-sirintharo/>Luangphor Viriyang Sirintharo</a></p>
     	</div> 
     </div>
 </section>
@@ -108,7 +108,7 @@
 			<?php if($feedback['picture']) { ?>
 			<img src="/Web/pictures/<?=$feedback['picture']?>" alt="profile picture" class="story__img" />
 			<?php } else { ?>
-			<img src="/Web/images/welcome/backprofile.jpg" alt="profile picture" class="story__img" />
+			<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="story__img" />
 			<?php } ?>
 				<figcaption class="story__caption">
                             		<?= $feedback['pseudo'] ?>

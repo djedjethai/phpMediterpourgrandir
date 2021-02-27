@@ -14,7 +14,7 @@
 		<?php if($news['picture']) { ?>
 			<img src="/Web/pictures/<?=$news['picture']?>" alt="test" class="newsframe__img"/>
 		<?php } else { ?>
-			<img src="/Web/images/welcome/backprofile.jpg" alt="profile picture" class="newsframe__img" />
+			<img src="/Web/images/welcome/silhouetteComment.jpg" alt="profile picture" class="newsframe__img" />
 		<?php } ?>	
 			<figcaption class="newsframe__caption">
                             	<?= $news['pseudo'] ?>
@@ -72,6 +72,8 @@
 			<legend>
 			<?php if($comment['picture']) { ?>
 				<img style="max-width: 60px;" src="/Web/pictures/<?=$comment['picture']?>" alt="test" />
+			<?php } else { ?>
+				<img style="max-width: 60px;" src="/Web/images/welcome/silhouetteComment.jpg" alt="test" />
 			<?php } ?>
 				Posté par <strong><?= htmlspecialchars($comment['pseudo']) ?></strong> le <?= $comment['date']->format('d/m/Y à H\hi') ?>
 			<?php if ($user->isAuthenticated()) { ?> -

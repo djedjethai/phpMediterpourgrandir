@@ -15,8 +15,8 @@
             width: 80%;
             margin: 0 auto;
             li {
+		font-size: $default-font-size;
                 text-align: center;
-                font-size: 1.8rem;
                 padding: 1rem;
                 &:not(:last-child) {
                     border-bottom: 1px solid $color-grey-light-2;

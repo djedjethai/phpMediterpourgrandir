@@ -17,7 +17,7 @@ foreach ($listeNews as $news)
 	<?php if($news['picture']) { ?>
 		<img src="/Web/pictures/<?=$news['picture']?>" alt="test" class="newsframe__img"/>
 	<?php } else { ?>
-		<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="newsframe__img" />
+		<img src="/Web/images/welcome/silhouetteComment.jpg" alt="profile picture" class="newsframe__img" />
 	<?php } ?>
 			<figcaption class="newsframe__caption">
                             	<?= $news['pseudo'] ?>
@@ -39,7 +39,7 @@ foreach ($listeNews as $news)
 
 <div class="paginate">
 <a class="page-link move"
-      <?php 
+<?php
       	if($page > 1) {
       		$previousPage = $page - 1 ;
       		echo 'href=/news/index-'.$previousPage.'.php';
@@ -52,8 +52,8 @@ foreach ($listeNews as $news)
 	<span class="change-page"><?=$page?></span>
 </div>
 <a class="page-link move" desabled="true" 
-      	<?php 
-      	if($page < $totalPages) {
+<?php
+      	if($page < $totalPages && $totalPages > 1) {
       		$nextPage = $page + 1 ;
       		echo 'href=/news/index-'.$nextPage.'.php';
 		} ?>
