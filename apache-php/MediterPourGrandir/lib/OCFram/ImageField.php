@@ -28,7 +28,7 @@ class ImageField extends Field
       // $widget .= ' value="'.htmlspecialchars($this->value).'"';
     }
 
-    $widget .= '<p></p>';
+    $widget .= '<h5>Photo</h5>';
 
     // $widget .= '<label class="text-dark">'.$this->label.'</label><input type="text" class="form-control" name="'.$this->name.'" ';
 

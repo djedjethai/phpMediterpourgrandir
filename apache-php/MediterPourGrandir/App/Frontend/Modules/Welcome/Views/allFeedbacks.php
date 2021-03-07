@@ -2,10 +2,6 @@
 	<section class="section-stories">
 		
 		<div class="rowgrid">
-		<div class="u-wrap-goback">
-			<a href="/" class="btn-text">&Larr;Retour</a>
-		</div>
-
 		<?php
 		foreach ($listFeedbacks as $feedback)
 		{

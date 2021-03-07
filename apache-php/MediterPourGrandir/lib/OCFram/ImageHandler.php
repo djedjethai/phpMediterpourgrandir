@@ -51,8 +51,8 @@ class ImageHandler
 
 	public function uploadFile($image) 
 	{
-		//echo 'image destination';
-		// var_dump($this->destination);
+		echo 'image destination';
+		var_dump($this->destination);
 		$feedBack = move_uploaded_file($image["tmp_name"], $this->destination.'/'.$image["name"]);
 		// if true upload success
 		return $feedBack;

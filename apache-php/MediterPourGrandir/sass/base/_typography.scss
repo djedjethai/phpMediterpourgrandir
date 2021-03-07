@@ -85,14 +85,7 @@ body {
 .paragraph {
     font-size: $default-font-size;
     &:not(:last-child) {
-        margin-bottom: 2rem;
-    }
-}
-
-.paragraph p{
-    font-size: $default-font-size;
-    &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 }
 
