@@ -28,9 +28,4 @@
   </p>
 </form>
 
-<a href="/Account/modifyPassword.php">Modifier votre mot de passe</a>
-
-
-
-
-
+<a href="/Account/modifyPassword.php">Modifier votre mot de passe</a> 
