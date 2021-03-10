@@ -17,7 +17,7 @@ foreach ($listeNews as $news)
 	<?php if($news['picture']) { ?>
 		<img src="/Web/pictures/<?=$news['picture']?>" alt="test" class="newsframe__img"/>
 	<?php } else { ?>
-		<img src="/Web/images/welcome/silhouette.jpg" alt="profile picture" class="newsframe__img" />
+		<img src="/Web/images/welcome/silhouetteComment.jpg" alt="profile picture" class="newsframe__img" />
 	<?php } ?>
 			<figcaption class="newsframe__caption">
                             	<?= $news['pseudo'] ?>

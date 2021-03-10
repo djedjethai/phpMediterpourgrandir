@@ -1,3 +1,7 @@
+<section class="section-book">
+     	<div class="rowgrid">
+		<div class="booknopic">
+
 <h2>Modifier votre compte</h2>
 
 
@@ -29,3 +33,7 @@
 </form>
 
 <a href="/Account/modifyPassword.php">Modifier votre mot de passe</a> 
+
+		</div>	
+	</div>
+</section>
