@@ -18,6 +18,10 @@
     margin-bottom: 8rem !important;
 }
 
+.u-margin-top-small {
+    margin-top: 1.5rem !important;
+}
+
 .u-margin-top {
     margin-top: 4rem !important;
     @include respond(tab-port) {

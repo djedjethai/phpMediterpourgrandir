@@ -162,6 +162,11 @@ body {
   .paragraph p:not(:last-child) {
     margin-bottom: 2rem; }
 
+.paragraph input {
+  font-size: 2rem; }
+  .paragraph input:not(:last-child) {
+    margin-bottom: 2rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -176,6 +181,9 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
 
 .u-margin-top {
   margin-top: 4rem !important; }
@@ -400,6 +408,22 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn-choice-btn {
+  font-size: 2rem;
+  background-color: #5643fa;
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1px 1rem;
+  transition: all .2s; }
+  .btn-choice-btn:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
+  .btn-choice-btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -609,8 +633,7 @@ body {
   margin: 0 auto;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  border: #999 solid 1px;
-  padding: 6rem; }
+  border: #999 solid 1px; }
   @media only screen and (max-width: 75em) {
     .booknopic {
       width: 85%; } }
@@ -626,6 +649,31 @@ body {
         width: 90%; } }
     @media only screen and (max-width: 56.25em) {
       .booknopic__form {
+        width: 100%; } }
+
+.bookaccount {
+  width: 85%;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border: #999 solid 1px;
+  padding: 6rem; }
+  @media only screen and (max-width: 75em) {
+    .bookaccount {
+      width: 85%; } }
+  @media only screen and (max-width: 56.25em) {
+    .bookaccount {
+      width: 90%; } }
+  .bookaccount__form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 6rem; }
+    @media only screen and (max-width: 75em) {
+      .bookaccount__form {
+        width: 90%; } }
+    @media only screen and (max-width: 56.25em) {
+      .bookaccount__form {
         width: 100%; } }
 
 .textwelcome {
