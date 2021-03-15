@@ -1042,7 +1042,17 @@ footer {
 .section-news {
   background-color: #eee;
   position: relative;
-  padding: 5rem 0 10rem 0; }
+  padding: 5rem 0 10rem 0;
+  min-height: 50rem; }
   @media only screen and (max-width: 56.25em) {
     .section-news {
+      padding: 3rem 0; } }
+
+.section-account {
+  background-color: #eee;
+  position: relative;
+  padding: 5rem 0 10rem 0;
+  min-height: 50rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-account {
       padding: 3rem 0; } }

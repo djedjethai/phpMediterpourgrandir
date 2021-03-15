@@ -1,4 +1,5 @@
 
+<div class="rowgrid">
 <div class="table-responsive">
 	<?php if(!empty($messages)) {
 			
@@ -25,6 +26,7 @@
 
 	<?php } ?>
 </div>
-	
+</div>
+</section>	
 
 
