@@ -815,6 +815,35 @@ body {
     .back-addcomment {
       padding-bottom: 2rem !important; } }
 
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee; }
+
+th {
+  background: #333 !important;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem; }
+
+td, th {
+  background: #fff;
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 2rem; }
+
+@media only screen and (max-width: 56.25em) {
+  width: 100%; }
+
+@media only screen and (max-width: 37.5em) {
+  width: 100%; }
+
 .rowgrid {
   max-width: 114rem;
   margin: 0 auto;
