@@ -10,9 +10,7 @@
                                 		</h2>
                             		</div>
 					 <?= $form ?>
-					<button class="btn btn--blue">
-					<input type="submit" value=" Valider " />    	
-					</button>
+					<input class="btn-choice-btn" type="submit" value=" Valider " />    	
 				</form>
 			</div>
 		</div>

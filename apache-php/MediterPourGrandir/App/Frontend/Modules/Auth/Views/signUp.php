@@ -17,9 +17,7 @@
 					<p class="form__error">Invalide confirmation de mot de passe.</p>
 <?php } ?>
     					<?= $form ?>
-					<button class="btn btn--blue">
-					<input type="submit" value=" S'inscrir " />    	
-					</button>
+					<input type="submit" class="btn-choice-btn" value=" S'inscrir " />    	
 
 				</form>
 		    	</div>
