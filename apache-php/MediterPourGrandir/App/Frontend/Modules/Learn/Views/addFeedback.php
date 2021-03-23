@@ -50,17 +50,14 @@
 						</div>
 					</div>
  					<p>
-						<button class="btn btn--blue u-margin-bottom-small">
-						<input type="submit" value=" Ajouter " />    	
-						</button>
+
+					<input class="btn-choice-btn u-margin-bottom-small" type="submit" value=" Ajouter " />    	
 					</p>
 				</form>
 
 				<a href="http://mediterpourgrandir/learn/learn.php">
-					<button class="btn btn--blue u-margin-bottom-small">
-					<input type="submit" value=" Ne pas s'exprimer " />
-					</button>
 
+					<input class="btn-choice-btn u-margin-bottom-small" type="submit" value=" Ne pas s'exprimer " />    	
 				</a>
 			</div>
 		</div>
