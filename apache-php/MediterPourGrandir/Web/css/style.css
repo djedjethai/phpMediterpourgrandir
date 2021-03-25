@@ -815,6 +815,16 @@ body {
     .back-addcomment {
       padding-bottom: 2rem !important; } }
 
+.flash {
+  font-size: 2rem;
+  text-align: center;
+  color: #5643fa;
+  background-color: #fff;
+  border: 4mm ridge rgba(255, 119, 48, 0.6);
+  min-height: .1rem;
+  width: 70%;
+  margin: 0 auto; }
+
 table {
   width: 90%;
   border-collapse: collapse;
