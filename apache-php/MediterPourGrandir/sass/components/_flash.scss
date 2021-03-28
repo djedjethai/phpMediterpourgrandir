@@ -1,0 +1,10 @@
+.flash{
+	font-size: $default-font-size;
+	text-align: center;
+	color: $color-tertiary-dark;
+        background-color: $color-white;
+	border: 4mm ridge rgba($color-secondary-dark, .6);
+	min-height: .1rem;
+	width: 70%;
+	margin: 0 auto;	
+}

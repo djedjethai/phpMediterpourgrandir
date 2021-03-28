@@ -1,0 +1,32 @@
+table { 
+  width: 90%; 
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333!important; 
+  color: white; 
+  font-weight: bold; 
+  font-size: $default-font-size;
+}
+td, th {
+  background: $color-white;	
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: center; 
+  font-size: $default-font-size;
+}
+
+@include respond(tab-port) {
+        width: 100%;
+}
+    
+@include respond(phone) {
+        width: 100%
+}
+
