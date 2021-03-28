@@ -5,8 +5,13 @@
 </div>-->
 
 <section class="section-account">
+	
+	<?php if($user->hasFlash()) { ?>
+		<div class="flash">
+		<p><?=$user->getFlash(); ?></p>
+		</div>
+	<?php } ?>
 
-			<?php if ($user->hasFlash()) echo '<p style="text-align: center; color: green; border: 4mm ridge rgba(170, 50, 220, .6);">', $user->getFlash(), '</p>'; ?>
-			<div><?= $content ?></div>
+	<div><?= $content ?></div>
 
 <?php require "footer.php"; ?> 
