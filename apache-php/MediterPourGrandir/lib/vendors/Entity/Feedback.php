@@ -12,7 +12,7 @@ class Feedback extends Entity
             $pseudo,
             $contenu,
             $grade,
-            $datePost;
+	    $datePost;
             
   const CONTENU_INVALIDE = 1;
   
@@ -65,7 +65,7 @@ class Feedback extends Entity
   {
     $this->datePost = $datePost;
   }
-
+   
   public function id()
   {
     return $this->id;
@@ -99,5 +99,5 @@ class Feedback extends Entity
   public function datePost()
   {
     return $this->datePost;
-  }
+  } 
 }
