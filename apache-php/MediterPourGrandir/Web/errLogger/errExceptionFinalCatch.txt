@@ -59,3 +59,9 @@ Stack trace:
 #1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
 #2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
 #3 {main}
+Date: Thursday 1st of April 2021 09:53:19 PM
+Text: RuntimeException: L'action "indexFeedbacks" n'est pas définie sur ce module in /var/www/html/lib/OCFram/BackController.php:40
+Stack trace:
+#0 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#1 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#2 {main}

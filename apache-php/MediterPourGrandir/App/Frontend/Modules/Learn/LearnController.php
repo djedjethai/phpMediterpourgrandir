@@ -111,7 +111,7 @@ class LearnController extends BackController
   
   // this method works for adding or updating a feedback
   public function executeAddFeedback(HTTPRequest $request) 
-  {
+   {
     $user = $this->verifSession();
 
     $managerFeedback = $this->managers->getManagerOf('Feedback');
@@ -140,14 +140,14 @@ class LearnController extends BackController
       'grade' => intval($request->postData('grade'))
       ]);
     } 
-    elseif($haveFeedback)
+    else
     {
       $feedback = $managerFeedback->getOldFeedback($user->id());
     }
-    else 
-    { 
-      $feedback = new Feedback;
-    }
+    // else 
+    // { 
+    //   $feedback = new Feedback;
+    // }
 
     $formBuilder = new FeedbackFormBuilder($feedback, $user->csrf());
     $formBuilder->build();  

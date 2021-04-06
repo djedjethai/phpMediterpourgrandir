@@ -5,6 +5,7 @@ use \OCFram\BackController;
 use \OCFram\HTTPRequest;
 use \Entity\Feedback;
 use \FormBuilder\FeedbackFormBuilder;
+use \App\Frontend\Modules\Learn\FeedbackFormHandler; 
 
 class FeedbacksController extends BackController
 {
@@ -42,7 +43,7 @@ class FeedbacksController extends BackController
 
     $manager = $this->managers->getManagerOf('Feedback');
     
-    $this->page->addVar('listFeedbacks', $manager->getOldFeedback());
+    $this->page->addVar('listFeedbacks', $manager->getFeedback(0,50));
     // $this->page->addVar('nombreNews', $manager->count());
 
     $this->page->addVar('student', $user); 
@@ -54,7 +55,7 @@ class FeedbacksController extends BackController
 
     $this->processForm($request);
 
-    $this->page->addVar('title', 'Modification d\'une news');
+    $this->page->addVar('title', 'Modification d\'un feedback');
   }
 
  
@@ -62,60 +63,62 @@ class FeedbacksController extends BackController
   {
     $user = $this->verifSession();
 
-    // if ($request->method() == 'POST')
+    $managerFeedback = $this->managers->getManagerOf('Feedback');
+    // check if student have feedback (return a bool)
+    // $haveFeedback = $managerFeedback->haveFeedBack($user->id());
+    
+
     if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {
-      // in case of any update or news's insertion, we delete all index-x files
-      $this->cache->deleteIndex();
 
-      // if update of a news, delete the news's cache
-      if (file_exists($this->cache->dataFolder()."/news-".$request->getData('id')))
-      {   
-        $this->cache->delete('news-'.$request->getData('id'));
-      }   	    
-      
-      $news = new News([
-        //'auteur' => $request->postData('auteur'),
-        'titre' => $request->postData('titre'),
-        'contenu' => $request->postData('contenu')
-      ]);
 
-      if ($request->getExists('id'))
+      if (file_exists($this->cache->dataFolder()."/feedbacks/welcomePageAllFeed"))
       {
-        $news->setId($request->getData('id'));
-      }
-    }
+        $this->cache->delete('/feedbacks/welcomePageAllFeed');
+      }  
+
+      if (file_exists($this->cache->dataFolder()."/feedbacks/welcomePage"))
+      {
+        $this->cache->delete('/feedbacks/welcomePage');
+      }  
+
+
+      $feedback = new Feedback([
+      'studentId' => $user->id(),
+      'contenu' => $request->postData('contenu'),
+      'grade' => intval($request->postData('grade'))
+      ]);
+    } 
     else
     {
-      // L'identifiant de la news est transmis si on veut la modifier
-      if ($request->getExists('id'))
-      {
-        $news = $this->managers->getManagerOf('News')->getUnique($request->getData('id'));
-        
-      }
-      else
-      {
-        $news = new News;
-      }
+	    // no good ..... need to implement new req from feedback id
+	    $feedback = $managerFeedback->modereGetFeedback($request->getData('id'));
     }
+    // else 
+    // { 
+    //   $feedback = new Feedback;
+    // }
 
-    // var_dump($news);
-    $formBuilder = new NewsFormBuilder($news, $user->csrf());
-    // $formBuilder = new NewsFormBuilder($news);
-    $formBuilder->build();
+    $formBuilder = new FeedbackFormBuilder($feedback, $user->csrf());
+    $formBuilder->build();  
 
     $form = $formBuilder->form();
 
-    $newsFormHandler = new NewsFormHandler($form, $this->managers->getManagerOf('News'), $request);
+    $feedbackFormHandler = new FeedbackFormHandler($form, $managerFeedback, $request);
 
-    if ($newsFormHandler->process())
+    // see the story of the process($haveFeedback) which $haveFeedback is a bool.... 
+    // if ($feedbackFormHandler->process($haveFeedback))
+    if ($feedbackFormHandler->process(true))
     {
-      $this->app->user()->setFlash($news->isNew() ? 'La news a bien été ajoutée !' : 'La news a bien été modifiée !');
+      $this->app->user()->setFlash('Votre avis a bien été ajouté, merci !');
       
-      $this->app->httpResponse()->redirect('/admin/');
+      // $this->app->httpResponse()->redirect('/learn/learn.php');
     }
 
-    $this->page->addVar('student', $user); 
+    if ($feedback->grade()) { $this->page->addVar('grade', $feedback->grade());}
     $this->page->addVar('form', $form->createView());
+    $this->page->addVar('title', 'Moderez le feedback');
+    $this->page->addVar('student', $user);
+
   }
 }

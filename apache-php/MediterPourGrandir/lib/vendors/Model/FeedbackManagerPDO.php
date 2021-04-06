@@ -96,4 +96,16 @@ class FeedbackManagerPDO extends Manager
 
   }
 
+  public function modereGetFeedback($id)
+  {
+    $q = $this->dao->prepare('SELECT id, contenu, grade FROM feedback WHERE id = :id');
+    $q->bindValue(':id', $id);
+    $q->execute();
+
+    $q->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Entity\Feedback');
+    
+    return $q->fetch();
+
+  }
+
 }
