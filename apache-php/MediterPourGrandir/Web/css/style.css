@@ -978,11 +978,12 @@ footer {
 
 .section-about {
   background-color: #eee;
-  padding: 27rem 0 0 0;
-  margin-top: -20vh; }
+  padding: 5rem 0 10rem 0;
+  position: relative;
+  min-height: 100rem; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 3rem 0; } }
 
 .benefMedit {
   padding: 2rem; }

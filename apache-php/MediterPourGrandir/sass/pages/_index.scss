@@ -1,9 +1,19 @@
+// .section-about {
+//     background-color: $color-grey-light-2;
+//     padding: 20rem 0 0 0;
+//     margin-top: -20vh;
+//     @include respond(tab-port) {
+//         padding: 20rem 0;
+//     }
+// }
 .section-about {
     background-color: $color-grey-light-2;
-    padding: 27rem 0 0 0;
-    margin-top: -20vh;
+    padding: 5rem 0 10rem 0;
+    position: relative;
+    min-height: 100rem; // useless...
+
     @include respond(tab-port) {
-        padding: 20rem 0;
+        padding: 3rem 0;
     }
 }
 

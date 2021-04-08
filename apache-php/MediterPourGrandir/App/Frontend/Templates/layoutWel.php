@@ -1,5 +1,7 @@
 <?php require "headNav.php"; ?> 
+<main>	
 	
+<section class="section-about">
 	<?php if($user->hasFlash()) { ?>
 		<div class="flash">
 		<p><?=$user->getFlash(); ?></p>
