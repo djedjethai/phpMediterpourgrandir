@@ -46,7 +46,7 @@ class NewsController extends BackController
     
     $this->app->user()->setFlash('Le commentaire a bien été supprimé !');
 
-    var_dump($request);
+    // var_dump($request);
 
     $this->app->httpResponse()->redirect('/news/index-1.php');
   }

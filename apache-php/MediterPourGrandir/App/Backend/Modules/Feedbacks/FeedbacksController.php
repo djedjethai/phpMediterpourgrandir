@@ -19,19 +19,21 @@ class FeedbacksController extends BackController
   {	  
     $user = $this->verifSession();
 
-    $newsId = $request->getData('id');
+    $feedbackId = $request->getData('id');
 
-    $this->managers->getManagerOf('News')->delete($newsId);
-    $this->managers->getManagerOf('Comments')->deleteFromNews($newsId);
+    $this->managers->getManagerOf('Feedback')->delete($feedbackId);
 
     // delete all caches
-    $this->cache->deleteIndex();
-    if (file_exists($this->cache->dataFolder()."/news-".$request->getData('id')))
-    {   
-        $this->cache->delete('news-'.$request->getData('id'));
-    } 
-
-    $this->app->user()->setFlash('La news a bien été supprimée !');
+    if (file_exists($this->cache->dataFolder()."/feedbacks/welcomePageAllFeed"))
+    {
+      	$this->cache->delete('/feedbacks/welcomePageAllFeed');
+    }  
+    if (file_exists($this->cache->dataFolder()."/feedbacks/welcomePage"))
+    {
+     	$this->cache->delete('/feedbacks/welcomePage');
+    }  
+    
+    $this->app->user()->setFlash('Le feedback a bien été supprimée !');
 
     $this->app->httpResponse()->redirect('.');
   }

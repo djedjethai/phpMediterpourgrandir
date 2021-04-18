@@ -107,5 +107,9 @@ class FeedbackManagerPDO extends Manager
     return $q->fetch();
 
   }
-
+  
+  public function delete($id)
+  {
+    $this->dao->exec('DELETE FROM feedback WHERE id = '.(int) $id);
+  }
 }
