@@ -10,10 +10,8 @@
                             		</div>
 		  	    		
 			       		<?= $form ?>
-					<button class="btn btn--blue">
-					<input type="submit" value=" Envoyer " />    	
-					</button>
 
+					<input class="btn-choice-btn u-margin-bottom-small" type="submit" value=" Envoyer " />    	
 				</form>
 		    	</div>
 		</div>

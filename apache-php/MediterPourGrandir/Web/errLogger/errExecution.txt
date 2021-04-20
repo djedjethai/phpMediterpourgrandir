@@ -24,3 +24,11 @@ Date: Thursday 1st of April 2021 09:45:03 PM
 Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>81</strong>
 Date: Sunday 4th of April 2021 09:48:49 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: haveFeedback<br /><strong>/var/www/html/App/Frontend/Modules/Learn/LearnController.php</strong> at the line <strong>159</strong>
+Date: Tuesday 20th of April 2021 09:54:06 PM
+Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>81</strong>
+Date: Tuesday 20th of April 2021 10:11:21 PM
+Text: <strong>Warning</strong> : [0] unlink(/var/www/html/lib/OCFram/../../tmp/cache/datas/index-1): Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>30</strong>
+Date: Tuesday 20th of April 2021 10:13:27 PM
+Text: <strong>Warning</strong> : [0] unlink(/var/www/html/lib/OCFram/../../tmp/cache/datas/index-1): Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>30</strong>
+Date: Tuesday 20th of April 2021 10:14:34 PM
+Text: <strong>Warning</strong> : [0] unlink(/var/www/html/lib/OCFram/../../tmp/cache/datas/index-1): Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>30</strong>
