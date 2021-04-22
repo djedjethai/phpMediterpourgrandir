@@ -1,21 +1,21 @@
-// .section-about {
-//     background-color: $color-grey-light-2;
-//     padding: 20rem 0 0 0;
-//     margin-top: -20vh;
-//     @include respond(tab-port) {
-//         padding: 20rem 0;
-//     }
-// }
 .section-about {
     background-color: $color-grey-light-2;
-    padding: 5rem 0 10rem 0;
-    position: relative;
-    min-height: 100rem; // useless...
-
+    padding: 20rem 0 0 0;
+    margin-top: -20vh;
     @include respond(tab-port) {
-        padding: 3rem 0;
+        padding: 20rem 0;
     }
 }
+// .section-about {
+//     background-color: $color-grey-light-2;
+//     padding: 5rem 0 10rem 0;
+//     position: relative;
+//     min-height: 100rem; // useless...
+// 
+//     @include respond(tab-port) {
+//         padding: 3rem 0;
+//     }
+// }
 
 .benefMedit {
 	// background-color: "green";
@@ -84,5 +84,18 @@
         @include respond(tab-port) {
             padding: 10rem 0;
         }
+}
+
+.section-allfeedbacks {
+    // position: relative; as the bg-video is absolute and should appear behind this section
+    background-color: $color-grey-light;
+    position: relative;
+    padding: 5rem 0;
+    min-height: 75rem;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
 }
 

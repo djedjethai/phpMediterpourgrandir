@@ -1,0 +1,14 @@
+.section-feedback {
+    background-color: $color-grey-light-2;
+    padding: 5rem 0 10rem 0;
+    position: relative;
+    min-height: 65rem;
+
+    @include respond(tab-port) {
+        padding: 3rem 0;
+    }
+}
+
+.admin-navigation {
+    background-color: $color-grey-light-2;
+}

@@ -978,12 +978,11 @@ footer {
 
 .section-about {
   background-color: #eee;
-  padding: 5rem 0 10rem 0;
-  position: relative;
-  min-height: 100rem; }
+  padding: 20rem 0 0 0;
+  margin-top: -20vh; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 3rem 0; } }
+      padding: 20rem 0; } }
 
 .benefMedit {
   padding: 2rem; }
@@ -1035,6 +1034,15 @@ footer {
   padding: 15rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-formation {
+      padding: 10rem 0; } }
+
+.section-allfeedbacks {
+  background-color: #dedace;
+  position: relative;
+  padding: 5rem 0;
+  min-height: 75rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-allfeedbacks {
       padding: 10rem 0; } }
 
 .section-report {
@@ -1096,3 +1104,15 @@ footer {
   @media only screen and (max-width: 56.25em) {
     .section-account {
       padding: 3rem 0; } }
+
+.section-feedback {
+  background-color: #eee;
+  padding: 5rem 0 10rem 0;
+  position: relative;
+  min-height: 65rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-feedback {
+      padding: 3rem 0; } }
+
+.admin-navigation {
+  background-color: #eee; }

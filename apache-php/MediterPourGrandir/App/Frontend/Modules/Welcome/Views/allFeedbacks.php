@@ -1,5 +1,5 @@
 <main>
-	<section class="section-stories">
+	<section class="section-allfeedbacks">
 		
 		<div class="rowgrid">
 		<div class="u-wrap-goback">
