@@ -9,11 +9,13 @@ class FeedbackFormHandler extends FormHandler
   {
     if($this->request->method() == 'POST' && $this->form->isValid())
     {
+
       if($haveFeedback !== true) {
         $this->manager->add($this->form->entity());
       }
       else 
       {
+	var_dump('grrrr');
         $this->manager->update($this->form->entity());
       }
 

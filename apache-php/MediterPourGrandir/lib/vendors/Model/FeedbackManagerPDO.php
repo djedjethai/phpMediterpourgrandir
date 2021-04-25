@@ -22,6 +22,7 @@ class FeedbackManagerPDO extends Manager
   {
       // A VOIR, SI POSSIBLE DE FAIRE LES 3 MANIP EN UNE SEULE REQ......??????????
      //we add the new news
+	var_dump($feedback->studentId());
       $requete = $this->dao->prepare('UPDATE feedback SET contenu = :contenu, grade = :grade,  datePost = NOW() WHERE studentId = :studentId');
       
       $requete->bindValue(':studentId', $feedback->studentId());

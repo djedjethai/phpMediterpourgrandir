@@ -73,7 +73,7 @@ class FeedbacksController extends BackController
     if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {
 
-
+	var_dump('alllors');
       if (file_exists($this->cache->dataFolder()."/feedbacks/welcomePageAllFeed"))
       {
         $this->cache->delete('/feedbacks/welcomePageAllFeed');
@@ -114,7 +114,7 @@ class FeedbacksController extends BackController
     {
       $this->app->user()->setFlash('Votre avis a bien été ajouté, merci !');
       
-      // $this->app->httpResponse()->redirect('/learn/learn.php');
+      //$this->app->httpResponse()->redirect('/learn/learn.php');
     }
 
     if ($feedback->grade()) { $this->page->addVar('grade', $feedback->grade());}
