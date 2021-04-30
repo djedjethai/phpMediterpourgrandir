@@ -15,7 +15,6 @@ class FeedbackFormHandler extends FormHandler
       }
       else 
       {
-	var_dump('grrrr');
         $this->manager->update($this->form->entity());
       }
 

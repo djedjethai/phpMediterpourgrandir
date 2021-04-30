@@ -144,10 +144,12 @@ class LearnController extends BackController
     {
       $feedback = $managerFeedback->getOldFeedback($user->id());
     }
-    // else 
-    // { 
-    //   $feedback = new Feedback;
-    // }
+
+    // if still no feedback, create one
+    if(!$feedback)
+    { 
+      $feedback = new Feedback;
+    }
 
     $formBuilder = new FeedbackFormBuilder($feedback, $user->csrf());
     $formBuilder->build();  
