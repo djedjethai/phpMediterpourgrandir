@@ -1,7 +1,6 @@
 <?php require "headNav.php"; ?>
-      
-      <div id="content-wrap">
-	<section id="main">
+<main>      
+	<section class="section-learn">
 
 	<?php if($user->hasFlash()) { ?>
 		<div class="flash">
@@ -20,7 +19,5 @@
 
         <?= $content ?>
 	
-	</section>
-      </div>
-    
+ </main>  
 <?php require "footer.php"; ?> 

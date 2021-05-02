@@ -1,7 +1,5 @@
+<div class="rowgrid">
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-10">
 
 			<?php 
 			if($interLesson && isset($interLesson))
@@ -9,11 +7,10 @@
 				<h4 class="text-center text-success m-5">N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
 			<?php } ?>
 
-			<h3 class="text-center m-3">Titre: <?= $lesson->title() ?></h3>
+	<h3 class="text-center m-3">Titre: <?= $lesson->title() ?></h3>
 
-			<div class="text-center">
-			 	<video class="shadow-lg m-3" src="/video/<?= $lesson->videoLink() ?>" controls height="600" allowfullscreen=""></video>
-			<div>
+	<div class="text-center">
+		<div>
 
 			<h4 class="text-left">Lesson:</h4> 
 			<p class="text-left"><?= nl2br($lesson->lesson()) ?><p>

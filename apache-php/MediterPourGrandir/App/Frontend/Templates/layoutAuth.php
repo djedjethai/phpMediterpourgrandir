@@ -1,4 +1,6 @@
 <?php require "headNav.php"; ?> 
+<main>
+<section class="section-book">
 
 	<?php if($user->hasFlash()) { ?>
 		<div class="flash">
@@ -7,7 +9,8 @@
 	<?php } ?>
 
 	<?= $content ?>
-
+</section>
+</main>
 
 <?php require "footer.php"; ?> 
 
