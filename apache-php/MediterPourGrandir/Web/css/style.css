@@ -1125,3 +1125,23 @@ footer {
   @media only screen and (max-width: 56.25em) {
     .section-learn {
       padding: 3rem 0; } }
+
+.learn-lesson {
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 2rem 6rem;
+  font-size: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .learn-lesson {
+      width: 100%;
+      padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .learn-lesson {
+      width: 100%;
+      padding: 2rem; } }
+
+h1.\'\'title\'\' {
+  text-align: center; }
