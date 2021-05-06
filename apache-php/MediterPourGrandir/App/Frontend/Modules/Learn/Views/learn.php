@@ -1,22 +1,20 @@
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-10">
-
+<div class="section-learn">
+	<div class="rowgrid">
+		<div class="learn">
 			<?php 
 			if($interLesson && isset($interLesson))
 			{ ?>
-				<h4 class="text-center text-success m-5">N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+			<div class="learn_recall">
+				<h4>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+			</div>
 			<?php } ?>
+			
+			<div class="learn_title">
+				<p><?= $lesson->title() ?></p>
+			</div>
 
-			<h3 class="text-center m-3">Titre: <?= $lesson->title() ?></h3>
-
-			<div class="text-center">
-			 	<video class="shadow-lg m-3" src="/video/<?= $lesson->videoLink() ?>" controls height="600" allowfullscreen=""></video>
-			<div>
-
-			<h4 class="text-left">Lesson:</h4> 
-			<p class="text-left"><?= nl2br($lesson->lesson()) ?><p>
+			<p><?= nl2br($lesson->lesson()) ?><p>
 
 			<!--
 			a faire disparaitre si moins de 4 jours-->	
@@ -25,9 +23,10 @@
 			{ ?>
 				<a href="/learn/lessonFinish.php"><button class="btn btn-primary text-center m-3" type="submit">Chapitre termine</button></a>
 			<?php } else { ?>
-				<h4 class="text-center text-success m-5">N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+			<div class="learn_recall">
+				<h4>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+			</div>
 			<?php } ?>
-
 		</div>
 	</div>
 </div>
