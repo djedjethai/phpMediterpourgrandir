@@ -6,7 +6,7 @@
 			if($interLesson && isset($interLesson))
 			{ ?>
 			<div class="learn_recall">
-				<h4>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
 			</div>
 			<?php } ?>
 			
@@ -21,10 +21,12 @@
 			<?php 
 			if($interLesson === false && isset($interLesson))
 			{ ?>
-				<a href="/learn/lessonFinish.php"><button class="btn btn-primary text-center m-3" type="submit">Chapitre termine</button></a>
+				<div class="justify-center">
+				<a href="/learn/lessonFinish.php" class="btn-text-resize-meddium">Chapitre termine</a>
+				</div>
 			<?php } else { ?>
 			<div class="learn_recall">
-				<h4>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
 			</div>
 			<?php } ?>
 		</div>

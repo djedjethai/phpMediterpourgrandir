@@ -35,5 +35,13 @@
 		border: 2px solid $color-grey-dark;
 	}
 
-	&_recall{}
+	&_recall{
+		font-size: 3rem;
+		color: green;
+		font-weight: bold;
+	}
+}
+
+.subTitle {
+	background-color:yellow;
 }
