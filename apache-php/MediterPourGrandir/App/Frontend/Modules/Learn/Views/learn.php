@@ -1,14 +1,19 @@
 <div class="rowgrid">
-
-	<div class="learn-lesson">	
+	<div class="section-learn">	
+		<div class="learn">
 			<?php 
 			if($interLesson && isset($interLesson))
 			{ ?>
-				<h4>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+			<div class="learn_recall">
+				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
+			</div>
 			<?php } ?>
+			
+			<div class="learn_title">
+				<p><?= $lesson->title() ?></p>
+			</div>
 
 
-		<div>
 			<p><?= nl2br($lesson->lesson()) ?><p>
 
 			<!--
@@ -16,11 +21,14 @@
 			<?php 
 			if($interLesson === false && isset($interLesson))
 			{ ?>
-				<a href="/learn/lessonFinish.php"><button class="btn btn-primary text-center m-3" type="submit">Chapitre termine</button></a>
+				<div class="justify-center">
+				<a href="/learn/lessonFinish.php" class="btn-text-resize-meddium">Chapitre termine</a>
+				</div>
 			<?php } else { ?>
-				<h4>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</h4>
+			<div class="learn_recall">
+				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
+			</div>
 			<?php } ?>
-
 		</div>
 	</div>
 </div>
