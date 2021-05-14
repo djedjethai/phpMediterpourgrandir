@@ -23,6 +23,13 @@ class LearnManagerPDO extends Manager
 	    return $bool;
 
 	}*/
+	public function getListOfTittle()
+	{
+		$sql = 'SELECT id, title FROM lecon ORDER BY id ASC';
+		$request = $this->dao->query($sql);
+		return $request->fetchAll();
+	}
+
 
 	public function getIntervalLesson($student)
 	{

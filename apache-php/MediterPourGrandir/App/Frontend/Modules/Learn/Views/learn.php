@@ -1,5 +1,6 @@
 <div class="rowgrid">
 	<div class="section-learn">	
+		<button id="thelist" onClick="dropdownlist()">Liste des lecons</button>
 		<div class="learn">
 			<?php 
 			if($interLesson && isset($interLesson))
@@ -34,5 +35,15 @@
 </div>
 
 
+<script type="text/javascript">
+
+	
+	function dropdownlist(){
+		console.log('works')
+	
+	}
+
+
+</script>
 
 

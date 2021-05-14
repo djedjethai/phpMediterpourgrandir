@@ -1,0 +1,11 @@
+
+Date: Thursday 13th of May 2021 11:15:32 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: var_dump<br /><strong>/var/www/html/App/Frontend/Modules/Learn/LearnController.php</strong> at the line <strong>38</strong>
+Date: Thursday 13th of May 2021 11:16:16 PM
+Text: <strong>Warning</strong> : [0] Use of undefined constant listTite - assumed 'listTite' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/Learn/LearnController.php</strong> at the line <strong>38</strong>
+Date: Thursday 13th of May 2021 11:16:34 PM
+Text: <strong>Warning</strong> : [0] Use of undefined constant listTitle - assumed 'listTitle' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/Learn/LearnController.php</strong> at the line <strong>38</strong>
+Date: Thursday 13th of May 2021 11:17:18 PM
+Text: <strong>Warning</strong> : [0] Use of undefined constant listTitle - assumed 'listTitle' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/Learn/LearnController.php</strong> at the line <strong>38</strong>
+Date: Thursday 13th of May 2021 11:17:19 PM
+Text: <strong>Warning</strong> : [0] Use of undefined constant listTitle - assumed 'listTitle' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/Learn/LearnController.php</strong> at the line <strong>38</strong>

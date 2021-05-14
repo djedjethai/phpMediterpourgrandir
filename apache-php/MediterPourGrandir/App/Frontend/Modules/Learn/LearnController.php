@@ -26,15 +26,18 @@ class LearnController extends BackController
     if($interLesson === false || ($student->lesson() == 1))
     {   
       $lesson = $manager->getLesson($student->lesson());
+      $listTitle = $manager->getListOfTittle();
     }
     else
     {
       $lastLesson = $student->lesson() - 1 ;
       $lesson = $manager->getLesson($lastLesson);
+      $listTitle = $manager->getListOfTittle();
     }
 
+    // var_dump($listTitle);
     // var_dump($lesson);
-
+    $this->page->addVar('listTite', $listTitle);
     $this->page->addVar('interLesson', $interLesson);
     $this->page->addVar('lesson', $lesson);
     $this->page->addVar('student', $student);
