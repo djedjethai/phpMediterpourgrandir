@@ -37,7 +37,7 @@ class LearnController extends BackController
 
     // var_dump($listTitle);
     // var_dump($lesson);
-    $this->page->addVar('listTite', $listTitle);
+    $this->page->addVar('listTitle', $listTitle);
     $this->page->addVar('interLesson', $interLesson);
     $this->page->addVar('lesson', $lesson);
     $this->page->addVar('student', $student);
