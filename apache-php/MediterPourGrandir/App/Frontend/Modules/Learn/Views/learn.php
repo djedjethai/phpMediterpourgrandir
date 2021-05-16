@@ -1,7 +1,7 @@
 <div class="rowgrid">
 	<div class="section-learn">	
 		<button id="thelist">Liste des lecons</button>
-<?php echo '<pre>'; print_r($student); ?>	
+<?php // echo '<pre>'; print_r($student); ?>	
 		<div id="containerList"></div>
 		<div class="learn">
 			<?php 
@@ -54,10 +54,8 @@
 
 			const ul = document.createElement('ul')
 			ul.setAttribute("id", "theul")
-			console.log(studentLesson)
 			for(let lesson of list){
-				console.log(lesson.id)
-				if(lesson.id < studentLesson){
+				if(parseInt(lesson.id, 10) <= parseInt(studentLesson, 10)){
 					let li = document.createElement('li')
 					const a = document.createElement('a')
 					var linkText = document.createTextNode(`${lesson.id} - ${lesson.title}`)	
@@ -70,7 +68,7 @@
 				}
 				else {
 					let li = document.createElement('li')
-					li.innerHTML = lesson.title
+					li.innerHTML = `${lesson.id} - ${lesson.title}`
 					ul.appendChild(li)
 				}	
 			}
