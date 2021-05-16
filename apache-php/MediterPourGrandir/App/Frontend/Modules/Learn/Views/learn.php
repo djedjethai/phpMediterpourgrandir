@@ -1,7 +1,7 @@
 <div class="rowgrid">
 	<div class="section-learn">	
 		<button id="thelist">Liste des lecons</button>
-<?php // echo '<pre>'; print_r($listTitle); ?>	
+<?php echo '<pre>'; print_r($student); ?>	
 		<div id="containerList"></div>
 		<div class="learn">
 			<?php 
@@ -38,10 +38,11 @@
 
 <script type="text/javascript">
 
+	document.getElementById("thelist").addEventListener("click", dropdownlist)
 
+	var studentLesson = <?php echo(json_encode($student->lesson())); ?>;
 	var list = <?php echo(json_encode($listTitle)); ?>;
 	const cont = document.getElementById("containerList")
-	const ul = document.createElement('ul')
 
 	let show = false
 
@@ -50,22 +51,38 @@
 		show = !show
 
 		if(show){
+
+			const ul = document.createElement('ul')
+			ul.setAttribute("id", "theul")
+			console.log(studentLesson)
 			for(let lesson of list){
-					//console.log(lesson.title)
+				console.log(lesson.id)
+				if(lesson.id < studentLesson){
 					let li = document.createElement('li')
-					
+					const a = document.createElement('a')
+					var linkText = document.createTextNode(`${lesson.id} - ${lesson.title}`)	
+					a.appendChild(linkText)
+					a.title = `${lesson.title}`
+					a.href = `learn.php`
+
+					li.appendChild(a)
+					ul.appendChild(li)
+				}
+				else {
+					let li = document.createElement('li')
 					li.innerHTML = lesson.title
 					ul.appendChild(li)
-					
+				}	
 			}
 			cont.appendChild(ul)
 		}
 		else {
-			cont.removeChild(ul)
+			const ul = document.getElementById('theul')
+			// cont.removeChild(ul)
+			ul.remove()
 		}	
 	
 	}
-	document.getElementById("thelist").addEventListener("click", dropdownlist)
 
 </script>
 
