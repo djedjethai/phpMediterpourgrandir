@@ -429,6 +429,22 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0); }
 
+.btn-choice-btnlight {
+  font-size: 2rem;
+  background-color: #2998ff;
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1px 1px;
+  transition: all .2s; }
+  .btn-choice-btnlight:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
+  .btn-choice-btnlight:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -859,6 +875,27 @@ td, th {
 @media only screen and (max-width: 37.5em) {
   width: 100%; }
 
+#list {
+  background-color: #f7f7f7;
+  margin: 0 2rem 0 0; }
+
+.list_title {
+  background-color: #2998ff;
+  min-height: 4rem;
+  padding: 1rem 1rem;
+  color: white; }
+
+.list_title h3 {
+  font-size: 2rem; }
+
+.list_lesson {
+  min-height: 3rem;
+  padding: 1rem 1rem; }
+
+.list_lesson p,
+.list_lesson p a {
+  font-size: 1.2rem; }
+
 .rowgrid {
   max-width: 114rem;
   margin: 0 auto;
@@ -1124,12 +1161,21 @@ footer {
 
 .section-learn {
   background-color: #eee;
-  position: relative;
   padding: 2rem 0;
   min-height: 50rem; }
   @media only screen and (max-width: 56.25em) {
     .section-learn {
       padding: 3rem 0; } }
+  .section-learn_container {
+    display: flex; }
+    @media only screen and (max-width: 56.25em) {
+      .section-learn_container {
+        display: block; } }
+
+@media only screen and (max-width: 56.25em) {
+  #containerList {
+    width: 100%;
+    margin: 2rem auto; } }
 
 .learn {
   width: 90%;
@@ -1147,7 +1193,7 @@ footer {
     .learn {
       width: 100%; } }
   .learn_title {
-    width: 70%;
+    max-width: 70%;
     margin: 8rem auto;
     padding: 2rem;
     font-size: 3rem;

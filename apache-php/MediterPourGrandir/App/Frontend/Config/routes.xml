@@ -15,6 +15,7 @@
   <!--<route url="/auth/password.php" module="Auth" action="password" />-->
 
   <route url="/learn/learn.php" module="Learn" action="learn" />
+  <route url="/learn/learn-([0-9]+)\.php" module="Learn" action="pastLesson" vars="id" />
   <route url="/learn/lessonFinish.php" module="Learn" action="lessonFinish" />
   <route url="/learn/deconnexion.php" module="Learn" action="deconnexion" />
   <route url="/learn/addFeedback.php" module="Learn" action="addFeedback" />

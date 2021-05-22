@@ -1,0 +1,15 @@
+
+Date: Saturday 22nd of May 2021 09:43:32 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Frontend\Modules\Learn\LearnController))
+#1 /var/www/html/App/Frontend/FrontendApplication.php(20): OCFram\HTTPResponse->send(Object(App\Frontend\Modules\Learn\LearnController))
+#2 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#3 {main}
+Date: Saturday 22nd of May 2021 09:46:29 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Frontend\Modules\Learn\LearnController))
+#1 /var/www/html/App/Frontend/FrontendApplication.php(20): OCFram\HTTPResponse->send(Object(App\Frontend\Modules\Learn\LearnController))
+#2 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#3 {main}

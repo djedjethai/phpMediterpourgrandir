@@ -218,3 +218,23 @@
     }
 }
 
+.btn-choice-btnlight{
+	font-size: 2rem;
+	background-color: $color-tertiary-light;
+        color: $color-white;
+        font-size: $default-font-size;
+        display: inline-block;
+        text-decoration: none;
+        // border: 2px solid $color-secondary-dark;
+        padding: 1px 1px;
+        transition: all .2s;
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+

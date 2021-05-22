@@ -43,6 +43,39 @@ class LearnController extends BackController
     $this->page->addVar('student', $student);
   }
 
+  public function executePastLesson(HTTPRequest $request)
+  {
+    //we verify the session
+    $student = $this->verifSession();
+
+    $lessonId = $request->getData('id');
+// var_dump($lessonId);
+    $manager = $this->managers->getManagerOf('Learn');
+
+    $interLesson = $manager->getIntervalLesson($student);
+
+// var_dump($student->lesson());
+    if($lessonId <= $student->lesson())
+    {   
+      $lesson = $manager->getLesson($lessonId);
+      $listTitle = $manager->getListOfTittle();
+    }
+    else
+    {
+      $lastLesson = $student->lesson() - 1 ;
+      $lesson = $manager->getLesson($lastLesson);
+      $listTitle = $manager->getListOfTittle();
+    }
+
+    // var_dump($listTitle);
+    // var_dump($lesson);
+    $this->page->addVar('listTitle', $listTitle);
+    $this->page->addVar('interLesson', $interLesson);
+    $this->page->addVar('lesson', $lesson);
+    $this->page->addVar('student', $student);
+
+  }
+
   public function updateStudentStatus($student, $manager, $updatedLesson) 
   {
     $student->setLesson($updatedLesson);
