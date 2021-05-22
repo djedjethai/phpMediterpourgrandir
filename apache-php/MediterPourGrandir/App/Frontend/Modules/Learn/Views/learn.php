@@ -52,36 +52,101 @@
 
 		if(show){
 
-			const ul = document.createElement('ul')
-			ul.setAttribute("id", "theul")
+			const listElm = document.createElement('div')
+			listElm.setAttribute("id", "list")
 			for(let lesson of list){
+
+
+				switch(parseInt(lesson.id,10)){
+					case 1:
+						let listElmTitle = document.createElement('div')
+						listElmTitle.setAttribute("class", "list_title")
+						
+						let h = document.createElement('h3')
+						h.innerHTML = `Commencer à méditer`
+			
+						listElmTitle.appendChild(h)
+						listElm.appendChild(listElmTitle)
+						break
+					case 12:
+						let listElmTitle1 = document.createElement('div')
+						listElmTitle1.setAttribute("class", "list_title")
+						
+						let h1 = document.createElement('h3')
+						h1.innerHTML = `Les obstacles à la méditation`
+			
+						listElmTitle1.appendChild(h1)
+						listElm.appendChild(listElmTitle1)
+						break
+					case 18:
+						let listElmTitle2 = document.createElement('div')
+						listElmTitle2.setAttribute("class", "list_title")
+						
+						let h2 = document.createElement('h3')
+						h2.innerHTML = `La méditation`
+			
+						listElmTitle2.appendChild(h2)
+						listElm.appendChild(listElmTitle2)
+						break
+					case 38:
+						let listElmTitle3 = document.createElement('div')
+						listElmTitle3.setAttribute("class", "list_title")
+						
+						let h3 = document.createElement('h3')
+						h3.innerHTML = `Les chan`
+			
+						listElmTitle3.appendChild(h3)
+						listElm.appendChild(listElmTitle3)
+						break
+					case 45:
+						let listElmTitle4 = document.createElement('div')
+						listElmTitle4.setAttribute("class", "list_title")
+						
+						let h4 = document.createElement('h3')
+						h4.innerHTML = `Commencer à méditer`
+			
+						listElmTitle4.appendChild(h4)
+						listElm.appendChild(listElmTitle4)
+						break
+				}
+
+					// console.log(lesson.id)
+				
 				if(parseInt(lesson.id, 10) <= parseInt(studentLesson, 10)){
-					let li = document.createElement('li')
+
+					let listElmLesson = document.createElement('div')
+					listElmLesson.setAttribute("class", "list_lesson")
+
+					const p = document.createElement('p')
 					const a = document.createElement('a')
 					var linkText = document.createTextNode(`${lesson.id} - ${lesson.title}`)	
 					a.appendChild(linkText)
 					a.title = `${lesson.title}`
 					a.href = `learn.php`
 
-					li.appendChild(a)
-					ul.appendChild(li)
+					p.appendChild(a)
+					listElmLesson.appendChild(p)
+					listElm.appendChild(listElmLesson)
 				}
 				else {
-					let li = document.createElement('li')
-					li.innerHTML = `${lesson.id} - ${lesson.title}`
-					ul.appendChild(li)
+					let listElmLesson = document.createElement('div')
+					listElmLesson.setAttribute("class", "list_lesson")
+					
+					let p = document.createElement('p')
+					p.innerHTML = `${lesson.id} - ${lesson.title}`
+					
+					listElmLesson.appendChild(p)
+					listElm.appendChild(listElmLesson)
 				}	
 			}
-			cont.appendChild(ul)
+			cont.appendChild(listElm)
 		}
 		else {
-			const ul = document.getElementById('theul')
+			const listElm = document.getElementById('list')
 			// cont.removeChild(ul)
-			ul.remove()
+			listElm.remove()
 		}	
-	
 	}
-
 </script>
 
 
