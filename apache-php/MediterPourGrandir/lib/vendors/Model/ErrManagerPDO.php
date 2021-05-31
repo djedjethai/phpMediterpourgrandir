@@ -2,8 +2,6 @@
 namespace Model;
 
 use \OCFram\Manager;
-//use \OCFram\Lesson;
-//use \OCFram\Student;
 
 class ErrManagerPDO extends Manager
 {

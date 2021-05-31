@@ -9,7 +9,6 @@ class AuthManagerPDO extends Manager
 	
 	//sgnUp method
 	public function isAvailablePseudo($pseudo){} 
-	//faire une seule query avec ces 2 first method ???
 	public function isUniqueEmail(){}
 
 

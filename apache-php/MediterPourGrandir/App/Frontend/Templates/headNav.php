@@ -7,12 +7,10 @@
   
   <title>mediter pour grandir</title>
   <link rel="stylesheet" href="/Web/css/style.css">
-  <link rel="stylesheet" href="/css/<?=$module?>/<?=$view?>.css">
   <link rel="stylesheet" href="/Web/css/bootstrap-4.3.1-dist/css/bootstrap.css">
   <script src="https://kit.fontawesome.com/d60d1dd85c.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="/js/<?=$module?>/<?=$view?>.js"></script>	
 
 </head>
 <body>

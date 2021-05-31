@@ -15,7 +15,6 @@ class KeyGenerator
 
         return $key;
 
-        //var_dump($key).'<br />';
 	}
 
 }

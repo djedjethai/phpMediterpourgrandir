@@ -65,7 +65,6 @@ class SessionManagerPDO extends Manager
 	    
 	    $q->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, '\Entity\Student');
 	    
-	    //return $q->fetch();
 	    $student = $q->fetch();
 
 	    $requete = $this->dao->prepare('SELECT COUNT(*) FROM notifications WHERE user_id = :userId AND status = 1');

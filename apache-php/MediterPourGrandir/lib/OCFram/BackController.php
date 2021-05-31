@@ -30,7 +30,6 @@ abstract class BackController extends ApplicationComponent
 
   public function execute()
   {
-    // var_dump($this->action);
     try{
 
       $method = 'execute'.ucfirst($this->action);
@@ -43,7 +42,6 @@ abstract class BackController extends ApplicationComponent
       $this->$method($this->app->httpRequest());
 
     } catch(MyException $e) {
-      // ExceptionHandler::errorLoggerDbFile($e, $this->getManager());
       ExceptionHandler::errorLoggerFile($e, 'errExecution.txt');
       
     } catch(\Exception $e) {
@@ -53,7 +51,6 @@ abstract class BackController extends ApplicationComponent
 
   public function page()
   {
-    // yyy;
     return $this->page;
 
   }
@@ -118,12 +115,7 @@ abstract class BackController extends ApplicationComponent
 
   public function verifSession()
   {
-    // $req = $this->app()->httpRequest()->getPost('csrfForm');
-    // echo('verif http ds back ctrl');
-    // echo '<pre>';
-    // print_r($req);
-    // echo 'beuu';
-
+    
     $sessionId = $this->app->user()->getUser();
     $student = $this->session->isValidSession($sessionId);
 

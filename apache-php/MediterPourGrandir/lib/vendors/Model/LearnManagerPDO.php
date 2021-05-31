@@ -7,22 +7,6 @@ use \OCFram\Student;
 
 class LearnManagerPDO extends Manager
 {
-	/*public function intervalLesson($student)
-	{
-		$bool = false;
-
-		$q = $this->dao->prepare('SELECT id FROM `students` WHERE (dateLastLesson < DATE_SUB(NOW(), INTERVAL 96 HOUR)) AND id = :id');
-	    $q->bindValue(':id', $student->id(), \PDO::PARAM_INT);
-	    $q->execute();
-
-	    if($q->fetch(\PDO::FETCH_ASSOC))
-	    {
-	    	$bool = true;
-	    }
-
-	    return $bool;
-
-	}*/
 	public function getListOfTittle()
 	{
 		$sql = 'SELECT id, title FROM lecon ORDER BY id ASC';
@@ -71,7 +55,4 @@ class LearnManagerPDO extends Manager
 	    
 	    $q->execute();
 	}
-
-
-
 }

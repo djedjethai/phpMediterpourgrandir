@@ -1,3 +1,0 @@
-testJs = () => {
-	console.log('contact');
-}

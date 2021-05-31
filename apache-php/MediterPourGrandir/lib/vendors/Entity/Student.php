@@ -23,14 +23,6 @@ class Student extends Entity
   const EMAIL_INVALIDE = 2;
   const PASSWORD_INVALIDE = 3;
 
-
-  /*public function __sleep()
-  {
-    return array('id', 'pseudo', 'password', 'email', 'dateSignUp', 'dateLastLesson', 'lesson', 'level', 'actif');
-  }
-
-  public function __wakeup(){}*/
-
   public function isValid()
   {
     return !(empty($this->pseudo) || empty($this->email) || empty($this->password));

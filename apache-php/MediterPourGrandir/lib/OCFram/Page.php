@@ -98,9 +98,6 @@ class Page extends ApplicationComponent
 
    public function setContent($content)
   {
-    echo '<br />ds page';
-    var_dump($content);
-
 
     if (!is_string($content))
     {

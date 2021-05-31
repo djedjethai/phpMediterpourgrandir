@@ -1129,13 +1129,13 @@ footer {
     .section-quisuisje {
       padding: 10rem 0; } }
 
-.section-learn {
+.section-news {
   background-color: #eee;
   position: relative;
   padding: 5rem 0 10rem 0;
-  min-height: 50rem; }
+  min-height: 68rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-learn {
+    .section-news {
       padding: 3rem 0; } }
 
 .section-account {
@@ -1193,7 +1193,7 @@ footer {
     .learn {
       width: 100%; } }
   .learn_title {
-    max-width: 70%;
+    width: 70%;
     margin: 8rem auto;
     padding: 2rem;
     font-size: 3rem;

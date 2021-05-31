@@ -43,7 +43,6 @@ class HTTPResponse extends ApplicationComponent
       exit($this->page->getGeneratedPage($controller));
     }
     catch(MyException $e) {
-      // ExceptionHandler::errorLoggerDbFile($e, $controller->getManager());
       ExceptionHandler::errorLoggerFile($e, 'errHttpResponse.txt');
     } 
     catch(\Exception $e) {
@@ -51,12 +50,6 @@ class HTTPResponse extends ApplicationComponent
     }
 
   }
-
-// for cache
-  // public function send($page)
-  // {
-  //   exit($page);
-  // }
 
   public function setPage(Page $page)
   {

@@ -17,7 +17,6 @@ class RegexValidator extends Validator
     $valid = false;
     if (preg_match($this->regex, $value) || strlen($value) === 0)
     {
-      // return $value;
       $valid = true;
     }
     return $valid;

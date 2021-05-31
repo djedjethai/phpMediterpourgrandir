@@ -51,16 +51,12 @@ class User
   public function setUser($user)
   {
   	$_SESSION['user'] = $user;
-  	//$userSer = serialize($user);
-  	//$_SESSION['user'] = $userSer;
   }
 
   public function getUser()
   {
   	if(isset($_SESSION['user']) && $_SESSION['user'])
   	{  	
-  	  	//$userSer = $_SESSION['user'];
-  	    //$user = unserialize($userSer);
   	    return $_SESSION['user'];
   	}
   }

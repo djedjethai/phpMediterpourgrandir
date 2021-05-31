@@ -10,7 +10,6 @@ abstract class Field
   protected $name;
   protected $validators = [];
   protected $value;
-  // protected $csrfForm;
   
   public function __construct(array $options = [])
   {
@@ -100,7 +99,6 @@ abstract class Field
   
   public function setValue($value)
   {
-    // var_dump($value);
     if (is_string($value))
     {
       $this->value = $value;

@@ -1,9 +1,6 @@
 <?php
 namespace OCFram;
 
-// these exception stand in 3 classes: 
-// BackController(1method)/Application(1 method)/HTTPResponse(2 methods)
-// that's covering almost the full OCFram part of the application.
 class MyException extends \ErrorException 
 {
 	public function __toString()
@@ -29,7 +26,6 @@ class MyException extends \ErrorException
 				break;
 		}
 
-		// return '';
 		return '<strong>' .$type. '</strong> : [' .$this->code. '] ' .$this->message. '<br /><strong>' .$this->file. '</strong> at the line <strong>' .$this->line. '</strong>';
 	}
 }

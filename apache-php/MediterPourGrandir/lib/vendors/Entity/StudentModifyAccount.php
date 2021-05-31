@@ -17,7 +17,7 @@ class StudentModifyAccount extends Student
 
   public function isValid()
   {
-    return true; // a voir......
+    return true;
   }
 
 

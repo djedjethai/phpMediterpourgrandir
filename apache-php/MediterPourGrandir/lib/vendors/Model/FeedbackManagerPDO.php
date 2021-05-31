@@ -9,7 +9,6 @@ class FeedbackManagerPDO extends Manager
 
   public function add(Feedback $feedback)
   {
-      // A VOIR, SI POSSIBLE DE FAIRE LES 3 MANIP EN UNE SEULE REQ......??????????
      //we add the new news
       $requete = $this->dao->prepare('INSERT INTO feedback SET studentId = :studentId, contenu = :contenu, grade = :grade,  datePost = NOW()');
       $requete->bindValue(':studentId', $feedback->studentId());
@@ -20,26 +19,13 @@ class FeedbackManagerPDO extends Manager
 
   public function update(Feedback $feedback)
   {
-      // A VOIR, SI POSSIBLE DE FAIRE LES 3 MANIP EN UNE SEULE REQ......??????????
 	  //we add the new news
-	  //
       $requete = $this->dao->prepare('UPDATE feedback SET contenu = :contenu, datePost = NOW() WHERE studentId = :studentId');
       
       $requete->bindValue(':studentId', $feedback->studentId());
       $requete->bindValue(':contenu', $feedback->contenu());
       $requete->execute();
   }
-
-   //   protected function modify($feedback)
-    // {
-   //   $requete = $this->dao->prepare('UPDATE news SET titre = :titre, contenu = :contenu, dateModif = NOW() WHERE id = :id');
-    
-   //   $requete->bindValue(':titre', $news->titre());
-    //  $requete->bindValue(':contenu', $news->contenu());
-   //     $requete->bindValue(':id', $news->id(), \PDO::PARAM_INT);
-    
-   //   $requete->execute();
-    // }
 
   public function getFeedback($debut, $limite)
   {

@@ -44,10 +44,9 @@ class ImageHandler
 	        {
 	            return "Error: Il y a eu un problème de téléchargement de votre fichier. Veuillez réessayer."; 
 	        }
-	    } /*else {
-        	return "Error: " . $image["error"];
-    	}*/
-	}
+	   }
+	}	
+
 
 	public function uploadFile($image) 
 	{

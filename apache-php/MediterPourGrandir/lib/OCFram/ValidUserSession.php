@@ -13,7 +13,7 @@ class ValidUserSession
   {
     $this->sessionId = $user->getUser();
     $this->user = $session->isValidSession($sessionId);
-    $this->isValid()
+    $this->isValid();
   }
 
   public function isValid() 
@@ -21,7 +21,6 @@ class ValidUserSession
     if(!$this->user)
     {
       $this->user->deconnexionUser();
-      //$this->app->httpResponse()->redirect('/');
       return;
     }
     return $user;

@@ -15,7 +15,6 @@ class FileWriter extends Writer {
 
 	public function write($text)
 	{
-		// the entry of the path is 'OCFram' 
 		$f = fopen(__DIR__ .'/../../Web/errLogger/'.$this->file, 'a');
 		fwrite($f, $this->formater->format($text));
 		fclose($f);

@@ -1,11 +1,8 @@
 <?php
 namespace OCFram;
 
-// use \OCFram\Csrf;
-
 class Session
 {
-  // protected $csrfToken;
   protected $managerSession = null;
 
   public function __construct($managerSession)

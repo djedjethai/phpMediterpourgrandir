@@ -8,7 +8,6 @@ class NewsManagerPDO extends NewsManager
   protected function add(News $news)
   {
 
-    // A VOIR, SI POSSIBLE DE FAIRE LES 3 MANIP EN UNE SEULE REQ......??????????
     //we add the new news
     $requete = $this->dao->prepare('INSERT INTO news SET auteurId = :id, titre = :titre, contenu = :contenu, dateAjout = NOW(), dateModif = NOW(), levelNew = :levelNew');
     $requete->bindValue(':id', $news->auteurId());
@@ -57,9 +56,6 @@ class NewsManagerPDO extends NewsManager
     
     $listeNews = $requete->fetchAll();
 
-    //echo '<pre>';
-    //print_r($listeNews);
-    
     foreach ($listeNews as $news)
     {
       $news->setDateAjout(new \DateTime($news->dateAjout()));

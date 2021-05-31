@@ -22,8 +22,6 @@ class NotificationManagerPDO extends Manager
     
     	return $q->fetchAll();
 
-    	//$q->closeCursor();//a ajouter partout !!!!
-
     }
 
     public function isUserNotifiy($comment) {

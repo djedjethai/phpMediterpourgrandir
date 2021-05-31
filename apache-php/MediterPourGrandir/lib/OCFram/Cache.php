@@ -41,12 +41,9 @@ class Cache
   public function readFile($filename)
   {
     if (!file_exists($filename)) return null;
-    
-    // echo 'from read cache<br />';
 
     $file = fopen($filename, 'r');
     $content = '';
-    
     
     $expires = (int) fgets($file);
     

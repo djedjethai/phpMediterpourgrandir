@@ -2,8 +2,6 @@
 namespace Model;
 
 use \OCFram\Manager;
-//use \OCFram\Lesson;
-//use \OCFram\Student;
 
 class AccountManagerPDO extends Manager
 {
@@ -11,7 +9,6 @@ class AccountManagerPDO extends Manager
 	public function getMessages($idStudent) 
 	{
 		$q = $this->dao->prepare('SELECT notifications.id as idNotify, news.id as idNews, titre as title, dateAjout, status  FROM notifications JOIN news ON notifications.news_id = news.id WHERE user_id = :idStudent AND (status = 1 OR history = 1)');
-	    //$q->bindValue(':chapter_number', (int) $chapter, \PDO::PARAM_INT);
 	    $q->bindValue(':idStudent', (int) $idStudent, \PDO::PARAM_INT);
 	    $q->execute();
 	    

@@ -11,7 +11,6 @@ class Hasher{
 	public function hash($password)
 	{
 		$passHash = password_hash($password, PASSWORD_DEFAULT);
-		//var_dump($passHash);
 		return $passHash;
 	}
 }

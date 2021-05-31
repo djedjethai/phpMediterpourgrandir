@@ -20,7 +20,6 @@ class News extends Entity
 
   public function isValid()
   {
-    //return !(empty($this->auteur) || empty($this->titre) || empty($this->contenu));
     return !(empty($this->titre) || empty($this->contenu));
   }
 
@@ -40,10 +39,10 @@ class News extends Entity
 
   public function setPseudo($pseudo)
   {
-    /*if (!is_string($auteur) || empty($auteur))
+    if (!is_string($auteur) || empty($auteur))
     {
       $this->erreurs[] = self::AUTEUR_INVALIDE;
-    }*/
+    }
 
     $this->pseudo = $pseudo;
   }
