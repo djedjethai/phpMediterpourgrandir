@@ -13,3 +13,5 @@ Date: Saturday 22nd of May 2021 10:07:28 AM
 Text: <strong>Warning</strong> : [0] A non-numeric value encountered<br /><strong>/var/www/html/App/Frontend/Modules/Learn/LearnController.php</strong> at the line <strong>52</strong>
 Date: Monday 31st of May 2021 02:12:38 AM
 Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
+Date: Tuesday 1st of June 2021 09:51:36 PM
+Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
