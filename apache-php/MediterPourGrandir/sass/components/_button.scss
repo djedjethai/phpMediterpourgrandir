@@ -198,6 +198,28 @@
     }
 }
 
+.btn-choice-resize-meddium {
+    &:link,
+    &:visited {
+	background-color: $color-secondary-dark;
+        color: $color-white;
+        font-size: 2.5rem;
+	margin: 2rem 0rem;
+        display: inline-block;
+        text-decoration: none;
+        padding: 1rem;
+        transition: all .2s;
+    }
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
 .btn-choice-btn {
 	font-size: 2rem;
 	background-color: $color-tertiary-dark;

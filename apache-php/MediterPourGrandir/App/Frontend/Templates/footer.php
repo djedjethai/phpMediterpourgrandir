@@ -2,19 +2,19 @@
 <div class="rowgrid">
 		<div class="col-1-of-3">
 			<div class="footer-left">
-				<h3>About<span>Eduonix</span></h3>
+				<h3>Méditer<span> Pour Grandir</span></h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
+					<a href="#">Acceuil</a>
 					|
-					<a href="#">Blog</a>
-					|
-					<a href="#">About</a>
+					<a href="#">Qui suis-je</a>
 					|
 					<a href="#">Contact</a>
 				</p>
+				<?php if(!$user->isUser()) { ?>
+      					<a href="/auth/signUp.php" class="btn-choice-resize-meddium">Apprendre à méditer</a>
+				<?php } ?>
 
-				<p class="footer-company-name">© 2019 Eduonix Learning Solutions Pvt. Ltd.</p>
 			</div>
 		</div>
 		<div class="col-1-of-3">

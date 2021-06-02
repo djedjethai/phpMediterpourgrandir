@@ -413,6 +413,24 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn-choice-resize-meddium:link, .btn-choice-resize-meddium:visited {
+  background-color: #ff7730;
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 2rem 0rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all .2s; }
+
+.btn-choice-resize-meddium:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-choice-resize-meddium:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .btn-choice-btn {
   font-size: 2rem;
   background-color: #5643fa;
@@ -992,25 +1010,13 @@ td, th {
   color: #fff;
   background: #939393; }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  padding: 3px; }
-
-@media (max-height: 800px) {
-  footer {
-    position: static; }
-  header {
-    padding-top: 40px; } }
-
 .footer-distributed {
   background-color: #5643fa;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 1.8rem sans-serif;
-  padding: 50px 50px 60px 50px;
-  margin-top: 80px; }
+  padding: 50px 50px 60px 50px; }
 
 /* Footer left */
 .footer-distributed h3 {
