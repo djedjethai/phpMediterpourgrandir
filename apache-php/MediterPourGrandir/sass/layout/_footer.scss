@@ -28,7 +28,7 @@
 
 
 .footer-distributed h3 span{
-	color:  #e0ac1c;
+	color: $color-secondary-light;
 }
 
 /* Footer links */
@@ -55,7 +55,7 @@
 /* Footer Center */
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
+	background-color: $color-tertiary-dark;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -70,6 +70,7 @@
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
+	// background-color:;
 }
 
 .footer-distributed .footer-center p{
