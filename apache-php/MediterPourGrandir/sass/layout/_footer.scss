@@ -67,10 +67,13 @@
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+
+.footer-distributed .footer-center i.fa-envelope,
+.footer-distributed .footer-center i.fa-phone{
 	font-size: 17px;
 	line-height: 38px;
-	// background-color:;
+	background-color: $color-secondary-light;
+	color: $color-grey-light-2;
 }
 
 .footer-distributed .footer-center p{
@@ -120,7 +123,7 @@
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  $color-secondary-light;
 	border-radius: 2px;
 
 	font-size: 20px;
@@ -131,6 +134,7 @@
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+
 
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */

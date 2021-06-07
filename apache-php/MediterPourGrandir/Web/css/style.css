@@ -1058,9 +1058,12 @@ td, th {
   margin: 10px 15px;
   vertical-align: middle; }
 
-.footer-distributed .footer-center i.fa-envelope {
+.footer-distributed .footer-center i.fa-envelope,
+.footer-distributed .footer-center i.fa-phone {
   font-size: 17px;
-  line-height: 38px; }
+  line-height: 38px;
+  background-color: #ffb900;
+  color: #eee; }
 
 .footer-distributed .footer-center p {
   display: inline-block;
@@ -1101,7 +1104,7 @@ td, th {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #33383b;
+  background-color: #ffb900;
   border-radius: 2px;
   font-size: 20px;
   color: #ffffff;
