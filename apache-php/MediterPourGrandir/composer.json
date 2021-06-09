@@ -2,7 +2,8 @@
     "require": {
         "monolog/monolog": "1.0.*",
 	"sendgrid/sendgrid": "~7",
-        "johnathanmiller/secure-env-php": "^2.0"
+        "johnathanmiller/secure-env-php": "^2.0",
+        "ircmaxell/password-compat": "^1.0"
     },
     "require-dev": {
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <definitions>
-  <define var="login" value="admin" />
-  <define var="pass" value="mdp" />
+  <define var="login" value="$2y$10$7L8BhD1NbnVlaqCAmlBRMeHn.F1VqC3hZPA0t4Tg4aZaKL1wMU0jS" />
+  <define var="pass" value="$2y$10$7L8BhD1NbnVlaqCAmlBRMeHn.F1VqC3hZPA0t4Tg4aZaKL1wMU0jS" />
 </definitions>

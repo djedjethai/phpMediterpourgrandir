@@ -19,7 +19,8 @@ class ConnexionController extends BackController
       $login = $request->postData('login');
       $password = $request->postData('password');
       
-      if ($login == $this->app->config()->get('login') && $password == $this->app->config()->get('pass'))
+      // password_verify() is from packagist module
+      if (password_verify($login, $this->app->config()->get('login')) && password_verify($password, $this->app->config()->get('pass')))
       {
 	$this->app->user()->setAuthenticated(true);
         $this->app->httpResponse()->redirect('.');

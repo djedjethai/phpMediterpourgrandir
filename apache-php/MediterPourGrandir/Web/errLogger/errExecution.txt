@@ -15,3 +15,7 @@ Date: Monday 31st of May 2021 02:12:38 AM
 Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
 Date: Tuesday 1st of June 2021 09:51:36 PM
 Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
+Date: Wednesday 9th of June 2021 10:08:31 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: password<br /><strong>/var/www/html/lib/OCFram/Config.php</strong> at the line <strong>12</strong>
+Date: Wednesday 9th of June 2021 10:09:22 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: password<br /><strong>/var/www/html/lib/OCFram/Config.php</strong> at the line <strong>13</strong>
