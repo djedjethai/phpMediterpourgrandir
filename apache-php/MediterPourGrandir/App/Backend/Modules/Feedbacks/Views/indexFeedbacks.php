@@ -12,7 +12,7 @@
 	?>
 	</table>
 <?php } else { ?>
-	<p>Il n'y a pas de news</p> 
+	<p>Il n'y a pas de feedback</p> 
 <?php } ?>
 
 </div>

@@ -3,6 +3,7 @@ namespace FormBuilder;
 
 use \OCFram\FormBuilder;
 use \OCFram\StringField;
+use \OCFram\PasswordField;
 use \OCFram\MaxLengthValidator;
 use \OCFram\NotNullValidator;
 use \OCFram\RegexValidator;
@@ -33,8 +34,8 @@ class StudentSignUpFormBuilder extends FormBuilder
           new RegexValidator('votre email ne correspond pas au format email', '#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#'),
         ],
        ]))
-       ->add(new StringField([
-        'label' => 'Mot de passe',
+       ->add(new PasswordField([
+	'label' => 'Mot de passe',
         'name' => 'password',
         'maxLength' => 50,
         'validators' => [
@@ -43,7 +44,7 @@ class StudentSignUpFormBuilder extends FormBuilder
           new RegexValidator('Le mot de passe doit contenir au minimum 8 caracteres (chiffres et/ou lettres). Les caracteres speciaux ne sont pas acceptes', '#[a-zA-Z0-9]{1,}#'),
         ],
        ]))
-       ->add(new StringField([
+       ->add(new PasswordField([
         'label' => 'Confirmation du Mot de passe',
         'name' => 'confirmPassword',
         'maxLength' => 50,

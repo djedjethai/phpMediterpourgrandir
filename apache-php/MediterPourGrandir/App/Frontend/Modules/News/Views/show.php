@@ -54,14 +54,14 @@
 	
 		<?php
 		}
-		$keyLast = 0;
-		
-		for ($i = 0; $i < count($comments); $i++) 
-		{
-			if ($i > $keyLast) {
-				$keyLast = $i;
-			};
-		}
+		// $keyLast = 0;
+		// for ($i = 0; $i < count($comments); $i++) 
+		// {
+		// 	if ($i > $keyLast) {
+
+		// 		$keyLast = $i;
+		// 	};
+		// }
 
 		foreach ($comments as $comment) { 
 		
@@ -85,7 +85,7 @@
 			</fieldset>
 		
 			<?php 
-			if($comments[$keyLast]->id() ===  $comment->id() && $comments[$keyLast]->pseudo() === $student->pseudo()) { ?>
+			if($comments[0]->id() ===  $comment->id() && $comments[0]->pseudo() === $student->pseudo()) { ?>
 			
 			<div class="justify-right u-margin-top">
 				<a href="comment-update-<?= $comment['id'] ?>.php" class="btn-choice">Modifier</a>

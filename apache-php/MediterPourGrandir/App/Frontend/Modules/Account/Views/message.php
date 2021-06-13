@@ -21,9 +21,9 @@
 			?>
 		</table>
 		<?php } else { ?>
-	
-			<h3>Vous n'avez pas de messages</h3>
-	
+			<div class="justify-center">
+				<h1>Vous n'avez pas de message</h1>
+			</div>
 		<?php } ?>
 		</div>
 	</div>

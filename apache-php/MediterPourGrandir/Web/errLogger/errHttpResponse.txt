@@ -1,0 +1,9 @@
+
+Date: Sunday 13th of June 2021 12:00:19 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: listNews<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/index.php</strong> at the line <strong>12</strong>
+Date: Sunday 13th of June 2021 12:34:54 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: 2<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>88</strong>
+Date: Sunday 13th of June 2021 12:35:04 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: 2<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>88</strong>
+Date: Sunday 13th of June 2021 12:36:49 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: comment<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>62</strong>

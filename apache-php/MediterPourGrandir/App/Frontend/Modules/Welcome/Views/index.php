@@ -99,6 +99,8 @@
             </div>
 
 	<?php
+if(count($feedbacks) > 0)
+{
 	foreach ($feedbacks as $feedback)
 	{
 	?>
@@ -126,5 +128,14 @@
 	<div class="u-center-text u-margin-top-huge">
                	<a href="/welcome/allFeedbacks.php" class="btn-text">Voir tous les Avis&rarr;</a>
 	</div>
+<?php 
+} else {		
+?>
+	<div class="justify-center">
+		<h1>Aucun avis pour le moment.</h1>
+	</div>
+<?php
+}
+?>
 </section>
 </main>
