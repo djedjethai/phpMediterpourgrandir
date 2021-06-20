@@ -244,6 +244,14 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between; }
 
+.u-news-link {
+  color: #ff7730;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .u-news-link:hover {
+    color: #ff7730;
+    text-transform: uppercase; }
+
 .btn {
   min-height: 4rem;
   font-size: 1.8rem !important; }

@@ -17,35 +17,16 @@ class CommentsManagerPDO extends CommentsManager
     
     $comment->setId($this->dao->lastInsertId());
 
-
-    $sql = $this->dao->prepare('UPDATE news JOIN comments ON news.id = comments.newsId SET news.nbrComments = news.nbrComments + 1 WHERE comments.id = :id');
-    
-    $sql->bindValue(':id', $comment->id(), \PDO::PARAM_INT);
-    $sql->execute();
-
-  }
+    // increase 1 to the new's number of comments
+    $this->dao->exec('UPDATE news SET nbrComments = nbrComments + 1 WHERE id = '.(int) $comment->newsId());
+}
 
   public function delete($id)
   {
+    //decrease 1 to the news number of comments
+    $this->dao->exec('UPDATE news JOIN comments ON news.id = comments.newsId SET news.nbrComments = news.nbrComments - 1 WHERE comments.id = ' .(int) $id);
+    
     $this->dao->exec('DELETE FROM comments WHERE id = '.(int) $id);
-	// $q = $this->dao->prepare('DELETE FROM comments WHERE id = :id');
-	// 
-    	// $q->bindValue(':id', $idint, \PDO::PARAM_INT);
-    	// $q->execute();
-
-    // substract one number of comments in news
-      }
-
-  public function decountNews($id){
-    $idint = intval($id, 10);
-
-    $sql = $this->dao->prepare('UPDATE news JOIN comments ON news.id = comments.newsId SET news.nbrComments = news.nbrComments - 1 WHERE comments.id = :id');
-   var_dump($idint); 
-    $sql->bindValue(':id', $idint, \PDO::PARAM_INT);
-    $sql->execute();
-
-    	var_dump('php is suuuuperrr sucks');
-
   }
 
   public function deleteFromNews($news)

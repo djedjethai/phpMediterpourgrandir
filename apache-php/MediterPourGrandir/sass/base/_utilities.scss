@@ -93,3 +93,12 @@
 	justify-content: space-between;
 }
 
+.u-news-link{
+	color: $color-secondary-dark;
+  	text-decoration: none;
+  	text-transform: uppercase;
+	&:hover{
+		color: $color-secondary-dark;
+  		text-transform: uppercase;
+	}
+}

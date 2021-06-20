@@ -33,7 +33,7 @@ if(count($listeNews) > 0)
 			<p><?= nl2br($news['contenu']) ?></p>
 		</div>
 		<div class="justify-right u-margin-top">
-			<p>Réponse(s): <?= $news->nbrComments() ?></p>
+			<a href="news-<?= $news['id'] ?>.php" class="u-news-link">Commentaires(s): <?= $news->nbrComments() ?></a>
 		</div>	
 
 	</div>	
