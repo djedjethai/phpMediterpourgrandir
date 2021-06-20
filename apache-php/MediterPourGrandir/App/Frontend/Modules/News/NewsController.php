@@ -11,7 +11,6 @@ use \App\Frontend\Modules\News\NewsFormHandler;
 use \OCFram\ObserverNotify;
 
 
-
 class NewsController extends BackController
 {
   
@@ -147,6 +146,9 @@ class NewsController extends BackController
 
     if ($newsFormHandler->process())
     {
+      // delete index's cache as the number of comments will increase
+      $this->cache->deleteIndex();
+      
       $this->app->user()->setFlash('Le commentaire a bien été ajouté, merci !');
       
       $this->app->httpResponse()->redirect('news-'.$request->getData('news').'.php');

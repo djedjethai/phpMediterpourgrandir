@@ -16,11 +16,36 @@ class CommentsManagerPDO extends CommentsManager
     $q->execute();
     
     $comment->setId($this->dao->lastInsertId());
+
+
+    $sql = $this->dao->prepare('UPDATE news JOIN comments ON news.id = comments.newsId SET news.nbrComments = news.nbrComments + 1 WHERE comments.id = :id');
+    
+    $sql->bindValue(':id', $comment->id(), \PDO::PARAM_INT);
+    $sql->execute();
+
   }
 
   public function delete($id)
   {
     $this->dao->exec('DELETE FROM comments WHERE id = '.(int) $id);
+	// $q = $this->dao->prepare('DELETE FROM comments WHERE id = :id');
+	// 
+    	// $q->bindValue(':id', $idint, \PDO::PARAM_INT);
+    	// $q->execute();
+
+    // substract one number of comments in news
+      }
+
+  public function decountNews($id){
+    $idint = intval($id, 10);
+
+    $sql = $this->dao->prepare('UPDATE news JOIN comments ON news.id = comments.newsId SET news.nbrComments = news.nbrComments - 1 WHERE comments.id = :id');
+   var_dump($idint); 
+    $sql->bindValue(':id', $idint, \PDO::PARAM_INT);
+    $sql->execute();
+
+    	var_dump('php is suuuuperrr sucks');
+
   }
 
   public function deleteFromNews($news)
@@ -35,7 +60,7 @@ class CommentsManagerPDO extends CommentsManager
       throw new \InvalidArgumentException('L\'identifiant de la news passé doit être un nombre entier valide');
     }
 
-    $q = $this->dao->prepare('SELECT comments.id, newsId, auteurComId, pseudo, picture, contenu, date FROM comments INNER JOIN students ON comments.auteurComId = students.id WHERE newsId = :news ORDER BY comments.id DESC');
+    $q = $this->dao->prepare('SELECT comments.id, newsId, auteurComId, pseudo, picture, contenu, date FROM comments INNER JOIN students ON comments.auteurComId = students.id WHERE newsId = :news ORDER BY comments.id ASC');
     $q->bindValue(':news', $news, \PDO::PARAM_INT);
     $q->execute();
     

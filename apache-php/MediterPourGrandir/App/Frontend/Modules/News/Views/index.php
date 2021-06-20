@@ -28,11 +28,14 @@ if(count($listeNews) > 0)
 		</figure>
 		<div class="newsframe__title">
 			<a href="news-<?= $news['id'] ?>.php" class="btn-link"><?= $news['titre'] ?></a>
-			<!--<a href="/news/update-', $news['id'], '.php"></a>-->
 		</div>
 		<div class="newsframe__text">
 			<p><?= nl2br($news['contenu']) ?></p>
 		</div>
+		<div class="justify-right u-margin-top">
+			<p>Réponse(s): <?= $news->nbrComments() ?></p>
+		</div>	
+
 	</div>	
 	
 	<?php

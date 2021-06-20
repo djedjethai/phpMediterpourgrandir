@@ -11,6 +11,7 @@ class News extends Entity
             $picture,
             $contenu,
             $levelNew,
+            $nbrComments,
             $dateAjout,
             $dateModif;
 
@@ -71,6 +72,11 @@ class News extends Entity
   {
     $this->levelNew = $level;
   }
+  
+  public function setNbrComments($nbrComments)
+  {
+    $this->nbrComments = $nbrComments;
+  }
 
   public function setDateAjout(\DateTime $dateAjout)
   {
@@ -111,6 +117,11 @@ class News extends Entity
   public function levelNew()
   {
     return $this->levelNew;
+  }
+  
+  public function nbrComments()
+  {
+    return $this->nbrComments;
   }
 
   public function dateAjout()

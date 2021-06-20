@@ -44,7 +44,7 @@ class NewsManagerPDO extends NewsManager
 
   public function getList($debut = -1, $limite = -1)
   {
-    $sql = 'SELECT news.id, students.pseudo, picture, titre, contenu, dateAjout, dateModif FROM news JOIN students ON news.auteurId = students.id ORDER BY id DESC';
+    $sql = 'SELECT news.id, students.pseudo, picture, titre, contenu, nbrComments, dateAjout, dateModif FROM news JOIN students ON news.auteurId = students.id';
     
     if ($debut != -1 || $limite != -1)
     {

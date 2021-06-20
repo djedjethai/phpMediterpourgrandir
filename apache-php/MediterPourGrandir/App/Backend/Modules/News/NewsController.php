@@ -42,8 +42,15 @@ class NewsController extends BackController
   {
     $user = $this->verifSession();
    
-    $this->managers->getManagerOf('Comments')->delete($request->getData('id'));
-    
+    // $this->managers->getManagerOf('Comments')->delete($request->getData('id'));
+    $commentManager = $this->managers->getManagerOf('Comments');
+    // $commentManager->delete($request->getData('id'));
+    var_dump('la merde');
+    $commentManager->decountNews($request->getData('id'));
+
+    // delete index's cache as the number of comments will decrease
+    $this->cache->deleteIndex();
+      
     $this->app->user()->setFlash('Le commentaire a bien été supprimé !');
 
     // var_dump($request);

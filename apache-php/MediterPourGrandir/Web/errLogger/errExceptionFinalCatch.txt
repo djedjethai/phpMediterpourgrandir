@@ -13,3 +13,178 @@ Stack trace:
 #1 /var/www/html/App/Frontend/FrontendApplication.php(20): OCFram\HTTPResponse->send(Object(App\Frontend\Modules\Learn\LearnController))
 #2 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
 #3 {main}
+Date: Sunday 20th of June 2021 10:33:49 AM
+Text: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'news' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:24
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(24): PDOStatement->execute()
+#1 /var/www/html/lib/vendors/Model/CommentsManager.php(40): Model\CommentsManagerPDO->add(Object(Entity\Comment))
+#2 /var/www/html/App/Frontend/Modules/News/NewsFormHandler.php(13): Model\CommentsManager->save(Object(Entity\Comment))
+#3 /var/www/html/App/Frontend/Modules/News/NewsController.php(148): App\Frontend\Modules\News\NewsFormHandler->process()
+#4 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\News\NewsController->executeInsertComment(Object(OCFram\HTTPRequest))
+#5 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#6 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#7 {main}
+Date: Sunday 20th of June 2021 11:34:47 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 11:36:00 AM
+Text: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'news' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:34
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(34): PDO->exec('UPDATE news JOI...')
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(45): Model\CommentsManagerPDO->delete('75')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Backend\Modules\News\NewsController->executeDeleteComment(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}
+Date: Sunday 20th of June 2021 11:38:53 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 11:40:03 AM
+Text: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'news' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:38
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(38): PDOStatement->execute()
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(45): Model\CommentsManagerPDO->delete('77')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Backend\Modules\News\NewsController->executeDeleteComment(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}
+Date: Sunday 20th of June 2021 11:42:13 AM
+Text: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'news' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:38
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(38): PDOStatement->execute()
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(45): Model\CommentsManagerPDO->delete('78')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Backend\Modules\News\NewsController->executeDeleteComment(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}
+Date: Sunday 20th of June 2021 11:49:17 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 11:51:56 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 11:53:59 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 11:54:06 AM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 11:55:17 AM
+Text: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'news' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:39
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(39): PDOStatement->execute()
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(45): Model\CommentsManagerPDO->delete('82')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Backend\Modules\News\NewsController->executeDeleteComment(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}
+Date: Sunday 20th of June 2021 11:55:25 AM
+Text: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'news' in /var/www/html/lib/vendors/Model/CommentsManagerPDO.php:39
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CommentsManagerPDO.php(39): PDOStatement->execute()
+#1 /var/www/html/App/Backend/Modules/News/NewsController.php(45): Model\CommentsManagerPDO->delete('83')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Backend\Modules\News\NewsController->executeDeleteComment(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Backend/BackendApplication.php(26): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#5 {main}
+Date: Sunday 20th of June 2021 12:00:23 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:03:29 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:12:26 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:13:50 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:32:53 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:33:09 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:33:38 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:36:37 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:36:57 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 12:50:52 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}
+Date: Sunday 20th of June 2021 01:03:16 PM
+Text: RuntimeException: La vue spécifiée n'existe pas in /var/www/html/lib/OCFram/Page.php:45
+Stack trace:
+#0 /var/www/html/lib/OCFram/HTTPResponse.php(43): OCFram\Page->getGeneratedPage(Object(App\Backend\Modules\News\NewsController))
+#1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
+#2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
+#3 {main}

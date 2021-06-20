@@ -1,7 +1,3 @@
-<!--<main>
-<section class="section-news">-->
-
-
 <div class="rowgrid">
 		<!--<div class="col-3-of-4">-->
 	<br />		
@@ -48,20 +44,17 @@
 	
 	
 	<div class="comment">	
-		<?php if (empty($comments) && ($news['auteurId'] !== $student->id())) { ?>
+		<?php 
+
+		if (empty($comments) && ($news['auteurId'] !== $student->id())) { ?>
 		<p class="comment__nocomment">Aucun commentaire n'a encore été posté. Soyez le premier à en laisser un !</p>
+		<div class="justify-right">
+			<a href="commenter-<?= $news['id'] ?>.php" class="btn-text-resize-meddium">Ajouter un commentaire</a>
+		</div>
 
-	
 		<?php
-		}
-		// $keyLast = 0;
-		// for ($i = 0; $i < count($comments); $i++) 
-		// {
-		// 	if ($i > $keyLast) {
-
-		// 		$keyLast = $i;
-		// 	};
-		// }
+		} 
+		if($comments){
 
 		foreach ($comments as $comment) { 
 		
@@ -85,22 +78,26 @@
 			</fieldset>
 		
 			<?php 
-			if($comments[0]->id() ===  $comment->id() && $comments[0]->pseudo() === $student->pseudo()) { ?>
+			if( $comments[count($comments)-1]->pseudo() ===  $student->pseudo() && $comments[count($comments)-1]->id() ===  $comment->id()) 
+			{ 
+?>
 			
 			<div class="justify-right u-margin-top">
 				<a href="comment-update-<?= $comment['id'] ?>.php" class="btn-choice">Modifier</a>
 			</div>	
-			<? } ?>	
+			<?php } ?>	
 
 		</div>
 
 		<?php } 
-		if ($newsHaveComment && ($lastComment === false || $lastComment->auteurComId() !== $student->id())) { ?>
+		if($comments[count($comments)-1]->pseudo() !==  $student->pseudo() ){
+		?>
 
 			<div class="justify-right">
 				<a href="commenter-<?= $news['id'] ?>.php" class="btn-text-resize-meddium">Ajouter un commentaire</a>
 			</div>
-		<?php } ?>
+		<?php } 
+}?>
 	</div>
 </div>
 

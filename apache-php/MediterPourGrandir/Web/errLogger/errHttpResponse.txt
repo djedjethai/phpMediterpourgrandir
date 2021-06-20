@@ -7,3 +7,51 @@ Date: Sunday 13th of June 2021 12:35:04 PM
 Text: <strong>Notice</strong> : [0] Undefined offset: 2<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>88</strong>
 Date: Sunday 13th of June 2021 12:36:49 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: comment<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>62</strong>
+Date: Monday 14th of June 2021 09:53:50 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: 1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>89</strong>
+Date: Monday 14th of June 2021 09:55:40 PM
+Text: <strong>Warning</strong> : [0] count(): Parameter must be an array or an object that implements Countable<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>89</strong>
+Date: Monday 14th of June 2021 09:55:42 PM
+Text: <strong>Warning</strong> : [0] count(): Parameter must be an array or an object that implements Countable<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>89</strong>
+Date: Monday 14th of June 2021 09:56:12 PM
+Text: <strong>Warning</strong> : [0] count(): Parameter must be an array or an object that implements Countable<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>89</strong>
+Date: Monday 14th of June 2021 09:58:27 PM
+Text: <strong>Warning</strong> : [0] Use of undefined constant comments - assumed 'comments' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>59</strong>
+Date: Wednesday 16th of June 2021 10:18:03 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>107</strong>
+Date: Wednesday 16th of June 2021 10:18:27 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>107</strong>
+Date: Wednesday 16th of June 2021 10:19:54 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>107</strong>
+Date: Wednesday 16th of June 2021 10:21:14 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>107</strong>
+Date: Wednesday 16th of June 2021 10:23:25 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>108</strong>
+Date: Wednesday 16th of June 2021 10:23:26 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>108</strong>
+Date: Wednesday 16th of June 2021 10:23:27 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>108</strong>
+Date: Wednesday 16th of June 2021 10:23:27 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>108</strong>
+Date: Wednesday 16th of June 2021 10:25:10 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>112</strong>
+Date: Wednesday 16th of June 2021 10:25:53 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>112</strong>
+Date: Wednesday 16th of June 2021 10:26:51 PM
+Text: <strong>Unknow error</strong> : [0] Object of class Entity\News could not be converted to string<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>52</strong>
+Date: Wednesday 16th of June 2021 10:27:23 PM
+Text: <strong>Warning</strong> : [0] A non-numeric value encountered<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>52</strong>
+Date: Wednesday 16th of June 2021 10:28:15 PM
+Text: <strong>Warning</strong> : [0] A non-numeric value encountered<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>53</strong>
+Date: Wednesday 16th of June 2021 10:28:30 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>112</strong>
+Date: Wednesday 16th of June 2021 10:29:09 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>116</strong>
+Date: Wednesday 16th of June 2021 10:29:55 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>116</strong>
+Date: Wednesday 16th of June 2021 10:31:11 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>117</strong>
+Date: Wednesday 16th of June 2021 10:32:48 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>121</strong>
+Date: Wednesday 16th of June 2021 10:34:30 PM
+Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>121</strong>
