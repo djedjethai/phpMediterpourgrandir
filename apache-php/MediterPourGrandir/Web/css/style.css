@@ -239,6 +239,11 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between; }
 
+.justify-inline-spacebetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .justify-spacebetween {
   display: flex;
   flex-direction: row-reverse;
