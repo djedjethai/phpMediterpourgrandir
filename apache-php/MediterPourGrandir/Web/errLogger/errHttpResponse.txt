@@ -55,3 +55,5 @@ Date: Wednesday 16th of June 2021 10:32:48 PM
 Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>121</strong>
 Date: Wednesday 16th of June 2021 10:34:30 PM
 Text: <strong>Notice</strong> : [0] Undefined offset: -1<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/show.php</strong> at the line <strong>121</strong>
+Date: Thursday 24th of June 2021 09:51:20 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: previousPge<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/index.php</strong> at the line <strong>54</strong>

@@ -61,7 +61,7 @@ if(count($listeNews) > 0)
 		<span class="change-page"><?=$page?></span>
 	</div>
 	<a class="page-link move" desabled="true" 
-	      	<?php 
+	      	<?php  
 	      	if($page < $totalPages) {
 	      		$nextPage = $page + 1 ;
 	      		echo 'href=/news/index-'.$nextPage.'.php';
