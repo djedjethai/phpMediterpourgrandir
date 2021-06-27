@@ -47,7 +47,15 @@
 		margin: 8rem auto;
 		padding: 2rem;
 		font-size:3rem;
-		border: 2px solid $color-grey-dark;
+		border: 3px solid $color-grey-dark;
+		text-align:center;
+		& p{
+			margin: auto;
+			font-weight: 700;
+			font-size: 4rem;
+			padding: 1rem .5rem;
+		}
+
 	}
 
 	&_recall{
@@ -68,7 +76,13 @@
 
 .pratiMeth{
 	font-weight: 600;
-	font-size: 2.5rem;
+	font-size: 3rem;
+	font-style: italic;
 	underline: dotted;
-	text-decoration: underline dotted;
+	text-decoration: underline;
+	&:first-of-type{
+		color: red;
+	}
 }
+
+
