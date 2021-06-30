@@ -1360,6 +1360,11 @@ td, th {
   font-size: 3rem;
   font-style: italic;
   underline: dotted;
+  color: #ff7730;
   text-decoration: underline; }
-  .pratiMeth:first-of-type {
-    color: red; }
+
+ul {
+  list-style: none;
+  margin: 0 0 0 3rem; }
+  ul li:not(:last-child) {
+    border-bottom: 1px solid #eee; }

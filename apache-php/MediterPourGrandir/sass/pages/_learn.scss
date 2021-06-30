@@ -74,14 +74,29 @@
 	font-weight:700;
 }
 
-.pratiMeth{
+.pratiMeth {
 	font-weight: 600;
 	font-size: 3rem;
 	font-style: italic;
 	underline: dotted;
+	color:$color-secondary-dark;
 	text-decoration: underline;
-	&:first-of-type{
-		color: red;
+	// &:first-of-type{
+	// 	color: red;
+	// }
+}
+
+ul {
+     	list-style: none;
+       	// width: 80%;
+      	margin: 0 0 0 3rem;
+       	li {
+       		// text-align: center;
+      		// font-size: 1.8rem;
+       		// padding: 1rem;
+       		&:not(:last-child) {
+             		border-bottom: 1px solid $color-grey-light-2;
+   		}
 	}
 }
 
