@@ -46,7 +46,7 @@
 		width:70%;
 		margin: 8rem auto;
 		padding: 2rem;
-		font-size:3rem;
+		font-size:4rem;
 		border: 3px solid $color-grey-dark;
 		text-align:center;
 		& p{
@@ -66,18 +66,22 @@
 }
 
 .paragraphe{
-
+	margin: 0 0 0 4rem;
 }
 
 .subTitle{
-	font-size:3rem;
+	font-size:3.5rem;
 	font-weight:700;
+}
+
+.subSubTitle{
+	font-size:2.5rem;
+	font-weight:600;
 }
 
 .pratiMeth {
 	font-weight: 600;
-	font-size: 3rem;
-	font-style: italic;
+	font-size: 3.5rem;
 	underline: dotted;
 	color:$color-secondary-dark;
 	text-decoration: underline;
@@ -100,4 +104,9 @@ ul {
 	}
 }
 
-
+.photolesson{
+	text-align: center;
+	&_img{
+		margin: auto;
+	}	
+}

@@ -1338,7 +1338,7 @@ td, th {
     width: 70%;
     margin: 8rem auto;
     padding: 2rem;
-    font-size: 3rem;
+    font-size: 4rem;
     border: 3px solid #777;
     text-align: center; }
     .learn_title p {
@@ -1351,14 +1351,20 @@ td, th {
     color: green;
     font-weight: bold; }
 
+.paragraphe {
+  margin: 0 0 0 4rem; }
+
 .subTitle {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700; }
+
+.subSubTitle {
+  font-size: 2.5rem;
+  font-weight: 600; }
 
 .pratiMeth {
   font-weight: 600;
-  font-size: 3rem;
-  font-style: italic;
+  font-size: 3.5rem;
   underline: dotted;
   color: #ff7730;
   text-decoration: underline; }
@@ -1368,3 +1374,8 @@ ul {
   margin: 0 0 0 3rem; }
   ul li:not(:last-child) {
     border-bottom: 1px solid #eee; }
+
+.photolesson {
+  text-align: center; }
+  .photolesson_img {
+    margin: auto; }
