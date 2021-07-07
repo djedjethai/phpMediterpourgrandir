@@ -1,7 +1,7 @@
 # docker-htaccess-phpApache-MySql
 
 # Description
-A simple online course website. Include an Index section(presentation, author, contact/mail). An Authentication section, a Lesson section, a Q&A section, an Account section. As well a Back-end section allow the admin to moderate any question, comment, or review.
+A simple online course website. Include an Index section(presentation, author, contact/mail). An Authentication section, a Lesson section, a Q&A section, a User Account section. As well a Back-end section allow the admin to moderate any question, comment, or review.
 
 ## Signup
 > A mail is sent for the student to activate an account validation’s link
