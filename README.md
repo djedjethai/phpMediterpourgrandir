@@ -22,6 +22,6 @@ Wrote in PHP (OOP), the code follow the MVC structure, easily scalable and DRY a
 The project looks like simple but behind the scene it implements a lots of good practices. It has been built from scratch, 100% OOP, as it depends of almost no dependencies all features as been implemented manually (csrf token, session’s management, cache system, logging system, etc.). Also as mush as possible some design patterns are implemented like Dependencies injection,  Observables, Factory, Strategy.
 
 # Downsides
-No testing implementation, as PHP was just a language I used during studies I did not learn about PHP testing library. The User’s profile pictures are store on the server which will be a problem at scale time(if scale time). This is a old school style website PHP-Apache-Mysql-javascript.
+No testing implementation, as PHP was just a language I used during studies I did not learn about PHP testing library. The User’s profile picture is store on the server which will be a problem at scale time(if scale time). This is a old school style website PHP-Apache-Mysql-javascript.
 
 ![Minion](https://octodex.github.com/images/minion.png)
