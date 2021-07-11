@@ -73,7 +73,6 @@ class FeedbacksController extends BackController
     if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {
 
-	var_dump('alllors');
       if (file_exists($this->cache->dataFolder()."/feedbacks/welcomePageAllFeed"))
       {
         $this->cache->delete('/feedbacks/welcomePageAllFeed');

@@ -46,7 +46,7 @@
         transition: all .5s;
     }
     &__title {
-        font-size: 5rem;
+        font-size: 3rem;
         @include respond(phone) {
             transform: skewX(0);
         }
