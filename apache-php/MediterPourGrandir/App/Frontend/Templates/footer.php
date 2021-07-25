@@ -34,7 +34,7 @@
 			<div class="footer-right">
 				<p class="footer-company-about">
 					<span>A notre sujet</span>
-					Cet enseignement n'invente rien, il ne fais que rapporter une technique de méditation traditionnelle résultante de l’expérience d’expert.</p>
+					Cet enseignement n'invente rien, il ne fait que rapporter une technique de méditation traditionnelle résultante de l’expérience d’expert.</p>
 				<div class="footer-icons">
 					<a href="#"><i class="fa fa-facebook"></i></a>
 				</div>
