@@ -9,7 +9,7 @@
 			if($interLesson && isset($interLesson))
 			{ ?>
 			<div class="learn_recall">
-				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
+				<p>LA PATIENCE ET LA PERSEVERENCE SONT LES CLEFS DU SUCCES.<br />N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
 			</div>
 			<?php } ?>
 			<div class="learn_title">
@@ -29,7 +29,7 @@
 				</div>
 			<?php } else { ?>
 			<div class="learn_recall">
-				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
+				<p>LA PATIENCE ET LA PERSEVERENCE SONT LES CLEFS DU SUCCES.<br />N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
 			</div>
 			<?php } ?>
 		</div>

@@ -1,14 +1,34 @@
-// main navbar
-.navbar {
-	// font-size: $default-font-size;
-	min-height: 8rem;
+.navcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: $color-tertiary-dark;
-	font-size: 1.8rem;
+	font-size: 2rem;
+	min-height: 8rem;
 }
 
-.navbar-light .navbar-nav .nav-link {
-	color: $color-white !important; 
+.unsigned-route {
+	display: flex;
+	&__item {
+		margin: .7rem;
+	}
+	&__link{
+		color: white;
+		text-decoration: none;
+	}
 }
+
+// main navbar
+// .navbar {
+// 	// font-size: $default-font-size;
+// 	min-height: 8rem;
+// 	background-color: $color-tertiary-dark;
+// 	font-size: 1.8rem;
+// }
+// 
+// .navbar-light .navbar-nav .nav-link {
+// 	color: $color-white !important; 
+// }
 
 // dropul account connected student
 .dropUl{
