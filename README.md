@@ -24,4 +24,3 @@ The project looks like simple but behind the scene it implements a lots of good 
 # Downsides
 No testing implementation, as PHP was just a language I used during studies I did not learn about PHP testing library. The User’s profile picture is store on the server which will be a problem at scale time(if scale time). This is a old school style website PHP-Apache-Mysql-javascript.
 
-![Minion](https://octodex.github.com/images/minion.png)
