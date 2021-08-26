@@ -86,8 +86,8 @@ body {
   /*font-size: 16px;*/
   line-height: 1.7;
   /*predefine the line-height 1.7 fois bigger than the default one*/
-  color: #777;
-  /*so from here all the child class of the doc herite de border-box*/
+  color: #000;
+  /*so from ire all the child class of the doc herite de border-box*/
   box-sizing: border-box;
   font-size: 2rem; }
 
@@ -581,6 +581,10 @@ body {
   @media only screen and (max-width: 37.5em) {
     .story__text {
       transform: skewX(0); } }
+  .story__text--icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: #ff7730; }
 
 .form__error {
   color: red;

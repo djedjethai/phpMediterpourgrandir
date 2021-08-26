@@ -73,5 +73,15 @@
         @include respond(phone) {
             transform: skewX(0);
         }
+	&--icon {
+		height: 2.25rem;
+		width: 2.25rem;
+	}
+	&--iconsuccess {
+		height: 2.25rem;
+		width: 2.25rem;
+		fill: $color-secondary-dark;
+	}
+
     }
 }
