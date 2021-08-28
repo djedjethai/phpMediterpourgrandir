@@ -118,14 +118,21 @@ if(count($feedbacks) > 0)
 
                     	</figure>
                     	<div class="story__text">
-				<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 50px">Appreciation: 
-<?php /*for( $i=0; $i < $feedback['grade']; $i+1){ */?>
-			<svg class="story__text--icon">
+				<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 25px">Note:
+<?php 	
+	for( $i=0; $i < $feedback['grade']; $i++){ ?>
+			<svg class="story__text__iconsuccess">
 				<use xlink:href="/Web/images/navbar/sprite.svg#icon-star"></use>
 			</svg>
-<?php  //} ?></span></h5>
+<?php  } $tot = 5;
+	$remain = $tot - $feedback['grade'];
+	for( $i=0; $i < $remain; $i++){  ?>
+			<svg class="story__text__icon">
+				<use xlink:href="/Web/images/navbar/sprite.svg#icon-star"></use>
+			</svg>
+<?php } ?></span></h5>
 			<p><?php echo nl2br($feedback['contenu']) ?></p>
-		    	</div>
+		    </div>
 		</div>
 	</div>		
 	<?php

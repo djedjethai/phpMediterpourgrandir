@@ -7,7 +7,7 @@
 	<?php
 	foreach ($listFeedbacks as $feedback)
 	{
-  	echo '<tbody><tr><td>', $feedback['pseudo'], '</td><td>', $feedback['grade'], '</td><td>le ', $feedback['datePost']->format('d/m/Y à H\hi'), '</td><td><a href="feedbacks-update-', $feedback['id'], '.html"><img src="/images/update.png" alt="Modifier" /></a> <a href="feedbacks-delete-', $feedback['id'], '.html"><img src="/images/delete.png" alt="Supprimer" /></a></td></tr></tbody>', "\n";
+  	echo '<tbody><tr><td>', $feedback['pseudo'], '</td><td>', $feedback['grade'], '</td><td>le ', $feedback['datePost']->format('d/m/Y à H\hi'), '</td><td><a href="feedbacks-update-', $feedback['id'], '.html"><img src="/Web/images/update.png" alt="Modifier" /></a> <a href="feedbacks-delete-', $feedback['id'], '.html"><img src="/Web/images/delete.png" alt="Supprimer" /></a></td></tr></tbody>', "\n";
 	}
 	?>
 	</table>

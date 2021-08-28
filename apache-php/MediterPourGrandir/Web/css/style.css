@@ -581,9 +581,13 @@ body {
   @media only screen and (max-width: 37.5em) {
     .story__text {
       transform: skewX(0); } }
-  .story__text--icon {
-    height: 2.25rem;
-    width: 2.25rem;
+  .story__text__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #777; }
+  .story__text__iconsuccess {
+    height: 2.5rem;
+    width: 2.5rem;
     fill: #ff7730; }
 
 .form__error {
@@ -1010,6 +1014,15 @@ td, th {
     text-decoration: none; }
   .unsigned-route__link:hover {
     border-bottom: 2px #ffb900 solid; }
+  .unsigned-route__menu {
+    height: 5rem;
+    width: 4.5rem;
+    fill: #ffb900; }
+  .unsigned-route__user {
+    margin-left: 100px;
+    height: 5rem;
+    width: 4.5rem;
+    fill: #ffb900; }
 
 .unsigned-form {
   margin: 0 .7rem 0 0; }
@@ -1109,6 +1122,15 @@ td, th {
   margin: 10px 15px;
   vertical-align: middle; }
 
+.footer-center__icon {
+  height: 4rem;
+  width: 4rem;
+  padding-bottom: 0;
+  fill: #ffb900; }
+
+.comment-icon {
+  padding-bottom: 2rem; }
+
 .footer-distributed .footer-center i.fa-envelope,
 .footer-distributed .footer-center i.fa-phone {
   font-size: 17px;
@@ -1155,7 +1177,6 @@ td, th {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #ffb900;
   border-radius: 2px;
   font-size: 20px;
   color: #ffffff;
@@ -1326,6 +1347,16 @@ td, th {
   @media only screen and (max-width: 56.25em) {
     .section-account {
       padding: 3rem 0; } }
+
+.message__unread__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #ff7730; }
+
+.message__read__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #7ed56f; }
 
 .section-feedback {
   background-color: #eee;

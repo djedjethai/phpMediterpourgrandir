@@ -67,6 +67,17 @@
 	vertical-align: middle;
 }
 
+.footer-center__icon {
+		height: 4rem;
+		width: 4rem;
+		padding-bottom:0;
+		fill: $color-secondary-light;
+}
+
+.comment-icon{
+	padding-bottom: 2rem;
+}
+
 
 .footer-distributed .footer-center i.fa-envelope,
 .footer-distributed .footer-center i.fa-phone{
@@ -123,7 +134,7 @@
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  $color-secondary-light;
+	// background-color:  $color-secondary-light;
 	border-radius: 2px;
 
 	font-size: 20px;

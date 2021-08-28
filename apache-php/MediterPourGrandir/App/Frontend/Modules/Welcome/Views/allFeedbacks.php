@@ -23,7 +23,19 @@
 
         	            	</figure>
         	            	<div class="story__text">
-					<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 50px">Appreciation: <?= $feedback['grade'] ?></span></h5>
+					<h5 class="heading-tertiary">Avis de: <?= $feedback['pseudo'] ?> le: <?= $feedback['datePost']->format('d/m/Y')  ?><span style="margin-left: 25px">Note: 
+<?php 	
+	for( $i=0; $i < $feedback['grade']; $i++){ ?>
+			<svg class="story__text__iconsuccess">
+				<use xlink:href="/Web/images/navbar/sprite.svg#icon-star"></use>
+			</svg>
+<?php  } $tot = 5;
+	$remain = $tot - $feedback['grade'];
+	for( $i=0; $i < $remain; $i++){  ?>
+			<svg class="story__text__icon">
+				<use xlink:href="/Web/images/navbar/sprite.svg#icon-star"></use>
+			</svg>
+<?php } ?></span></h5>
 					<p><?= nl2br($feedback['contenu']) ?></p>
 			    	</div>
 			</div>

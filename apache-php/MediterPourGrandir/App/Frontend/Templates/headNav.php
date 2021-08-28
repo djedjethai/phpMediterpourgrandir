@@ -8,7 +8,7 @@
   <title>mediter pour grandir</title>
   <link rel="stylesheet" href="/Web/css/style.css">
   <!--<link rel="stylesheet" href="/Web/css/bootstrap-4.3.1-dist/css/bootstrap.css">-->
-  <script src="https://kit.fontawesome.com/d60d1dd85c.js" crossorigin="anonymous"></script>
+  <!--<script src="https://kit.fontawesome.com/d60d1dd85c.js" crossorigin="anonymous"></script>-->
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
   <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
 
@@ -20,7 +20,11 @@
 			<div class="unsigned-route">
 				<ul class="dropUl">
                            	<li class="dropLi">
-			      		<a class="dropA" href="#"><i class="fa fa-list fa-lg"></i></a>
+					<div class="dropA">
+					<svg class="unsigned-route__menu">
+						<use xlink:href="/Web/images/navbar/sprite.svg#icon-menu"></use>
+					</svg>
+					</div>
 				
                               		<ul class="dropdown">
                                 		<li class="dropLi"><a class="dropA" href="/">Acceuil</a></li>
@@ -40,11 +44,20 @@
 		<div class="signed-form">         
                         <ul class="dropUl">
                            <li class="dropLi">
-			      <a class="dropA" href="#"><i style="margin-left: 100px;" class="fas fa-user-alt fa-lg"></i></a>
+				<div class="dropA">
+					<svg class="unsigned-route__user">
+						<use xlink:href="/Web/images/navbar/sprite.svg#icon-user"></use>
+					</svg>
+					<span><?php if($student->message() > 0){echo $student->message();};?></span>
+				</div>
+
                               <ul class="dropdown">
                                 <li class="dropLi"><a class="dropA" href="/Account/message.php">Message
                                    <?php if($student->message()) {?> 
-                                       <span class="badge badge-primary badge-pill ml-1"><?=$student->message();?></span>
+					<svg class="message__unread__icon">
+						<use xlink:href="/Web/images/navbar/sprite.svg#icon-chat"></use>
+					</svg>
+                                       <span><?=$student->message();?></span>
                                    <?php } ?>
                                         </a></li>
                                 <li class="dropLi"><a class="dropA" href="/learn/addFeedback.php">Avis</a></li>

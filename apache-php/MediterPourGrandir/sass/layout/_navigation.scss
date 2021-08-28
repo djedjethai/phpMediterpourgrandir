@@ -21,6 +21,18 @@
 	&__link:hover{
 		border-bottom: 2px $color-secondary-light solid;
 	}
+	&__menu {
+		height: 5rem;
+		width: 4.5rem;
+		fill: $color-secondary-light;
+	}
+	&__user {
+		margin-left: 100px;
+		height: 5rem;
+		width: 4.5rem;
+		fill: $color-secondary-light;
+	}
+
 }
 
 .unsigned-form{

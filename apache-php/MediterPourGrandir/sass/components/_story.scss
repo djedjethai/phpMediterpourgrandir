@@ -73,13 +73,14 @@
         @include respond(phone) {
             transform: skewX(0);
         }
-	&--icon {
-		height: 2.25rem;
-		width: 2.25rem;
+	&__icon {
+		height: 2.5rem;
+		width: 2.5rem;
+		fill: $color-grey-dark;
 	}
-	&--iconsuccess {
-		height: 2.25rem;
-		width: 2.25rem;
+	&__iconsuccess {
+		height: 2.5rem;
+		width: 2.5rem;
 		fill: $color-secondary-dark;
 	}
 
