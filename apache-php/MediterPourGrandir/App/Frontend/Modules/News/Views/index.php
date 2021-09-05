@@ -4,7 +4,7 @@
 <div class="rowgrid">
 
 <div class="section-news__around">
-	<a href="/news/insert.php" class="btn-text-resize-meddium">Ajouter une news</a>
+	<a href="/news/insert.php" class="btn-choice-btn">Ajouter une news</a>
 </div>
 
 

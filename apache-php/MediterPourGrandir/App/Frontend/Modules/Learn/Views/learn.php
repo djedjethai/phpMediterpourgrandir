@@ -25,7 +25,7 @@
 			if($interLesson === false && isset($interLesson))
 			{ ?>
 				<div class="justify-center">
-				<a href="/learn/lessonFinish.php" class="btn-text-resize-meddium">Chapitre termine</a>
+				<a href="/learn/lessonFinish.php" class="btn-choice-resize-meddium">Chapitre termine</a>
 				</div>
 			<?php } else { ?>
 			<div class="learn_recall">

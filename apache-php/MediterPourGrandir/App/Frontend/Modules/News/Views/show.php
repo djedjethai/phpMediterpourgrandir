@@ -49,7 +49,7 @@
 		if (empty($comments) && ($news['auteurId'] !== $student->id())) { ?>
 		<p class="comment__nocomment">Aucun commentaire n'a encore été posté. Soyez le premier à en laisser un !</p>
 		<div class="justify-right">
-			<a href="commenter-<?= $news['id'] ?>.php" class="btn-text-resize-meddium">Ajouter un commentaire</a>
+			<a href="commenter-<?= $news['id'] ?>.php" class="btn-choice-btn">Ajouter un commentaire</a>
 		</div>
 
 		<?php
@@ -61,22 +61,21 @@
 			?>
 
 		<div class="comment__item">
-			<fieldset>
-			<legend>
+			<div class="comment__item__title">
 			<?php if($comment['picture']) { ?>
 				<img style="max-width: 60px;" src="/Web/pictures/<?=$comment['picture']?>" alt="test" />
 			<?php } else { ?>
 				<img style="max-width: 60px;" src="/Web/images/welcome/silhouetteComment.jpg" alt="test" />
 			<?php } ?>
 			Posté par <strong><?= htmlspecialchars($comment['pseudo']) ?></strong> le <?= $comment['date']->format('d/m/Y à H\hi') ?>
+			</div>
 			<?php if ($user->isAuthenticated()) { ?> -
 				<a href="/admin/comment-update-<?= $comment['id'] ?>.html">Modifier</a> 
 				<a href="/admin/comment-delete-<?= $comment['id'] ?>.html">Supprimer</a>
 			<?php } ?>
-			</legend>
+			<div class="comment__item__text">
 				  <p><?= nl2br(htmlspecialchars($comment['contenu'])) ?></p>
-			</fieldset>
-		
+			</div>	
 			<?php 
 			if( $comments[count($comments)-1]->pseudo() ===  $student->pseudo() && $comments[count($comments)-1]->id() ===  $comment->id()) 
 			{ 
@@ -94,7 +93,7 @@
 		?>
 
 			<div class="justify-right">
-				<a href="commenter-<?= $news['id'] ?>.php" class="btn-text-resize-meddium">Ajouter un commentaire</a>
+				<a href="commenter-<?= $news['id'] ?>.php" class="btn-choice-btn">Ajouter un commentaire</a>
 			</div>
 		<?php } 
 }?>

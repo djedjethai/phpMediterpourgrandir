@@ -45,19 +45,33 @@
                         <ul class="dropUl">
                            <li class="dropLi">
 				<div class="dropA">
+					<?php if($student->message() > 0) {?>
+					<div class="notification">
 					<svg class="unsigned-route__user">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-user"></use>
 					</svg>
-					<span><?php if($student->message() > 0){echo $student->message();};?></span>
+					<div class="notification__child">
+						<span><?php echo $student->message();?></span>
+					</div>
+					</div>
+					<?php } else { ?>
+					<svg class="unsigned-route__user">
+						<use xlink:href="/Web/images/navbar/sprite.svg#icon-user"></use>
+					</svg>
+					<?php } ?>
 				</div>
 
                               <ul class="dropdown">
                                 <li class="dropLi"><a class="dropA" href="/Account/message.php">Message
                                    <?php if($student->message()) {?> 
+					<div class="notification">
 					<svg class="message__unread__icon">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-chat"></use>
 					</svg>
-                                       <span><?=$student->message();?></span>
+					<div class="notification__child">
+                                       		<span><?=$student->message();?></span>
+					</div>
+					</div>
                                    <?php } ?>
                                         </a></li>
                                 <li class="dropLi"><a class="dropA" href="/learn/addFeedback.php">Avis</a></li>

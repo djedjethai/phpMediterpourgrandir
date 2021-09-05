@@ -20,17 +20,24 @@
 		<div class="col-1-of-3">
 			<div class="footer-center">
 				
-				<div>
-					<svg class="footer-center__icon">
+					<!--<svg class="footer-center__icon">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-old-mobile"></use>
 					</svg>
-					<p class="comment-icon">+66 881-806900</p>
-				</div>
+					<p class="comment-icon">+66 881-806900</p>-->
 				<div>
 					<svg class="footer-center__icon">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-mail"></use>
 					</svg>
 					<p class="comment-icon">mediterpourgrandir@gmail.com</p>
+				</div>
+				<div>
+					<div class="footer-icons">
+					<svg class="footer-center__icon">
+						<use xlink:href="/Web/images/navbar/sprite.svg#icon-facebook-with-circle"></use>
+					</svg>
+					<a href="#" class="comment-icon">Facebook</a>
+				</div>
+
 				</div>
 			</div>
 		</div>
@@ -39,12 +46,6 @@
 				<p class="footer-company-about">
 					<span>A notre sujet</span>
 					Cet enseignement n'invente rien, il ne fait que rapporter une technique de méditation traditionnelle résultante de l’expérience d’expert.</p>
-				<div class="footer-icons">
-					<svg class="footer-center__icon">
-						<use xlink:href="/Web/images/navbar/sprite.svg#icon-facebook-with-circle"></use>
-					</svg>
-					<a href="#" class="comment-icon">Facebook</a>
-				</div>
 			</div>
 		</div>
 		</footer>

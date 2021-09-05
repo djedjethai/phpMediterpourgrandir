@@ -83,7 +83,6 @@ class FeedbacksController extends BackController
         $this->cache->delete('/feedbacks/welcomePage');
       }  
 
-
       $feedback = new Feedback([
       'studentId' => $user->id(),
       'contenu' => $request->postData('contenu'),
@@ -92,13 +91,8 @@ class FeedbacksController extends BackController
     } 
     else
     {
-	    // no good ..... need to implement new req from feedback id
 	    $feedback = $managerFeedback->modereGetFeedback($request->getData('id'));
     }
-    // else 
-    // { 
-    //   $feedback = new Feedback;
-    // }
 
     $formBuilder = new FeedbackFormBuilder($feedback, $user->csrf());
     $formBuilder->build();  
@@ -116,7 +110,7 @@ class FeedbacksController extends BackController
       //$this->app->httpResponse()->redirect('/learn/learn.php');
     }
 
-    if ($feedback->grade()) { $this->page->addVar('grade', $feedback->grade());}
+    if ($feedback->grade() !== null) { $this->page->addVar('grade', $feedback->grade());}
     $this->page->addVar('form', $form->createView());
     $this->page->addVar('title', 'Moderez le feedback');
     $this->page->addVar('student', $user);

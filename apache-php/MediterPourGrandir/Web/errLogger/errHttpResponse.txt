@@ -59,3 +59,7 @@ Date: Thursday 24th of June 2021 09:51:20 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: previousPge<br /><strong>/var/www/html/App/Frontend/Modules/News/Views/index.php</strong> at the line <strong>54</strong>
 Date: Thursday 26th of August 2021 11:56:07 AM
 Text: <strong>Warning</strong> : [0] Use of undefined constant i - assumed 'i' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/Views/index.php</strong> at the line <strong>124</strong>
+Date: Sunday 5th of September 2021 10:36:11 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: grade<br /><strong>/var/www/html/App/Backend/Modules/Feedbacks/Views/update.php</strong> at the line <strong>11</strong>
+Date: Sunday 5th of September 2021 10:37:50 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: grade<br /><strong>/var/www/html/App/Backend/Modules/Feedbacks/Views/update.php</strong> at the line <strong>11</strong>

@@ -11,9 +11,9 @@
                             		</div>
 		  	    		
 			       		<?= $form ?>
-					<button class="btn btn--blue">
-					<input type="submit" value=" Envoyer " />    	
-					</button>
+					<!--<button class="btn-choice-btn">-->
+					<input type="submit" class="btn-choice-btn" value=" Envoyer " />    	
+					<!--</button>-->
 
 				</form>
 		    	</div>

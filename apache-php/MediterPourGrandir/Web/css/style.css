@@ -886,6 +886,8 @@ body {
     padding: 2rem 6rem 4rem 6rem;
     margin: 1rem 0;
     font-size: 2rem; }
+    .comment__item__title {
+      font-size: 2.5rem; }
 
 .back-addcomment {
   background-color: #eee;
@@ -1026,6 +1028,23 @@ td, th {
 
 .unsigned-form {
   margin: 0 .7rem 0 0; }
+
+.notification {
+  display: flex;
+  position: relative; }
+  .notification__child {
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -0.5rem;
+    right: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .dropUl {
   margin: 0 .7rem 0 0;
@@ -1357,6 +1376,9 @@ td, th {
   width: 3rem;
   height: 3rem;
   fill: #7ed56f; }
+
+.text-danger {
+  color: red; }
 
 .section-feedback {
   background-color: #eee;

@@ -19,3 +19,5 @@ Date: Wednesday 9th of June 2021 10:08:31 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: password<br /><strong>/var/www/html/lib/OCFram/Config.php</strong> at the line <strong>12</strong>
 Date: Wednesday 9th of June 2021 10:09:22 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: password<br /><strong>/var/www/html/lib/OCFram/Config.php</strong> at the line <strong>13</strong>
+Date: Sunday 5th of September 2021 10:43:08 AM
+Text: <strong>Notice</strong> : [0] Undefined variable: isset<br /><strong>/var/www/html/App/Backend/Modules/Feedbacks/FeedbacksController.php</strong> at the line <strong>121</strong>
