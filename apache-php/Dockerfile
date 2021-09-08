@@ -19,10 +19,10 @@ COPY php.ini /usr/local/etc/php/php.ini
 # RUN composer update
 WORKDIR /var/www/html/
 # RUN apt-get install iputils-ping
-# Install git
+# Install git && php-gd
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y git 
+    && apt-get install -y git \
 # Install composer & update packages
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 # Install unzip utility and libs needed by zip PHP extension 
