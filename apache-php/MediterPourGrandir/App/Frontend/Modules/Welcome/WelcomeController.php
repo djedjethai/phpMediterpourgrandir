@@ -82,8 +82,7 @@ class WelcomeController extends BackController
       $csrf = '012345789';
       $formBuilder = new ContactFormBuilder($contact, $csrf);
     }
-    
-  
+
     $this->page->addVar('title', 'bienvenue a authentification sign Up');
 
     $formBuilder->build();
@@ -102,9 +101,35 @@ class WelcomeController extends BackController
       // $this->app->httpResponse()->redirect('/');
     }
     
+    // my catpcha try ==============================
+  
+    // generate captcha to validate contact-form 
+    $permitted_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  
+    function secure_generate_string($input, $strength = 5, $secure = true) {
+        $input_length = strlen($input);
+        $random_string = '';
+        for($i = 0; $i < $strength; $i++) {
+            if($secure) {
+                $random_character = $input[random_int(0, $input_length - 1)];
+            } else {
+                $random_character = $input[mt_rand(0, $input_length - 1)];
+            }
+            $random_string .= $random_character;
+        }
+      
+        return $random_string;
+    }
+     
+    $string_length = 6;
+    $captcha_string = secure_generate_string($permitted_chars, $string_length);
+    
+    
+       
     if($user) {
       $this->page->addVar('student', $user);
     }
+    $this->page->addVar('captchatext', $captcha_string);
     $this->page->addVar('Inscription', $contact);
     $this->page->addVar('form', $form->createView());
     $this->page->addVar('title', 'Creation d\'un compte');

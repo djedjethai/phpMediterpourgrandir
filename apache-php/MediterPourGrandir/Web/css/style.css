@@ -956,6 +956,29 @@ td, th {
 .list_lesson p a {
   font-size: 1.2rem; }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#captchaHeading {
+  color: black; }
+
+#captchaBackground {
+  height: 7rem;
+  width: 25rem;
+  background-color: #2d3748;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+#captcha {
+  width: 80%;
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin: auto; }
+
 .rowgrid {
   max-width: 114rem;
   margin: 0 auto;
