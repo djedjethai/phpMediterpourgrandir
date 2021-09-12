@@ -7,6 +7,7 @@ use \Entity\Contact;
 use \FormBuilder\ContactFormBuilder;
 use \App\Frontend\Modules\Welcome\WelcomeFormHandler;
 use \OCFram\MyException;
+use \OCFram\Captcha;
 
 class WelcomeController extends BackController
 {
@@ -61,18 +62,33 @@ class WelcomeController extends BackController
   {
     $user = $this->verifSession();
 
+    $managerCaptcha = $this->managers->getManagerOf('Captcha'); 
+    $errCaptcha = false;
+
     //$this->page->addVar('title', 'Me contacter');
     if ($request->method() == 'POST')
     {
-      
-      $contact = new Contact([
+	if($request->postData('captchaInput') && $managerCaptcha->haveCaptcha($request->postData('captchaInput'))){
+		
+		// delete used captcha
+		$managerCaptcha->delete($request->postData('captchaInput')); 
+		// delete overtime captcha // err as it delete all ....
+		$managerCaptcha->deleteCaptchaOverTime();
+
+	} else {
+		// err wrong or no captcha
+		$errCaptcha = true;
+	}
+	
+	$contact = new Contact([
         'pseudo' => $request->postData('pseudo'),
         'email' => $request->postData('email'),
         'contenu' => $request->postData('contenu')
-      ]);
+      	]);
     }
     else
     {
+	   // delete all ca 
       $contact = new Contact;
     }
 
@@ -92,43 +108,28 @@ class WelcomeController extends BackController
     $welcomeFormHandler = new WelcomeFormHandler($form, $this->managers->getManagerOf('Welcome'), $request);
 
   
-    if ($welcomeFormHandler->processMailContact($contact))
+    if (!$errCaptcha && $welcomeFormHandler->processMailContact($contact))
     {
       $this->app->user()->setFlash('Votre message a bien ete envoye, nous vous repondrons au plus vite. merci.');
       
       // $this->app->httpResponse()->redirect('/welcome/mailContact.php');
 
       // $this->app->httpResponse()->redirect('/');
+    }    
+
+    $captcha = new Captcha();
+    $captcha->setCaptcha();
+    if($captcha_string = $captcha->getCaptcha()){
+
+	// does i delete the old captcha here ?????
+	    
+	$managerCaptcha->add($captcha_string);
     }
-    
-    // my catpcha try ==============================
-  
-    // generate captcha to validate contact-form 
-    $permitted_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  
-    function secure_generate_string($input, $strength = 5, $secure = true) {
-        $input_length = strlen($input);
-        $random_string = '';
-        for($i = 0; $i < $strength; $i++) {
-            if($secure) {
-                $random_character = $input[random_int(0, $input_length - 1)];
-            } else {
-                $random_character = $input[mt_rand(0, $input_length - 1)];
-            }
-            $random_string .= $random_character;
-        }
-      
-        return $random_string;
-    }
-     
-    $string_length = 6;
-    $captcha_string = secure_generate_string($permitted_chars, $string_length);
-    
-    
-       
+var_dump('captcha from controller ', $captcha_string);
     if($user) {
       $this->page->addVar('student', $user);
     }
+    $this->page->addVar('errCaptcha', $errCaptcha);
     $this->page->addVar('captchatext', $captcha_string);
     $this->page->addVar('Inscription', $contact);
     $this->page->addVar('form', $form->createView());

@@ -29,3 +29,11 @@ Date: Saturday 11th of September 2021 08:14:08 AM
 Text: <strong>Warning</strong> : [0] imagettftext(): Could not find/open font<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php</strong> at the line <strong>156</strong>
 Date: Saturday 11th of September 2021 08:24:18 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: captcha_code<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php</strong> at the line <strong>126</strong>
+Date: Sunday 12th of September 2021 12:19:32 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: input<br /><strong>/var/www/html/lib/OCFram/Captcha.php</strong> at the line <strong>18</strong>
+Date: Sunday 12th of September 2021 12:41:54 PM
+Text: <strong>Notice</strong> : [0] Undefined property: PDOStatement::$execute<br /><strong>/var/www/html/lib/vendors/Model/CaptchaManagerPDO.php</strong> at the line <strong>60</strong>
+Date: Sunday 12th of September 2021 12:43:15 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: contact<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php</strong> at the line <strong>99</strong>
+Date: Sunday 12th of September 2021 12:53:13 PM
+Text: <strong>Warning</strong> : [0] Declaration of App\Frontend\Modules\Welcome\WelcomeFormHandler::processMailContact($contact, $errCaptcha) should be compatible with OCFram\FormHandler::processMailContact($student)<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/WelcomeFormHandler.php</strong> at the line <strong>7</strong>

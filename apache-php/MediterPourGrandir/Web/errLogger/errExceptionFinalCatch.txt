@@ -188,3 +188,39 @@ Stack trace:
 #1 /var/www/html/App/Backend/BackendApplication.php(29): OCFram\HTTPResponse->send(Object(App\Backend\Modules\News\NewsController))
 #2 /var/www/html/bootstrap.php(41): App\Backend\BackendApplication->run()
 #3 {main}
+Date: Sunday 12th of September 2021 12:28:40 PM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PGQdm2' in 'where clause' in /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php:55
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php(55): PDO->exec('DELETE FROM cap...')
+#1 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(74): Model\CaptchaManagerPDO->delete('PGQdm2')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Sunday 12th of September 2021 12:33:44 PM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'slcyCr' in 'where clause' in /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php:55
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php(55): PDO->exec('DELETE FROM cap...')
+#1 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(74): Model\CaptchaManagerPDO->delete('slcyCr')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Sunday 12th of September 2021 12:35:02 PM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column '4fiUnh' in 'where clause' in /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php:56
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php(56): PDO->exec('DELETE FROM cap...')
+#1 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(74): Model\CaptchaManagerPDO->delete('4fiUnh')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Sunday 12th of September 2021 12:37:12 PM
+Text: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'lG1Uj8' in 'where clause' in /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php:56
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/CaptchaManagerPDO.php(56): PDO->exec('DELETE FROM cap...')
+#1 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(74): Model\CaptchaManagerPDO->delete('lG1Uj8')
+#2 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#3 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#4 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
+#5 {main}

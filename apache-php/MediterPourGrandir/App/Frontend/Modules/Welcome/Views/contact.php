@@ -12,7 +12,10 @@
                             		</div>
 		  	    		
 			       		<?= $form ?>
-					
+
+<?php if($errCaptcha){?>
+	<p style="color:red;">Incorrect captcha code</p> 
+<?php  } ?>	
 					<div class="center">
  					<h2 id="captchaHeading">Entrez le code</h2>
  					<div id="captchaBackground">
