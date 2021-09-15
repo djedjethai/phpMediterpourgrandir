@@ -35,8 +35,21 @@ class Captcha
 	  }
   }
 
-  public function renderCaptcha()
+  public function renderCaptcha($captcha)
   {
-	  // set captcha with <span>
+	  $input = 'a,b,c,d,e,f';
+	  $r_input = $input[random_int(0, strlen($input) -1)];
+
+	  var_dump("ggh:".$r_input);
+
+	  // $captcha = $this->setCaptcha();
+	  $str = '<div>';
+	  for($i = 0; $i < $this->strength; $i++){
+		 
+		// $str .= '<span="'.$r_input[$i].'">"'.$captcha[$i].'"</span>"';
+	  }
+	  $str .= '</div>';
+
+	  return $str;
   }
 }

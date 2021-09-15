@@ -34,34 +34,34 @@ class CaptchaManagerPDO extends Manager
 
     return $exist;
   }
-
-  // maybee useless as even i delete with no match, no err are returned ???
-  public function getCaptchaOverTime()
+  
+  public function deleteCaptchaOverTime()
   {
-	$exist = false;
-
-	$q = $this->dao->prepare('SELECT COUNT(*) FROM captcha WHERE quand > DATE_SUB(NOW(), INTERVAL 3 HOUR)');
-	$q->execute();
-
-	if (intval($q->fetchColumn()) > 0)
-        {
-        	$exist = true;
-        }
-
-        return $exist;
+    $this->dao->exec('DELETE FROM captcha WHERE quand < DATE_SUB(NOW(), INTERVAL 1 HOUR)');
   }
 
   public function delete($cptCode)
   {
-	  $q = $this->dao->prepare('DELETE FROM captcha WHERE code = :captchaCode');
+          $q = $this->dao->prepare('DELETE FROM captcha WHERE code = :captchaCode');
     
-	  $q->bindValue(':captchaCode', $cptCode);
-	  $q->execute();
+          $q->bindValue(':captchaCode', $cptCode);
+          $q->execute();
 
   }
 
-  public function deleteCaptchaOverTime()
-  {
-    $this->dao->exec('DELETE FROM captcha WHERE quand > DATE_SUB(NOW(), INTERVAL 3 HOUR)');
-  }
+  // maybee useless as even i delete with no match, no err are returned ???
+  // public function getCaptchaOverTime()
+  // {
+  //       $exist = false;
+
+  //       $q = $this->dao->prepare('SELECT COUNT(*) FROM captcha WHERE quand < DATE_SUB(NOW(), INTERVAL 3 HOUR)');
+  //       $q->execute();
+
+  //       if (intval($q->fetchColumn()) > 0)
+  //       {
+  //       	$exist = true;
+  //       }
+
+  //       return $exist;
+  // }
 }

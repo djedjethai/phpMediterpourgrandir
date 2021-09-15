@@ -72,9 +72,7 @@ class WelcomeController extends BackController
 		
 		// delete used captcha
 		$managerCaptcha->delete($request->postData('captchaInput')); 
-		// delete overtime captcha // err as it delete all ....
-		$managerCaptcha->deleteCaptchaOverTime();
-
+		
 	} else {
 		// err wrong or no captcha
 		$errCaptcha = true;
@@ -116,15 +114,18 @@ class WelcomeController extends BackController
 
       // $this->app->httpResponse()->redirect('/');
     }    
+    
+    // delete overtime captcha (if have)
+    $managerCaptcha->deleteCaptchaOverTime();
 
     $captcha = new Captcha();
     $captcha->setCaptcha();
-    if($captcha_string = $captcha->getCaptcha()){
-
-	// does i delete the old captcha here ?????
-	    
-	$managerCaptcha->add($captcha_string);
+    if($captcha_string = $captcha->getCaptcha()) { 
+	    $managerCaptcha->add($captcha_string); 
+	    $captcha_rendered = $captcha->renderCaptcha($captcha_string);
+	    var_dump($captcha_rendered);
     }
+
 var_dump('captcha from controller ', $captcha_string);
     if($user) {
       $this->page->addVar('student', $user);

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 12, 2021 at 09:59 AM
+-- Generation Time: Sep 14, 2021 at 12:23 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `captcha` (
   `id` int(11) NOT NULL,
   `code` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `quand` date NOT NULL
+  `quand` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
