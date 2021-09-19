@@ -68,10 +68,10 @@ class WelcomeController extends BackController
     //$this->page->addVar('title', 'Me contacter');
     if ($request->method() == 'POST')
     {
-	if($request->postData('captchaInput') && $managerCaptcha->haveCaptcha($request->postData('captchaInput'))){
+	if($request->postData('valiIpt') && $managerCaptcha->haveCaptcha($request->postData('valiIpt'))){
 		
 		// delete used captcha
-		$managerCaptcha->delete($request->postData('captchaInput')); 
+		$managerCaptcha->delete($request->postData('valiIpt')); 
 		
 	} else {
 		// err wrong or no captcha
@@ -122,11 +122,10 @@ class WelcomeController extends BackController
     $captcha->setCaptcha();
     if($captcha_string = $captcha->getCaptcha()) { 
 	    $managerCaptcha->add($captcha_string); 
-	    $captcha_rendered = $captcha->renderCaptcha($captcha_string);
-	    var_dump($captcha_rendered);
+	    // $captcha_rendered = $captcha->renderCaptcha($captcha_string);
+	    // var_dump($captcha_rendered);
     }
 
-var_dump('captcha from controller ', $captcha_string);
     if($user) {
       $this->page->addVar('student', $user);
     }

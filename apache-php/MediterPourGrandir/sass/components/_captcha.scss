@@ -1,33 +1,13 @@
 .center {
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-#captchaHeading {
- color: black;
-}
-#captchaBackground {
- height: 7rem;
- width: 25rem;
- background-color: #2d3748;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
-}
-#captcha {
- // height: 100%;
- width: 80%;
- font-size: 50px;
- letter-spacing: 3px;
- margin: auto;
- // display: block;
- // top: 0;
- // bottom: 0;
- // left: 0;
- // right: 0;
-}
-#captchaBox {
- // height: 7rem;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	margin: 0 0 7rem 0;
+ 	&__comment{
+		font-size: 1.1rem; 
+ 	}
 }
 
+#valiIpt {
+	padding: 3px 10px; 
+}
