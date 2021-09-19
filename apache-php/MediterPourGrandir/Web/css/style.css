@@ -683,7 +683,7 @@ body {
   opacity: 1; }
 
 .book {
-  background-image: linear-gradient(90deg, rgba(247, 247, 247, 0.9) 0%, rgba(247, 247, 247, 0.9) 50%, transparent 50%), url(../images/welcome/form.jpg);
+  background-image: linear-gradient(90deg, rgba(222, 218, 206, 0.9) 0%, rgba(222, 218, 206, 0.9) 50%, transparent 50%), url(../images/welcome/form.jpg);
   background-size: 100%;
   background-size: cover;
   border-radius: 3px;
@@ -691,11 +691,11 @@ body {
   border: #999 solid 1px; }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../images/welcome/form.jpg);
+      background-image: linear-gradient(to right, rgba(222, 218, 206, 0.9) 0%, rgba(222, 218, 206, 0.9) 100%), url(../images/welcome/form.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../images/welcome/form.jpg); } }
+      background-image: linear-gradient(to right, rgba(222, 218, 206, 0.9) 0%, rgba(222, 218, 206, 0.9) 100%), url(../images/welcome/form.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
@@ -708,7 +708,7 @@ body {
 
 .booknopic {
   width: 85%;
-  background-color: #f7f7f7;
+  background-color: #dedace;
   margin: 0 auto;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -732,7 +732,7 @@ body {
 
 .bookaccount {
   width: 85%;
-  background-color: #f7f7f7;
+  background-color: #dedace;
   margin: 0 auto;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);

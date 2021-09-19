@@ -65,3 +65,5 @@ Date: Sunday 5th of September 2021 10:37:50 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: grade<br /><strong>/var/www/html/App/Backend/Modules/Feedbacks/Views/update.php</strong> at the line <strong>11</strong>
 Date: Saturday 11th of September 2021 09:18:59 AM
 Text: <strong>Notice</strong> : [0] Undefined variable: captchatxt<br /><strong>/var/www/html/App/Frontend/Modules/Welcome/Views/contact.php</strong> at the line <strong>6</strong>
+Date: Sunday 19th of September 2021 12:21:42 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: studentLesson<br /><strong>/var/www/html/App/Frontend/Modules/Learn/Views/learn.php</strong> at the line <strong>22</strong>

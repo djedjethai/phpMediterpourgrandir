@@ -21,8 +21,9 @@
 
 			<!--
 			a faire disparaitre si moins de 4 jours-->	
-			<?php 
-			if($interLesson === false && isset($interLesson))
+			<?php if($student->Lesson() === "49") { 
+			 	// nothing to show, end of the course
+			} else if($interLesson === false && isset($interLesson))
 			{ ?>
 				<div class="justify-center">
 				<a href="/learn/lessonFinish.php" class="btn-choice-resize-meddium">Chapitre termine</a>
