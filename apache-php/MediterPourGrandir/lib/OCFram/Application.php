@@ -69,7 +69,6 @@ abstract class Application
       // On instancie le contrôleur.
       $controllerClass = 'App\\'.$this->name.'\\Modules\\'.$matchedRoute->module().'\\'.$matchedRoute->module().'Controller';
 
-      //var_dump($controllerClass);
       return new $controllerClass($this, $matchedRoute->module(), $matchedRoute->action());
 
     } 

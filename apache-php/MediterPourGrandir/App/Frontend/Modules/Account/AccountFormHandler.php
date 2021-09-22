@@ -51,9 +51,6 @@ class AccountFormHandler extends FormHandler
       $student->setEmail($user->email());
     }
 
-    // path in computer
-    // $imageDestination = "/opt/lampp/htdocs/MediterPourGrandir/Web/pictures";
-
     // path in container
     $imageDestination = "/var/www/html/Web/pictures";
 

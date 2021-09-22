@@ -48,8 +48,6 @@ class AccountController extends BackController
 
         if ($request->fileExists('picture'))
         {
-
-          // $imageDestination = "/opt/lampp/htdocs/MediterPourGrandir/Web/pictures";
           $imageDestination = "/var/www/html/Web/pictures";
           $imageHandler = new ImageHandler($imageDestination);
           $imageErr = $imageHandler->checkFile($request->fileData('picture'));
@@ -160,10 +158,6 @@ class AccountController extends BackController
     $accountFormHandler = new AccountFormHandler($form, $this->managers->getManagerOf('Account'), $request);
     
     $errMessage = '';
-
-    // echo '<pre>';
-    // print_r($user->id());
-    
     
      if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {

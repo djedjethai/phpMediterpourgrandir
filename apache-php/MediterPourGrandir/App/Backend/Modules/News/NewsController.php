@@ -49,8 +49,6 @@ class NewsController extends BackController
       
     $this->app->user()->setFlash('Le commentaire a bien été supprimé !');
 
-    // var_dump($request);
-
     $this->app->httpResponse()->redirect('/news/index-1.php');
   }
 
@@ -153,9 +151,7 @@ class NewsController extends BackController
       }
     }
 
-    // var_dump($news);
     $formBuilder = new NewsFormBuilder($news, $user->csrf());
-    // $formBuilder = new NewsFormBuilder($news);
     $formBuilder->build();
 
     $form = $formBuilder->form();

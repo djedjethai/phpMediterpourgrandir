@@ -32,12 +32,10 @@ class WelcomeController extends BackController
 
     $nameCache = '/feedbacks/welcomePage';
 
-    // $listFeedbacks = $this->cache->read($nameCache);
     $listFeedbacks = null;
     if ($listFeedbacks === null)
     {
       $manager =  $this->managers->getManagerOf('Feedback');
-      // $listFeedbacks = $manager->getFeedback(0, 3);
       $listFeedbacks = $this->getFeedbackHepler();
 
       $this->cache->write($nameCache, $listFeedbacks, '2 months');
@@ -65,7 +63,6 @@ class WelcomeController extends BackController
     $managerCaptcha = $this->managers->getManagerOf('Captcha'); 
     $errCaptcha = false;
 
-    //$this->page->addVar('title', 'Me contacter');
     if ($request->method() == 'POST')
     {
 	if($request->postData('valiIpt') && $managerCaptcha->haveCaptcha($request->postData('valiIpt'))){
@@ -86,7 +83,6 @@ class WelcomeController extends BackController
     }
     else
     {
-	   // delete all ca 
       $contact = new Contact;
     }
 
@@ -122,8 +118,6 @@ class WelcomeController extends BackController
     $captcha->setCaptcha();
     if($captcha_string = $captcha->getCaptcha()) { 
 	    $managerCaptcha->add($captcha_string); 
-	    // $captcha_rendered = $captcha->renderCaptcha($captcha_string);
-	    // var_dump($captcha_rendered);
     }
 
     if($user) {

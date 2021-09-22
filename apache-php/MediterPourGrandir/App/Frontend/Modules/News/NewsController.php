@@ -13,7 +13,6 @@ use \OCFram\ObserverNotify;
 
 class NewsController extends BackController
 {
-  
   public function executeIndex(HTTPRequest $request)
   {   
     $user = $this->verifSession();
@@ -31,14 +30,11 @@ class NewsController extends BackController
     
     if ($listeNews === null)
     {
-      // echo 'from db';
       $fromNewsNbr = ($page - 1) * 10;
       $listeNews = $manager->getList($fromNewsNbr, $nombreNews);
     
       $this->cache->write($nameCache, $listeNews, '2 months');
     }
-    // if no cache query list of news and cache it 
-    
     
     foreach ($listeNews as $news)
     {
@@ -63,8 +59,7 @@ class NewsController extends BackController
   public function executeShow(HTTPRequest $request)
   {
     $user = $this->verifSession();
-
-
+    
     // cache modif this block
     $newsId = $request->getData('id');
 
@@ -101,7 +96,6 @@ class NewsController extends BackController
       $this->page->addVar('newsHaveComment', $newsHaveComment);
     }
     
-    
     $this->page->addVar('lastComment', $lastComment);
     $this->page->addVar('student', $user);
     $this->page->addVar('title', $news->titre());
@@ -113,7 +107,6 @@ class NewsController extends BackController
   {
      //verif the session
     $user = $this->verifSession();
-
 
     // Si le formulaire a été envoyé.
     if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
@@ -177,7 +170,6 @@ class NewsController extends BackController
 
   public function executeUpdateComment(HTTPRequest $request)
   {
-
     $this->page->addVar('title', 'Modification d\'un commentaire');
 
     $user = $this->verifSession();

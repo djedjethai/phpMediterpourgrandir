@@ -66,9 +66,6 @@ class FeedbacksController extends BackController
     $user = $this->verifSession();
 
     $managerFeedback = $this->managers->getManagerOf('Feedback');
-    // check if student have feedback (return a bool)
-    // $haveFeedback = $managerFeedback->haveFeedBack($user->id());
-    
 
     if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {
@@ -101,8 +98,6 @@ class FeedbacksController extends BackController
 
     $feedbackFormHandler = new FeedbackFormHandler($form, $managerFeedback, $request);
 
-    // see the story of the process($haveFeedback) which $haveFeedback is a bool.... 
-    // if ($feedbackFormHandler->process($haveFeedback))
     if ($feedbackFormHandler->process(true))
     {
       $this->app->user()->setFlash('Votre avis a bien été ajouté, merci !');

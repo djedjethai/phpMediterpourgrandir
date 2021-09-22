@@ -7,10 +7,6 @@
   
   <title>mediter pour grandir</title>
   <link rel="stylesheet" href="/Web/css/style.css">
-  <!--<link rel="stylesheet" href="/Web/css/bootstrap-4.3.1-dist/css/bootstrap.css">-->
-  <!--<script src="https://kit.fontawesome.com/d60d1dd85c.js" crossorigin="anonymous"></script>-->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
 
 </head>
 <body>
@@ -83,7 +79,6 @@
         	</div>
 	<?php } else { ?>
 		<div class="unsigned-route">
-			<!--<a class="unsigned-route__link" href="/"><img class="unsigned-route__img" src="Web/images/navbar/logo.png" alt="the logo" class="logo" /></a>-->
         		<div class="unsigned-route__item">
              			<a class="unsigned-route__link" href="/">Acceuil</a>
               		</div>

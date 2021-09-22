@@ -1,5 +1,4 @@
 <div class="rowgrid">
-		<!--<div class="col-3-of-4">-->
 	<br />		
 	<div class="u-wrap-goback">
 		<a href="/news/index-1.php" class="btn-text">&Larr;Retour aux news</a>
@@ -27,7 +26,7 @@
 			<p><?= nl2br($news['contenu']) ?></p>
 		</div>
 		
-<div><!--????? but works like it-->			
+<div>			
 		<?php if (isset($newsHaveComment) && $newsHaveComment === false) { ?>
 		<div class="justify-spacebetweenreverse u-margin-top">
 			<div>
@@ -99,5 +98,3 @@
 }?>
 	</div>
 </div>
-
-

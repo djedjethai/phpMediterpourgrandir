@@ -11,9 +11,7 @@
 				<p class="form__error"><?=$wrongEmailPassword?></p>
 				<?php } ?>
     				<?= $form ?>
-					<!--<button class="u-margin-bottom-small">-->
 				<input class="btn-choice-btn u-margin-bottom-small" type="submit" value=" Connexion " />    	
-					<!--</button>-->
 
 			</form>
 			<p>

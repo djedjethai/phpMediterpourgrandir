@@ -22,9 +22,6 @@ body {
 
 .heading-primary {
     color: $color-secondary-light;
-    // background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
-    // -webkit-background-clip: text;
-    // color: transparent; 
     text-transform: uppercase;
     /*to stop potentiel shaking on anumation, we add this ligne*/
     backface-visibility: hidden;

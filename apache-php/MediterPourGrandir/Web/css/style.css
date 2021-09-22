@@ -1,16 +1,3 @@
-/*
-0-600px: phone
-600-900px: tablet portrait
-900-1200px: tablet landscape
-[1200-1800] our actual code
-1800px ++ big desktop
-
-$breackpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-*/
 /* universal selector will select all elements on the page and apply it to them. to prevent pre-setting of the differents browser.
 Like it s the same for all*/
 *,
@@ -287,68 +274,59 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0); }
 
-.btn {
-  /*!!! ici on part du :hover . Donc le -1 aura un effet de descendre*/ }
-  .btn, .btn:link, .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.4rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    /*to stop potentiel shaking on anumation, we add this ligne*/
-    backface-visibility: hidden;
-    /*transition is the simple way to create effects, all is to select all properties, and 2s for the time */
-    transition: all .2s;
-    /*as we want the ::after (which have a position:absolute) to refer to this element*/
-    position: relative;
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
-    opacity: 1; }
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem white; }
-    .btn:hover::after {
-      /*grossit 1.5 fois. the simple one: transform: scale(1.5);
-            more complexe:*/
-      transform: scaleX(1.4) scaleY(1.6);
-      /*that is the trick to fade something up*/
-      opacity: 0; }
-  .btn:focus, .btn:active {
-    outline: none;
-    transform: translateY(-1px);
-    /*here is half of the hover value, as we clicked on it*/
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-  .btn--white {
-    background-color: #fff;
-    color: #777; }
-    .btn--white::after {
-      background-color: #fff; }
-  .btn--blue {
-    background-color: #5643fa;
-    color: #fff; }
-    .btn--blue::after {
-      background-color: #2998ff; }
-  .btn::after {
-    /*for this sudo effect, the content: and display: property have to appear, even empty*/
-    content: '';
-    /*as the btn is already a inline-block*/
-    display: inline-block;
-    /*pourcentage par rapport au parent donc au &*/
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    /*this is the start of the effect link to &:hover::after*/
-    transition: all .4s; }
-  .btn--animated {
-    /*last value is a start delay, so 0,75s*/
-    animation: moveInButton .5s ease-out .75s;
-    /*permet de palier au delay, d'initialiser le stade initial de depart d'animation sans delay.*/
-    animation-fill-mode: backwards; }
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.4rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  backface-visibility: hidden;
+  transition: all .2s;
+  position: relative;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  opacity: 1; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem white; }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:focus, .btn:active {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
+
+.btn--blue {
+  background-color: #5643fa;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #2998ff; }
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn--animated {
+  animation: moveInButton .5s ease-out .75s;
+  animation-fill-mode: backwards; }
 
 .btn-text-resize-big:link, .btn-text-resize-big:visited {
   font-size: 4rem;
@@ -969,8 +947,7 @@ td, th {
 
 .rowgrid {
   max-width: 114rem;
-  margin: 0 auto;
-  /*means Except the last child (so this margin-bottom will be apply to all children except the last one)*/ }
+  margin: 0 auto; }
   .rowgrid:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -1215,8 +1192,6 @@ td, th {
   margin-right: 3px;
   margin-bottom: 5px; }
 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
 @media (max-width: 880px) {
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
@@ -1229,21 +1204,16 @@ td, th {
     margin-left: 0; } }
 
 .header {
-  /*95% of the view port point*/
   height: 60vh;
   background-image: linear-gradient(to bottom, rgba(86, 67, 250, 0.801), rgba(41, 152, 255, 0.801)), url(../images/welcome/header.jpg);
-  /*what ever the view port, cover will always try to fit the elmt inside the box*/
   background-size: cover;
-  /*fix the backGr at the top*/
   background-position: top;
   position: relative; }
   .header__text-box {
     text-align: center;
     position: absolute;
-    /*40% and 50% from the parent element*/
     top: 50%;
     left: 50%;
-    /*readjust l'alignement x et y par rapport l'element lui-meme*/
     transform: translate(-50%, -50%); }
 
 .logo:hover {
@@ -1346,10 +1316,8 @@ td, th {
   .report__box {
     text-align: center;
     position: absolute;
-    /*40% and 50% from the parent element*/
     top: 50%;
     left: 50%;
-    /*readjust l'alignement x et y par rapport l'element lui-meme*/
     transform: translate(-50%, -50%); }
 
 .section-quisuisje {

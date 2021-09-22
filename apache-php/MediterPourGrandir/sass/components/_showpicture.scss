@@ -1,12 +1,9 @@
 .showpicture {
-    // position: relative;
     text-align: center;
     &__photo {
         width: 18%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
-        // position: absolute;
-	// text-align: center;
         margin: 0 auto;
 	z-index: 10;
         transition: all .2s;

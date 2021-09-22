@@ -80,5 +80,3 @@ if(count($listeNews) > 0)
 	</div>
 <?php } ?>
 </div>
-<!--</section>
-</main>-->

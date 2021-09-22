@@ -48,8 +48,6 @@ class AuthController extends BackController
 
     if ($exist === 'exist')
     {
-      // $this->app->user()->setFlash('');
-
       //we set the session[]
       $studAuth = $managerAuth->getStudent($student);
 
@@ -117,11 +115,6 @@ class AuthController extends BackController
     $this->page->addVar('title', 'Creation d\'un compte');
 
   }
-
-  // public function executeRegistration(HTTPRequest $request)
-  // {
-  //   $this->app->user()->setFlash('Un email vous a ete envoye afin de confirmer votre inscription, merci !');
-  // }
 
   public function executeConfRegistration(HTTPRequest $request)
   {
@@ -201,9 +194,4 @@ class AuthController extends BackController
     $this->page->addVar('form', $form->createView());
     $this->page->addVar('title', 'mot de passe oublie');
   }
-
-  // public function executePassword(HTTPRequest $request)
-  // {
-  //   $this->app->user()->setFlash('Un email contenant votre mot de passe vous a ete envoye');
-  // }
 }

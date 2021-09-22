@@ -1,6 +1,4 @@
 <?php require "headNav.php"; ?> 
-<!--<main>-->	
-
 
 	<?php if($user->hasFlash()) { ?>
 		<div class="flash">

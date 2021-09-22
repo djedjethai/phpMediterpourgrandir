@@ -6,16 +6,6 @@
         padding: 20rem 0;
     }
 }
-// .section-about {
-//     background-color: $color-grey-light-2;
-//     padding: 5rem 0 10rem 0;
-//     position: relative;
-//     min-height: 100rem; // useless...
-// 
-//     @include respond(tab-port) {
-//         padding: 3rem 0;
-//     }
-// }
 
 .benefMedit {
 	// background-color: "green";
@@ -36,7 +26,6 @@
 }
 
 .section-stories {
-    // position: relative; as the bg-video is absolute and should appear behind this section
     background-color: $color-grey-light;
     position: relative;
     padding: 15rem 0;

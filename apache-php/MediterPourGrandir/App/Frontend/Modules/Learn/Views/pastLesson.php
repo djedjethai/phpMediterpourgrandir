@@ -19,8 +19,6 @@
 
 			<p><?= nl2br($lesson->lesson()) ?><p>
 
-			<!--
-			a faire disparaitre si moins de 4 jours-->	
 			<?php 
 			if($lesson->id() === $student->lesson() && 
 			   !$interLesson &&

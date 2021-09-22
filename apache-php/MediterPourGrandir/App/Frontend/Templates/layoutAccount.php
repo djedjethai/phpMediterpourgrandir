@@ -1,9 +1,5 @@
 <?php require "headNav.php"; ?> 
 
-<!--<div class="test">
-	<button type="submit" onclick="testJs()">Test Js</button>
-</div>-->
-
 <section class="section-account">
 	
 	<?php if($user->hasFlash()) { ?>

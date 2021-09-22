@@ -19,11 +19,6 @@
 		</div>
 		<div class="col-1-of-3">
 			<div class="footer-center">
-				
-					<!--<svg class="footer-center__icon">
-						<use xlink:href="/Web/images/navbar/sprite.svg#icon-old-mobile"></use>
-					</svg>
-					<p class="comment-icon">+66 881-806900</p>-->
 				<div>
 					<svg class="footer-center__icon">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-mail"></use>

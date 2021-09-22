@@ -58,7 +58,6 @@ class AuthFormHandler extends FormHandler
 
         $studentPreRegister = $this->manager->getStudent($student);
 
-        // $authMailer = new Mailer();
         Mailer::sendMailAuth($studentPreRegister, $key);
 
         $feedBack = 'register';
@@ -89,7 +88,6 @@ class AuthFormHandler extends FormHandler
 	        $this->manager->registerNewPassword($student, $pass);
 
 	        //send mail with new password
-        	// $authMailer = new Mailer();
         	Mailer::sendMailPassword($student, $key);
         	return true;
         }

@@ -35,8 +35,6 @@ class LearnController extends BackController
       $listTitle = $manager->getListOfTittle();
     }
 
-    // var_dump($listTitle);
-    // var_dump($lesson);
     $this->page->addVar('listTitle', $listTitle);
     $this->page->addVar('interLesson', $interLesson);
     $this->page->addVar('lesson', $lesson);
@@ -49,12 +47,10 @@ class LearnController extends BackController
     $student = $this->verifSession();
 
     $lessonId = $request->getData('id');
-// var_dump($lessonId);
     $manager = $this->managers->getManagerOf('Learn');
 
     $interLesson = $manager->getIntervalLesson($student);
 
-// var_dump($student->lesson());
     if($lessonId <= $student->lesson())
     {   
       $lesson = $manager->getLesson($lessonId);
@@ -67,8 +63,6 @@ class LearnController extends BackController
       $listTitle = $manager->getListOfTittle();
     }
 
-    // var_dump($listTitle);
-    // var_dump($lesson);
     $this->page->addVar('listTitle', $listTitle);
     $this->page->addVar('interLesson', $interLesson);
     $this->page->addVar('lesson', $lesson);
@@ -95,11 +89,6 @@ class LearnController extends BackController
     $updatedLesson = $student->lesson() + 1;
 
     switch($updatedLesson){
-      // case 3 :
-      //   // we update the student's lesson && level in student's database table
-      //   $this->updateStudentStatus($student, $manager, $updatedLesson);
-      //   $this->app->httpResponse()->redirect('/learn/addFeedback.php');
-      //   break;
       case 12 :
         // we update the student's lesson && level in student's database table
         $this->updateStudentStatus($student, $manager, $updatedLesson);
@@ -127,23 +116,17 @@ class LearnController extends BackController
     $student->setLesson($updatedLesson);
     $manager->updateStudent($student);
 
-
-
     $this->app->httpResponse()->redirect('/learn/learn.php');
-
   }
   
 
   public function executeDeconnexion(HTTPRequest $request)
   {
-    
     $sessionId = $this->app->user()->getUser();
     $this->session->deleteSessionDb($sessionId);
 
     $this->app->user()->deconnexionUser();
-   
   }
-
   
   // this method works for adding or updating a feedback
   public function executeAddFeedback(HTTPRequest $request) 
@@ -157,8 +140,6 @@ class LearnController extends BackController
 
     if ($request->method() == 'POST' && hash_equals($user->csrf(), $request->getPost('csrfForm')))
     {
-
-
       if (file_exists($this->cache->dataFolder()."/feedbacks/welcomePageAllFeed"))
       {
         $this->cache->delete('/feedbacks/welcomePageAllFeed');
@@ -168,7 +149,6 @@ class LearnController extends BackController
       {
         $this->cache->delete('/feedbacks/welcomePage');
       }  
-
 
       $feedback = new Feedback([
       'studentId' => $user->id(),
@@ -205,17 +185,5 @@ class LearnController extends BackController
     $this->page->addVar('form', $form->createView());
     $this->page->addVar('title', 'Ajouter votre avis');
     $this->page->addVar('student', $user);
-
-  }
-
-  
-  public function executePastLearn(HTTPRequest $request)
-  {
-    
-  }
-
-  public function executeDonation(HTTPRequest $request)
-  {
-  
   }
 }

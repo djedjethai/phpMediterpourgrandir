@@ -45,3 +45,5 @@ Date: Wednesday 15th of September 2021 10:30:43 PM
 Text: <strong>Warning</strong> : [0] Use of undefined constant str - assumed 'str' (this will throw an Error in a future version of PHP)<br /><strong>/var/www/html/lib/OCFram/Captcha.php</strong> at the line <strong>53</strong>
 Date: Sunday 19th of September 2021 07:43:41 AM
 Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
+Date: Wednesday 22nd of September 2021 10:21:04 PM
+Text: <strong>Warning</strong> : [0] move_uploaded_file(/var/www/html/Web/pictures/balloon-1046658_1280.jpg): failed to open stream: No such file or directory<br /><strong>/var/www/html/lib/OCFram/ImageHandler.php</strong> at the line <strong>55</strong>

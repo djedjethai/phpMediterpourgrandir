@@ -11,7 +11,6 @@ class WelcomeFormHandler extends FormHandler
   {
     if ($this->request->method() == 'POST' && $this->form->isValid())
     {
-        // $welcomeMailer = new Mailer();
         Mailer::sendMailContact($contact);
         return true;
     }

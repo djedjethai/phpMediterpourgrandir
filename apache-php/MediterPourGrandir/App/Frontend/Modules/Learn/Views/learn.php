@@ -19,8 +19,7 @@
 
 			<p><?= nl2br($lesson->lesson()) ?><p>
 
-			<!--
-			a faire disparaitre si moins de 4 jours-->	
+			
 			<?php if($student->Lesson() === "49") { 
 			 	// nothing to show, end of the course
 			} else if($interLesson === false && isset($interLesson))
@@ -175,7 +174,6 @@
 		}
 		else {
 			const listElm = document.getElementById('list')
-			// cont.removeChild(ul)
 			listElm.remove()
 		}	
 	}

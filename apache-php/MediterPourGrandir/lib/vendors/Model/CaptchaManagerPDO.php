@@ -2,12 +2,9 @@
 namespace Model;
 
 use \OCFram\Manager;
-// use \Entity\Feedback;
 
 class CaptchaManagerPDO extends Manager
 {
-
-  // protected $expiration = // expiration time 
 
   public function add($cptCode)
   {
@@ -48,20 +45,4 @@ class CaptchaManagerPDO extends Manager
           $q->execute();
 
   }
-
-  // maybee useless as even i delete with no match, no err are returned ???
-  // public function getCaptchaOverTime()
-  // {
-  //       $exist = false;
-
-  //       $q = $this->dao->prepare('SELECT COUNT(*) FROM captcha WHERE quand < DATE_SUB(NOW(), INTERVAL 3 HOUR)');
-  //       $q->execute();
-
-  //       if (intval($q->fetchColumn()) > 0)
-  //       {
-  //       	$exist = true;
-  //       }
-
-  //       return $exist;
-  // }
 }

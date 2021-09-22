@@ -56,8 +56,6 @@ class ObserverNotify implements SplObserver
 
   public function sendMailNotification($news) {
 
-    //$mailer = new Mailer();
-
     $users = $this->users;
 
     foreach ($users as $user) {

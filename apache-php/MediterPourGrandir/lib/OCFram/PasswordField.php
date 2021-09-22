@@ -13,7 +13,6 @@ class PasswordField extends Field
     {
       $widget .= '<span class="form__error">'.$this->errorMessage.'</span><br />';
     }
-
     
     $widget .= '<div class="form__group"><label for="'.$this->label.'" class="form__label">'.$this->label.'</label><input type="password" id="'.$this->label.'" class="form__input" name="'.$this->name.'" ';
     

@@ -161,13 +161,4 @@ class AuthManagerPDO extends Manager
 	    
 	    $requete->execute();
 	}
-	
-
-	//sera dans StudentManager
-	public function modifyPseudoStudent(){}
-
-	public function modifyEmailStudent(){}
-
-	public function modifyPasswordStudent(){}
-	
 }
