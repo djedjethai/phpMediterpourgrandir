@@ -224,3 +224,111 @@ Stack trace:
 #3 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
 #4 /var/www/html/bootstrap.php(41): App\Frontend\FrontendApplication->run()
 #5 {main}
+Date: Friday 24th of September 2021 09:53:56 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:44 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:47 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:47 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:48 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:48 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:48 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:49 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:49 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:49 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:02:49 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Friday 24th of September 2021 10:05:49 PM
+Text: InvalidArgumentException: Le dossier spécifié pour le cache des données est invalide in /var/www/html/lib/OCFram/Cache.php:90
+Stack trace:
+#0 /var/www/html/lib/OCFram/Cache.php(10): OCFram\Cache->setDataFolder('/var/www/html/l...')
+#1 /var/www/html/lib/OCFram/BackController.php(24): OCFram\Cache->__construct('/var/www/html/l...')
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
