@@ -9,7 +9,7 @@
 			if($interLesson && isset($interLesson))
 			{ ?>
 			<div class="learn_recall">
-				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
+				<p>LA PATIENCE ET LA PERSEVERENCE SONT LES CLEFS DU SUCCES.<br />N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
 			</div>
 			<?php } ?>
 			<div class="learn_title">
@@ -19,19 +19,20 @@
 
 			<p><?= nl2br($lesson->lesson()) ?><p>
 
-			<?php 
-			if($lesson->id() === $student->lesson() && 
+			<?php if($student->Lesson() === "49") {
+				// nothing to show end of the course
+			} else if($lesson->id() === $student->lesson() && 
 			   !$interLesson &&
 			   isset($interLesson)
 		        )
 			{ ?>
 				<div class="justify-center">
-				<a href="/learn/lessonFinish.php" class="btn-text-resize-meddium">Chapitre termine</a>
+				<a href="/learn/lessonFinish.php" class="btn-choice-resize-meddium">Chapitre termine</a>
 				</div>
 
 			<?php } elseif($interLesson && isset($interLesson)) { ?>
 			<div class="learn_recall">
-				<p>N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
+				<p>LA PATIENCE ET LA PERSEVERENCE SONT LES CLEFS DU SUCCES.<br />N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
 			</div>
 			<?php } ?>
 		</div>

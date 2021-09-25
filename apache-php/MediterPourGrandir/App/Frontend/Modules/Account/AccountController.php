@@ -87,7 +87,8 @@ class AccountController extends BackController
       $student = new StudentModifyAccount([
         'pseudo' => $user->pseudo(),
         'email' => $user->email(),
-        'picture' => $user->picture()
+	'picture' => $user->picture(),
+	'message' => $user->message()
       ]);
     }
 
@@ -143,7 +144,7 @@ class AccountController extends BackController
     }
     else
     {
-      $student = new StudentModifyAccount();
+      $student = new StudentModifyAccount(['message' => $user->message()]);
     } 
 
     $formBuilder = new StudentResetPasswordFormBuilder($student, $user->csrf());

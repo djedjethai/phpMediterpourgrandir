@@ -102,7 +102,8 @@ class FeedbacksController extends BackController
     {
       $this->app->user()->setFlash('Votre avis a bien été ajouté, merci !');
       
-      //$this->app->httpResponse()->redirect('/learn/learn.php');
+      // $this->app->httpResponse()->redirect('/learn/learn.php');
+      $this->app->httpResponse()->redirect('/admin/feedbacks');
     }
 
     if ($feedback->grade() !== null) { $this->page->addVar('grade', $feedback->grade());}

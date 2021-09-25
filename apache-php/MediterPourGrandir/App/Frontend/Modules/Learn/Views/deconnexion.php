@@ -3,7 +3,7 @@
      		<div class="rowgrid">
 				<div class="report">
 					<div class="report__box">
-					<p class="paragraph">Vous etes deconnectes, tous les cookies ont ete supprimes.</p>
+					<p class="paragraph">Vous êtes deconnecté(e), tous les cookies ont été supprimé.</p>
 					</div>
 				</div>
 		</div>
