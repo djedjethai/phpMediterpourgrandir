@@ -4,13 +4,29 @@
 	align-items: center;
 	background-color: $color-tertiary-dark;
 	font-size: 2.5rem;
-	min-height: 8rem;
+	// min-height: 8rem;
+	// max-height: 8rem;
+}
+
+.logo-image{
+	max-height: 9rem;
+	max-width: 19rem;
+	overflow: hidden;
 }
 
 .unsigned-route {
 	display: flex;
-	margin: 0 0 0 .7rem;
+	margin: 0rem .7rem 0rem 0rem;
 	align-items: center;
+
+	&__logo{
+		margin: 0;
+		&__item{
+			height: 100%;
+			width: 100%;
+		}
+	}
+
 	&__item {
 		margin: .7rem;
 	}

@@ -990,13 +990,22 @@ td, th {
   justify-content: space-between;
   align-items: center;
   background-color: #5643fa;
-  font-size: 2.5rem;
-  min-height: 8rem; }
+  font-size: 2.5rem; }
+
+.logo-image {
+  max-height: 9rem;
+  max-width: 19rem;
+  overflow: hidden; }
 
 .unsigned-route {
   display: flex;
-  margin: 0 0 0 .7rem;
+  margin: 0rem .7rem 0rem 0rem;
   align-items: center; }
+  .unsigned-route__logo {
+    margin: 0; }
+    .unsigned-route__logo__item {
+      height: 100%;
+      width: 100%; }
   .unsigned-route__item {
     margin: .7rem; }
   .unsigned-route__link {

@@ -30,7 +30,7 @@
 					<svg class="footer-center__icon">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-facebook-with-circle"></use>
 					</svg>
-					<a href="#" class="comment-icon">Facebook</a>
+					<a href="https://www.facebook.com/profile.php?id=100053746027326" class="comment-icon">Facebook</a>
 				</div>
 
 				</div>

@@ -79,7 +79,7 @@
     </div>
     <div class="textwelcome">
     	<div class="paragraph">
-    		<p><span class="u-margin-left-medium">Cet</span> enseignement est gratuit. Il se compose de 48 leçons réparties en  5 chapitres. Tous les aspects de la méditation sont expliqués : une technique extrêmement efficace, les obstacles à éviter, les chan (djana) et les yan (insight). Il s’adresse à tous les niveaux car il part de zéro et décrit toutes les étapes. Aussi à l’issue la méditation de pleine conscience n’aura plus de secret pour vous.</p>
+    		<p><span class="u-margin-left-medium">Cet</span> enseignement est gratuit. Il se compose de 46 leçons réparties en  5 chapitres. Tous les aspects de la méditation sont expliqués : une technique extrêmement efficace, les obstacles à éviter, les chan (djana) et les yan (insight). Il s’adresse à tous les niveaux car il part de zéro et décrit toutes les étapes. Aussi à l’issue la méditation de pleine conscience n’aura plus de secret pour vous.</p>
 
 			<p><span class="u-margin-left-medium">Après</span> avoir ouvert votre compte, vous avez accès à une leçon tous les 4 jours. Cette contrainte n’est pas anodine, afin de développer la méditation if faut la pratiquer quotidiennement durant un certain temps pour en constater les bénéfices. Ainsi cet enseignement vous incite, pour commencer, à méditer durant 6 mois. Idéalement cela ne sera qu’un début, car à l’issue, afin d’entretenir vos acquis et continuer à progresser, vous devrez poursuivre.</p>
  
