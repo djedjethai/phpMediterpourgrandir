@@ -84,13 +84,7 @@
             				<img src="/Web/images/navbar/mediterlogocrop.jpg" class="unsigned-route__logo__item">
       				</div>
 			</a>
-			<!-- <div class="unsigned-route__logo">
-			 	<img src="/Web/images/navbar/mediterlogocrop.jpg" class="unsigned-route__logo__item"/>
-              		 </div>-->
 
-        		<!--<div class="unsigned-route__item">
-             			<a class="unsigned-route__link" href="/">Acceuiluu</a>
-              		</div>-->
                 	<div class="unsigned-route__item">
                       		<a class="unsigned-route__link" href="/welcome/QuiSuisJe.php">Qui suis-je</a>
                 	</div>

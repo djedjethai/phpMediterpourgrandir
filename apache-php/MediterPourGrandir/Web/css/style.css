@@ -990,7 +990,8 @@ td, th {
   justify-content: space-between;
   align-items: center;
   background-color: #5643fa;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  min-height: 9rem; }
 
 .logo-image {
   max-height: 9rem;

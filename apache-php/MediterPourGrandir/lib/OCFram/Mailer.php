@@ -7,8 +7,14 @@ use \OCFram\SMTP;
 use \OCFram\PHPMailerAutoload;
 
 
+use SecureEnvPHP\SecureEnvPHP;
+
+
 class Mailer
 {
+
+  protected $sender = 'mediterpourgrandir@gmail.com';
+
   public static function sendMail($destination, $sender, $subject, $body) 
   {
     echo 'destination';
@@ -19,56 +25,82 @@ class Mailer
     var_dump($subject);
     echo 'body';
     var_dump($body);
-
-//    	$email = new \SendGrid\Mail\Mail();
-//	$email->setFrom("djedje.thai.ok@gmail.com", "Example User");
-//	$email->setSubject("Sending with Twilio SendGrid is Fun");
-//	$email->addTo("djedjethai@gmail.com", "Example User");
-//	$email->addContent("text/plain", "and easy to do anywhere, even with PHP");
-//	$email->addContent(
-//	    "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-//	);
-//	$sendgrid = new \SendGrid('');
-//	try {
-//	    $response = $sendgrid->send($email);
-//	    print $response->statusCode() . "\n";
-//	    print_r($response->headers());
-//	    print $response->body() . "\n";
-//	} catch (Exception $e) {
-//	    echo 'Caught exception: ',  $e->getMessage(), "\n";
-//	}
-
-    $mail = new PHPMailer;
-
-    // $mail->SMTPDebug = 3;                               // Enable verbose debug output
-    $mail->SMTPDebug = 4;
-    $mail->isSMTP();   
-    $mail->Mailer = "smtp";                                 // Set mailer to use SMTP
-    // $mail->Host = 'djedje-PORTEGE-M900';  // Specify main and backup SMTP servers
-    $mail->Host = "localhost";
-    $mail->SMTPAuth = false;
-    $mail->SMTPSecure = false;
-    $mail->SMTPAutoTLS = false;
-                       // SMTP password
     
-    $mail->Port = 25;                                    // as it s the port of the postfix image
+    
+    (new SecureEnvPHP())->parse('.env.enc', '.env.key');
+    $sendGridApiKey = getenv('SENDGRID_API_KEY');
+    
+    
+    $email = new \SendGrid\Mail\Mail();
+    $email->setFrom("mediterpourgrandir@gmail.com", "Example User");
+    $email->setSubject("Sending with Twilio SendGrid is Fun");
+    $email->addTo("djedjethai@gmail.com", "Example User");
+    $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+    $email->addContent(
+        "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+    );
+    // $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+    $sendgrid = new \SendGrid($sendGridApiKey);
+    var_dump('arrrrrhhhhh', $sendgrid);
+    try {
+        $response = $sendgrid->send($email);
+        print $response->statusCode() . "\n";
+        print_r($response->headers());
+        print $response->body() . "\n";
+    } catch (Exception $e) {
+        echo 'Caught exception: '. $e->getMessage() ."\n";
+    }
 
-    $mail->setFrom($sender);
-    $mail->addAddress($destination);     // Add a recipient
+    	// $email = new \SendGrid\Mail\Mail();
+	// $email->setFrom("mediterpourgrandir@gmail.com", "Example User");
+	// $email->setSubject("Sending with Twilio SendGrid is Fun");
+	// $email->addTo("djedjethai@gmail.com", "Example User");
+	// $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+	// $email->addContent(
+	//     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+	// );
+	// $sendgrid = new \SendGrid('');
+	// try {
+	//     $response = $sendgrid->send($email);
+	//     print $response->statusCode() . "\n";
+	//     print_r($response->headers());
+	//     print $response->body() . "\n";
+	// } catch (Exception $e) {
+	//     echo 'Caught exception: ',  $e->getMessage(), "\n";
+	// }
 
-    $mail->isHTML(true);                                  // Set email format to HTML
+    // WITH POSTFIX DO NOT WORK
+    // $mail = new PHPMailer;
 
-    $mail->Subject = $subject;
-    $mail->Body    = $body;
-    $mail->CharSet = 'utf-8';
-    $mail->AltBody = 'alt body';
+    // // $mail->SMTPDebug = 3;                               // Enable verbose debug output
+    // $mail->SMTPDebug = 4;
+    // $mail->isSMTP();   
+    // $mail->Mailer = "smtp";                                 // Set mailer to use SMTP
+    // // $mail->Host = 'djedje-PORTEGE-M900';  // Specify main and backup SMTP servers
+    // $mail->Host = "localhost";
+    // $mail->SMTPAuth = false;
+    // $mail->SMTPSecure = false;
+    // $mail->SMTPAutoTLS = false;
+    //                    // SMTP password
+    // 
+    // $mail->Port = 25;                                    // as it s the port of the postfix image
 
-    if(!$mail->send()) {
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-    } else {
-        echo 'Message has been sent';
-    } 
+    // $mail->setFrom($sender);
+    // $mail->addAddress($destination);     // Add a recipient
+
+    // $mail->isHTML(true);                                  // Set email format to HTML
+
+    // $mail->Subject = $subject;
+    // $mail->Body    = $body;
+    // $mail->CharSet = 'utf-8';
+    // $mail->AltBody = 'alt body';
+
+    // if(!$mail->send()) {
+    //     echo 'Message could not be sent.';
+    //     echo 'Mailer Error: ' . $mail->ErrorInfo;
+    // } else {
+    //     echo 'Message has been sent';
+    // } 
   }
 
   public static function sendMailAuth($student, $key)
@@ -76,7 +108,7 @@ class Mailer
 	var_dump("http://mediterpourgrandir/auth/confRegistration-".$key."".$student->id().".php");
    
     $destination = $student->email();
-    $sender = 'djedjethai@gmail.com';
+    $sender = 'mediterpourgrandir@gmail.com';
     $subject = 'Mediter Pour Grandir, confirmation d\'inscription';
     $body = "Bienvenue sur le site de Mediter Pour Grandir,
  
@@ -129,7 +161,7 @@ class Mailer
   public static function sendMailPassword($student, $key)
   {
     $destination = $student->email();
-    $sender = 'djedjethai@gmail.com';
+    $sender = 'mediterpourgrandir@gmail.com';
     $subject = 'Mediter Pour Grandir';
     $body = "Mediter Pour Grandir est ravie de vous compter parmis ses membres,
  
@@ -176,7 +208,7 @@ class Mailer
   public static function sendMailNotify($user, $news)
   {
     $destination = $user->userEmail();
-    $sender = 'djedjethai@gmail.com';
+    $sender = 'mediterpourgrandir@gmail.com';
     $subject = 'Mediter Pour Grandir, nouveau message';
     $body = "Mediter Pour Grandir est ravie de vous compter parmis ses membres,
 
@@ -194,7 +226,7 @@ class Mailer
 
   public static function sendMailContact($contact)
   {
-    $destination = 'djedjethai@gmail.com';
+    $destination = 'mediterpourgrandir@gmail.com';
     $sender = $contact->email();
     $subject = 'Mediter Pour Grandir, contact';
     $body = "Email de ".$contact->pseudo().",
