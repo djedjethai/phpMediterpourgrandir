@@ -78,6 +78,21 @@
                         </ul>               
         	</div>
 	<?php } else { ?>
+		<ul class="dropUlwelc">
+                           	<li class="dropLi">
+					<div class="dropA">
+					<svg class="unsigned-route__menu">
+						<use xlink:href="/Web/images/navbar/sprite.svg#icon-menu"></use>
+					</svg>
+					</div>
+				
+                              		<ul class="dropdown">
+                                		<li class="dropLi"><a class="dropA" href="/">Acceuil</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Qui-suis-je</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/contact.php">Contact</a></li>
+                              		</ul>
+                           	</li>
+                </ul> 
 		<div class="unsigned-route">
 			<a class="unsigned-route__logo" href="/">
       				<div class="logo-image">

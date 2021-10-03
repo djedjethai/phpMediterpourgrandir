@@ -51,56 +51,42 @@ class Mailer
         echo 'Caught exception: '. $e->getMessage() ."\n";
     }
 
-    	// $email = new \SendGrid\Mail\Mail();
-	// $email->setFrom("mediterpourgrandir@gmail.com", "Example User");
-	// $email->setSubject("Sending with Twilio SendGrid is Fun");
-	// $email->addTo("djedjethai@gmail.com", "Example User");
-	// $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
-	// $email->addContent(
-	//     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-	// );
-	// $sendgrid = new \SendGrid('');
-	// try {
-	//     $response = $sendgrid->send($email);
-	//     print $response->statusCode() . "\n";
-	//     print_r($response->headers());
-	//     print $response->body() . "\n";
-	// } catch (Exception $e) {
-	//     echo 'Caught exception: ',  $e->getMessage(), "\n";
-	// }
+  }
 
+  public static function sendMailWithPostFix($destination, $sender, $subject, $body)
+  {  
     // WITH POSTFIX DO NOT WORK
-    // $mail = new PHPMailer;
+    $mail = new PHPMailer;
 
-    // // $mail->SMTPDebug = 3;                               // Enable verbose debug output
-    // $mail->SMTPDebug = 4;
-    // $mail->isSMTP();   
-    // $mail->Mailer = "smtp";                                 // Set mailer to use SMTP
-    // // $mail->Host = 'djedje-PORTEGE-M900';  // Specify main and backup SMTP servers
-    // $mail->Host = "localhost";
-    // $mail->SMTPAuth = false;
-    // $mail->SMTPSecure = false;
-    // $mail->SMTPAutoTLS = false;
-    //                    // SMTP password
-    // 
-    // $mail->Port = 25;                                    // as it s the port of the postfix image
+    // $mail->SMTPDebug = 3;                               // Enable verbose debug output
+    $mail->SMTPDebug = 4;
+    $mail->isSMTP();   
+    $mail->Mailer = "smtp";                                 // Set mailer to use SMTP
+    // $mail->Host = 'djedje-PORTEGE-M900';  // Specify main and backup SMTP servers
+    $mail->Host = "localhost";
+    $mail->SMTPAuth = false;
+    $mail->SMTPSecure = false;
+    $mail->SMTPAutoTLS = false;
+                       // SMTP password
+    
+    $mail->Port = 25;                                    // as it s the port of the postfix image
 
-    // $mail->setFrom($sender);
-    // $mail->addAddress($destination);     // Add a recipient
+    $mail->setFrom($sender);
+    $mail->addAddress($destination);     // Add a recipient
 
-    // $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->isHTML(true);                                  // Set email format to HTML
 
-    // $mail->Subject = $subject;
-    // $mail->Body    = $body;
-    // $mail->CharSet = 'utf-8';
-    // $mail->AltBody = 'alt body';
+    $mail->Subject = $subject;
+    $mail->Body    = $body;
+    $mail->CharSet = 'utf-8';
+    $mail->AltBody = 'alt body';
 
-    // if(!$mail->send()) {
-    //     echo 'Message could not be sent.';
-    //     echo 'Mailer Error: ' . $mail->ErrorInfo;
-    // } else {
-    //     echo 'Message has been sent';
-    // } 
+    if(!$mail->send()) {
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+        echo 'Message has been sent';
+    } 
   }
 
   public static function sendMailAuth($student, $key)
@@ -122,40 +108,7 @@ class Mailer
         Ceci est un mail automatique, Merci de ne pas y répondre.";
     
 
-    self::sendMail($destination, $sender, $subject, $body);
-
-
-    /*$mail = new PHPMailer;
-
-    // $mail->SMTPDebug = 3;                               // Enable verbose debug output
-    $mail->SMTPDebug = 4;
-    $mail->isSMTP();   
-    $mail->Mailer = "smtp";                                 // Set mailer to use SMTP
-    // $mail->Host = 'djedje-PORTEGE-M900';  // Specify main and backup SMTP servers
-    $mail->Host = 'localhost';
-    $mail->SMTPAuth = false;
-    $mail->SMTPSecure = false;
-    $mail->SMTPAutoTLS = false;
-                       // SMTP password
-    
-    $mail->Port = 25;                                    // TCP port to connect to
-
-    $mail->setFrom('djedjethai@gmail.com');
-    $mail->addAddress($student->email());     // Add a recipient
-
-    $mail->isHTML(true);                                  // Set email format to HTML
-
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->CharSet = 'utf-8';
-    $mail->AltBody = 'alt body';
-
-    if(!$mail->send()) {
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-    } else {
-        echo 'Message has been sent';
-    }*/ 
+    self::sendMail($destination, $sender, $subject, $body); 
   }
 
   public static function sendMailPassword($student, $key)
@@ -173,36 +126,7 @@ class Mailer
         Ceci est un mail automatique, Merci de ne pas y répondre.";;
 
     self::sendMail($destination, $sender, $subject, $body);
-
-   	  /* $mail = new PHPMailer;
-      $mail->setFrom('admin@example.com');
-      $mail->addAddress($student->email());
-      $mail->Subject = 'Message sent by PHPMailer';
-      $mail->Body = "Mediter Pour Grandir est ravie de vous compter parmis ses membres,
- 
-				Votre nouveau mot de passe est: ".$key."
-				 
-				---------------
-				Ceci est un mail automatique, Merci de ne pas y répondre.";
-      $mail->IsSMTP();
-      $mail->SMTPSecure = 'ssl';
-      $mail->Host = 'ssl://smtp.gmail.com';
-      $mail->SMTPAuth = true;
-      //$mail->Port = 25;
-      $mail->Port = 465;
-
-      //Set your existing gmail address as user name
-      $mail->Username = $student->email();
-
-      //Set the password of your gmail address here
-      $mail->Password = 'xxxxxxxxx';
-      if(!$mail->send()) {
-        $mail->SMTPDebug = 2;
-        echo 'Email is not sent.';
-        echo 'Email error: ' . $mail->ErrorInfo;
-      } else {
-        echo 'Email has been sent.';
-      }*/  
+   	 
   }
 
   public static function sendMailNotify($user, $news)
