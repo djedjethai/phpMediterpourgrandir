@@ -1,27 +1,27 @@
 version: "2.4"
 
 services:
-        php-apache:
-                build:
-                        context: ./apache-php
-                        target: dev
-                ports:
-                        - "80:80"  
-                # for prod take off the volumes
-                volumes:
-                        - ./apache-php/MediterPourGrandir/:/var/www/html/  
-        mysql:
-                image: mysql:5.6.40
-                #restart: always
-                environment:
-                        - MYSQL_ROOT_PASSWORD=root
-                        - MYSQL_DATABASE=monsupersite
-#                       - MYSQL_USER=root
-                        - MYSQL_PASSWORD=root
-                ports:
-                        - "3306:3306"
-                volumes:
-                        - mysql-db:/var/lib/mysql
+  php-apache:
+    build:
+      context: ./apache-php
+      target: dev
+    ports:
+    - "80:80"  
+ # for prod take off the volumes
+    volumes:
+    - ./apache-php/MediterPourGrandir/:/var/www/html/  
+  mysql:
+    image: mysql:5.6.40
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: thisisabigsecretyouwontguessit
+      MYSQL_DATABASE: monsupersite
+      MYSQL_USER: lasolution
+      MYSQL_PASSWORD: cestdedevelopperledharma
+    ports:
+    - "3306:3306"
+    volumes:
+    - mysql-db:/var/lib/mysql
          # postfix:
          #      image: juanluisbaptiste/postfix:latest
          #      environment:

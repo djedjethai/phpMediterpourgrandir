@@ -17,14 +17,14 @@ class Mailer
 
   public static function sendMail($destination, $sender, $subject, $body) 
   {
-    echo 'destination';
-    var_dump($destination);
-    echo 'sender';
-    var_dump($sender);
-    echo 'subject';
-    var_dump($subject);
-    echo 'body';
-    var_dump($body);
+    // echo 'destination';
+    // var_dump($destination);
+    // echo 'sender';
+    // var_dump($sender);
+    // echo 'subject';
+    // var_dump($subject);
+    // echo 'body';
+    // var_dump($body);
     
     
     (new SecureEnvPHP())->parse('.env.enc', '.env.key');
@@ -41,7 +41,7 @@ class Mailer
     );
     // $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
     $sendgrid = new \SendGrid($sendGridApiKey);
-    var_dump('arrrrrhhhhh', $sendgrid);
+    // var_dump('arrrrrhhhhh', $sendgrid);
     try {
         $response = $sendgrid->send($email);
         print $response->statusCode() . "\n";

@@ -392,3 +392,346 @@ Stack trace:
 #7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
 #8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
 #9 {main}
+Date: Wednesday 6th of October 2021 08:49:26 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:50:59 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:52:44 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:54:09 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:54:10 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:54:11 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:54:11 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:54:11 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:54:11 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'SecretAccessToD...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:56:55 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:56:55 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:56:56 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:56:56 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:56:56 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:56:56 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:56:56 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:51 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:52 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:52 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:52 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:53 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:54 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:57 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:57 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:58 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 08:57:58 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 09:01:01 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'root')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 09:05:50 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'ilovemysqlalitt...')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 09:12:48 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'jerome'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'jerome', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 09:14:43 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'lamerde'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'lamerde', 'lamerde')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 09:24:03 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.28.0.3' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'root', 'lamerde')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 09:25:57 AM
+Text: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'user'@'172.28.0.2' (using password: YES) in /var/www/html/lib/OCFram/PDOFactory.php:16
+Stack trace:
+#0 /var/www/html/lib/OCFram/PDOFactory.php(16): PDO->__construct('mysql:host=mysq...', 'user', 'mypassword')
+#1 /var/www/html/lib/OCFram/BackController.php(21): OCFram\PDOFactory::getMysqlConnexion()
+#2 /var/www/html/lib/OCFram/Application.php(72): OCFram\BackController->__construct(Object(App\Frontend\FrontendApplication), 'Welcome', 'index')
+#3 /var/www/html/App/Frontend/FrontendApplication.php(17): OCFram\Application->getController()
+#4 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#5 {main}
+Date: Wednesday 6th of October 2021 09:36:18 AM
+Text: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'monsupersite.feedback' doesn't exist in /var/www/html/lib/vendors/Model/FeedbackManagerPDO.php:39
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/FeedbackManagerPDO.php(39): PDO->query('SELECT feedback...')
+#1 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(180): Model\FeedbackManagerPDO->getFeedback(0, '3')
+#2 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(39): App\Frontend\Modules\Welcome\WelcomeController->getFeedbackHepler()
+#3 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeIndex(Object(OCFram\HTTPRequest))
+#4 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#6 {main}
+Date: Wednesday 6th of October 2021 10:34:17 AM
+Text: SendGrid\Exception\InvalidRequest: Could not send request to server. CURL error 77: error setting certificate verify locations:
+  CAfile: /opt/lampp/share/curl/curl-ca-bundle.crt
+  CApath: /etc/ssl/certs in /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php:507
+Stack trace:
+#0 /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php(648): SendGrid\Client->makeRequest('post', 'https://api.sen...', Object(SendGrid\Mail\Mail), NULL, false)
+#1 /var/www/html/vendor/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php(63): SendGrid\Client->__call('post', Array)
+#2 /var/www/html/lib/OCFram/Mailer.php(46): BaseSendGridClientInterface->send(Object(SendGrid\Mail\Mail))
+#3 /var/www/html/lib/OCFram/Mailer.php(160): OCFram\Mailer::sendMail('mediterpourgran...', 'djedjethai@gmai...', 'Mediter Pour Gr...', 'Email de jerome...')
+#4 /var/www/html/App/Frontend/Modules/Welcome/WelcomeFormHandler.php(14): OCFram\Mailer::sendMailContact(Object(Entity\Contact))
+#5 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(105): App\Frontend\Modules\Welcome\WelcomeFormHandler->processMailContact(Object(Entity\Contact))
+#6 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#9 {main}
+Date: Wednesday 6th of October 2021 10:39:35 AM
+Text: SendGrid\Exception\InvalidRequest: Could not send request to server. CURL error 77: error setting certificate verify locations:
+  CAfile: /opt/lampp/share/curl/curl-ca-bundle.crt
+  CApath: /etc/ssl/certs in /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php:507
+Stack trace:
+#0 /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php(648): SendGrid\Client->makeRequest('post', 'https://api.sen...', Object(SendGrid\Mail\Mail), NULL, false)
+#1 /var/www/html/vendor/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php(63): SendGrid\Client->__call('post', Array)
+#2 /var/www/html/lib/OCFram/Mailer.php(46): BaseSendGridClientInterface->send(Object(SendGrid\Mail\Mail))
+#3 /var/www/html/lib/OCFram/Mailer.php(160): OCFram\Mailer::sendMail('mediterpourgran...', 'djedjethai@gmai...', 'Mediter Pour Gr...', 'Email de jerome...')
+#4 /var/www/html/App/Frontend/Modules/Welcome/WelcomeFormHandler.php(14): OCFram\Mailer::sendMailContact(Object(Entity\Contact))
+#5 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(105): App\Frontend\Modules\Welcome\WelcomeFormHandler->processMailContact(Object(Entity\Contact))
+#6 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#9 {main}
+Date: Wednesday 6th of October 2021 11:08:19 AM
+Text: SendGrid\Exception\InvalidRequest: Could not send request to server. CURL error 77: error setting certificate verify locations:
+  CAfile: /opt/lampp/share/curl/curl-ca-bundle.crt
+  CApath: /etc/ssl/certs in /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php:507
+Stack trace:
+#0 /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php(648): SendGrid\Client->makeRequest('post', 'https://api.sen...', Object(SendGrid\Mail\Mail), NULL, false)
+#1 /var/www/html/vendor/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php(63): SendGrid\Client->__call('post', Array)
+#2 /var/www/html/lib/OCFram/Mailer.php(46): BaseSendGridClientInterface->send(Object(SendGrid\Mail\Mail))
+#3 /var/www/html/lib/OCFram/Mailer.php(160): OCFram\Mailer::sendMail('mediterpourgran...', 'djedjethai@gmai...', 'Mediter Pour Gr...', 'Email de jerome...')
+#4 /var/www/html/App/Frontend/Modules/Welcome/WelcomeFormHandler.php(14): OCFram\Mailer::sendMailContact(Object(Entity\Contact))
+#5 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(105): App\Frontend\Modules\Welcome\WelcomeFormHandler->processMailContact(Object(Entity\Contact))
+#6 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#9 {main}

@@ -10,9 +10,14 @@ class Config extends ApplicationComponent
     if (!$this->vars)
     {
       // encode password
-      // $password='jerome';
+      // $password='theadminnametoencode';
       // $hash = password_hash($password, PASSWORD_BCRYPT);
       // var_dump($hash);
+	    
+      // $password2='thepasswordnametoencode';
+      // $hash = password_hash($password2, PASSWORD_BCRYPT);
+      // var_dump($hash);
+
 
       $xml = new \DOMDocument;
       $xml->load(__DIR__.'/../../App/'.$this->app->name().'/Config/app.xml');
