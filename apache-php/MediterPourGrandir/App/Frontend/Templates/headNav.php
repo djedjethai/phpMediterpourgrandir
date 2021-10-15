@@ -24,7 +24,7 @@
 				
                               		<ul class="dropdown">
                                 		<li class="dropLi"><a class="dropA" href="/">Acceuil</a></li>
-                                		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Qui-suis-je</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Instructeur(s)</a></li>
                                 		<li class="dropLi"><a class="dropA" href="/welcome/contact.php">Contact</a></li>
                               		</ul>
                            	</li>
@@ -88,7 +88,7 @@
 				
                               		<ul class="dropdown">
                                 		<li class="dropLi"><a class="dropA" href="/">Acceuil</a></li>
-                                		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Qui-suis-je</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Instructeur(s)</a></li>
                                 		<li class="dropLi"><a class="dropA" href="/welcome/contact.php">Contact</a></li>
                               		</ul>
                            	</li>
@@ -101,7 +101,7 @@
 			</a>
 
                 	<div class="unsigned-route__item">
-                      		<a class="unsigned-route__link" href="/welcome/QuiSuisJe.php">Qui suis-je</a>
+                      		<a class="unsigned-route__link" href="/welcome/QuiSuisJe.php">Instructeur(s)</a>
                 	</div>
                 	<div class="unsigned-route__item">
                         	<a class="unsigned-route__link" href="/welcome/contact.php">Contact</a>

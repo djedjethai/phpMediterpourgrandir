@@ -16,10 +16,10 @@
             </h2>
     </div>
     <div class="textwelcome">
-    	<div class="paragraph">
-	<p><span class="u-margin-left-medium">"Mediter Pour Grandir"</span> a pour vocation d'enseigner gratuitement la mediation de plein conscience, pour y parvenir un enseigenement est mis a disposition ainsi que des instructeurs diplomes via l’institut <a href="http://www.samathi.com/2016/institute-detail.php?actid=1">Willpower Institute (Bangkok)</a>. Nous instruire nous fait beneficier de l'experience de nos anciens ainsi nous optimisons notre progression. Dans cet enseignement nous n’inventons rien, nous ne faisons que rapporter une technique de méditation traditionnelle résultante de l’expérience d’expert, en l’occurrence de <a href=https://en.wikipedia.org/wiki/Mun_Bhuridatta>Luang Pu Mun Bhuridatta</a>. Méthode enseignée par <a href=https://en.wikipedia.org/wiki/Luangphor_Viriyang_Sirintharo>Luangphor Viriyang Sirintharo</a> via l'institution <a href=https://www.willpowerinstituteusa.com/about/>Willpower Institute</a></p>
+	<div class="paragraph">
+		<p><span class="u-margin-left-medium">"Méditer Pour Grandir"</span> à pour vocation d'enseigner gratuitement la médiation de pleine conscience, afin d'y parvenir une formation et un instructeur diplômé sont mis à disposition. Cet enseignement n’invente rien, il ne fait que rapporter une technique de méditation traditionnelle résultante de l’expérience d’experts, notamment de <a href=https://en.wikipedia.org/wiki/Mun_Bhuridatta>Luang Pu Mun Bhuridatta</a>. Méthode diffusé par <a href=https://en.wikipedia.org/wiki/Luangphor_Viriyang_Sirintharo>Luangphor Viriyang Sirintharo</a> via l'institution <a href=https://www.willpowerinstituteusa.com/about/>Willpower Institute</a></p>
 
-	<p><span class="u-margin-left-medium">Méditer</span> quotidiennement nous aide à prendre du recule par rapport aux évènements du quotidien et par rapport à nous-même, progressivement nos prises de conscience s’éclaircissent, d’où ‘’méditation de pleine conscience’’. De plus, affermissant la force de volonté, nous développons nos aptitudes à rectifier nos comportements, nos paroles, et finalement nos pensées, ainsi nous optimisons notre bien-être. .</p>
+		<p><span class="u-margin-left-medium">Méditer</span> quotidiennement nous aide à prendre du recule par rapport aux évènements du quotidien et par rapport à nous-même (souvent appelé le "lâcher prise"), progressivement nos prises de conscience s’éclaircissent, d’où "méditation de pleine conscience". De plus, affermissant notre force de volonté, nous développons nos aptitudes à rectifier nos comportements, nos paroles et finalement nos pensées, ainsi nous optimisons notre bien-être.</p>
     	</div> 
     </div>
 </section>
@@ -82,9 +82,9 @@
     	<div class="paragraph">
     		<p><span class="u-margin-left-medium">Cet</span> enseignement est gratuit. Il se compose de 46 leçons réparties en  5 chapitres. Tous les aspects de la méditation sont expliqués : une technique extrêmement efficace, les obstacles à éviter, les chan (djana) et les yan (insight). Il s’adresse à tous les niveaux car il part de zéro et décrit toutes les étapes. Aussi à l’issue la méditation de pleine conscience n’aura plus de secret pour vous.</p>
 
-			<p><span class="u-margin-left-medium">Après</span> avoir ouvert votre compte, vous avez accès à une leçon tous les 4 jours. Cette contrainte n’est pas anodine, afin de développer la méditation if faut la pratiquer quotidiennement durant un certain temps pour en constater les bénéfices. Ainsi cet enseignement vous incite, pour commencer, à méditer durant 6 mois. Idéalement cela ne sera qu’un début, car à l’issue, afin d’entretenir vos acquis et continuer à progresser, vous devrez poursuivre.</p>
+		<p><span class="u-margin-left-medium">Après</span> avoir ouvert votre compte, vous avez accès à une leçon tous les 4 jours. Cette contrainte n’est pas anodine, afin de développer la méditation il faut la pratiquer quotidiennement durant un certain temps pour en constater les bénéfices. Ainsi cet enseignement vous incite, pour commencer, à méditer durant 6 mois(46 leçons * 4 jours / 30 jours = 6 mois). Idéalement cela ne sera qu’un début, car à l’issue, afin d’entretenir vos acquis et continuer à progresser, vous devrez poursuivre.</p>
  
-			<p><span class="u-margin-left-medium">Un</span> forum est mis à disposition afin de répondre aux questions, si vous avez des doutes, ou ne comprenez pas certaines explications. Ce dernier vous permet également d’échanger avec d’autres pratiquants sur des sujets lies à la méditation.</p>
+		<p><span class="u-margin-left-medium">Si</span> vous avez des doutes, ou ne comprenez pas certaines explications, un instructeur diplomé répondra à vos questions via un forum mis à disposition. Ce dernier vous permet également d’échanger avec d’autres pratiquants sur des sujets liés à la méditation.</p>
     	</div> 
     </div>
 </section>
