@@ -735,3 +735,33 @@ Stack trace:
 #7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
 #8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
 #9 {main}
+Date: Sunday 17th of October 2021 06:39:44 AM
+Text: SendGrid\Exception\InvalidRequest: Could not send request to server. CURL error 77: error setting certificate verify locations:
+  CAfile: /opt/lampp/share/curl/curl-ca-bundle.crt
+  CApath: /etc/ssl/certs in /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php:507
+Stack trace:
+#0 /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php(648): SendGrid\Client->makeRequest('post', 'https://api.sen...', Object(SendGrid\Mail\Mail), NULL, false)
+#1 /var/www/html/vendor/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php(63): SendGrid\Client->__call('post', Array)
+#2 /var/www/html/lib/OCFram/Mailer.php(46): BaseSendGridClientInterface->send(Object(SendGrid\Mail\Mail))
+#3 /var/www/html/lib/OCFram/Mailer.php(160): OCFram\Mailer::sendMail('mediterpourgran...', 'jerome@jerome.c...', 'Mediter Pour Gr...', 'Email de loulou...')
+#4 /var/www/html/App/Frontend/Modules/Welcome/WelcomeFormHandler.php(14): OCFram\Mailer::sendMailContact(Object(Entity\Contact))
+#5 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(105): App\Frontend\Modules\Welcome\WelcomeFormHandler->processMailContact(Object(Entity\Contact))
+#6 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#9 {main}
+Date: Sunday 17th of October 2021 06:49:27 AM
+Text: SendGrid\Exception\InvalidRequest: Could not send request to server. CURL error 77: error setting certificate verify locations:
+  CAfile: /opt/lampp/share/curl/curl-ca-bundle.crt
+  CApath: /etc/ssl/certs in /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php:507
+Stack trace:
+#0 /var/www/html/vendor/sendgrid/php-http-client/lib/Client.php(648): SendGrid\Client->makeRequest('post', 'https://api.sen...', Object(SendGrid\Mail\Mail), NULL, false)
+#1 /var/www/html/vendor/sendgrid/sendgrid/lib/BaseSendGridClientInterface.php(63): SendGrid\Client->__call('post', Array)
+#2 /var/www/html/lib/OCFram/Mailer.php(46): BaseSendGridClientInterface->send(Object(SendGrid\Mail\Mail))
+#3 /var/www/html/lib/OCFram/Mailer.php(160): OCFram\Mailer::sendMail('mediterpourgran...', 'jerome@jerome.c...', 'Mediter Pour Gr...', 'Email de loulou...')
+#4 /var/www/html/App/Frontend/Modules/Welcome/WelcomeFormHandler.php(14): OCFram\Mailer::sendMailContact(Object(Entity\Contact))
+#5 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(105): App\Frontend\Modules\Welcome\WelcomeFormHandler->processMailContact(Object(Entity\Contact))
+#6 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeContact(Object(OCFram\HTTPRequest))
+#7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#9 {main}

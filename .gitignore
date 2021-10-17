@@ -6,3 +6,5 @@ apache-php/MediterPourGrandir/.env.enc
 apache-php/MediterPourGrandir/.env.key
 
 ./docker-compose.yml
+
+curl

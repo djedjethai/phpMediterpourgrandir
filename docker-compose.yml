@@ -10,6 +10,7 @@ services:
  # for prod take off the volumes
     volumes:
     - ./apache-php/MediterPourGrandir/:/var/www/html/  
+    - ./curl/:/opt/lampp/share/curl/
   mysql:
     image: mysql:5.6.40
     restart: always
