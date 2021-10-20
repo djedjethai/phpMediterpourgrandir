@@ -755,6 +755,24 @@ body {
   .showpicture:hover .showpicture__photo:not(:hover) {
     transform: scale(0.95); }
 
+.showpictureinstructeur {
+  text-align: center; }
+  .showpictureinstructeur__photo {
+    width: 37%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    margin: 0 auto;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .showpictureinstructeur__photo:hover {
+      outline: 1.5rem solid #2998ff;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .showpictureinstructeur:hover .showpictureinstructeur__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .newsframe {
   width: 90%;
   margin: 4px auto;
@@ -1390,17 +1408,21 @@ td, th {
 
 .section-quisuisje {
   background-color: #eee;
-  padding: 10rem 0; }
+  padding: 10rem; }
   @media only screen and (max-width: 56.25em) {
     .section-quisuisje {
-      padding: 10rem 0; } }
+      padding: 10rem 5rem; } }
 
-.textwelcome {
+.textinstructeur {
   display: flex;
   justify-content: space-between;
-  padding: 10rem 0; }
-  .textwelcome_info {
-    width: 0; }
+  padding: 5rem 0;
+  margin: 0; }
+  .textinstructeur_info {
+    min-width: 50%; }
+  .textinstructeur_picture {
+    display: block;
+    margin: 0; }
 
 .section-news {
   background-color: #eee;
