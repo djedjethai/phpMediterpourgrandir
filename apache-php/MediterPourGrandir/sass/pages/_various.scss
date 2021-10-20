@@ -38,10 +38,28 @@
 
 .section-quisuisje {
 	background-color: $color-grey-light-2;
-    	position: relative;
+    	// position: relative;
     	padding: 10rem 0;
 
     	@include respond(tab-port) {
         	padding: 10rem 0;
+    	}
+}
+
+.textwelcome {
+	// background-color: $color-grey-light-2;
+	display: flex;
+	// flex-basis:0;
+	justify-content: space-between;
+    	padding: 10rem 0;
+
+	&_info{
+		width:0;
+	}
+	&_picture{
+		// width:0;
+	}
+
+    	@include respond(tab-port) {
     	}
 }

@@ -10,7 +10,7 @@
 
 <main>
 <section class="section-introduction">
-	<div class="u-center-text u-margin-bottom-big">
+	<div class="u-center-text u-margin-bottom-medium">
             <h2 class="heading-secondary">
                 Introduction
             </h2>
@@ -56,7 +56,7 @@
 </section>
 
 <section class="section-explication">
-	<div class="u-center-text u-margin-bottom-big">
+	<div class="u-center-text u-margin-bottom-medium">
             <h2 class="heading-secondary">
                 de maniere generale
             </h2>
@@ -73,7 +73,7 @@
 </section>
 
 <section class="section-formation">
-	<div class="u-center-text u-margin-bottom-big">
+	<div class="u-center-text u-margin-bottom-medium">
             <h2 class="heading-secondary">
                 la formation
             </h2>
@@ -90,7 +90,7 @@
 </section>
 
 <section class="section-stories">
-	<div class="u-center-text u-margin-bottom-big">
+	<div class="u-center-text u-margin-bottom-medium">
                 <h2 class="heading-secondary">
                     Votre avis
                 </h2>

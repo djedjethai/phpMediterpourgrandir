@@ -93,7 +93,7 @@ class WelcomeController extends BackController
       $formBuilder = new ContactFormBuilder($contact, $csrf);
     }
 
-    $this->page->addVar('title', 'bienvenue a authentification sign Up');
+    $this->page->addVar('title', 'Bienvenue à l\'authentification S\'inscrir');
 
     $formBuilder->build();
 
@@ -104,11 +104,11 @@ class WelcomeController extends BackController
   
     if (!$errCaptcha && $welcomeFormHandler->processMailContact($contact))
     {
-      $this->app->user()->setFlash('Votre message a bien ete envoye, nous vous repondrons au plus vite. merci.');
+      $this->app->user()->setFlash('Votre message a bien été envoyé, nous vous répondrons au plus vite, merci.');
       
       // $this->app->httpResponse()->redirect('/welcome/mailContact.php');
 
-      // $this->app->httpResponse()->redirect('/');
+      $this->app->httpResponse()->redirect('/');
     }    
     
     // delete overtime captcha (if have)

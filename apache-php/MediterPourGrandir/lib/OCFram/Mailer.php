@@ -13,7 +13,7 @@ use SecureEnvPHP\SecureEnvPHP;
 class Mailer
 {
 
-  protected $sender = 'mediterpourgrandir@gmail.com';
+  protected $sender = 'admin@mediterpourgrandir.com';
 
   public static function sendMail($destination, $sender, $subject, $body) 
   {
@@ -30,26 +30,43 @@ class Mailer
     (new SecureEnvPHP())->parse('.env.enc', '.env.key');
     $sendGridApiKey = getenv('SENDGRID_API_KEY');
     
-    
     $email = new \SendGrid\Mail\Mail();
-    $email->setFrom("mediterpourgrandir@gmail.com", "Example User");
-    $email->setSubject("Sending with Twilio SendGrid is Fun");
-    $email->addTo("djedjethai@gmail.com", "Example User");
-    $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
-    $email->addContent(
-        "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
-    );
-    // $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+    $email->setFrom($sender, "Mediter Pour Grandir");
+    $email->setSubject($subject);
+    $email->addTo($destination, "");
+    $email->addContent("text/plain", $body);
+    // $email->addContent(
+    //     "text/html", $body
+    // );
     $sendgrid = new \SendGrid($sendGridApiKey);
-    // var_dump('arrrrrhhhhh', $sendgrid);
     try {
         $response = $sendgrid->send($email);
-        print $response->statusCode() . "\n";
-        print_r($response->headers());
-        print $response->body() . "\n";
+        // print $response->statusCode() . "\n";
+        // print_r($response->headers());
+        // print $response->body() . "\n";
     } catch (Exception $e) {
         echo 'Caught exception: '. $e->getMessage() ."\n";
     }
+
+    // $email = new \SendGrid\Mail\Mail();
+    // $email->setFrom("admin@mediterpourgrandir.com", "Example User");
+    // $email->setSubject("Sending with Twilio SendGrid is Fun");
+    // $email->addTo("djedjethai@gmail.com", "Example User");
+    // $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+    // $email->addContent(
+    //     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
+    // );
+    // // $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+    // $sendgrid = new \SendGrid($sendGridApiKey);
+    // // var_dump('arrrrrhhhhh', $sendgrid);
+    // try {
+    //     $response = $sendgrid->send($email);
+    //     print $response->statusCode() . "\n";
+    //     print_r($response->headers());
+    //     print $response->body() . "\n";
+    // } catch (Exception $e) {
+    //     echo 'Caught exception: '. $e->getMessage() ."\n";
+    // }
 
   }
 
@@ -94,9 +111,9 @@ class Mailer
 	var_dump("http://mediterpourgrandir/auth/confRegistration-".$key."".$student->id().".php");
    
     $destination = $student->email();
-    $sender = 'mediterpourgrandir@gmail.com';
+    $sender = 'admin@mediterpourgrandir.com';
     $subject = 'Mediter Pour Grandir, confirmation d\'inscription';
-    $body = "Bienvenue sur le site de Mediter Pour Grandir,
+    $body = "Bienvenue sur le site de Méditer Pour Grandir,
  
         Pour activer votre compte, veuillez cliquer sur le lien ci dessous
         ou le copier/coller dans votre navigateur internet.
@@ -114,13 +131,13 @@ class Mailer
   public static function sendMailPassword($student, $key)
   {
     $destination = $student->email();
-    $sender = 'mediterpourgrandir@gmail.com';
+    $sender = 'admin@mediterpourgrandir.com';
     $subject = 'Mediter Pour Grandir';
-    $body = "Mediter Pour Grandir est ravie de vous compter parmis ses membres,
+    $body = "Méditer Pour Grandir est ravie de vous compter parmis ses membres,
  
-        Votre nouveau mot de passe est: ".$key.".
+        Votre nouveau mot de passe est: ".$key."
 
-        Afin de proteger votre compte, pensez a le modifier des votre prochaine connexion.
+        Afin de protéger votre compte, pensez à le modifier dès votre prochaine connexion.
          
         ---------------
         Ceci est un mail automatique, Merci de ne pas y répondre.";;
@@ -132,28 +149,24 @@ class Mailer
   public static function sendMailNotify($user, $news)
   {
     $destination = $user->userEmail();
-    $sender = 'mediterpourgrandir@gmail.com';
+    $sender = 'admin@mediterpourgrandir.com';
     $subject = 'Mediter Pour Grandir, nouveau message';
-    $body = "Mediter Pour Grandir est ravie de vous compter parmis ses membres,
+    $body = "Méditer Pour Grandir est ravie de vous compter parmis ses membres,
 
-            Il y a une reponse dans la discution '".$news->titre()."'
+      	Il y a une réponse dans la discution: '".$news->titre()."'
 
-            Vous pouvez consulter le nouveau message en suivant ce lien.
-
-            ----------- Le lien (a passer en arg) ------------------
-         
-            ---------------
-            Ceci est un mail automatique, Merci de ne pas y répondre.";
+	---------------
+       	Ceci est un mail automatique, Merci de ne pas y répondre.";
 
     self::sendMail($destination, $sender, $subject, $body);
   }
 
   public static function sendMailContact($contact)
   {
-    $destination = 'mediterpourgrandir@gmail.com';
-    $sender = $contact->email();
+    $destination = 'admin@mediterpourgrandir.com';
+    $sender = 'admin@mediterpourgrandir.com';
     $subject = 'Mediter Pour Grandir, contact';
-    $body = "Email de ".$contact->pseudo().",
+    $body = "Email de ".$contact->pseudo()." - ".$contact->email().",
 
             Message: ".$contact->contenu()."";
 

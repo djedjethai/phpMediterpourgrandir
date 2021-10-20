@@ -18,5 +18,7 @@
 	<?php } ?>
         
        <?= $content ?>
+
+ </section>
 </main>
 <?php require "footer.php"; ?> 

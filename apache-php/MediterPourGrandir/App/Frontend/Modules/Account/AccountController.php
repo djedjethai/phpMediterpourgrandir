@@ -113,7 +113,7 @@ class AccountController extends BackController
         
         $uploadSuccess = $imageHandler->uploadFile($request->fileData('picture'));
         $accountFormHandler->processStudentModification($student, $user);
-        $this->app->user()->setFlash('La modification de votre compte a ete effectue');
+        $this->app->user()->setFlash('La modification de votre compte a été effectuée');
         $this->app->httpResponse()->redirect('/Account/modifyAccount.php');
       }
       
@@ -167,7 +167,7 @@ class AccountController extends BackController
 
       if($errMessage === 'verifOk'){
         $accountFormHandler->processPasswordModification($student, $user);
-        $this->app->user()->setFlash('La modification de votre compte a ete effectue');
+        $this->app->user()->setFlash('La modification de votre compte a été effectuée');
         $this->app->httpResponse()->redirect('/Account/modifyAccount.php');
       }
     }

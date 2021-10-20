@@ -1,5 +1,6 @@
 <?php require "headNav.php"; ?> 
 
+<main>
 <section class="section-account">
 	
 	<?php if($user->hasFlash()) { ?>
@@ -9,5 +10,6 @@
 	<?php } ?>
 
 	<div><?= $content ?></div>
-
+</section>
+</main>
 <?php require "footer.php"; ?> 

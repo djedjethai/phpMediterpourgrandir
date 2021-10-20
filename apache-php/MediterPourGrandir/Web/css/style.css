@@ -1390,11 +1390,17 @@ td, th {
 
 .section-quisuisje {
   background-color: #eee;
-  position: relative;
   padding: 10rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-quisuisje {
       padding: 10rem 0; } }
+
+.textwelcome {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0; }
+  .textwelcome_info {
+    width: 0; }
 
 .section-news {
   background-color: #eee;
@@ -1517,3 +1523,10 @@ ul {
   text-align: center; }
   .photolesson_img {
     margin: auto; }
+
+.section-welcome {
+  background-color: #5643fa;
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .section-welcome {
+      padding: 3rem 0; } }

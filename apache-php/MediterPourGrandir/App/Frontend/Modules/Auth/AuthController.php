@@ -32,7 +32,7 @@ class AuthController extends BackController
 
     $formBuilder = new StudentSignInFormBuilder($student, $csrfForm);
 
-    $this->page->addVar('title', 'bienvenue a l\'authentification.');
+    $this->page->addVar('title', 'Bienvenue à l\'authentification.');
 
     $formBuilder->build();
 
@@ -90,7 +90,7 @@ class AuthController extends BackController
 
     $formBuilder = new StudentSignUpFormBuilder($student, $csrfForm);
 
-    $this->page->addVar('title', 'bienvenue a authentification sign Up');
+    $this->page->addVar('title', 'Bienvenue à authentification sign Up');
 
     $formBuilder->build();
 
@@ -102,7 +102,8 @@ class AuthController extends BackController
     $signUpErr = $authFormHandler->processRegistration($student);
 
     if($signUpErr === 'register'){
-        $this->app->user()->setFlash('Votre pre-enregistrement a bien ete effectue, un mail vous a ete envoye afin de confirmer votre inscription, merci !');
+
+        $this->app->user()->setFlash('Votre pré-enregistrement a bien été effectué, un mail vous a été envoyé afin de confirmer votre inscription, merci (si vous ne trouvez pas l\'email, pensez à vérifier vos \'Pourriel/Spam\')!');
 
         $this->app->httpResponse()->redirect('/');
       
@@ -118,7 +119,7 @@ class AuthController extends BackController
 
   public function executeConfRegistration(HTTPRequest $request)
   {
-      $this->app->user()->setFlash('Votre compte est active.');
+      $this->app->user()->setFlash('Votre compte est activé.');
       
       $data = $request->getData('key');
     
@@ -139,7 +140,7 @@ class AuthController extends BackController
 
         $this->app->user()->setUser($sessionId);//on stoke l'id (table auth)
 
-        $this->app->user()->setFlash('Bienvenue, en esperant que ce cours reponde a vos attentes, nous vous souhaitons de bonnes seances de meditation.');
+        $this->app->user()->setFlash('Bienvenue, en espérant que cet enseignement réponde à vos attentes, nous vous souhaitons de bonnes séances de méditation.');
 
         $this->app->httpResponse()->redirect('/learn/learn.php');
 
@@ -169,7 +170,7 @@ class AuthController extends BackController
 
     $formBuilder = new StudentForgetPasswordFormBuilder($student, $csrfForm);
 
-    $this->page->addVar('title', 'Vous avez oublie votre mot de passe');
+    $this->page->addVar('title', 'Vous avez oublié votre mot de passe');
 
     $formBuilder->build();
 
@@ -182,7 +183,7 @@ class AuthController extends BackController
     if($authFormHandler->processForgetPassword($student))
     {
 
-      $this->app->user()->setFlash('Un email contenant votre mot de passe vous a ete envoye.');
+      $this->app->user()->setFlash('Un email contenant un nouveau mot de passe vous a été envoyé.');
 
       $this->app->httpResponse()->redirect('/');
 
@@ -190,8 +191,8 @@ class AuthController extends BackController
       
     }
 
-    $this->page->addVar('mot de passe oublie', $student);
+    $this->page->addVar('mot de passe oublié', $student);
     $this->page->addVar('form', $form->createView());
-    $this->page->addVar('title', 'mot de passe oublie');
+    $this->page->addVar('title', 'mot de passe oublié ');
   }
 }

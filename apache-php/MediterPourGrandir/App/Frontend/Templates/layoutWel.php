@@ -1,5 +1,6 @@
 <?php require "headNav.php"; ?> 
-
+	<section class="section-welcome">
+	
 	<?php if($user->hasFlash()) { ?>
 		<div class="flash">
 		<p><?=$user->getFlash(); ?></p>
@@ -15,9 +16,6 @@
 	<?php } ?>
 
 	<?= $content ?>
-
+	</section>
 <?php require "footer.php"; ?> 
-
-
-
 	

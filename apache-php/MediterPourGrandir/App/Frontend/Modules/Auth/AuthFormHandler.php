@@ -79,7 +79,7 @@ class AuthFormHandler extends FormHandler
         {
         	//generate new password
 	        $genKey = new KeyGenerator;
-	        $key = $genKey->generateKey(7);
+	        $key = $genKey->generateKey(20);
 
           $passHash = new Hasher();
           $pass = $passHash->hash($key);
