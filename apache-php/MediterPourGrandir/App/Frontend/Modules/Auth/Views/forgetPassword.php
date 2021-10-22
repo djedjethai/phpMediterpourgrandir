@@ -7,6 +7,10 @@
                                     		Recuperez votre mot de passe
                                 	</h2>
                             	</div>
+				<?php if($wrongEmailPseudo !== '') { ?>
+					<p class="form__error"><?=$wrongEmailPseudo?></p>
+				<?php } ?>
+
 				<?= $form ?>
 				<input class="btn-choice-btn" type="submit" value=" Valider " />    	
 			</form>

@@ -57,14 +57,25 @@
 
 	&_info{
 		min-width:50%;
-
+		
+		@include respond(tab-port) {
+			margin: auto;
+    		}
 	}
 	&_picture{
 		display: block;
 		margin: 0;
-		// width:0;
 	}
 
     	@include respond(tab-port) {
+		flex-direction: column;
     	}
+}
+
+.info{
+	font-weight: bold;
+	&-link{
+		font-style:italic;
+		margin-left: 2rem;
+	}
 }

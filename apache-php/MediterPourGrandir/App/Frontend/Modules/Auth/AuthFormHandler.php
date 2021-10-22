@@ -79,10 +79,10 @@ class AuthFormHandler extends FormHandler
         {
         	//generate new password
 	        $genKey = new KeyGenerator;
-	        $key = $genKey->generateKey(20);
+	        $key = $genKey->generateSecureKey(16);
 
-          $passHash = new Hasher();
-          $pass = $passHash->hash($key);
+          	$passHash = new Hasher();
+          	$pass = $passHash->hash($key);
 	    	
 	    	//register new password in bdd
 	        $this->manager->registerNewPassword($student, $pass);

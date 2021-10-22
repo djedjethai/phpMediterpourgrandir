@@ -108,7 +108,7 @@ class Mailer
 
   public static function sendMailAuth($student, $key)
   {
-	var_dump("http://mediterpourgrandir/auth/confRegistration-".$key."".$student->id().".php");
+	// var_dump("http://mediterpourgrandir/auth/confRegistration-".$key."".$student->id().".php");
    
     $destination = $student->email();
     $sender = 'admin@mediterpourgrandir.com';
@@ -148,12 +148,13 @@ class Mailer
 
   public static function sendMailNotify($user, $news)
   {
+
     $destination = $user->userEmail();
     $sender = 'admin@mediterpourgrandir.com';
     $subject = 'Mediter Pour Grandir, nouveau message';
     $body = "Méditer Pour Grandir est ravie de vous compter parmis ses membres,
 
-      	Il y a une réponse dans la discution: '".$news->titre()."'
+      	Il y a une réponse dans la discution:  '".$news->titre()."'.
 
 	---------------
        	Ceci est un mail automatique, Merci de ne pas y répondre.";

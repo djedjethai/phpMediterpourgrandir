@@ -36,6 +36,10 @@
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
+	@include respond(tab-port) {
+    		margin-top: 4rem;
+		width: 23%;	
+	}
     }
     &:hover &__photo:not(:hover) {
         transform: scale(.95);

@@ -103,7 +103,7 @@ class AuthController extends BackController
 
     if($signUpErr === 'register'){
 
-        $this->app->user()->setFlash('Votre pré-enregistrement a bien été effectué, un mail vous a été envoyé afin de confirmer votre inscription, merci (si vous ne trouvez pas l\'email, pensez à vérifier vos \'Pourriel/Spam\')!');
+        $this->app->user()->setFlash('Votre pré-enregistrement a bien été effectué, un mail vous a été envoyé afin de confirmer votre inscription, merci (si l\'email n\'apparait pas, pensez à vérifier vos pourriels/spams)!');
 
         $this->app->httpResponse()->redirect('/');
       
@@ -179,18 +179,26 @@ class AuthController extends BackController
     $managerAuth = $this->managers->getManagerOf('Auth');
 
     $authFormHandler = new AuthFormHandler($form, $managerAuth, $request);
-    
-    if($authFormHandler->processForgetPassword($student))
+
+    $wrongEmailPseudo = ""; 
+    if($request->method() == 'POST')
     {
+    	if($authFormHandler->processForgetPassword($student))
+    	{
 
-      $this->app->user()->setFlash('Un email contenant un nouveau mot de passe vous a été envoyé.');
+    	  $this->app->user()->setFlash('Un email contenant un nouveau mot de passe vous a été envoyé (si l\'email n\'apparait pas, pensez à vérifier vos pourriels/spams).');
 
-      $this->app->httpResponse()->redirect('/');
+    	  $this->app->httpResponse()->redirect('/');
 
-      // $this->app->httpResponse()->redirect('/auth/password.php');
-      
+    	  // $this->app->httpResponse()->redirect('/auth/password.php');
+    	  
+    	}
+    	else {
+    	    $wrongEmailPseudo = "Votre email ou votre pseudo est incorrect";
+	}
     }
 
+    $this->page->addVar('wrongEmailPseudo', $wrongEmailPseudo);
     $this->page->addVar('mot de passe oublié', $student);
     $this->page->addVar('form', $form->createView());
     $this->page->addVar('title', 'mot de passe oublié ');

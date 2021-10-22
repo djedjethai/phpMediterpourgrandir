@@ -4,19 +4,18 @@
 			<div class="textinstructeur_info">
 				<div class="paragraph">
 				<ul>
-				<li><span class=info>Nom:</span>Bidault</li>
-				<li><span class=info>Prenom:</span>Jerome</li>
-				<li><span class=info>Profession:</span>Web Developper</li>
+				<li><span class=info>Nom:</span> Bidault</li>
+				<li><span class=info>Prenom:</span> Jerome</li>
 				<li><span class=info>Certification:</span>
 					<ul>
-						<li>Instructeur de méditation<br/>
-				Delivré par: <a href="http://www.samathi.com/2016/institute-detail.php?actid=1">Willpower Institute Bangkok</a></li>
-						<li>Instructeur de haute méditation<br/>
-				Delivré par: <a href="http://www.samathi.com/2016/institute-detail.php?actid=1">Willpower Institute Bangkok</a></li>	
-						<li>License de bouddhisme<br />	
-				Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Tailandais du Buddisme</a></li>	
-						<li>Maitrise de bouddhisme<br />
-				Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Tailandais du Buddisme</a></li>	
+						<li>- Instructeur de méditation<br/>
+				<span class="info-link">Delivré par: <a href="http://www.samathi.com/2016/institute-detail.php?actid=1">Willpower Institute Bangkok</a></span></li>
+						<li>- Instructeur de haute méditation<br/>
+				<span class="info-link">Delivré par: <a href="http://www.samathi.com/2016/institute-detail.php?actid=1">Willpower Institute Bangkok</a></span></li>	
+						<li>- License de bouddhisme<br />	
+				<span class="info-link">Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Tailandais du Buddisme</a></span></li>	
+						<li>- Maitrise de bouddhisme<br />
+				<span class="info-link">Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Tailandais du Buddisme</a></span></li>	
 					</ul>
 				</div>
 			</div>
