@@ -85,3 +85,9 @@ Date: Friday 24th of September 2021 10:25:12 PM
 Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas/index-1): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
 Date: Friday 22nd of October 2021 08:50:54 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: wrongEmailPseudo<br /><strong>/var/www/html/App/Frontend/Modules/Auth/AuthController.php</strong> at the line <strong>200</strong>
+Date: Sunday 24th of October 2021 01:40:53 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: keyGenerate<br /><strong>/var/www/html/lib/OCFram/Captcha.php</strong> at the line <strong>18</strong>
+Date: Sunday 24th of October 2021 01:41:34 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: KeyGenerator<br /><strong>/var/www/html/lib/OCFram/Captcha.php</strong> at the line <strong>18</strong>
+Date: Sunday 24th of October 2021 01:42:11 PM
+Text: <strong>Notice</strong> : [0] Undefined variable: KeyGenerator<br /><strong>/var/www/html/lib/OCFram/Captcha.php</strong> at the line <strong>18</strong>

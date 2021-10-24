@@ -13,20 +13,11 @@ use SecureEnvPHP\SecureEnvPHP;
 class Mailer
 {
 
-  protected $sender = 'admin@mediterpourgrandir.com';
+  protected static $sender = 'admin@mediterpourgrandir.com';
 
   public static function sendMail($destination, $sender, $subject, $body) 
   {
-    // echo 'destination';
-    // var_dump($destination);
-    // echo 'sender';
-    // var_dump($sender);
-    // echo 'subject';
-    // var_dump($subject);
-    // echo 'body';
-    // var_dump($body);
-    
-    
+        
     (new SecureEnvPHP())->parse('.env.enc', '.env.key');
     $sendGridApiKey = getenv('SENDGRID_API_KEY');
     
@@ -111,7 +102,7 @@ class Mailer
 	// var_dump("http://mediterpourgrandir/auth/confRegistration-".$key."".$student->id().".php");
    
     $destination = $student->email();
-    $sender = 'admin@mediterpourgrandir.com';
+    $sender = self::$sender;
     $subject = 'Mediter Pour Grandir, confirmation d\'inscription';
     $body = "Bienvenue sur le site de Méditer Pour Grandir,
  
@@ -131,7 +122,7 @@ class Mailer
   public static function sendMailPassword($student, $key)
   {
     $destination = $student->email();
-    $sender = 'admin@mediterpourgrandir.com';
+    $sender = self::$sender;
     $subject = 'Mediter Pour Grandir';
     $body = "Méditer Pour Grandir est ravie de vous compter parmis ses membres,
  
@@ -150,7 +141,7 @@ class Mailer
   {
 
     $destination = $user->userEmail();
-    $sender = 'admin@mediterpourgrandir.com';
+    $sender = self::$sender;
     $subject = 'Mediter Pour Grandir, nouveau message';
     $body = "Méditer Pour Grandir est ravie de vous compter parmis ses membres,
 
@@ -165,7 +156,7 @@ class Mailer
   public static function sendMailContact($contact)
   {
     $destination = 'admin@mediterpourgrandir.com';
-    $sender = 'admin@mediterpourgrandir.com';
+    $sender = self::$sender;
     $subject = 'Mediter Pour Grandir, contact';
     $body = "Email de ".$contact->pseudo()." - ".$contact->email().",
 
@@ -173,46 +164,7 @@ class Mailer
 
     self::sendMail($destination, $sender, $subject, $body);  
   }
-
-
-
-
-    /* 
-    // this is working, but with the email password so using php mail()
-      $mail = new PHPMailer();
-      $mail->setFrom('admin@example.com');
-      $mail->addAddress($student->email());
-      $mail->Subject = 'Message sent by PHPMailer';
-      $mail->Body = "Bienvenue sur Mediter Pour Grandir,
- 
-        Pour activer votre compte, veuillez cliquer sur le lien ci dessous
-        ou copier/coller dans votre navigateur internet.
-         
-        http://mediterpourgrandir/auth/confRegistration-".$key."".$student->id().".php
-         
-         
-        ---------------
-        Ceci est un mail automatique, Merci de ne pas y répondre.";
-      $mail->IsSMTP();
-      $mail->SMTPSecure = 'ssl';
-      $mail->Host = 'ssl://smtp.gmail.com';
-      $mail->SMTPAuth = true;
-      //$mail->Port = 25;
-      $mail->Port = 465;
-
-      //Set your existing gmail address as user name
-      $mail->Username = $student->email();
-
-      //Set the password of your gmail address here
-      $mail->Password = '';
-      if(!$mail->send()) {
-        $mail->SMTPDebug = 2;
-        echo 'Email is not sent.';
-        echo 'Email error: ' . $mail->ErrorInfo;
-      } else {
-        echo 'Email has been sent.';
-      }*/
-
+    
 }
 
     
