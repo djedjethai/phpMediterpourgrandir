@@ -13,9 +13,9 @@
 						<li>- Instructeur de haute méditation<br/>
 				<span class="info-link">Delivré par: <a href="http://www.samathi.com/2016/institute-detail.php?actid=1">Willpower Institute Bangkok</a></span></li>	
 						<li>- License de bouddhisme<br />	
-				<span class="info-link">Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Tailandais du Buddisme</a></span></li>	
+				<span class="info-link">Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Thailandais du Buddhisme</a></span></li>	
 						<li>- Maitrise de bouddhisme<br />
-				<span class="info-link">Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Tailandais du Buddisme</a></span></li>	
+				<span class="info-link">Delivré par: <a href="https://www.onab.go.th/th/page/item/index/id/10">Office National Thailandais du Buddhisme</a></span></li>	
 					</ul>
 				</div>
 			</div>

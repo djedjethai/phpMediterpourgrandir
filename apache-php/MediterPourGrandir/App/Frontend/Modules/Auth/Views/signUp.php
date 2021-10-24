@@ -1,6 +1,6 @@
 <div class="rowgrid">
-      	<div class="book">
-                 <div class="book__form">
+      	<div class="booksignup">
+                 <div class="booksignup__form">
                         <form action="" class="form" method="post">
                             	<div class="u-margin-bottom-medium">
                                 	<h2 class="heading-secondary">

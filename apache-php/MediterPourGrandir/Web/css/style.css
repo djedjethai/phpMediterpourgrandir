@@ -684,6 +684,30 @@ body {
       .book__form {
         width: 100%; } }
 
+.booksignup {
+  background-image: linear-gradient(90deg, rgba(222, 218, 206, 0.9) 0%, rgba(222, 218, 206, 0.9) 50%, transparent 50%), url(../images/welcome/formok.jpg);
+  background-size: 100%;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border: #999 solid 1px; }
+  @media only screen and (max-width: 75em) {
+    .booksignup {
+      background-image: linear-gradient(to right, rgba(222, 218, 206, 0.9) 0%, rgba(222, 218, 206, 0.9) 100%), url(../images/welcome/formok.jpg);
+      background-size: cover; } }
+  @media only screen and (max-width: 56.25em) {
+    .booksignup {
+      background-image: linear-gradient(to right, rgba(222, 218, 206, 0.9) 0%, rgba(222, 218, 206, 0.9) 100%), url(../images/welcome/formok.jpg); } }
+  .booksignup__form {
+    width: 50%;
+    padding: 6rem; }
+    @media only screen and (max-width: 75em) {
+      .booksignup__form {
+        width: 70%; } }
+    @media only screen and (max-width: 56.25em) {
+      .booksignup__form {
+        width: 100%; } }
+
 .booknopic {
   width: 85%;
   background-color: #dedace;
@@ -772,7 +796,7 @@ body {
       z-index: 20; }
     @media only screen and (max-width: 56.25em) {
       .showpictureinstructeur__photo {
-        margin-top: 4rem;
+        margin-bottom: 4rem;
         width: 23%; } }
   .showpictureinstructeur:hover .showpictureinstructeur__photo:not(:hover) {
     transform: scale(0.95); }
@@ -903,7 +927,6 @@ body {
   background-color: #fff;
   border: 4mm ridge rgba(255, 119, 48, 0.6);
   min-height: .1rem;
-  width: 70%;
   margin: 0 auto; }
 
 table {
@@ -1311,11 +1334,11 @@ td, th {
 
 .section-about {
   background-color: #eee;
-  padding: 20rem 0 0 0;
+  padding: 25rem 0 0 0;
   margin-top: -20vh; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 25rem 0 45rem 0; } }
 
 .benefMedit {
   padding: 2rem; }
@@ -1325,7 +1348,7 @@ td, th {
     margin: 0 auto; }
     .benefMedit ul li {
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2rem;
       padding: 1rem; }
       .benefMedit ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
@@ -1333,7 +1356,7 @@ td, th {
 .section-stories {
   background-color: #dedace;
   position: relative;
-  padding: 15rem 0; }
+  padding: 10rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0; } }
@@ -1348,7 +1371,7 @@ td, th {
 .section-introduction {
   background-color: #dedace;
   position: relative;
-  padding: 15rem 0; }
+  padding: 10rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-introduction {
       padding: 10rem 0; } }
@@ -1356,7 +1379,7 @@ td, th {
 .section-explication {
   background-color: #dedace;
   position: relative;
-  padding: 15rem 0; }
+  padding: 10rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-explication {
       padding: 10rem 0; } }
@@ -1364,7 +1387,7 @@ td, th {
 .section-formation {
   background-color: #eee;
   position: relative;
-  padding: 15rem 0; }
+  padding: 10rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-formation {
       padding: 10rem 0; } }
@@ -1409,36 +1432,6 @@ td, th {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-
-.section-quisuisje {
-  background-color: #eee;
-  padding: 10rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section-quisuisje {
-      padding: 10rem 5rem; } }
-
-.textinstructeur {
-  display: flex;
-  justify-content: space-between;
-  padding: 5rem 0;
-  margin: 0; }
-  .textinstructeur_info {
-    min-width: 50%; }
-    @media only screen and (max-width: 56.25em) {
-      .textinstructeur_info {
-        margin: auto; } }
-  .textinstructeur_picture {
-    display: block;
-    margin: 0; }
-  @media only screen and (max-width: 56.25em) {
-    .textinstructeur {
-      flex-direction: column; } }
-
-.info {
-  font-weight: bold; }
-  .info-link {
-    font-style: italic;
-    margin-left: 2rem; }
 
 .section-news {
   background-color: #eee;
@@ -1563,8 +1556,35 @@ ul {
     margin: auto; }
 
 .section-welcome {
-  background-color: #5643fa;
+  background-color: #eee;
   position: relative; }
+
+.section-quisuisje {
+  background-color: #eee;
+  padding: 10rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-welcome {
-      padding: 3rem 0; } }
+    .section-quisuisje {
+      padding: 10rem 5rem; } }
+
+.textinstructeur {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+  margin: 0; }
+  .textinstructeur_info {
+    min-width: 50%; }
+    @media only screen and (max-width: 56.25em) {
+      .textinstructeur_info {
+        margin: auto; } }
+  .textinstructeur_picture {
+    display: block;
+    margin: 0; }
+  @media only screen and (max-width: 56.25em) {
+    .textinstructeur {
+      flex-direction: column-reverse; } }
+
+.info {
+  font-weight: bold; }
+  .info-link {
+    font-style: italic;
+    margin-left: 2rem; }
