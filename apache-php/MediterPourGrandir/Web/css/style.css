@@ -1047,7 +1047,7 @@ td, th {
   display: flex;
   margin: 0rem .7rem 0rem 0rem;
   align-items: center; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .unsigned-route {
       display: none; } }
   .unsigned-route__logo {
@@ -1145,7 +1145,7 @@ td, th {
 
 .dropUlwelc {
   display: none; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .dropUlwelc {
       display: block;
       margin: 0 .7rem 0 0;
@@ -1588,3 +1588,10 @@ ul {
   .info-link {
     font-style: italic;
     margin-left: 2rem; }
+
+.section-retraite {
+  background-color: #eee;
+  padding: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-retraite {
+      padding: 10rem 5rem; } }

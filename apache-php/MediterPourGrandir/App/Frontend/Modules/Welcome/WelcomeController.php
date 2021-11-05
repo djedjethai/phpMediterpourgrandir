@@ -56,6 +56,17 @@ class WelcomeController extends BackController
     $this->page->addVar('title', 'Qui suis-je');
   }
 
+  public function executeRetraite(HTTPRequest $request)
+  {
+    $user = $this->verifSession();
+
+    if($user) {
+      $this->page->addVar('student', $user);
+    }
+    $this->page->addVar('title', 'Retraite');
+  }
+
+
   public function executeContact(HTTPRequest $request)
   {
     $user = $this->verifSession();

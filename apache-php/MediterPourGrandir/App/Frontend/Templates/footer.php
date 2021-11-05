@@ -9,6 +9,8 @@
 					|
 					<a href="/welcome/QuiSuisJe.php">Qui suis-je</a>
 					|
+					<a href="/welcome/retraite.php">Retraite</a>
+					|
 					<a href="/welcome/contact.php">Contact</a>
 				</p>
 				<?php if(!$user->isUser()) { ?>

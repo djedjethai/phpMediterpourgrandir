@@ -2,6 +2,7 @@
 <routes>
   <route url="/" module="Welcome" action="index" />
   <route url="/welcome/QuiSuisJe.php" module="Welcome" action="quiSuisJe" />
+  <route url="/welcome/retraite.php" module="Welcome" action="retraite" />
   <route url="/welcome/contact.php" module="Welcome" action="contact" />
   <route url="/welcome/allFeedbacks.php" module="Welcome" action="allFeedbacks" />
   <route url="/welcome/error.php" module="Welcome" action="error" />
