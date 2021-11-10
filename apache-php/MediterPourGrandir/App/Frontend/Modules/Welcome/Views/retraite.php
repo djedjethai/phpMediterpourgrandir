@@ -1,6 +1,6 @@
 <main>
 	<section class="section-retraite">
-		<p>Mediter pour grandir vous offre la possibilite de venir(seul ou en groupe) en retraite au temple Big-Buddha-Statue (Pratatousisomdetprapoutachinawang) au nord de la Thailande dans les forets de la montagne Doi-Inthanon, region de Chiang-Mai.</p>
+		<p>Mediter pour grandir vous offre la possibilite de venir(seul ou en groupe) en retraite au temple "Big-Buddha-Statue(Pratatousisomdetprapoutachinawang)" au nord de la Thailande dans les forets de la montagne Doi-Inthanon, region de Chiang-Mai.</p>
 		<p>PHOTOS</P>
 		<br />
 
@@ -10,6 +10,16 @@
 		<h3>Le temple</h3>
 		<p>Au sommet de la montagne, dans le temple lui-meme. C'est le plus confortable, les douches sont chauffees, les sanitaires propres, une cuisine est a disposition. La vue est imprenable et le site, spacieux, offre de nombreux spots de meditation.</p>
 		<p>PHOTOS</p>    
+		<div class="gallery">
+			<figure class="gallery__item gallery__item--1">
+			<img src="/Web/images/retraite/temple/buddha.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<img src="/Web/images/retraite/temple/kitchen.jpg" alt="Gallery image tpl" class="gallery__img">
+			<img src="/Web/images/retraite/temple/toilet.jpg" alt="Gallery image tpl" class="gallery__img">
+			<img src="/Web/images/retraite/temple/luci.jpg" alt="Gallery image tpl" class="gallery__img">
+		</div>
+		
+
 		<br />
 
 		<h3>Le niveau intermediaire</h3>
