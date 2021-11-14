@@ -12,11 +12,41 @@
 		<p>PHOTOS</p>    
 		<div class="gallery">
 			<figure class="gallery__item gallery__item--1">
+			<img src="/Web/images/retraite/temple/houseKrouba.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--2">
+			<img src="/Web/images/retraite/temple/kitchen.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--3">
+			<img src="/Web/images/retraite/temple/luci.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--4">
+			<img src="/Web/images/retraite/temple/toilet.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--5">
+			<img src="/Web/images/retraite/temple/viewCloud.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--6">
+			<img src="/Web/images/retraite/temple/mainKoutiFace.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--7">
+			<img src="/Web/images/retraite/temple/stupa.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--8">
+			<img src="/Web/images/retraite/temple/view.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--9">
+			<img src="/Web/images/retraite/temple/smallKouti.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--10">
 			<img src="/Web/images/retraite/temple/buddha.jpg" alt="Gallery image tpl" class="gallery__img">
 			</figure>
-			<img src="/Web/images/retraite/temple/kitchen.jpg" alt="Gallery image tpl" class="gallery__img">
-			<img src="/Web/images/retraite/temple/toilet.jpg" alt="Gallery image tpl" class="gallery__img">
-			<img src="/Web/images/retraite/temple/luci.jpg" alt="Gallery image tpl" class="gallery__img">
+			<figure class="gallery__item gallery__item--11">
+			<img src="/Web/images/retraite/temple/mainKouti.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="gallery__item gallery__item--12">
+			<img src="/Web/images/retraite/temple/koutiFar1.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
 		</div>
 		
 
@@ -26,12 +56,84 @@
 		<p>A millieu de la montagne deux cabanes dans lequelles il est recommander d'y installer une ou plusieurs tentes. Le site s'avere plus rustique, les douches froides, et il n'y a pas de cuisine, il faudra donc vous rendre au temple pour cuisiner. Les spots de meditation sur le site lui-meme sont tres limites cependant etant a mi-distance(20mn de marche de chacun) entre le temple et la foret vous pourrez facilement vous rendre sur les deux autres sites pour y mediter.</p>
 		<p>PHOTOS</p>
 		<br />
+		<div class="galleryintermediaire">
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--1">
+			<img src="/Web/images/retraite/intermediate/central1.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--2">
+			<img src="/Web/images/retraite/intermediate/view.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--3">
+			<img src="/Web/images/retraite/intermediate/kouti.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>	
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--4">
+			<img src="/Web/images/retraite/intermediate/sideKouti.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--5">
+			<img src="/Web/images/retraite/intermediate/koutiFar.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--6">
+			<img src="/Web/images/retraite/intermediate/sin.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--8">
+			<img src="/Web/images/retraite/intermediate/sinView.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="gallery__item gallery__intermediate--9">
+			<img src="/Web/images/retraite/intermediate/toilet.jpg" alt="Gallery image tpl" class="gallery__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--10">
+			<img src="/Web/images/retraite/intermediate/kitchen.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+		</div>
 
 		<h3>La foret</h3>
 		<p>Le troiseme et dernier site, pour les plus agueris ou ceux a la recheche d'une experience plus sauvage se trouve au pied de la montagne au coeur de la foret, rassurez vous la foret etant privee aucun animal dangereux ne s'y trouve. Vous ferez votre feu pour cuisiner et dormirez dans votre tente a la belle etoile. Malgres tout l'espace vie reste propre et degage, une spacieuse cabane en tole peut vous abriter en cas de forte pluis par example, et une seconde abrite les toilettes turcs ainsi qu'un robinet que vous pourrez utiliser pour prendre votre douche.</p> 
 		<p>PHOTOS</p>
 		<br />
-		
+		<div class="galleryintermediaire">
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--1">
+			<img src="/Web/images/retraite/forest/jungle.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--2">
+			<img src="/Web/images/retraite/forest/kouti.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--3">
+			<img src="/Web/images/retraite/forest/tente.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--4">
+			<img src="/Web/images/retraite/forest/meditation.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--5">
+			<img src="/Web/images/retraite/forest/kitchen.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--6">
+			<img src="/Web/images/retraite/forest/access.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--7">
+			<img src="/Web/images/retraite/forest/twoTente1.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--8">
+			<img src="/Web/images/retraite/forest/view.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--9">
+			<img src="/Web/images/retraite/forest/path.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--10">
+			<img src="/Web/images/retraite/forest/toilet.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+			<figure class="galleryintermediaire__item galleryintermediaire__forest--11">
+			<img src="/Web/images/retraite/forest/viewToilet.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
+			</figure>
+
+
+
+
+
+
+		</div>
+
+
 		<p>Ce centre de meditation n'est aucunement lie a Mediter-Pour-Grandir, aussi nous n'assurons aucune reponsabilite lors de votre sejour. Le temple Big-Buddha-Statue met a disposition gracieusement son site pour les personne souhaitant pratiquer la meditation, cependant il n'assure aucune responssabilite en  cas de probleme. Les maitre des lieux est un expert de meditation tres repute dans la region, il subviendra a vos besoins si possible(car il est d'une extreme gentillesse), et pourra repondre a vos questions(si vous parlez Thailandais).</p>
 
 		<br />
