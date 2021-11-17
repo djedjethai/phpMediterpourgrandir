@@ -1,9 +1,13 @@
 apache-php/MediterPourGrandir/vendor/
 apache-php/MediterPourGrandir/node_modules/
 
+apache-php/MediterPourGrandir/Web/images
+
 apache-php/MediterPourGrandir/.env
 apache-php/MediterPourGrandir/.env.enc
 apache-php/MediterPourGrandir/.env.key
+
+
 
 ./docker-compose.yml
 
