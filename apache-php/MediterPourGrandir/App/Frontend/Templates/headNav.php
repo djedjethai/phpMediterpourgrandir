@@ -12,8 +12,8 @@
 <body>
 	<div class="navcontainer">
 	<?php if($user->isUser()){ ?>
-		<div class="signed">
-			<div class="unsigned-route">
+		<!--<div class="signed">-->
+			<div class="signed-user">
 				<ul class="dropUl">
                            	<li class="dropLi">
 					<div class="dropA">
@@ -37,8 +37,9 @@
                         		<a class="unsigned-route__link" href="/news/index-1.php">Forum</a>
                 		</div>
 	      		</div>
-		</div>
-		<div class="signed-form">         
+		<!--</div>-->
+		<!--<div class="signed-form">-->    
+		<div>     
                         <ul class="dropUl">
                            <li class="dropLi">
 				<div class="dropA">

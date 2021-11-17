@@ -1,15 +1,38 @@
 <main>
 	<section class="section-retraite">
-		<p>Mediter pour grandir vous offre la possibilite de venir(seul ou en groupe) en retraite au temple "Big-Buddha-Statue(Pratatousisomdetprapoutachinawang)" au nord de la Thailande dans les forets de la montagne Doi-Inthanon, region de Chiang-Mai.</p>
-		<p>PHOTOS</P>
+		<div class="u-center-text u-margin-bottom-verybig">
+                	<h2 class="heading-secondary">
+                    		Un endroit ideal pour une retraite de meditation
+                	</h2>
+            	</div>
+		
 		<br />
 
-		<p>Si vous le desirez nous pouvons organiser votre transfert du l'aroport de Chiang-Mai au centre de meditation ou vous pourrez y pratiquer a votre guise et en toute liberete.</p>
-		<p>Le temple Big-Buddha-Statue se situe au sommet d'une petite montagne, trois espaces vie sont disponibles(chacun joignable de l'un a l'autre en une vingtaine de minutes a pieds):</p> 
+		<p><span class="u-margin-left-medium">Méditer</span> Pour Grandir vous offre la possibilité de venir(seul ou en groupe) en retraite au temple "Big-Buddha-Statue(Pratatousisomdetprapoutachinawang)" au nord de la Thailande dans les forets de la montagne Doi-Inthanon, région de Chiang-Mai.</p>
+		<div class="gallerypresentation">
+			<figure class="gallerypresentation__item gallerypresentation__item--1">
+			<img src="/Web/images/retraite/presentation/entrance.jpg" alt="Gallery image tpl" class="gallerypresentation__img">
+			</figure>
+			<figure class="gallerypresentation__item gallerypresentation__item--2">
+			<img src="/Web/images/retraite/presentation/bigBuddha.jpg" alt="Gallery image tpl" class="gallerypresentation__img">
+			</figure>
+			<figure class="gallerypresentation__item gallerypresentation__item--3">
+			<img src="/Web/images/retraite/presentation/map.jpg" alt="Gallery image tpl" class="gallerypresentation__img">
+			</figure>
+		</div>
 
-		<h3>Le temple</h3>
-		<p>Au sommet de la montagne, dans le temple lui-meme. C'est le plus confortable, les douches sont chauffees, les sanitaires propres, une cuisine est a disposition. La vue est imprenable et le site, spacieux, offre de nombreux spots de meditation.</p>
-		<p>PHOTOS</p>    
+		<br />
+
+		<p><span class="u-margin-left-medium">Si</span> vous le souhaitez nous pouvons organiser votre transfert du l'aeroport de Chiang-Mai au centre de méditation où vous pourrez y pratiquer à votre guise et en toute liberté.</p>
+		<p><span class="u-margin-left-medium">Le</span> temple Big-Buddha-Statue se situe au sommet d'une petite montagne, trois espaces de vie sont disponibles(joignable l'un à l'autre à pieds en une vingtaine de minutes).</p> 
+
+		<div class="u-center-text u-margin-bottom-verybig">
+                	<h2 class="heading-retraite">
+                    		Le temple
+                	</h2>
+            	</div>
+
+		<p><span class="u-margin-left-medium">Situé</span> au sommet de la montagne, le temple lui-même. C'est le plus confortable, les douches sont chauffées, les sanitaires propres, une cuisine(trés modeste) est à disposition. La vue est imprenable et le site, spacieux, offre de nombreux spots de méditation.</p>
 		<div class="gallery">
 			<figure class="gallery__item gallery__item--1">
 			<img src="/Web/images/retraite/temple/houseKrouba.jpg" alt="Gallery image tpl" class="gallery__img">
@@ -49,13 +72,13 @@
 			</figure>
 		</div>
 		
+		<div class="u-center-text u-margin-bottom-verybig">
+                	<h2 class="heading-retraite">
+                    		Le niveau intermediaire
+                	</h2>
+            	</div>
 
-		<br />
-
-		<h3>Le niveau intermediaire</h3>
-		<p>A millieu de la montagne deux cabanes dans lequelles il est recommander d'y installer une ou plusieurs tentes. Le site s'avere plus rustique, les douches froides, et il n'y a pas de cuisine, il faudra donc vous rendre au temple pour cuisiner. Les spots de meditation sur le site lui-meme sont tres limites cependant etant a mi-distance(20mn de marche de chacun) entre le temple et la foret vous pourrez facilement vous rendre sur les deux autres sites pour y mediter.</p>
-		<p>PHOTOS</p>
-		<br />
+		<p><span class="u-margin-left-medium">Au</span> milieu de la montagne deux cabanes dans lesquelles il est recommandé d'y installer une ou plusieurs tentes. Le site s'avère plus rustique, les douches sont froides et il n'y a pas de cuisine(il faudra donc vous rendre au temple pour cuisiner). Les spots de méditation sur le site lui-même sont limités cependant étant à mi-distance(20mn de marche de chacun) entre le temple et la foret vous pourrez facilement vous rendre sur les deux autres sites(c'est l'avantage de cet endroit).</p>
 		<div class="galleryintermediaire">
 			<figure class="galleryintermediaire__item galleryintermediaire__intermediate--1">
 			<img src="/Web/images/retraite/intermediate/central1.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
@@ -85,13 +108,17 @@
 			<img src="/Web/images/retraite/intermediate/kitchen.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
 			</figure>
 		</div>
+		
+		<div class="u-center-text u-margin-bottom-verybig">
+                	<h2 class="heading-retraite">
+                    		La foret
+                	</h2>
+            	</div>
 
-		<h3>La foret</h3>
-		<p>Le troiseme et dernier site, pour les plus agueris ou ceux a la recheche d'une experience plus sauvage se trouve au pied de la montagne au coeur de la foret, rassurez vous la foret etant privee aucun animal dangereux ne s'y trouve. Vous ferez votre feu pour cuisiner et dormirez dans votre tente a la belle etoile. Malgres tout l'espace vie reste propre et degage, une spacieuse cabane en tole peut vous abriter en cas de forte pluis par example, et une seconde abrite les toilettes turcs ainsi qu'un robinet que vous pourrez utiliser pour prendre votre douche.</p> 
-		<p>PHOTOS</p>
-		<br />
+		<p><span class="u-margin-left-medium">Le</span> troisième et dernier site, pour les plus aguerris ou ceux à la recheche d'une expérience plus sauvage se trouve au pied de la montagne au coeur de la foret, rassurez vous cette dernière étant privée aucun animal dangereux ne s'y trouve. Vous ferez votre feu pour cuisiner et dormirez dans votre tente à la belle étoile. L'espace de vie reste propre et dégagé, une spacieuse cabane en tôle peut vous abriter en cas de forte pluie par example, et une seconde abrite les toilettes(turcs) ainsi qu'un robinet que vous pourrez utiliser pour prendre votre douche.</p> 
+		
 		<div class="galleryintermediaire">
-			<figure class="galleryintermediaire__item galleryintermediaire__forest--1">
+		<figure class="galleryintermediaire__item galleryintermediaire__forest--1">
 			<img src="/Web/images/retraite/forest/jungle.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
 			</figure>
 			<figure class="galleryintermediaire__item galleryintermediaire__forest--2">
@@ -125,19 +152,14 @@
 			<figure class="galleryintermediaire__item galleryintermediaire__forest--11">
 			<img src="/Web/images/retraite/forest/viewToilet.jpg" alt="Gallery image tpl" class="galleryintermediaire__img">
 			</figure>
-
-
-
-
-
-
 		</div>
 
+		<br />
 
-		<p>Ce centre de meditation n'est aucunement lie a Mediter-Pour-Grandir, aussi nous n'assurons aucune reponsabilite lors de votre sejour. Le temple Big-Buddha-Statue met a disposition gracieusement son site pour les personne souhaitant pratiquer la meditation, cependant il n'assure aucune responssabilite en  cas de probleme. Les maitre des lieux est un expert de meditation tres repute dans la region, il subviendra a vos besoins si possible(car il est d'une extreme gentillesse), et pourra repondre a vos questions(si vous parlez Thailandais).</p>
+		<p><span class="u-margin-left-medium">Ce</span> centre de méditation n'est pas lié à Méditer Pour Grandir, aussi nous n'assurons aucune reponsabilité durant de votre séjour. Le temple Big-Buddha-Statue met à disposition gracieusement son site pour les personnes souhaitant pratiquer la méditation, cependant il n'assure aucune responssabilité en  cas de problème. Le maitre des lieux est un expert de méditation trés reputé dans la région, il subviendra à vos besoins si il le peut(car il est d'une extrême gentillesse) et pourra répondre à vos questions(si vous parlez Thailandais).</p>
 
 		<br />
-		<p>Le site est reserve a la pratique de la meditation, toute autre activite est a proscrire. Les rapports sexuelles, la consomation d'alcool et/ou de stupefiants sont formellement interdits</p>
+		<p>Le site est réservé à la pratique de la méditation(et aux activités qui y sont liées), toute autre activité est à proscrire. Les rapports sexuels, la consommation d'alcool et/ou de stupéfiants sont formellement interdits.</p>
 
 	</section>
 </main>

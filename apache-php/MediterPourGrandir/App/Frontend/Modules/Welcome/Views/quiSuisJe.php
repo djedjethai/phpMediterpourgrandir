@@ -6,7 +6,7 @@
 				<ul>
 				<li><span class=info>Nom:</span> Bidault</li>
 				<li><span class=info>Prenom:</span> Jerome</li>
-				<li><span class=info>Certification:</span>
+				<li><span class=info>Certifications:</span>
 					<ul>
 						<li>- Instructeur de méditation<br/>
 				<span class="info-link">Delivré par: <a href="http://www.samathi.com/2016/institute-detail.php?actid=1">Willpower Institute Bangkok</a></span></li>
