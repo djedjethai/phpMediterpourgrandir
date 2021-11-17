@@ -12,8 +12,8 @@
 <body>
 	<div class="navcontainer">
 	<?php if($user->isUser()){ ?>
-		<div class="signed">
-			<div class="unsigned-route">
+		<!--<div class="signed">-->
+			<div class="signed-user">
 				<ul class="dropUl">
                            	<li class="dropLi">
 					<div class="dropA">
@@ -25,6 +25,7 @@
                               		<ul class="dropdown">
                                 		<li class="dropLi"><a class="dropA" href="/">Acceuil</a></li>
                                 		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Instructeur(s)</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/retraite.php">Retraite</a></li>
                                 		<li class="dropLi"><a class="dropA" href="/welcome/contact.php">Contact</a></li>
                               		</ul>
                            	</li>
@@ -36,8 +37,9 @@
                         		<a class="unsigned-route__link" href="/news/index-1.php">Forum</a>
                 		</div>
 	      		</div>
-		</div>
-		<div class="signed-form">         
+		<!--</div>-->
+		<!--<div class="signed-form">-->    
+		<div>     
                         <ul class="dropUl">
                            <li class="dropLi">
 				<div class="dropA">
@@ -89,6 +91,7 @@
                               		<ul class="dropdown">
                                 		<li class="dropLi"><a class="dropA" href="/">Acceuil</a></li>
                                 		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Instructeur(s)</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/retraite.php">Retraite</a></li>
                                 		<li class="dropLi"><a class="dropA" href="/welcome/contact.php">Contact</a></li>
                               		</ul>
                            	</li>
@@ -103,6 +106,10 @@
                 	<div class="unsigned-route__item">
                       		<a class="unsigned-route__link" href="/welcome/QuiSuisJe.php">Instructeur(s)</a>
                 	</div>
+			<div class="unsigned-route__item">
+                      		<a class="unsigned-route__link" href="/welcome/retraite.php">Retraite</a>
+                	</div>
+
                 	<div class="unsigned-route__item">
                         	<a class="unsigned-route__link" href="/welcome/contact.php">Contact</a>
                 	</div>

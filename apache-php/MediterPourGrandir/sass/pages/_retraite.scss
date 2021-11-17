@@ -1,0 +1,10 @@
+.section-retraite {
+	background-color: $color-grey-light-2;
+    	// position: relative;
+    	padding: 10rem;
+
+    	@include respond(tab-port) {
+        	padding: 10rem 5rem;
+    	}
+}
+
