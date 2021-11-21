@@ -765,3 +765,13 @@ Stack trace:
 #7 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
 #8 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
 #9 {main}
+Date: Sunday 21st of November 2021 07:55:56 AM
+Text: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'monsupersite.feedback' doesn't exist in /var/www/html/lib/vendors/Model/FeedbackManagerPDO.php:39
+Stack trace:
+#0 /var/www/html/lib/vendors/Model/FeedbackManagerPDO.php(39): PDO->query('SELECT feedback...')
+#1 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(191): Model\FeedbackManagerPDO->getFeedback(0, '3')
+#2 /var/www/html/App/Frontend/Modules/Welcome/WelcomeController.php(39): App\Frontend\Modules\Welcome\WelcomeController->getFeedbackHepler()
+#3 /var/www/html/lib/OCFram/BackController.php(42): App\Frontend\Modules\Welcome\WelcomeController->executeIndex(Object(OCFram\HTTPRequest))
+#4 /var/www/html/App/Frontend/FrontendApplication.php(18): OCFram\BackController->execute()
+#5 /var/www/html/bootstrap.php(40): App\Frontend\FrontendApplication->run()
+#6 {main}
