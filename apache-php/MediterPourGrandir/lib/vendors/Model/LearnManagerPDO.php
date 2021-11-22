@@ -17,7 +17,7 @@ class LearnManagerPDO extends Manager
 
 	public function getIntervalLesson($student)
 	{
-		$q = $this->dao->prepare('SELECT TIME_FORMAT(TIMEDIFF((DATE_ADD(dateLastLesson, INTERVAL 96 HOUR)), NOW()), "%H heure(s) et %i minute(s) ") FROM students WHERE id = :id');
+		$q = $this->dao->prepare('SELECT TIME_FORMAT(TIMEDIFF((DATE_ADD(dateLastLesson, INTERVAL 72 HOUR)), NOW()), "%H heure(s) et %i minute(s) ") FROM students WHERE id = :id');
 	    $q->bindValue(':id', $student->id(), \PDO::PARAM_INT);
 	    $q->execute();
 
