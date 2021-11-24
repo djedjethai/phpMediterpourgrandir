@@ -12,3 +12,5 @@ apache-php/MediterPourGrandir/.env.key
 ./docker-compose.yml
 
 curl
+certificate
+sites-enabled
