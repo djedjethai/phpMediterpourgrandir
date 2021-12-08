@@ -7,7 +7,7 @@ use \OCFram\SMTP;
 use \OCFram\PHPMailerAutoload;
 
 
-use SecureEnvPHP\SecureEnvPHP;
+// use SecureEnvPHP\SecureEnvPHP;
 
 
 class Mailer
@@ -18,7 +18,7 @@ class Mailer
   public static function sendMail($destination, $sender, $subject, $body) 
   {
         
-    (new SecureEnvPHP())->parse('.env.enc', '.env.key');
+    // (new SecureEnvPHP())->parse('.env.enc', '.env.key');
     $sendGridApiKey = getenv('SENDGRID_API_KEY');
     
     $email = new \SendGrid\Mail\Mail();

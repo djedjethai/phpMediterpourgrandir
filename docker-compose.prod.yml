@@ -1,0 +1,54 @@
+version: "3.1"
+
+services:
+  php-apache:
+    ports:
+    - "80:80"  
+    - "443:443"  
+    secrets:
+      - sendgrid_api_key
+      - mysql_user
+      - mysql_password
+    environment:
+      SENDGRID_API_KEY: /run/secrets/sendgrid_api_key
+      MYSQL_USER: /run/secrets/mysql_user
+      MYSQL_PASSWORD: /run/secrets/mysql_password
+    volumes:
+    - ./apache-php/MediterPourGrandir/:/var/www/html/  
+    - ./curl/:/opt/lampp/share/curl/
+    - ./sites-enabled/:/etc/apache2/sites-enabled/
+    - ./certificate/:/certificate/
+  
+  mysql:
+    restart: always
+    secrets:
+      - mysql_rpassword
+      - mysql_db
+      - mysql_user
+      - mysql_password
+    environment:
+      MYSQL_ROOT_PASSWORD: /run/secrets/mysql_rpassword
+      MYSQL_DATABASE: /run/secrets/mysql_db
+      MYSQL_USER: /run/secrets/mysql_user
+      MYSQL_PASSWORD: /run/secrets/mysql_password
+    ports:
+    - "3306:3306"
+    volumes:
+    - mysql-db:/var/lib/mysql
+      
+secrets:
+  sendgrid_api_key:
+    external: true
+  mysql_rpassword: 
+    external: true
+  mysql_db:
+    external: true
+  mysql_user:
+    external: true
+  mysql_password:
+    external: true
+
+volumes: 
+      mysql-db:
+
+

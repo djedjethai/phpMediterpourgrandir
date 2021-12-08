@@ -1,16 +1,16 @@
 <?php
 namespace OCFram;
 
-use SecureEnvPHP\SecureEnvPHP;
+// use SecureEnvPHP\SecureEnvPHP;
 
 
 class PDOFactory
 {
   	public static function getMysqlConnexion()
   	{
-	  	(new SecureEnvPHP())->parse('.env.enc', '.env.key');
-		$user = getenv('DB_USER');
-		$password = getenv('DB_PASSWORD');
+	  	// (new SecureEnvPHP())->parse('.env.enc', '.env.key');
+		$user = getenv('MYSQL_USER');
+		$password = getenv('MYSQL_PASSWORD');
 
 
 		$db = new \PDO('mysql:host=mysql;port=3306;dbname=monsupersite;charset=utf8', $user, $password);

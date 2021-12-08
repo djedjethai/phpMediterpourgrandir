@@ -1,0 +1,68 @@
+version: "3.1"
+
+services:
+  php-apache:
+    image: djedjethai/mediter
+    ports:
+    - "80:80"  
+    - "443:443"  
+    secrets:
+      - sendgrid_api_key
+      - mysql_user
+      - mysql_password
+    environment:
+      MYSQL_USER: lasolution
+      MYSQL_PASSWORD: cestdedevelopperledharma
+      SENDGRID_API_KEY: /run/secrets/sendgrid_api_key
+      #MYSQL_USER: /run/secrets/mysql_user
+      #MYSQL_PASSWORD: /run/secrets/mysql_password
+    volumes:
+    - ./apache-php/MediterPourGrandir/:/var/www/html/  
+    - ./curl/:/opt/lampp/share/curl/
+    - ./sites-enabled/:/etc/apache2/sites-enabled/
+    - ./certificate/:/certificate/
+    networks:
+    - mynet
+  
+  mysql:
+    image: mysql:5.6.40
+    secrets:
+      - mysql_rpassword
+      - mysql_db
+      - mysql_user
+      - mysql_password
+    environment:
+      MYSQL_ROOT_PASSWORD: thisisabigsecretyouwontguessit
+      MYSQL_DATABASE: monsupersite
+      MYSQL_USER: lasolution
+      MYSQL_PASSWORD: cestdedevelopperledharma
+      #MYSQL_ROOT_PASSWORD: /run/secrets/mysql_rpassword
+      #MYSQL_DATABASE: /run/secrets/mysql_db
+      #MYSQL_USER: /run/secrets/mysql_user
+      #MYSQL_PASSWORD: /run/secrets/mysql_password
+    ports:
+    - "3306:3306"
+    networks:
+    - mynet
+    volumes:
+    - mysql-db:/var/lib/mysql
+      
+secrets:
+  sendgrid_api_key:
+    file: ./secrets/sendgrid_api_key.txt
+  mysql_rpassword: 
+    file: ./secrets/mysql_rpassword.txt
+  mysql_db:
+    file: ./secrets/mysql_db.txt
+  mysql_user:
+    file: ./secrets/mysql_user.txt
+  mysql_password:
+    file: ./secrets/mysql_password.txt
+
+networks:
+  mynet:
+
+volumes: 
+  mysql-db:
+
+

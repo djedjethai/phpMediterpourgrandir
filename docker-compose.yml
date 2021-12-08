@@ -1,31 +1,9 @@
-version: "2.4"
+version: "3.1"
 
 services:
   php-apache:
-    build:
-      context: ./apache-php
-      target: dev
-    ports:
-    - "80:80"  
-    - "443:443"  
- # for prod take off the volumes
-    volumes:
-    - ./apache-php/MediterPourGrandir/:/var/www/html/  
-    - ./curl/:/opt/lampp/share/curl/
-    - ./sites-enabled/:/etc/apache2/sites-enabled/
-    - ./certificate/:/certificate/
+    image: djedjethai/mediter
+  
   mysql:
     image: mysql:5.6.40
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: thisisabigsecretyouwontguessit
-      MYSQL_DATABASE: monsupersite
-      MYSQL_USER: lasolution
-      MYSQL_PASSWORD: cestdedevelopperledharma
-    ports:
-    - "3306:3306"
-    volumes:
-    - mysql-db:/var/lib/mysql
                           
-volumes: 
-      mysql-db:
