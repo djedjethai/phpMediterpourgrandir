@@ -12,6 +12,8 @@ class PDOFactory
 		$user = getenv('MYSQL_USER');
 		$password = getenv('MYSQL_PASSWORD');
 
+		
+		var_dump($user);
 
 		$db = new \PDO('mysql:host=mysql;port=3306;dbname=monsupersite;charset=utf8', $user, $password);
 		
