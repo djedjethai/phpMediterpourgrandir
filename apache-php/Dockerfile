@@ -32,13 +32,22 @@ RUN a2enmod ssl
 # development stage
 FROM base as dev
 
-# stage delete dev package
-
 # production stage
 FROM base as prod
 WORKDIR /var/www/html
 COPY ./MediterPourGrandir/ .
-# WORKDIR /MediterPourGrandir/
+
+WORKDIR /var/www/html/tmp/
+RUN chmod -R 777 cache
+
+# delete sass files
+WORKDIR /var/www/html/
+RUN rm -rf sass \ 
+    rm .env \
+    rm -rf node_modules \
+    rm package.json \
+    rm package-lock.json
+
 RUN composer update
 RUN apt-get -y remove git 
 

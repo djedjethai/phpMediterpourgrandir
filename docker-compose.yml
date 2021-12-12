@@ -1,9 +1,0 @@
-version: "3.1"
-
-services:
-  php-apache:
-    image: djedjethai/mediter
-  
-  mysql:
-    image: mysql:5.6.40
-                          
