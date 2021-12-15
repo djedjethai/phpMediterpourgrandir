@@ -93,3 +93,9 @@ Date: Sunday 24th of October 2021 01:42:11 PM
 Text: <strong>Notice</strong> : [0] Undefined variable: KeyGenerator<br /><strong>/var/www/html/lib/OCFram/Captcha.php</strong> at the line <strong>18</strong>
 Date: Saturday 20th of November 2021 12:09:23 PM
 Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
+Date: Wednesday 15th of December 2021 10:47:57 AM
+Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
+Date: Wednesday 15th of December 2021 10:47:57 AM
+Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>
+Date: Wednesday 15th of December 2021 10:53:40 AM
+Text: <strong>Warning</strong> : [0] file_put_contents(/var/www/html/lib/OCFram/../../tmp/cache/datas//feedbacks/welcomePage): failed to open stream: Permission denied<br /><strong>/var/www/html/lib/OCFram/Cache.php</strong> at the line <strong>78</strong>

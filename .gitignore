@@ -10,6 +10,7 @@ apache-php/MediterPourGrandir/.env.key
 
 ./docker-compose.yml.origin
 ./docker-compose.test.yml
+./docker-compose.prod.yml
 
 curl
 certificate
