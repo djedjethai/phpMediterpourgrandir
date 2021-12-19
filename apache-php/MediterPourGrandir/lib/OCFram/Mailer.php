@@ -13,7 +13,7 @@ use SecureEnvPHP\SecureEnvPHP;
 class Mailer
 {
 
-  protected static $sender = 'admin@mediterpourgrandir.com';
+  protected static $sender = 'info@mediterpourgrandir.com';
 
   public static function sendMail($destination, $sender, $subject, $body) 
   {
@@ -155,7 +155,7 @@ class Mailer
 
   public static function sendMailContact($contact)
   {
-    $destination = 'admin@mediterpourgrandir.com';
+    $destination = 'info@mediterpourgrandir.com';
     $sender = self::$sender;
     $subject = 'Mediter Pour Grandir, contact';
     $body = "Email de ".$contact->pseudo()." - ".$contact->email().",

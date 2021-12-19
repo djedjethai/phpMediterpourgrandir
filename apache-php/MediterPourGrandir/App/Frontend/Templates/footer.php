@@ -25,7 +25,7 @@
 					<svg class="footer-center__icon">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-mail"></use>
 					</svg>
-					<p class="comment-icon">admin@mediterpourgrandir.com</p>
+					<p class="comment-icon">info@mediterpourgrandir.com</p>
 				</div>
 				<div>
 					<div class="footer-icons">
