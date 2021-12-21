@@ -19,7 +19,7 @@
 	<div class="paragraph">
 		<p><span class="u-margin-left-medium">"Méditer Pour Grandir"</span> à pour vocation d'enseigner gratuitement la médiation de pleine conscience, afin d'y parvenir une formation et un instructeur diplômé sont mis à disposition. Cet enseignement n’invente rien, il ne fait que rapporter une technique de méditation traditionnelle résultante de l’expérience d’experts, notamment de <a href=https://en.wikipedia.org/wiki/Mun_Bhuridatta>Luang Pu Mun Bhuridatta</a>. Méthode diffusé par <a href=https://en.wikipedia.org/wiki/Luangphor_Viriyang_Sirintharo>Luangphor Viriyang Sirintharo</a> via l'institution <a href=https://www.willpowerinstituteusa.com/about/>Willpower Institute</a></p>
 
-		<p><span class="u-margin-left-medium">Méditer</span> quotidiennement nous aide à prendre du recule par rapport aux évènements du quotidien et par rapport à nous-même (souvent appelé le "lâcher prise"), progressivement nos prises de conscience s’éclaircissent, d’où "méditation de pleine conscience". De plus, affermissant notre force de volonté, nous développons nos aptitudes à rectifier nos comportements, nos paroles et finalement nos pensées, ainsi nous optimisons notre bien-être.</p>
+		<p><span class="u-margin-left-medium">Méditer</span> quotidiennement nous aide à prendre du recule par rapport aux évènements du quotidien et par rapport à nous-même, progressivement nos prises de conscience s’éclaircissent, d’où "méditation de pleine conscience". De plus, affermissant notre force de volonté, nous développons nos aptitudes à rectifier nos comportements, nos paroles et finalement nos pensées, ainsi nous optimisons notre bien-être.</p>
     	</div> 
     </div>
 </section>

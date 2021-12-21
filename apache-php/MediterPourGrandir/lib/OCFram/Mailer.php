@@ -6,7 +6,6 @@ use \OCFram\Exception;
 use \OCFram\SMTP;
 use \OCFram\PHPMailerAutoload;
 
-
 use SecureEnvPHP\SecureEnvPHP;
 
 

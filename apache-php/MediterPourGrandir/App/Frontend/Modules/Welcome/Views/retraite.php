@@ -156,7 +156,7 @@
 
 		<br />
 
-		<p><span class="u-margin-left-medium">Ce</span> centre de méditation n'est pas lié à Méditer Pour Grandir, aussi nous n'assurons aucune reponsabilité durant de votre séjour. Le temple Big-Buddha-Statue met à disposition gracieusement son site pour les personnes souhaitant pratiquer la méditation, cependant il n'assure aucune responssabilité en  cas de problème. Le maitre des lieux est un expert de méditation trés reputé dans la région, il subviendra à vos besoins si il le peut(car il est d'une extrême gentillesse) et pourra répondre à vos questions(si vous parlez Thailandais).</p>
+		<p><span class="u-margin-left-medium">Ce</span> centre de méditation n'est pas lié à Méditer Pour Grandir, aussi nous n'assurons aucune reponsabilité durant de votre séjour. Le temple Big-Buddha-Statue met à disposition gracieusement son site pour les personnes souhaitant pratiquer la méditation, cependant il n'assure aucune responsabilité en  cas de problème. Le maitre des lieux est un expert de méditation trés reputé dans la région, il subviendra à vos besoins si il le peut(car il est d'une extrême gentillesse) et pourra répondre à vos questions(si vous parlez Thailandais).</p>
 
 		<br />
 		<p>Le site est réservé à la pratique de la méditation(et aux activités qui y sont liées), toute autre activité est à proscrire. Les rapports sexuels, la consommation d'alcool et/ou de stupéfiants sont formellement interdits.</p>

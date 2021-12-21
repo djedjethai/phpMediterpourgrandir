@@ -18,6 +18,12 @@
 	margin: 0rem .7rem 0rem 0rem;
 	align-items: center;
 
+	// @include respond(phone){
+	@include respond(phone){
+		display: none;
+	}
+
+	
 	&__logo{
 		margin: 0;
 		&__item{
@@ -47,7 +53,6 @@
 		width: 4.5rem;
 		fill: $color-secondary-light;
 	}
-
 }
 
 .unsigned-route {
@@ -235,6 +240,67 @@
 	display: block;
 }
 .dropUlwelc .dropLi .dropdown .dropLi .dropA:hover{
+	color: #fff;
+	background: #939393;
+}
+
+// dropUl signed only for responsive welcome section when signed
+.dropUlwelcSigned{
+   display: none;
+   // @include respond(phone){
+   @include respond(phone){
+    display: block;
+    margin: 0 .7rem 0 0;
+    padding: 0;
+    list-style: none;
+    background: $color-tertiary-dark;
+    text-align: left;
+    }
+}
+
+.dropUlwelcSigned .dropLi{
+	display: inline-block;
+	position: relative;
+	line-height: 21px;
+}
+.dropUlwelcSigned .dropLi .dropA{
+	display: block;
+	/*min-width: 150px;*/
+	padding: 8px 25px;
+	color: $color-secondary-light;
+	// color: black;
+	text-decoration: none;
+}
+.dropUlwelcSigned .dropLi .dropA:hover{
+	// color: $color-secondary-light;
+	color: black;
+	background: $color-tertiary-dark;
+}
+.dropUlwelcSigned .dropLi .dropdown{
+	min-width: 100%; /* Set width of the dropdown */
+	background: #f2f2f2;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	list-style: none;
+	margin: 0;
+    padding: 0;
+    box-shadow: 
+    	 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		  0 12.5px 10px rgba(0, 0, 0, 0.06),
+		  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		  0 100px 80px rgba(0, 0, 0, 0.12)
+ }
+.dropUlwelcSigned .dropLi:hover .dropdown{
+	display: block;	/* Display the dropdown */   
+}
+.dropUlwelcSigned .dropLi .dropdown .dropLi{
+	display: block;
+}
+.dropUlwelcSigned .dropLi .dropdown .dropLi .dropA:hover{
 	color: #fff;
 	background: #939393;
 }

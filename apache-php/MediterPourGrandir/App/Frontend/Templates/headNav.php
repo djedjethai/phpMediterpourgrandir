@@ -13,6 +13,24 @@
 	<div class="navcontainer">
 	<?php if($user->isUser()){ ?>
 		<!--<div class="signed">-->
+			<ul class="dropUlwelcSigned">
+                           	<li class="dropLi">
+					<div class="dropA">
+					<svg class="unsigned-route__menu">
+						<use xlink:href="/Web/images/navbar/sprite.svg#icon-menu"></use>
+					</svg>
+					</div>
+				
+                              		<ul class="dropdown">
+                                		<li class="dropLi"><a class="dropA" href="/">Acceuil</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/QuiSuisJe.php">Instructeur(s)</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/retraite.php">Retraite</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/welcome/contact.php">Contact</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/learn/learn.php">Enseignement</a></li>
+                                		<li class="dropLi"><a class="dropA" href="/news/index-1.php">Forum</a></li>
+                              		</ul>
+                           	</li>
+                	</ul> 
 			<div class="signed-user">
 				<ul class="dropUl">
                            	<li class="dropLi">

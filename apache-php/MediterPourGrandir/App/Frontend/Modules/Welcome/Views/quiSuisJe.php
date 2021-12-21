@@ -32,7 +32,7 @@
 		<br />	
 		<p><span class="paragraphe">Méditer</span> affermit la concentration-attention, l'utiliser à moins dépendre de nous humeurs-émotions nous aide à "lâcher prise", nous libère de certains mécanismes intérieurs indépendant de notre volonté, ainsi nous appréhendons les différentes situations du quotidien avec plus de recule, nous devenons plus clairevoyant par conséquent nous prenons de meilleurs décisions. Progressivement nous allons changer, devenir plus raisonnable, compatissant, respectueux, tolérant, ouvert d'esprit, notre bien-être va s'affermir.</p>		
 		<br />
-		<p><span class="paragraphe">La</span> méditation de pleine conscience est une médiation laïque aussi elle s’adresse à tous. Si vous êtes croyants elle vous aidera à pratiquer votre religion.</p>
+		<p><span class="paragraphe">La</span> méditation de pleine conscience est une méditation laïque aussi elle s’adresse à tous. Si vous êtes croyants elle vous aidera à pratiquer votre religion.</p>
 
 		</div>
 		</div>
