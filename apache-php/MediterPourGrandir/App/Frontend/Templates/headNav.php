@@ -61,7 +61,7 @@
                         <ul class="dropUl">
                            <li class="dropLi">
 				<div class="dropA">
-					<?php if($student->message() > 0) {?>
+					<?php if(isset($student) && $student->message() > 0) {?>
 					<div class="notification">
 					<svg class="unsigned-route__user">
 						<use xlink:href="/Web/images/navbar/sprite.svg#icon-user"></use>

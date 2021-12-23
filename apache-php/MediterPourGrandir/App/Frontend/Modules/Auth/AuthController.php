@@ -147,9 +147,16 @@ class AuthController extends BackController
       }
       else
       {
-        //throw err
-        // $this->app->httpResponse()->redirect('/');
-        $this->app->httpResponse()->redirect('/auth/signIn.php');
+	      // if active link confInscription when already signedin	
+	      // kill session first
+	      	$sessionId = $this->app->user()->getUser();
+
+    		if($sessionId)
+    		{
+      			$this->app->user()->deconnexionUser();
+    		}
+	
+		$this->app->httpResponse()->redirect('/auth/signIn.php');
       } 
   }
 
