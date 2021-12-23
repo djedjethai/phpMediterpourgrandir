@@ -55,9 +55,9 @@
 					</p>
 				</form>
 
-				<a href="http://mediterpourgrandir/learn/learn.php">
+				<a href="http://mediterpourgrandir.com/learn/learn.php">
 
-					<input class="btn-choice-btn u-margin-bottom-small" type="submit" value=" Ne pas s'exprimer " />    	
+					<input class="btn-choice-btn u-margin-bottom-small" type="submit" value=" Ne pas s'exprimer " />
 				</a>
 			</div>
 		</div>

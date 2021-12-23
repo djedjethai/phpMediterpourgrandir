@@ -148,7 +148,8 @@ class AuthController extends BackController
       else
       {
         //throw err
-        $this->app->httpResponse()->redirect('/');
+        // $this->app->httpResponse()->redirect('/');
+        $this->app->httpResponse()->redirect('/auth/signIn.php');
       } 
   }
 

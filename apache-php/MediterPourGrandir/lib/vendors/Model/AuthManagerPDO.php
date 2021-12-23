@@ -96,11 +96,11 @@ class AuthManagerPDO extends Manager
 	{
 		$exist = false;
 
-		$q = $this->dao->prepare('SELECT COUNT(*) FROM students WHERE id = :id AND cle = :cle');
+		$q = $this->dao->prepare('SELECT COUNT(*) FROM students WHERE id = :id AND cle = :cle AND actif = 0');
     
-	    $q->bindValue(':id', (int)$id, \PDO::PARAM_INT);
-	    $q->bindValue(':cle', (int)$key, \PDO::PARAM_INT);
-	    $q->execute();
+	    	$q->bindValue(':id', (int)$id, \PDO::PARAM_INT);
+	    	$q->bindValue(':cle', (int)$key, \PDO::PARAM_INT);
+	    	$q->execute();
 
 	   	if ($q->fetchColumn() > 0)
 	  	{
