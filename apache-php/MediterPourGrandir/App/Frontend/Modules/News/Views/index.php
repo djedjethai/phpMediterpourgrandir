@@ -26,12 +26,13 @@ if(count($listeNews) > 0)
 	                        </figcaption>
 	
 		</figure>
-		<div class="justify-inline-spacebetween">
+		<div>
 			<div class="newsframe__title">
 				<a href="news-<?= $news['id'] ?>.php" class="btn-link"><?= $news['titre'] ?></a>
 			</div>
 			<div>Posté le: <strong><?= $news['dateAjout']->format('d/m/Y à H\hi') ?></strong></div>
 		</div>
+		<hr />
 		<div class="newsframe__text">
 			<p><?= nl2br($news['contenu']) ?></p>
 		</div>
