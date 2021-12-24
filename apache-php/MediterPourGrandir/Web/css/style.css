@@ -1763,6 +1763,10 @@ td, th {
   @media only screen and (max-width: 37.5em) {
     .learn {
       width: 100%; } }
+  .learn_warningbrowser {
+    color: #ff7730;
+    font-size: 2rem;
+    text-align: center; }
   .learn_title {
     width: 70%;
     margin: 8rem auto;

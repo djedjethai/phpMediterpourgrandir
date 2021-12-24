@@ -42,6 +42,12 @@
 		width: 100%;
     	}
 
+	&_warningbrowser{
+		color: $color-secondary-dark;
+		font-size: $default-font-size;
+		text-align: center;
+    	}
+
 	&_title{
 		width:70%;
 		margin: 8rem auto;

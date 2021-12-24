@@ -1,5 +1,5 @@
 <header class="header">
-	<div class="header__text-box">
+	<div class="header__text-box"> 
 	 	<h1 class="heading-primary">
                 	<span class="heading-primary--main">MEDITER</span>
                 	<span class="heading-primary--sub">pour GRANDIR</span>

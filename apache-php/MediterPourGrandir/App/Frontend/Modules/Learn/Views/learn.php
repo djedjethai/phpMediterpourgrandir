@@ -5,8 +5,11 @@
 		<div class="section-learn_container">
 		<div id="containerList"></div>
 		<div class="learn">
-			<?php 
-			if($interLesson && isset($interLesson))
+			<?php if($lesson->id() === "1") { ?>
+			<p class="learn_warningbrowser">Si vous observez des anomalies ou des boutons qui ne fonctionnent pas, il s'agit de problèmes liés à votre navigateur, merci d’utiliser une version récente (Google Chrome ou Firefox sont généralement recommandés).</p>
+			<?php } ?> 
+
+			<?php if($interLesson && isset($interLesson))
 			{ ?>
 			<div class="learn_recall">
 				<p>LA PATIENCE ET LA PERSEVERENCE SONT LES CLEFS DU SUCCES.<br />N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
