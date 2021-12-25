@@ -7,7 +7,7 @@
 				<p class="footer-links">
 					<a href="/">Acceuil</a>
 					|
-					<a href="/welcome/QuiSuisJe.php">Qui suis-je</a>
+					<a href="/welcome/QuiSuisJe.php">Instructeur(s)</a>
 					|
 					<a href="/welcome/retraite.php">Retraite</a>
 					|

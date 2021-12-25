@@ -11,8 +11,22 @@ use \FormBuilder\FeedbackFormBuilder;
 use \App\Frontend\Modules\Learn\FeedbackFormHandler;
 
 
+
 class LearnController extends BackController
 {
+	
+	// to fix pb from deleted rows(27 and 28) in db
+	public function fixPbFromAccidentDeleteRowInDB($studentLesson)
+	{
+		if($studentLesson === "29")
+		{
+			$lastLesson = 26;
+			return $lastLesson;
+		} else {
+			$lastLesson = $studentLesson -1;
+			return $lastLesson;	
+		}	
+	}
 
   public function executeLearn(HTTPRequest $request)
   {
@@ -30,7 +44,12 @@ class LearnController extends BackController
     }
     else
     {
-      $lastLesson = $student->lesson() - 1 ;
+	// normal logic 	    
+      // $lastLesson = $student->lesson() - 1 ;
+	    
+	    // to fix pb from deleted rows(27 and 28) in db
+	    $lastLesson = $this->fixPbFromAccidentDeleteRowInDB($student->lesson());
+	    
       $lesson = $manager->getLesson($lastLesson);
       $listTitle = $manager->getListOfTittle();
     }
@@ -58,7 +77,12 @@ class LearnController extends BackController
     }
     else
     {
-      $lastLesson = $student->lesson() - 1 ;
+	// normal logic   
+        // $lastLesson = $student->lesson() - 1 ;
+
+	    // to fix pb from deleted rows(27 and 28) in db
+	    $lastLesson = $this->fixPbFromAccidentDeleteRowInDB($student->lesson());
+
       $lesson = $manager->getLesson($lastLesson);
       $listTitle = $manager->getListOfTittle();
     }
@@ -86,7 +110,16 @@ class LearnController extends BackController
     
     $manager = $this->managers->getManagerOf('Learn');
 
-    $updatedLesson = $student->lesson() + 1;
+    // normal logic
+    // $updatedLesson = $student->lesson() + 1;
+    
+    // to fix pb deleted rows(27, 28) in db
+    if($student->lesson() === "26") {
+	$updatedLesson = $student->lesson() + 3;
+    } else {
+	$updatedLesson = $student->lesson() + 1;
+    }
+   
 
     switch($updatedLesson){
       case 12 :
