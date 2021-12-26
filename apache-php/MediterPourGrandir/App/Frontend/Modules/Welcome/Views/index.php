@@ -4,7 +4,7 @@
                 	<span class="heading-primary--main">MEDITER</span>
                 	<span class="heading-primary--sub">pour GRANDIR</span>
          	</h1>
-	 	<a href="/auth/signUp.php" class="btn btn--white btn--animated">S'inscrir</a>
+	 	<a href="/auth/signUp.php" class="btn btn--white btn--animated">S'inscrire</a>
 	</div>	
 </header>
 

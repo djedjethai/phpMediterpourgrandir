@@ -28,6 +28,8 @@ RUN docker-php-ext-install zip
 RUN  apt-get clean
 RUN a2enmod rewrite
 RUN a2enmod ssl
+RUN a2enmod headers
+
 
 # development stage
 FROM base as dev

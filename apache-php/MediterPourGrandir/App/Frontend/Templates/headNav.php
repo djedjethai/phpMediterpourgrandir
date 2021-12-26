@@ -134,7 +134,7 @@
     		</div>
             	<div class="unsigned-form">
                         <a href="/auth/signIn.php"><button class="btn-choice-connecter" type="button">Se connecter</button></a>
-                        <a href="/auth/signUp.php"><button class="btn-choice-inscrir" type="button">S'inscrir</button></a>
+                        <a href="/auth/signUp.php"><button class="btn-choice-inscrir" type="button">S'inscrire</button></a>
                 </div>
 
 	<?php } ?>
