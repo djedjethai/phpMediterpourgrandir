@@ -91,7 +91,7 @@
                                    <?php } ?>
                                         </a></li>
                                 <li class="dropLi"><a class="dropA" href="/learn/addFeedback.php">Avis</a></li>
-                                <li class="dropLi"><a class="dropA" href="/Account/modifyAccount.php">Account</a></li>
+                                <li class="dropLi"><a class="dropA" href="/Account/modifyAccount.php">Compte</a></li>
                                 <li class="dropLi"><a class="dropA" href="/learn/deconnexion.php">Deconnection</a></li>
                               </ul>
                            </li>

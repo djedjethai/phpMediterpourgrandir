@@ -12,7 +12,7 @@
 			<?php if($interLesson && isset($interLesson))
 			{ ?>
 			<div class="learn_recall">
-				<p>LA PATIENCE ET LA PERSEVERENCE SONT LES CLEFS DU SUCCES.<br />N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine lecon.</p>
+				<p>LA PATIENCE ET LA PERSEVERENCE SONT LES CLEFS DU SUCCES.<br />N'oubliez pas de mediter quotidiennement ! Rendez-vous dans <?=$interLesson ?> pour la prochaine leçon.</p>
 			</div>
 			<?php } ?>
 			<div class="learn_title">
@@ -27,6 +27,10 @@
 			 	// nothing to show, end of the course
 			} else if($interLesson === false && isset($interLesson))
 			{ ?>
+
+				<div class="justify-center">
+				<p class="message-important">!!! Cliquez sur ce bouton pour valider la leçon.</P> 
+				</div>
 				<div class="justify-center">
 				<a href="/learn/lessonFinish.php" class="btn-choice-resize-meddium">Chapitre termine</a>
 				</div>

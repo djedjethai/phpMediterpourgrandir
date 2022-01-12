@@ -250,6 +250,9 @@ body {
     color: #ff7730;
     text-transform: uppercase; }
 
+.message-important {
+  color: #ff7730; }
+
 .btn-choice-inscrir {
   font-size: 2.5rem;
   background-color: #ff7730;

@@ -127,6 +127,8 @@ class Mailer
  
         Votre nouveau mot de passe est: ".$key."
 
+	Cliquer sur ce lien pour acceder au site: https://mediterpourgrandir.com/auth/signIn.php
+
         Afin de protéger votre compte, pensez à le modifier dès votre prochaine connexion.
          
         ---------------
