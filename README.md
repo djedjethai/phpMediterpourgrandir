@@ -1,26 +1,28 @@
 # docker-htaccess-phpApache-MySql
 
 # Description
-A simple online course website. Include an Index section(presentation, author, contact/mail). An Authentification section, a Lesson section, a Q&A section, a User Account section. As well a Back-end allow the admin to moderate any question, comment, or review.
+An online course website. 
+The Front-end render: the Index module, the Authentification module, the Course module, the Q&A Module(via a Chat), the User Account module. 
+The Back-end allow the administrator to moderate any input from the client (questions, comments, or reviews).
 
-## Signup
-> An email is sent for the student to activate an account validation’s link
+## Authentification
+> The Activation of the client account is based on email validation (using Sendgrid).
 
 ## Course
-> Only one course, as soon as a lesson is finish the next one won't be available before 96 hours(specific to the aim of this course). The student can review the course at the end of each chapter, the review can be edited at anytime in the User Account
+> Display the lessons. 
 
 ## Q&A 
-> Questions can be answer by any students, a mailing system notify all participants if any new answer
+> A Chat is implemented, allowing the Instructor or other users to answer questions, the mailing implementation will notify users for follow-ups based on the response from others.
 
 ## User Account
-> Each member own his account, where he can modify his credentials, modify his review, add a profile picture and consult any notification’s messages. 
+> Each member own his account, credentials and reviews can be modify, A profile picture can be add. 
 
 # Technologie
-Wrote in PHP (OOP), the code follow the MVC structure, easily scalable and DRY as a central library is available to all modules. The App load using a .htaccess and a Bootstrap class loader. The design is responsive using SASS to optimise the implementation of the CSS. Some Javascript also complete various effects.
+Wrote in PHP (OOP), the application is design as a framework, the code follow the MVC structure, easily scalable and DRY as a central library is available to all modules(index, authentification, account, etc). Mysql is use for database storage. Docker-compose has been use during development process and Swarm orchestrate the application in production. 
 
 # Technical description
-The project looks like simple but behind the scene it implements a lots of good practices. It has been built from scratch, 100% OOP, as it depends of almost no dependencies all features as been implemented manually (csrf token, session’s management, cache system, logging system, etc.). Also as mush as possible some design patterns are implemented like Dependencies injection,  Observables, Factory, Strategy.
+The project may looks like simple but behind the scene its implementation follow good practices. It has been built from scratch, 100% OOP. With the aim of depending at least dependencies, so most of the features as been implemented (csrf token, session’s management, cache system, logging system, etc.).
 
 # Downsides
-No testing implementation, as PHP was just a language I used during studies I did not learn about PHP testing library. The User’s profile picture is store on the server which will be a problem at scale time(if scale time). This is a old school style website PHP-Apache-Mysql-javascript.
+No testing implementation. The User’s profile picture is store on the server which will lead to problems at scale time(if scale time). This is an old school style website PHP-Apache-Mysql-javascript, but sill it works very-well.
 
