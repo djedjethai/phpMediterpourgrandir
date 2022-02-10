@@ -3,16 +3,12 @@ apache-php/MediterPourGrandir/node_modules/
 
 apache-php/MediterPourGrandir/Web/images/
 
-apache-php/MediterPourGrandir/.env
-apache-php/MediterPourGrandir/.env.enc
-apache-php/MediterPourGrandir/.env.key
-
-
-./docker-compose.yml.origin
 ./docker-compose.test.yml
 ./docker-compose.prod.yml
+./docker-compose.yml
 
 curl
 certificate
 sites-enabled
+data
 

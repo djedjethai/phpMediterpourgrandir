@@ -5,6 +5,10 @@ services:
     build:
       context: ./apache-php
       target: dev
+    environment:
+      API_KEY: needtobeset
+      MYSQL_USER: lasolution
+      MYSQL_PASSWORD: cestdedevelopperledharma
     ports:
     - "80:80"  
     - "443:443"  

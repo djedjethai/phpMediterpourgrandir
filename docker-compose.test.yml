@@ -1,9 +1,9 @@
 version: "3.9"
 
-# do not work in dev env as certificates are not set
 services:
   php-apache:
-    image: djedjethai/mediter:1.0.2
+    image: djedjethai/mediter:0.0.1
+      # image: djedjethai/mediter:1.0.2 # production image
     environment:
       MYSQL_USER: /run/secrets/mysql-user
       MYSQL_PASSWORD: /run/secrets/mysql-password
@@ -16,10 +16,7 @@ services:
     - "80:80"  
     - "443:443"  
     volumes:
-    - ./curl/:/opt/lampp/share/curl/
     - ./sites-enabled/:/etc/apache2/sites-enabled/
-    - ./certificate/:/certificate/
-    - ./security.conf:/etc/apache2/conf-available/security.conf
     - ./data/logs:/var/www/html/Web/errLogger
     - ./data/pictures:/var/www/html/Web/pictures
     networks:
@@ -28,10 +25,10 @@ services:
   mysql:
     image: mysql:5.6.40
     environment:
-      MYSQL_USER: /run/secrets/mysql-user
-      MYSQL_PASSWORD: /run/secrets/mysql-password
-      MYSQL_DATABASE: /run/secrets/mysql-database
-      MYSQL_ROOT_PASSWORD: /run/secrets/mysql-root-password
+      MYSQL_USER_FILE: /run/secrets/mysql-user
+      MYSQL_PASSWORD_FILE: /run/secrets/mysql-password
+      MYSQL_DATABASE_FILE: /run/secrets/mysql-database
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql-root-password
     secrets:
     - mysql-user
     - mysql-password
@@ -42,7 +39,7 @@ services:
     networks:
     - mynet
     volumes:
-    - ./data/mysql:/var/lib/mysql
+    - /home/jerome/Documents/code/phpMediterpourgrandir/data/mysql:/var/lib/mysql
       
 networks:
   mynet:
@@ -58,4 +55,3 @@ secrets:
     external: true
   api-key:
     external: true
-

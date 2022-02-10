@@ -18,7 +18,8 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y git 
 # Install composer & update packages
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+# COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 # Install unzip utility and libs needed by zip PHP extension 
 RUN apt-get update && apt-get install -y \
     zlib1g-dev \
@@ -45,7 +46,6 @@ RUN chmod -R 777 cache
 # delete sass files
 WORKDIR /var/www/html/
 RUN rm -rf sass \ 
-    rm .env \
     rm -rf node_modules \
     rm package.json \
     rm package-lock.json

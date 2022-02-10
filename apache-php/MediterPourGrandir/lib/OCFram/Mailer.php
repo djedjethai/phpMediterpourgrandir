@@ -6,9 +6,6 @@ use \OCFram\Exception;
 use \OCFram\SMTP;
 use \OCFram\PHPMailerAutoload;
 
-use SecureEnvPHP\SecureEnvPHP;
-
-
 class Mailer
 {
 
@@ -17,9 +14,8 @@ class Mailer
   public static function sendMail($destination, $sender, $subject, $body) 
   {
         
-    (new SecureEnvPHP())->parse('.env.enc', '.env.key');
-    $sendGridApiKey = getenv('SENDGRID_API_KEY');
-    
+    $sendGridApiKey = rtrim(file_get_contents(getenv('API_KEY')));
+	    
     $email = new \SendGrid\Mail\Mail();
     $email->setFrom($sender, "Mediter Pour Grandir");
     $email->setSubject($subject);
