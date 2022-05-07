@@ -3,9 +3,10 @@ apache-php/MediterPourGrandir/node_modules/
 
 apache-php/MediterPourGrandir/Web/images/
 
-./docker-compose.test.yml
-./docker-compose.prod.yml
-./docker-compose.yml
+docker-compose.test.yml
+docker-compose.prod.yml
+docker-compose.yml
+security.conf
 
 curl
 certificate

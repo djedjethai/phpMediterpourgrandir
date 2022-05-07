@@ -104,7 +104,7 @@ class Mailer
         Pour activer votre compte, veuillez cliquer sur le lien ci dessous
         ou le copier/coller dans votre navigateur internet.
          
-        http://mediterpourgrandir.com/auth/confRegistration-".$key."".$student->id().".php
+        https://mediterpourgrandir.com/auth/confRegistration-".$key."".$student->id().".php
          
          
         ---------------
