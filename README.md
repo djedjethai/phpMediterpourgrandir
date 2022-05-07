@@ -17,8 +17,18 @@ The Back-end allow the administrator to moderate any input from the client (ques
 ## User Account
 > Each member own his account, credentials and reviews can be modify, A profile picture can be add. 
 
-# Technologie
-Wrote in PHP (OOP), the application is design as a framework, the code follow the MVC structure, easily scalable and DRY as a central library is available to all modules(index, authentification, account, etc). Mysql is use for database storage. Docker-compose has been use during development process and Swarm orchestrate the application in production. 
+# Technologies
+- PHP (OOP)
+- MySQL
+- Apache
+- Sendgrid
+- Docker-Swarm
+
+# Key issues
+- The application is design as a framework
+- The code follow the MVC structure
+- Easily scalable and DRY as a central library is available to all modules(index, authentification, account, etc)
+- Deployed using a Digital Ocean droplet
 
 # Technical description
 The project may looks like simple but behind the scene its implementation follow good practices. It has been built from scratch, 100% OOP. With the aim of depending at least dependencies, so most of the features as been implemented (csrf token, session’s management, cache system, logging system, etc.).
